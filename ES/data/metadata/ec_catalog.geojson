@@ -1,0 +1,311 @@
+{
+    "type": "FeatureCollection",
+    "crs": {
+      "type": "name",
+      "properties": {
+        "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+      }
+    },
+    "features": [
+      {
+        "id": "9b32e1572c4f4c69861d0e50cf6782",
+        "type": "Feature",
+        "recordUpdated": "2022-03-31T09:59:58.131Z",
+        "@version": "1",
+        "recordCreated": "2022-03-31T09:59:58.131Z",
+        "properties": {
+            "id": "9b32e1572c4f4c69861d0e50cf6782",
+            "created": "2022-03-31T09:59:58.131Z",
+            "updated": "2022-03-31T09:59:58.131Z",
+            "title": "Physical activity levels in London Boroughs in 2019",
+            "description": "Physical activity levels in London Boroughs in 2019 was extracted from the Active Lives Survey Nov 19/20. The number refers to the ratio of active people (at least 30mins per week).",
+            "language": "en",
+            "type": "Feature",
+            "license": "Attribution-NonCommercial-NoDerivatives 4.0 International",
+            "contactPoint": {
+              "name": "Haifeng Niu",
+              "institution": "University of Cambridge",
+              "email": "hn303(at)cam.ac.uk"
+            },
+            "publisher": "University of Cambridge",
+            "formats": [
+                "HTML",
+                "GeoJSON"
+            ],
+            "keywords": [
+                "Mesurements",
+                "H2020"
+            ],
+            "themes": [
+              {
+                  "concepts": [
+                      "health"
+                  ],
+                  "scheme": null
+              }
+          ],
+          "extent": {
+              "spatial": {
+                  "bbox": [
+                      [
+                        -1.11,
+                        51.06,
+                        0.87,
+                        51.90
+                      ]
+                  ],
+                  "crs": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+              },
+              "temporal": {
+                  "interval": [
+                      null,
+                      null
+                  ],
+                  "trs": "http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"
+              }
+          },
+            "associations": [
+                {
+                    "type": "application/geo+json",
+                    "rel": "item",
+                    "title": "Link to the feature in JSON format",
+                    "href": "https://emotional.byteroad.net/collections/activity_level_ldn?f=json"
+                },
+                {
+                  "type": "text/html",
+                  "rel": "item",
+                  "title": "Link to the feature in HTML format",
+                  "href": "https://emotional.byteroad.net/collections/activity_level_ldn?f=html"
+              }
+            ]
+        },
+        "geometry": {
+            "coordinates": [
+              [
+                [
+                  -1.11,
+                  51.06
+                ],
+                [
+                  0.87,
+                  51.06
+                ],
+                [
+                  0.87,
+                  51.90
+                ],
+                [
+                  -1.11,
+                  51.90
+                ],
+                [
+                  -1.11,
+                  51.06
+                ]
+              ]
+            ],
+            "type": "Polygon"
+        }
+      },
+      {
+        "id": "6c22e1572c4f4a44121d0e50cf6141",
+        "type": "Feature",
+        "recordUpdated": "2022-03-31T09:59:58.131Z",
+        "@version": "1",
+        "recordCreated": "2022-03-31T09:59:58.131Z",
+        "properties": {
+            "id": "6c22e1572c4f4a44121d0e50cf6141",
+            "created": "2022-03-31T09:59:58.131Z",
+            "updated": "2022-03-31T09:59:58.131Z",
+            "title": "Mortality rate from all cardiovascular diseases in London Boroughs 2020",
+            "description": "Mortality rate per 100k people (under 75 mortality rate) from all cardiovascular diseases in London Boroughs 2020.",
+            "language": "en",
+            "type": "Feature",
+            "license": "Attribution-NonCommercial-NoDerivatives 4.0 International",
+            "contactPoint": {
+              "name": "Haifeng Niu",
+              "institution": "University of Cambridge",
+              "email": "hn303(at)cam.ac.uk"
+            },
+            "publisher": "University of Cambridge",
+            "formats": [
+                "HTML",
+                "GeoJSON"
+            ],
+            "keywords": [
+                "Mesurements",
+                "H2020"
+            ],
+            "themes": [
+              {
+                  "concepts": [
+                      "health"
+                  ],
+                  "scheme": null
+              }
+          ],
+          "extent": {
+              "spatial": {
+                  "bbox": [
+                      [
+                        -1.11,
+                        51.06,
+                        0.87,
+                        51.90
+                      ]
+                  ],
+                  "crs": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+              },
+              "temporal": {
+                  "interval": [
+                      null,
+                      null
+                  ],
+                  "trs": "http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"
+              }
+          },
+            "associations": [
+                {
+                    "type": "application/geo+json",
+                    "rel": "item",
+                    "title": "Link to the feature in JSON format",
+                    "href": "https://emotional.byteroad.net/collections/cardivasular_disease_ldn?f=json"
+                },
+                {
+                  "type": "text/html",
+                  "rel": "item",
+                  "title": "Link to the feature in HTML format",
+                  "href": "https://emotional.byteroad.net/collections/cardivasular_disease_ldn?f=html"
+              }
+            ]
+        },
+        "geometry": {
+            "coordinates": [
+              [
+                [
+                  -1.11,
+                  51.06
+                ],
+                [
+                  0.87,
+                  51.06
+                ],
+                [
+                  0.87,
+                  51.90
+                ],
+                [
+                  -1.11,
+                  51.90
+                ],
+                [
+                  -1.11,
+                  51.06
+                ]
+              ]
+            ],
+            "type": "Polygon"
+        }
+      },
+      {
+        "id": "11v2e1549c2t5669861d0e50cf6h66",
+        "type": "Feature",
+        "recordUpdated": "2022-03-31T09:59:58.131Z",
+        "@version": "1",
+        "recordCreated": "2022-03-31T09:59:58.131Z",
+        "properties": {
+            "id": "11v2e1549c2t5669861d0e50cf6h66",
+            "created": "2022-03-31T09:59:58.131Z",
+            "updated": "2022-03-31T09:59:58.131Z",
+            "title": "Number of tweets in hexagon cells of London (August 2021)",
+            "description": "Number of tweets in hexagon cells of London (August 2021). Twitter data was collected via Academic Research product track API. The horizontal and vertical spacing of hexagon cells are 500 meters.",
+            "language": "en",
+            "type": "Feature",
+            "license": "Attribution-NonCommercial-NoDerivatives 4.0 International",
+            "contactPoint": {
+              "name": "Haifeng Niu",
+              "institution": "University of Cambridge",
+              "email": "hn303(at)cam.ac.uk"
+            },
+            "publisher": "University of Cambridge",
+            "formats": [
+                "HTML",
+                "GeoJSON"
+            ],
+            "keywords": [
+                "Mesurements",
+                "H2020"
+            ],
+            "themes": [
+              {
+                  "concepts": [
+                      "health"
+                  ],
+                  "scheme": null
+              }
+          ],
+          "extent": {
+              "spatial": {
+                  "bbox": [
+                      [
+                        -1.11,
+                        51.06,
+                        0.87,
+                        51.90
+                      ]
+                  ],
+                  "crs": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+              },
+              "temporal": {
+                  "interval": [
+                      null,
+                      null
+                  ],
+                  "trs": "http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"
+              }
+          },
+            "associations": [
+                {
+                    "type": "application/geo+json",
+                    "rel": "item",
+                    "title": "Link to the feature in JSON format",
+                    "href": "https://emotional.byteroad.net/collections/activity_level_ldn?f=json"
+                },
+                {
+                  "type": "text/html",
+                  "rel": "item",
+                  "title": "Link to the feature in HTML format",
+                  "href": "https://emotional.byteroad.net/collections/activity_level_ldn?f=html"
+              }
+            ]
+        },
+        "geometry": {
+            "coordinates": [
+              [
+                [
+                  -1.11,
+                  51.06
+                ],
+                [
+                  0.87,
+                  51.06
+                ],
+                [
+                  0.87,
+                  51.90
+                ],
+                [
+                  -1.11,
+                  51.90
+                ],
+                [
+                  -1.11,
+                  51.06
+                ]
+              ]
+            ],
+            "type": "Polygon"
+        }
+      }
+    ]
+}

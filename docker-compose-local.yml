@@ -43,7 +43,7 @@ services:
       - ./pygeoapi/docker.config.local.yml:/pygeoapi/local.config-orig.yml
       - ./pygeoapi/es-entrypoint.sh:/es-entrypoint.sh
       - ./pygeoapi/wait-for-elasticsearch.sh:/wait-for-elasticsearch.sh
-      #- /home/joana/git/pygeoapi/tests/data/tiles/obs:/pygeoapi/tests/data/tiles/obs
+      - ./data:/data
     environment:
       - "DATASET=masked"
     networks:

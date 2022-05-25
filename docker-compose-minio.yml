@@ -1,0 +1,69 @@
+# =================================================================
+#
+# Authors: doublebyte <jo@byteroad.net>
+# 
+# Copyright (c) 2021 Joana Simoes
+#
+# Permission is hereby granted, free of charge, to any person
+# obtaining a copy of this software and associated documentation
+# files (the "Software"), to deal in the Software without
+# restriction, including without limitation the rights to use,
+# copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the
+# Software is furnished to do so, subject to the following
+# conditions:
+#
+# The above copyright notice and this permission notice shall be
+# included in all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+# EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+# OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+# NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+# HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+# WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+# OTHER DEALINGS IN THE SOFTWARE.
+#
+# =================================================================
+
+version: '3.3'
+
+services:
+  minio:
+    image: minio/minio
+    container_name: minio
+    ports:
+      - 9000:9000
+    environment:
+      MINIO_ACCESS_KEY: pygeoapi
+      MINIO_SECRET_KEY: pygeoapi
+    networks:
+      - minioNet
+    volumes:
+      - ./data:/data
+      - minio:/root/.minio/
+    command: server --address 0.0.0.0:9000 /data
+
+volumes:
+  minio: {}
+
+networks:
+  minioNet:
+    name: minioNet
+    driver: bridge
+
+# TODO: Run this, when containers are running!
+# docker run -it -v ${PWD}/data:/data \
+#   --network host --add-host="host.docker.internal:127.0.0.1" \
+#   --entrypoint=/bin/sh minio/mc
+
+# /usr/bin/mc config host rm local;
+# /usr/bin/mc config host add \
+# --quiet --api s3v4 local http://127.0.0.1:9000 \
+# pygeoapi pygeoapi;
+# /usr/bin/mc mb local/shops/;
+# mv /data/tiles/* /data/shops/;
+# /usr/bin/mc policy set public local/shops;
+# rm -rf /data/tiles;
+# exit

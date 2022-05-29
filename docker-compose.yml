@@ -50,7 +50,7 @@ services:
       - ./pygeoapi/docker.config.yml:/pygeoapi/local.config-orig.yml
       - ./pygeoapi/es-entrypoint.sh:/es-entrypoint.sh
       - ./pygeoapi/wait-for-elasticsearch.sh:/wait-for-elasticsearch.sh
-
+      - ./data:/data
     links:
       - elastic_search
 

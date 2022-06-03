@@ -40,12 +40,13 @@ services:
     ports:
       - 80:80
     volumes:
-      - ./pygeoapi/docker.config.local.yml:/pygeoapi/local.config-orig.yml
+      #- ./pygeoapi/docker.config.local.yml:/pygeoapi/local.config-orig.yml
+      - ./pygeoapi/docker.config.yml:/pygeoapi/local.config.yml
       - ./pygeoapi/es-entrypoint.sh:/es-entrypoint.sh
       - ./pygeoapi/wait-for-elasticsearch.sh:/wait-for-elasticsearch.sh
       - ./data:/data
-    environment:
-      - "DATASET=masked"
+    # environment:
+    #   - "DATASET=masked"
     networks:
       - proxynet
       - default

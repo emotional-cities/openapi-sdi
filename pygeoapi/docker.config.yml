@@ -229,11 +229,11 @@ resources:
             - type: feature
               name: Elasticsearch
               #Note elastic_search is the docker container of ES the name is defined in the docker-compose.yml
-              data: http://elastic_search:9200/DATASET
+              data: http://elastic_search:9200/masked
               id_field: fid
             - type: tile
               name: MVT
-              data: http://minio:9000/DATASET/{z}/{x}/{y}
+              data: http://minio:9000/masked/{z}/{x}/{y}
               #data: tests/data/tiles/DATASET
               options:
                 metadata_format: tilejson # default | tilejson
@@ -278,6 +278,6 @@ resources:
             - type: record
               name: Elasticsearch
               #Note elastic_search is the docker container of ES the name is defined in the docker-compose.yml
-              data: http://elastic_search:9200/DATASET_metadata
+              data: http://elastic_search:9200/masked
               id_field: fid
               time_field: datetime

@@ -36,8 +36,8 @@ services:
     ports:
       - 9000:9000
     environment:
-      MINIO_ACCESS_KEY: pygeoapi
-      MINIO_SECRET_KEY: pygeoapi
+      MINIO_ROOT_USER: pygeoapi
+      MINIO_ROOT_PASSWORD: pygeoapi
     networks:
       - minioNet
     volumes:

@@ -131,7 +131,7 @@ services:
       - elastic_search
     depends_on:
       - elastic_search
-    command: bash -c "/docker-entrypoint.sh masked"
+    command: bash -c "/docker-entrypoint.sh"
 
 
 volumes:

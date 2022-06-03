@@ -210,7 +210,7 @@ resources:
               id_field: id
               time_field: datetime
 
-    DATASET:
+    masked:
         type: collection
         title: Example features
         description: Tech demo data from eMOTIONAL Cities.
@@ -246,7 +246,6 @@ resources:
             - type: tile
               name: MVT
               data: http://minio:9000/masked/{z}/{x}/{y}
-              #data: tests/data/tiles/DATASET
               options:
                 metadata_format: tilejson # default | tilejson
                 bounds: [[-9.1353880000000007, 38.7098030000000008],[-9.1282750000000004, 38.7172610000000006]]
@@ -259,7 +258,7 @@ resources:
                     name: pbf
                     mimetype: application/vnd.mapbox-vector-tile
 
-    DATASET_rec:
+    masked_rec:
         type: collection
         title: Example metadata
         description: Tech demo metadata from eMOTIONAL Cities. One metadata record for each feature.

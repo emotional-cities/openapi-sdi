@@ -1,10 +1,10 @@
 # =================================================================
 #
-# Authors: Just van den Broecke <justb4@gmail.com>>
-#          Jorge Samuel Mendes de Jesus <jorge.dejesus@geocat.net>
+# Authors: doublebyte1 <jo@byteroad.net>>
+#          pascalike <ant@byteroad.net>
 #
-# Copyright (c) 2019 Just van den Broecke
-# Copyright (c) 2019 Jorge Samuel Mendes de Jesus
+# Copyright (c) 2022 doublebyte
+# Copyright (c) 2019 pascalike
 #
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation
@@ -39,9 +39,6 @@ services:
     entrypoint:
       - /es-entrypoint.sh
 
-    # environment:
-    #   - "DATASET=masked"
-
     networks:
       - proxynet
       - default
@@ -67,7 +64,6 @@ services:
        - "discovery.type=single-node"
        - bootstrap.memory_lock=true
        - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-       - "DATASET=masked"
        - "logger.level=WARN"
     ulimits:
        memlock:
@@ -119,7 +115,6 @@ services:
       ELASTICSEARCH_URL: http://elastic:9200
       ELASTICSEARCH_HOSTS: '["http://elastic:9200"]'
       XPACK_MONITORING_ENABLED: 'false'
-      DATASET: 'masked'
       LOG_LEVEL: 'error'
     links:
       - elastic_search
@@ -136,7 +131,7 @@ services:
       - elastic_search
     depends_on:
       - elastic_search
-    command: bash -c "/docker-entrypoint.sh"
+    command: bash -c "/docker-entrypoint.sh masked"
 
 
 volumes:

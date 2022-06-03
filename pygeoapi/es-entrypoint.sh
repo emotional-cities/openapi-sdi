@@ -32,14 +32,6 @@
 
 set +e
 
-# dataset="${DATASET:-obs}"
-
-# echo  "Update dataset name to $dataset"
-
-# Workaround to avoid resource busy
-# cp /pygeoapi/local.config-orig.yml /pygeoapi/local.config.yml
-# sed -i "s/DATASET/$dataset/g" /pygeoapi/local.config.yml
-
 echo  "Install Curl"
 
 apt-get update -y &&

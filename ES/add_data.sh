@@ -43,7 +43,7 @@ until $(curl -sSf -XGET --insecure 'http://localhost:9200/_cluster/health?wait_f
     sleep 10
 done
 
-dataset="${DATASET:-obs}"
+dataset="$1"
 
 ## ADDING DATA *************************************************
 

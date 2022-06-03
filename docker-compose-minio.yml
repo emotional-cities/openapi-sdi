@@ -41,7 +41,7 @@ services:
     networks:
       - minioNet
     volumes:
-      - ./data:/data
+      - ./ES/data:/data
       - minio:/root/.minio/
     command: server --address 0.0.0.0:9000 /data
 
@@ -54,7 +54,7 @@ networks:
     driver: bridge
 
 # TODO: Run this, when containers are running!
-# docker run -it -v ${PWD}/data:/data \
+# docker run -it -v ${PWD}/ES/data:/data \
 #   --network host --add-host="host.docker.internal:127.0.0.1" \
 #   --entrypoint=/bin/sh minio/mc
 
@@ -62,8 +62,8 @@ networks:
 # /usr/bin/mc config host add \
 # --quiet --api s3v4 local http://127.0.0.1:9000 \
 # pygeoapi pygeoapi;
-# /usr/bin/mc mb local/shops/;
-# mv /data/tiles/* /data/shops/;
-# /usr/bin/mc policy set public local/shops;
+# /usr/bin/mc mb local/masked/;
+# mv /data/tiles/* /data/masked/;
+# /usr/bin/mc policy set public local/masked;
 # rm -rf /data/tiles;
 # exit

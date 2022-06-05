@@ -43,13 +43,11 @@ until $(curl -sSf -XGET --insecure 'http://localhost:9200/_cluster/health?wait_f
     sleep 10
 done
 
-dataset="$1"
-
 ## ADDING DATA *************************************************
 
-echo "Elasticsearch seems to be working - Adding $dataset to ES"
+#echo "Elasticsearch seems to be working - Adding $dataset to ES"
 
-python3 /load_es_data.py /in/"$dataset".geojson fid
+python3 /load_es_data.py /in/masked.geojson fid
 
 # Waiting for geopackage_pusher container to create the file
 while ! test -f "/in/activity_level_ldn.geojson"; do

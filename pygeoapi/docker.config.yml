@@ -90,7 +90,6 @@ metadata:
         role: pointOfContact
 
 resources:
-
     activity_level_ldn:
         type: collection
         title: Physical activity levels in London Boroughs in 2019

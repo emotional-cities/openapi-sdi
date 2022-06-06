@@ -72,7 +72,7 @@ metadata:
         url: https://creativecommons.org/licenses/by/4.0/
     provider:
         name: ByteRoad
-        url: https://pygeoapi.io
+        url: https://byteroad.net
     contact:
         name: ByteRoad
         position: Maintainer
@@ -99,6 +99,7 @@ resources:
             - Mesurements
             - Health
             - London
+            - eMOTIONAL Cities
         links:
             - type: text/html
               rel: canonical
@@ -123,6 +124,7 @@ resources:
             - Mesurements
             - Health
             - London
+            - eMOTIONAL Cities
         links:
             - type: text/html
               rel: canonical
@@ -147,6 +149,7 @@ resources:
             - Mesurements
             - Health
             - London
+            - eMOTIONAL Cities
         links:
             - type: text/html
               rel: canonical

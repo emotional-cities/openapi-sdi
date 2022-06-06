@@ -90,6 +90,7 @@ metadata:
         role: pointOfContact
 
 resources:
+
     activity_level_ldn:
         type: collection
         title: Physical activity levels in London Boroughs in 2019
@@ -248,7 +249,7 @@ resources:
                     name: pbf
                     mimetype: application/vnd.mapbox-vector-tile
 
-     masked_rec:
+    masked_rec:
         type: collection
         title: Example metadata
         description: Tech demo metadata from eMOTIONAL Cities. One metadata record for each feature.

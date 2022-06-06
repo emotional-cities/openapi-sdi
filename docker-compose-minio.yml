@@ -31,10 +31,11 @@ version: '3.3'
 
 services:
   minio:
-    image: minio/minio:RELEASE.2021-07-15T22-27-34Z
+    image: minio/minio:RELEASE.2022-05-04T07-45-27Z.fips
     container_name: minio
     ports:
       - 9000:9000
+      - 9001:9001
     environment:
       MINIO_ROOT_USER: pygeoapi
       MINIO_ROOT_PASSWORD: pygeoapi
@@ -43,7 +44,7 @@ services:
     volumes:
       - ./ES/data:/data
       - minio:/root/.minio/
-    command: server --address 0.0.0.0:9000 /data
+    command: server --address 0.0.0.0:9000 --console-address ":9001" /data
 
 volumes:
   minio: {}

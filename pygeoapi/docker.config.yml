@@ -246,7 +246,7 @@ resources:
                     name: pbf
                     mimetype: application/vnd.mapbox-vector-tile
 
-    masked:
+     masked_rec:
         type: collection
         title: Example metadata
         description: Tech demo metadata from eMOTIONAL Cities. One metadata record for each feature.
@@ -277,6 +277,6 @@ resources:
             - type: record
               name: Elasticsearch
               #Note elastic_search is the docker container of ES the name is defined in the docker-compose.yml
-              data: http://elastic_search:9200/masked
+              data: http://elastic_search:9200/masked_metadata
               id_field: fid
               time_field: datetime

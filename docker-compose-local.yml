@@ -38,7 +38,7 @@ services:
     entrypoint:
       - /es-entrypoint.sh
     ports:
-      - 80:80
+      - 81:80
     volumes:
       - ./pygeoapi/docker.config.local.yml:/pygeoapi/local.config.yml
       - ./pygeoapi/es-entrypoint.sh:/es-entrypoint.sh
@@ -107,8 +107,62 @@ services:
       - elastic_search
     command: bash -c "/docker-entrypoint.sh"
 
+  postgis:
+    build: ./postgis/
+    environment:
+      POSTGRES_PASSWORD: G1rlP0w3r
+      POSTGRES_DB: geodb
+    expose:
+       - 5432
+    volumes:
+      - postgis_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    container_name: postgis
+
+  geoserver:
+    build: ./geoserver/
+    expose:
+      - 8009
+    environment:
+      DB_BACKEND: POSTGRES
+      HOST: postgis
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: geodb
+      POSTGRES_USER: postgres
+      POSTGRES_PASS: G1rlP0w3r
+      GEOSERVER_DATA_DIR: /var/local/geoserver
+    volumes:
+      - geoserver_data:/var/local/geoserver
+      - geoserver_gwc_data:/var/local/geoserver-gwc
+    container_name: geoserver
+
+  mapstore:
+    build: ./mapstore/
+    expose:
+      - 8080
+    container_name: mapstore
+
+  apache-httpd:
+    image: httpd:2.4
+    depends_on:
+      - geoserver
+      - mapstore
+    volumes:
+      - ./apache-httpd/httpd.conf:/usr/local/apache2/conf/httpd.conf
+    ports:
+      - "80:80"
+      - "443:443"
+    container_name: apache-httpd
+
 volumes:
   elastic_search_data: {}
+  geoserver_data:
+    driver: local
+  geoserver_gwc_data:
+    driver: local
+  postgis_data:
+    driver: local
 
 networks:
   default:

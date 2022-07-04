@@ -34,8 +34,6 @@ RUN mkdir ${GEOSERVER_DATA_DIR} \
     && mv data/* ${GEOSERVER_DATA_DIR} \
     && rm -rf geoserver-${GEOSERVER_VERSION}-war.zip geoserver.war target *.txt
 
-COPY ./data_geoserver ${GEOSERVER_DATA_DIR}
-
 # CORS
 RUN sed -i '\:</web-app>:i\
 <filter>\n\
@@ -60,7 +58,7 @@ ENV CATALINA_OPTS " -Xms768m -Xmx1560m --patch-module java.desktop=/usr/local/to
     -server -XX:+UseG1GC -XX:NewSize=48m -XX:-UsePerfData -XX:SoftRefLRUPolicyMSPerMB=36000 -Djava.awt.headless=true \
     -DGEOSERVER_DATA_DIR=${GEOSERVER_DATA_DIR} -Dorg.geotools.referencing.forceXY=true -Dsun.java2d.renderer.useThreadLocal=false "
 
-# Create tomcat user to avoid root access. 
+# Create tomcat user to avoid root access.
 RUN addgroup --gid 1099 tomcat && useradd -m -u 1099 -g tomcat tomcat \
     && chown -R tomcat:tomcat . \
     && chown -R tomcat:tomcat ${GEOSERVER_DATA_DIR} \

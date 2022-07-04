@@ -95,26 +95,6 @@ services:
     networks:
       - default
 
-  # nginx:
-  #   image: nginx:stable-alpine
-  #   container_name: nginx
-  #   ports:
-  #     - "80:80"
-  #     - "443:443"
-  #   volumes:
-  #     - ./nginx/.htpasswd:/etc/nginx/.htpasswd
-  #     - ./nginx:/etc/nginx/conf.d
-  #     - /etc/letsencrypt/:/etc/letsencrypt/
-  #     - /etc/ssl/certs/dhparam.pem:/etc/ssl/certs/dhparam.pem
-  #     - ./nginx/options-ssl-nginx.conf:/etc/options-ssl-nginx.conf
-  #   command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
-  #   networks:
-  #     - proxynet
-  #     - default
-  #   restart: unless-stopped
-  #   depends_on:
-  #     - pygeoapi
-
   metadata_logstash:
     build: ./logstash
     container_name: metadata_logstash
@@ -174,8 +154,9 @@ services:
       POSTGRES_PASS: G1rlP0w3r
       GEOSERVER_DATA_DIR: /var/local/geoserver
     volumes:
-      - geoserver_data:/var/local/geoserver
-      - geoserver_gwc_data:/var/local/geoserver-gwc
+      - ./geoserver/data_geoserver:/var/local/geoserver
+      - ./geoserver/data_geoserver/gwc:/var/local/geoserver-gwc
+      - ./geoserver/ec_data/geopackage:/home/tomcat/ec_data/geopackage
     container_name: geoserver
     image: emotionalcities/sdi-template-geoserver
     restart: unless-stopped
@@ -190,13 +171,14 @@ services:
   apache-httpd:
     image: httpd:2.4
     depends_on:
-      - geoserver
+      - pygeoapi
       - mapstore
+      - geoserver
     volumes:
-      - "/etc/letsencrypt/archive/oldskool.byteroad.net/cert2.pem:/usr/local/apache2/conf/server.crt"
+      - "/etc/letsencrypt/archive/emotionalcities.byteroad.net/cert2.pem:/usr/local/apache2/conf/server.crt"
       #- "/etc/letsencrypt/archive/oldskool.byteroad.net/chain1.pem:/usr/local/apache2/conf/ca_bundle.crt"
-      - "/etc/letsencrypt/archive/oldskool.byteroad.net/privkey2.pem:/usr/local/apache2/conf/server.key"
-      - ./apache-httpd/httpd-ssl.conf:/usr/local/apache2/conf/httpd.conf
+      - "/etc/letsencrypt/archive/emotionalcities.byteroad.net/privkey2.pem:/usr/local/apache2/conf/server.key"
+      - ./apache-httpd/httpd.conf:/usr/local/apache2/conf/httpd.conf
     ports:
       - "80:80"
       - "443:443"

@@ -158,7 +158,7 @@ services:
       - ./geoserver/data_geoserver/gwc:/var/local/geoserver-gwc
       - ./geoserver/ec_data/geopackage:/home/tomcat/ec_data/geopackage
     container_name: geoserver
-    image: emotionalcities/sdi-template-geoserver
+    image: emotionalcities/geoserver
     restart: unless-stopped
 
   mapstore:
@@ -178,7 +178,7 @@ services:
       - "/etc/letsencrypt/archive/emotionalcities.byteroad.net/cert2.pem:/usr/local/apache2/conf/server.crt"
       #- "/etc/letsencrypt/archive/oldskool.byteroad.net/chain1.pem:/usr/local/apache2/conf/ca_bundle.crt"
       - "/etc/letsencrypt/archive/emotionalcities.byteroad.net/privkey2.pem:/usr/local/apache2/conf/server.key"
-      - ./apache-httpd/httpd.conf:/usr/local/apache2/conf/httpd.conf
+      - ./apache-httpd/httpd-ssl.conf:/usr/local/apache2/conf/httpd.conf
     ports:
       - "80:80"
       - "443:443"

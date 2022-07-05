@@ -166,6 +166,8 @@ services:
     expose:
       - 8080
     container_name: mapstore
+    volumes:
+      - ./home/ubuntu/emotional_cities_volumes/mapstore/geostore.h2.db:/usr/local/tomcat/webapps/mapstore/geostore.h2.db
     image: emotionalcities/sdi-template-mapstore
 
   apache-httpd:

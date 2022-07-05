@@ -1,4 +1,3 @@
-FROM geosolutionsit/mapstore2:2021.01.04
+FROM geosolutionsit/mapstore2:2022.01.01-stable
 
 COPY ./mapstore.war /usr/local/tomcat/webapps/mapstore.war
-

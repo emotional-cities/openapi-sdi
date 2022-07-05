@@ -80,13 +80,13 @@
                 {
                   "href": "https://emotional.byteroad.net/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities",
                   "rel": "item",
-                  "title": "WMS Endpoint",
+                  "title": "activity_level_ldn",
                   "type": "OGC:WMS"
                 },
                 {
                   "href": "https://emotional.byteroad.net/geoserver/ows?service=wfs&version=2.0.0&request=GetCapabilities",
                   "rel": "item",
-                  "title": "WFS Endpoint",
+                  "title": "activity_level_ldn",
                   "type": "OGC:WFS"
                 }
             ]
@@ -192,13 +192,13 @@
                 {
                   "href": "https://emotional.byteroad.net/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities",
                   "rel": "item",
-                  "title": "WMS Endpoint",
+                  "title": "cardivasular_disease_ldn",
                   "type": "OGC:WMS"
                 },
                 {
                   "href": "https://emotional.byteroad.net/geoserver/ows?service=wfs&version=2.0.0&request=GetCapabilities",
                   "rel": "item",
-                  "title": "WFS Endpoint",
+                  "title": "cardivasular_disease_ldn",
                   "type": "OGC:WFS"
                 }
             ]
@@ -293,24 +293,24 @@
                     "type": "application/geo+json",
                     "rel": "item",
                     "title": "Link to the feature in JSON format",
-                    "href": "https://emotional.byteroad.net/collections/activity_level_ldn?f=json"
+                    "href": "https://emotional.byteroad.net/collections/tweet_count_sample?f=json"
                 },
                 {
                   "type": "text/html",
                   "rel": "item",
                   "title": "Link to the feature in HTML format",
-                  "href": "https://emotional.byteroad.net/collections/activity_level_ldn?f=html"
+                  "href": "https://emotional.byteroad.net/collections/tweet_count_sample?f=html"
                 },
                 {
                   "href": "https://emotional.byteroad.net/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities",
                   "rel": "item",
-                  "title": "WMS Endpoint",
+                  "title": "tweet_count_sample",
                   "type": "OGC:WMS"
                 },
                 {
                   "href": "https://emotional.byteroad.net/geoserver/ows?service=wfs&version=2.0.0&request=GetCapabilities",
                   "rel": "item",
-                  "title": "WFS Endpoint",
+                  "title": "tweet_count_sample",
                   "type": "OGC:WFS"
                 }
             ]

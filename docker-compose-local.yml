@@ -32,13 +32,29 @@
 version: '3.3'
 
 services:
+
+  apache-httpd:
+    image: httpd:2.4
+    depends_on:
+      - pygeoapi
+      - geoserver
+      - mapstore
+    volumes:
+      - "/etc/letsencrypt/archive/emotionalcities.byteroad.net/cert2.pem:/usr/local/apache2/conf/server.crt"
+      #- "/etc/letsencrypt/archive/oldskool.byteroad.net/chain1.pem:/usr/local/apache2/conf/ca_bundle.crt"
+      - "/etc/letsencrypt/archive/emotionalcities.byteroad.net/privkey2.pem:/usr/local/apache2/conf/server.key"
+      - ./apache-httpd/httpd.conf:/usr/local/apache2/conf/httpd.conf
+    ports:
+      - "80:80"
+      - "443:443"
+    container_name: apache-httpd
+    restart: unless-stopped
+
   pygeoapi:
     image: geopython/pygeoapi:latest
     container_name: pygeoapi_es
     entrypoint:
       - /es-entrypoint.sh
-    ports:
-      - 80:80
     volumes:
       - ./pygeoapi/docker.config.local.yml:/pygeoapi/local.config.yml
       - ./pygeoapi/es-entrypoint.sh:/es-entrypoint.sh
@@ -76,8 +92,6 @@ services:
   kib01:
     image: docker.elastic.co/kibana/kibana:7.5.1
     container_name: kibana
-    ports:
-      - 5601:5601
     environment:
       ELASTICSEARCH_URL: http://elastic:9200
       ELASTICSEARCH_HOSTS: '["http://elastic:9200"]'
@@ -107,8 +121,51 @@ services:
       - elastic_search
     command: bash -c "/docker-entrypoint.sh"
 
+  postgis:
+    build: ./postgis/
+    environment:
+      POSTGRES_PASSWORD: G1rlP0w3r
+      POSTGRES_DB: geodb
+    expose:
+       - 5432
+    volumes:
+      - postgis_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    container_name: postgis
+
+  geoserver:
+    build: ./geoserver/
+    expose:
+      - 8080
+    environment:
+      DB_BACKEND: POSTGRES
+      HOST: postgis
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: geodb
+      POSTGRES_USER: postgres
+      POSTGRES_PASS: G1rlP0w3r
+      GEOSERVER_DATA_DIR: /var/local/geoserver
+    volumes:
+      - ./geoserver/data_geoserver:/var/local/geoserver
+      - ./geoserver/data_geoserver/gwc:/var/local/geoserver-gwc
+      - ./geoserver/ec_data/geopackage:/home/tomcat/ec_data/geopackage
+    container_name: geoserver
+
+  mapstore:
+    build: ./mapstore/
+    expose:
+      - 8080
+    container_name: mapstore
+
 volumes:
   elastic_search_data: {}
+  geoserver_data:
+    driver: local
+  geoserver_gwc_data:
+    driver: local
+  postgis_data:
+    driver: local
 
 networks:
   default:

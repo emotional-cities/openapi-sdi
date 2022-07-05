@@ -1,0 +1,16 @@
+<layer>
+  <name>active_score_ldn</name>
+  <id>LayerInfoImpl-72fb1e7c:181c96f54d0:-7ffd</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-335e30d2:17e93340b06:-7ffe</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-72fb1e7c:181c96f54d0:-7ffe</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-07-04 13:43:05.191 UTC</dateCreated>
+</layer>

@@ -176,10 +176,10 @@ services:
       - geoserver
     volumes:
       - "/etc/letsencrypt/archive/emotional.byteroad.net/cert1.pem:/usr/local/apache2/conf/emotional.crt"
-      #- "/etc/letsencrypt/archive/emotional.byteroad.net/chain1.pem:/usr/local/apache2/conf/ca_bundle_emotional.crt"
+      - "/etc/letsencrypt/archive/emotional.byteroad.net/chain1.pem:/usr/local/apache2/conf/ca_bundle_emotional.crt"
       - "/etc/letsencrypt/archive/emotional.byteroad.net/privkey1.pem:/usr/local/apache2/conf/emotional.key"
       - "/etc/letsencrypt/archive/oldskool.byteroad.net/cert1.pem:/usr/local/apache2/conf/oldskool.crt"
-      #- "/etc/letsencrypt/archive/oldskool.byteroad.net/chain1.pem:/usr/local/apache2/conf/ca_bundle_oldskool.crt"
+      - "/etc/letsencrypt/archive/oldskool.byteroad.net/chain1.pem:/usr/local/apache2/conf/ca_bundle_oldskool.crt"
       - "/etc/letsencrypt/archive/oldskool.byteroad.net/privkey1.pem:/usr/local/apache2/conf/oldskool.key"
       - ./apache-httpd/httpd-ssl.conf:/usr/local/apache2/conf/httpd.conf
     ports:

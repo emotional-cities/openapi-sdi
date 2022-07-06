@@ -1,3 +1,9 @@
+CREATE SCHEMA IF NOT EXISTS geostore;
+
+CREATE USER geostore WITH ENCRYPTED PASSWORD 'geostore123!4';
+
+GRANT ALL PRIVILEGES ON SCHEMA geostore TO geostore;
+
 CREATE SCHEMA IF NOT EXISTS examples;
 
 -- examples.observations definition

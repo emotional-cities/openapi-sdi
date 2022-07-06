@@ -163,6 +163,12 @@ services:
     #build: ./mapstore/
     expose:
       - 8080
+    environment:
+      - "JAVA_OPTS=-Dgeostore-ovr=file:///usr/local/tomcat/conf/geostore-datasource-ovr.properties "
+    volumes:
+      - ./mapstore/geostore-datasource-ovr.properties:/usr/local/tomcat/conf/geostore-datasource-ovr.properties
+    depends_on:
+      - postgis
     container_name: mapstore
     image: emotionalcities/sdi-template-mapstore
 

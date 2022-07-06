@@ -48,7 +48,6 @@ services:
       - "80:80"
       - "443:443"
     container_name: apache-httpd
-    restart: unless-stopped
 
   pygeoapi:
     image: geopython/pygeoapi:latest

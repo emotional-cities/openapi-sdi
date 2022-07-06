@@ -139,7 +139,6 @@ services:
       - "5432:5432"
     container_name: postgis
     image: emotionalcities/sdi-template-postgis
-    restart: unless-stopped
 
   geoserver:
     #build: ./geoserver/
@@ -159,7 +158,6 @@ services:
       - ./geoserver/ec_data/geopackage:/home/tomcat/ec_data/geopackage
     container_name: geoserver
     image: emotionalcities/geoserver
-    restart: unless-stopped
 
   mapstore:
     #build: ./mapstore/
@@ -186,7 +184,6 @@ services:
       - "80:80"
       - "443:443"
     container_name: apache-httpd
-    restart: unless-stopped
 
 volumes:
   elastic_search_data: {}

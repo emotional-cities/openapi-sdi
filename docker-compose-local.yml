@@ -124,8 +124,8 @@ services:
   postgis:
     build: ./postgis/
     environment:
-      POSTGRES_PASSWORD: G1rlP0w3r
-      POSTGRES_DB: geodb
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
     expose:
        - 5432
     volumes:
@@ -133,6 +133,8 @@ services:
     ports:
       - "5432:5432"
     container_name: postgis
+    env_file:
+      - .env     # path to your .env file
 
   geoserver:
     build: ./geoserver/
@@ -142,16 +144,18 @@ services:
       DB_BACKEND: POSTGRES
       HOST: postgis
       POSTGRES_PORT: 5432
-      POSTGRES_DB: geodb
-      POSTGRES_USER: postgres
-      POSTGRES_PASS: G1rlP0w3r
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASS: ${POSTGRES_PASSWORD}
       GEOSERVER_DATA_DIR: /var/local/geoserver
     volumes:
       - ./geoserver/data_geoserver:/var/local/geoserver
       - ./geoserver/data_geoserver/gwc:/var/local/geoserver-gwc
       - ./geoserver/ec_data/geopackage:/home/tomcat/ec_data/geopackage
     container_name: geoserver
-
+    env_file:
+      - .env     # path to your .env file
+      
   mapstore:
     build: ./mapstore/
     expose:

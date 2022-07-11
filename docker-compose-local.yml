@@ -120,8 +120,10 @@ services:
   postgis:
     build: ./postgis/
     environment:
-      POSTGRES_PASSWORD: G1rlP0w3r
-      POSTGRES_DB: geodb
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    env_file:
+      - .env     # path to your .env file
     expose:
        - 5432
     volumes:
@@ -138,10 +140,12 @@ services:
       DB_BACKEND: POSTGRES
       HOST: postgis
       POSTGRES_PORT: 5432
-      POSTGRES_DB: geodb
-      POSTGRES_USER: postgres
-      POSTGRES_PASS: G1rlP0w3r
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASS: ${POSTGRES_PASSWORD}
       GEOSERVER_DATA_DIR: /var/local/geoserver
+    env_file:
+      - .env     # path to your .env file
     volumes:
       - ./geoserver/data_geoserver:/var/local/geoserver
       - ./geoserver/data_geoserver/gwc:/var/local/geoserver-gwc

@@ -89,6 +89,19 @@ And then:
 docker-compose -f docker-compose-local.yml up -d
 ```
 
+After building images locally with ```docker-compose-local.yml```, you can push them to docker hub:
+
+```
+docker tag openapi-sdi_elastic_search  emotionalcities/openapi-sdi_elastic_search
+docker tag openapi-sdi_metadata_logstash  emotionalcities/openapi-sdi_metadata_logstash
+docker tag openapi-sdi_geopackage_pusher   emotionalcities/openapi-sdi_geopackage_pusher
+docker tag openapi-sdi_postgis emotionalcities/sdi-template-postgis
+docker push emotionalcities/openapi-sdi_elastic_search
+docker push emotionalcities/openapi-sdi_metadata_logstash
+docker push emotionalcities/openapi-sdi_geopackage_pusher
+docker push emotionalcities/sdi-template-postgis
+```
+
 The `docker-compose.yml` is designed for production and it includes a web server. Launch it with:
 
 ```
@@ -98,6 +111,21 @@ docker-compose up -d
 You can read more about docker-compose on this [link](https://docs.docker.com/compose/gettingstarted/)
 
 Regardless the composition you choosen, when all goes well, pygeoapi will be available at port 80 of the host: http://localhost.
+
+## Environment Variables
+
+This compositions read secrets from an environment file on this folder: ```.env```.
+
+Create this file with the following format, replacing "SOMEPASSWORD" by reasonable values.
+
+```
+POSTGRES_PASSWORD="SOMEPASSWORD"
+POSTGRES_DB="SOMEPASSWORD"
+POSTGRES_USER="SOMEPASSWORD"
+MINIO_ROOT_USER="SOMEPASSWORD"
+MINIO_ROOT_PASSWORD="SOMEPASSWORD"
+```
+
 
 ## Troubleshooting
 

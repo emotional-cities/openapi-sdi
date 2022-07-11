@@ -37,18 +37,18 @@ services:
     container_name: pygeoapi_es
     entrypoint:
       - /es-entrypoint.sh
-    ports:
-      - 80:80
-    volumes:
-      - ./pygeoapi/docker.config.local.yml:/pygeoapi/local.config.yml
-      - ./pygeoapi/es-entrypoint.sh:/es-entrypoint.sh
-      - ./pygeoapi/wait-for-elasticsearch.sh:/wait-for-elasticsearch.sh
-      - ./ES/data:/data
     networks:
       - proxynet
       - default
+    volumes:
+      #- ./pygeoapi/docker.config.yml:/pygeoapi/local.config-orig.yml
+      - ./pygeoapi/docker.config.yml:/pygeoapi/local.config.yml
+      - ./pygeoapi/es-entrypoint.sh:/es-entrypoint.sh
+      - ./pygeoapi/wait-for-elasticsearch.sh:/wait-for-elasticsearch.sh
+      - ./ES/data:/data
     links:
       - elastic_search
+
     depends_on:
       - elastic_search
 
@@ -56,23 +56,24 @@ services:
     image: emotionalcities/openapi-sdi_elastic_search
     container_name: elastic
     environment:
-       - "discovery.type=single-node"
-       - bootstrap.memory_lock=true
-       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - "discovery.type=single-node"
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - "logger.level=WARN"
     ulimits:
-       memlock:
-         soft: -1
-         hard: -1
-
+      memlock:
+        soft: -1
+        hard: -1
     ports:
       - 9300:9300
       - 9200:9200
     volumes:
       - elastic_search_data:/usr/share/elasticsearch/data
       - ./ES/data:/in
+    networks:
+      - default
 
   kib01:
-    image: docker.elastic.co/kibana/kibana:7.5.1
     container_name: kibana
     ports:
       - 5601:5601
@@ -80,6 +81,9 @@ services:
       ELASTICSEARCH_URL: http://elastic:9200
       ELASTICSEARCH_HOSTS: '["http://elastic:9200"]'
       SERVER_BASEPATH: /dashboard
+      #SERVER_HOST: emotional.byteroad.net
+    networks:
+      - default
 
   metadata_logstash:
     image: emotionalcities/openapi-sdi_metadata_logstash
@@ -88,10 +92,13 @@ services:
       ELASTICSEARCH_URL: http://elastic:9200
       ELASTICSEARCH_HOSTS: '["http://elastic:9200"]'
       XPACK_MONITORING_ENABLED: 'false'
+      LOG_LEVEL: 'error'
     links:
       - elastic_search
     depends_on:
       - elastic_search
+    networks:
+      - default
 
   geopackage_pusher:
     image: emotionalcities/openapi-sdi_geopackage_pusher
@@ -104,15 +111,87 @@ services:
     depends_on:
       - elastic_search
     command: bash -c "/docker-entrypoint.sh"
+    networks:
+      - default
+
+  postgis:
+    #build: ./postgis/
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    env_file:
+      - .env     # path to your .env file
+    expose:
+       - 5432
+    volumes:
+      - postgis_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    container_name: postgis
+    image: emotionalcities/sdi-template-postgis
+
+  geoserver:
+    #build: ./geoserver/
+    expose:
+      - 8009
+    environment:
+      DB_BACKEND: POSTGRES
+      HOST: postgis
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASS: ${POSTGRES_PASSWORD}
+      GEOSERVER_DATA_DIR: /var/local/geoserver
+    env_file:
+      - .env     # path to your .env file
+    volumes:
+      - ./geoserver/data_geoserver:/var/local/geoserver
+      - ./geoserver/data_geoserver/gwc:/var/local/geoserver-gwc
+      - ./geoserver/ec_data/geopackage:/home/tomcat/ec_data/geopackage
+    container_name: geoserver
+    image: emotionalcities/geoserver
+
+  mapstore:
+    #build: ./mapstore/
+    expose:
+      - 8080
+    environment:
+      - "JAVA_OPTS=-Dgeostore-ovr=file:///usr/local/tomcat/conf/geostore-datasource-ovr.properties "
+    volumes:
+      - ./mapstore/geostore-datasource-ovr.properties:/usr/local/tomcat/conf/geostore-datasource-ovr.properties
+    depends_on:
+      - postgis
+    container_name: mapstore
+    image: emotionalcities/sdi-template-mapstore
+
+  apache-httpd:
+    image: httpd:2.4
+    depends_on:
+      - pygeoapi
+      - mapstore
+      - geoserver
+    volumes:
+      - "/etc/letsencrypt/archive/emotional.byteroad.net/fullchain1.pem:/usr/local/apache2/conf/emotional/fullchain1.pem"
+      - "/etc/letsencrypt/archive/emotional.byteroad.net/privkey1.pem:/usr/local/apache2/conf/emotional/privkey1.pem"
+      - "/etc/letsencrypt/archive/oldskool.byteroad.net/fullchain1.pem:/usr/local/apache2/conf/oldskool/fullchain1.pem"
+      - "/etc/letsencrypt/archive/oldskool.byteroad.net/privkey1.pem:/usr/local/apache2/conf/oldskool/privkey1.pem"
+      - ./apache-httpd/httpd-ssl.conf:/usr/local/apache2/conf/httpd.conf
+    ports:
+      - "80:80"
+      - "443:443"
+    container_name: apache-httpd
 
 volumes:
   elastic_search_data: {}
+  geoserver_data:
+    driver: local
+  geoserver_gwc_data:
+    driver: local
+  postgis_data:
+    driver: local
 
 networks:
   default:
     driver: bridge
   proxynet:
     name: minioNet # Minio's network
-
-#NOTE: Host requires changes in configuration to run ES
-#sudo sysctl -w vm.max_map_count=262144

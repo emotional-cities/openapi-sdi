@@ -37,6 +37,11 @@ services:
     container_name: pygeoapi_es
     entrypoint:
       - /es-entrypoint.sh
+    environment:
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+    env_file:
+      - .env     # path to your .env file
     networks:
       - proxynet
       - default

@@ -284,4 +284,35 @@ resources:
               id_field: fid
               time_field: datetime
 
-
+    byteroad-workshop:
+        type: collection
+        title: Demo data for workshop 
+        description: Read data from the data lake
+        keywords:
+            - AWS
+        links:
+            - type: text/html
+              rel: canonical
+              title: information
+              href: https://www.sawcer.com/
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-180, -90, 180, 90]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+            temporal:
+                begin: 2011-11-11
+                end: null  # or empty
+        providers:
+            - type: feature
+              name: OGR
+              data:
+                source_type: GeoJSON
+                # TODO: edit this to read data from a bucket /vsis3/emotional-cities/data/[BUCKET NAME]/[FILE NAME]
+                source: /vsis3/emotional-cities/data/utartu/shops.geojson
+                gdal_ogr_options:
+                    AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+                    AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+                    #AWS_SESSION_TOKEN:
+              id_field: field_1
+              layer: shops

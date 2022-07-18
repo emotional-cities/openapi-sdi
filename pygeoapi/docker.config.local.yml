@@ -293,12 +293,12 @@ resources:
               id_field: fid
               time_field: datetime
 
-    sawcer:
+    byteroad-workshop:
         type: collection
-        title: Shops and Products 
-        description: SEARCH & FIND & SHARE where to get ingredients in local shops
+        title: Demo data for workshop 
+        description: Read data from the data lake
         keywords:
-            - cases
+            - AWS
         links:
             - type: text/html
               rel: canonical

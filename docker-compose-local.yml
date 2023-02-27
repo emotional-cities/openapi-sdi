@@ -75,13 +75,15 @@ services:
     container_name: elastic
 
     environment:
-       - "discovery.type=single-node"
-       - bootstrap.memory_lock=true
-       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-    ulimits:
-       memlock:
-         soft: -1
-         hard: -1
+      #  - "discovery.type=single-node"
+      #  - bootstrap.memory_lock=true
+      #  - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      #  - ELASTIC_CLIENT_APIVERSIONING=1
+      ELASTIC_CLIENT_APIVERSIONING: 1
+    # ulimits:
+    #    memlock:
+    #      soft: -1
+    #      hard: -1
 
     ports:
       - 9300:9300
@@ -90,37 +92,37 @@ services:
       - elastic_search_data:/usr/share/elasticsearch/data
       - ./ES/data:/in
 
-  kib01:
-    image: docker.elastic.co/kibana/kibana:7.5.1
-    container_name: kibana
-    environment:
-      ELASTICSEARCH_URL: http://elastic:9200
-      ELASTICSEARCH_HOSTS: '["http://elastic:9200"]'
-      SERVER_BASEPATH: /dashboard
+  # kib01:
+  #   image: docker.elastic.co/kibana/kibana:7.5.1
+  #   container_name: kibana
+  #   environment:
+  #     ELASTICSEARCH_URL: http://elastic:9200
+  #     ELASTICSEARCH_HOSTS: '["http://elastic:9200"]'
+  #     SERVER_BASEPATH: /dashboard
 
-  metadata_logstash:
-    build: ./logstash
-    container_name: metadata_logstash
-    environment:
-      ELASTICSEARCH_URL: http://elastic:9200
-      ELASTICSEARCH_HOSTS: '["http://elastic:9200"]'
-      XPACK_MONITORING_ENABLED: 'false'
-    links:
-      - elastic_search
-    depends_on:
-      - elastic_search
+  # metadata_logstash:
+  #   build: ./logstash
+  #   container_name: metadata_logstash
+  #   environment:
+  #     ELASTICSEARCH_URL: http://elastic:9200
+  #     ELASTICSEARCH_HOSTS: '["http://elastic:9200"]'
+  #     XPACK_MONITORING_ENABLED: 'false'
+  #   links:
+  #     - elastic_search
+  #   depends_on:
+  #     - elastic_search
 
-  geopackage_pusher:
-    build: ./gdal
-    container_name: geopackage_pusher
-    volumes:
-      - ./gdal/data:/in
-      - ./ES/data:/out
-    links:
-      - elastic_search
-    depends_on:
-      - elastic_search
-    command: bash -c "/docker-entrypoint.sh"
+  # geopackage_pusher:
+  #   build: ./gdal
+  #   container_name: geopackage_pusher
+  #   volumes:
+  #     - ./gdal/data:/in
+  #     - ./ES/data:/out
+  #   links:
+  #     - elastic_search
+  #   depends_on:
+  #     - elastic_search
+  #   command: bash -c "/docker-entrypoint.sh"
 
   postgis:
     build: ./postgis/

@@ -1,1 +1,9 @@
 .env
+./ES/data/a0000000a.geojson
+./ES/data/a0000000b.geojson
+./ES/data/a0000000c.geojson
+./ES/data/a00000009.geojson
+./geoserver/ec_data/geopackage/a0000000a.gpkg
+./geoserver/ec_data/geopackage/a0000000b.gpkg
+./geoserver/ec_data/geopackage/a0000000c.gpkg
+./geoserver/ec_data/geopackage/a00000009.gpkg

@@ -326,3 +326,39 @@ resources:
               id_field: field_1
               layer: shops
 
+    physical_data:
+        type: collection
+        title: physical data
+        description: Data Platform IGOT
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                # bbox: [38.6913993330390724,-9.2298355643394778,38.7967596910924826,-9.0873870796450795]
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/a0000000a
+              id_field: OBJECTID              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/a0000000a/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile

@@ -79,6 +79,31 @@ python3 /load_es_data.py /in/a0000000b.geojson OBJECTID
 python3 /load_es_data.py /in/a0000000c.geojson OBJECTID
 python3 /load_es_data.py /in/a00000009.geojson OBJECTID
 
+# echo "Loading camb data"
+python3 /load_es_data.py /in/Hex250_grid_popden_2020.geojson fid
+python3 /load_es_data.py /in/Hex250_grid_access2openspace.geojson fid
+python3 /load_es_data.py /in/Hex250_grid_active2020.geojson fid
+python3 /load_es_data.py /in/Hex250_grid_age2020.geojson fid
+python3 /load_es_data.py /in/Hex250_grid_avgLST.geojson fid
+python3 /load_es_data.py /in/Hex250_grid_cardio_1920.geojson fid
+python3 /load_es_data.py /in/Hex250_grid_crime_22.geojson fid
+python3 /load_es_data.py /in/Hex250_grid_cycleroutes2021.geojson fid
+python3 /load_es_data.py /in/Hex250_grid_demantia_1920.geojson fid
+python3 /load_es_data.py /in/Hex250_grid_depression_1920.geojson fid
+python3 /load_es_data.py /in/Hex250_grid_flood_4band.geojson fid
+python3 /load_es_data.py /in/Hex250_grid_gender2020.geojson fid
+python3 /load_es_data.py /in/Hex250_grid_hindex2020.geojson fid
+python3 /load_es_data.py /in/Hex250_grid_LAeq16h.geojson fid
+python3 /load_es_data.py /in/Hex250_grid_mental_1920.geojson fid
+python3 /load_es_data.py /in/Hex250_grid_ndvi2022.geojson fid
+python3 /load_es_data.py /in/Hex250_grid_no2_2019.geojson fid
+python3 /load_es_data.py /in/Hex250_grid_obesity_1920.geojson fid
+python3 /load_es_data.py /in/Hex250_grid_pm10_2019.geojson fid
+python3 /load_es_data.py /in/Hex250_grid_pm25_2019.geojson fid
+
+# echo "Loading clima data"
+python3 /load_es_data.py /in/Munich_220713_All.geojson id
+
 echo "Seems that data was loaded"
 
 ## *************************************************************

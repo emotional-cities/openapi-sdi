@@ -91,89 +91,1054 @@ metadata:
 
 resources:
 
-    activity_level_ldn:
+    hex250_grid_cardio_1920:
         type: collection
-        title: Physical activity levels in London Boroughs in 2019
-        description: Physical activity levels in London Boroughs in 2019 was extracted from the Active Lives Survey Nov 19/20. The number refers to the ratio of active people (at least 30mins per week).
+        title: Prevalence rates of cardiovascular diseases in London.
+        description: Maps of physical health
         keywords:
-            - Mesurements
-            - Health
             - London
             - eMOTIONAL Cities
+            - Maps of physical health
+            - Health outcomes
         links:
             - type: text/html
               rel: canonical
               title: metadata
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/9b32e1572c4f4c69861d0e50cf6782
-              hreflang: en-US
-        extents:
-            spatial:
-                bbox: [-1.11,51.06,0.87,51.90]
-                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-        providers:
-            - type: feature
-              name: Elasticsearch
-              data: http://elastic_search:9200/activity_level_ldn
-              id_field: GSS_CODE
-              format:
-                    name: pbf
-                    mimetype: application/vnd.mapbox-vector-tile
-
-    cardivasular_disease_ldn:
-        type: collection
-        title: Mortality rate from all cardiovascular diseases in London Boroughs 2020
-        description: Mortality rate per 100k people (under 75 mortality rate) from all cardiovascular diseases in London Boroughs 2020.
-        keywords:
-            - Mesurements
-            - Health
-            - London
-            - eMOTIONAL Cities
-        links:
-            - type: text/html
-              rel: canonical
-              title: metadata
+              # TODO: replace this later
               href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
               hreflang: en-US
         extents:
             spatial:
-                bbox: [-1.11,51.06,0.87,51.90]
+                bbox: [-0.2607653545419580,51.4096281337334560,0.1267201969466480,51.5800306780284501]
                 crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/cardivasular_disease_ldn
-              id_field: GSS_CODE
+              data: http://elastic_search:9200/hex250_grid_cardio_1920
+              id_field: fid              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/hex250_grid_cardio_1920/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
               format:
-                    name: pbf
-                    mimetype: application/vnd.mapbox-vector-tile
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
 
-    tweet_count_sample:
+    hex250_grid_obesity_1920:
         type: collection
-        title: Number of tweets in hexagon cells of London (August 2021)
-        description: Number of tweets in hexagon cells of London (August 2021). Twitter data was collected via Academic Research product track API. The horizontal and vertical spacing of hexagon cells are 500 meters.
+        title: Prevalence rates of obesity in London.
+        description: Maps of physical health
         keywords:
-            - Mesurements
-            - Health
             - London
+            - eMOTIONAL Cities
+            - Maps of physical health
+            - Health outcomes
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.2607653545419580,51.4096281337334560,0.1267201969466480,51.5800306780284501]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/hex250_grid_obesity_1920
+              id_field: fid              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/hex250_grid_obesity_1920/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    hex250_grid_depression_1920:
+        type: collection
+        title: Prevalence rates of depression in London.
+        description: Maps of wellbeing outcomes
+        keywords:
+            - London
+            - eMOTIONAL Cities
+            - Maps of wellbeing outcomes
+            - Health outcomes
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.2607653545419580,51.4096281337334560,0.1267201969466480,51.5800306780284501]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/hex250_grid_depression_1920
+              id_field: fid              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/hex250_grid_depression_1920/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    hex250_grid_mental_1920:
+        type: collection
+        title: Prevalence rates of mental health issues in London.
+        description: Maps of wellbeing outcomes
+        keywords:
+            - London
+            - eMOTIONAL Cities
+            - Maps of wellbeing outcomes
+            - Health outcomes
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.2607653545419580,51.4096281337334560,0.1267201969466480,51.5800306780284501]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/hex250_grid_mental_1920
+              id_field: fid              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/hex250_grid_mental_1920/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    hex250_grid_demantia_1920:
+        type: collection
+        title: Prevalence rates of dementia in London.
+        description: Maps of wellbeing outcomes
+        keywords:
+            - London
+            - eMOTIONAL Cities
+            - Maps of wellbeing outcomes
+            - Health outcomes
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.2607653545419580,51.4096281337334560,0.1267201969466480,51.5800306780284501]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/hex250_grid_demantia_1920
+              id_field: fid              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/hex250_grid_demantia_1920/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    hex250_grid_access2openspace:
+        type: collection
+        title: Proportion of population with access to public open space in London.
+        description: Maps of physical environment
+        keywords:
+            - London
+            - eMOTIONAL Cities
+            - Maps of physical environment
+            - Health determinates
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.2607653545419580,51.4096281337334560,0.1267201969466480,51.5800306780284501]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/hex250_grid_access2openspace
+              id_field: fid              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/hex250_grid_access2openspace/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    hex250_grid_ndvi2022:
+        type: collection
+        title: Normalized difference vegetation index (NDVI) in London.
+        description: Maps of physical environment
+        keywords:
+            - London
+            - eMOTIONAL Cities
+            - Maps of physical environment
+            - Health determinates
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.2607653545419580,51.4096281337334560,0.1267201969466480,51.5800306780284501]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/hex250_grid_ndvi2022
+              id_field: fid              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/hex250_grid_ndvi2022/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    hex250_grid_pm25_2019:
+        type: collection
+        title: Annual mean PM2.5 based on output areas average concentrations in London.
+        description: Maps of physical environment
+        keywords:
+            - London
+            - eMOTIONAL Cities
+            - Maps of physical environment
+            - Health determinates
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.2607653545419580,51.4096281337334560,0.1267201969466480,51.5800306780284501]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/hex250_grid_pm25_2019
+              id_field: fid              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/hex250_grid_pm25_2019/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    hex250_grid_pm10_2019:
+        type: collection
+        title: Annual mean PM10 based on output areas average concentrations in London.
+        description: Maps of physical environment
+        keywords:
+            - London
+            - eMOTIONAL Cities
+            - Maps of physical environment
+            - Health determinates
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.2607653545419580,51.4096281337334560,0.1267201969466480,51.5800306780284501]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/hex250_grid_pm10_2019
+              id_field: fid              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/hex250_grid_pm10_2019/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    hex250_grid_no2_2019:
+        type: collection
+        title: Annual mean NO2 concentration in London.
+        description: Maps of physical environment
+        keywords:
+            - London
+            - eMOTIONAL Cities
+            - Maps of physical environment
+            - Health determinates
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.2607653545419580,51.4096281337334560,0.1267201969466480,51.5800306780284501]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/hex250_grid_no2_2019
+              id_field: fid              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/hex250_grid_no2_2019/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    hex250_grid_laeq16h:
+        type: collection
+        title: Annual average noise levels of rail noise in London.
+        description: Maps of physical environment
+        keywords:
+            - London
+            - eMOTIONAL Cities
+            - Maps of physical environment
+            - Health determinates
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.2607653545419580,51.4096281337334560,0.1267201969466480,51.5800306780284501]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/hex250_grid_laeq16h
+              id_field: fid              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/hex250_grid_laeq16h/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    hex250_grid_flood_4band:
+        type: collection
+        title: Risk of flooding from rivers and seas in London.
+        description: Maps of physical environment
+        keywords:
+            - London
+            - eMOTIONAL Cities
+            - Maps of physical environment
+            - Health determinates
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.2607653545419580,51.4096281337334560,0.1267201969466480,51.5800306780284501]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/hex250_grid_flood_4band
+              id_field: fid              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/hex250_grid_flood_4band/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    hex250_grid_avglst:
+        type: collection
+        title: Major summer heat spots in London.
+        description: Maps of physical environment
+        keywords:
+            - London
+            - eMOTIONAL Cities
+            - Maps of physical environment
+            - Health determinates
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.2607653545419580,51.4096281337334560,0.1267201969466480,51.5800306780284501]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/hex250_grid_avglst
+              id_field: fid              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/hex250_grid_avglst/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    hex250_grid_cycleroutes2021:
+        type: collection
+        title: Cycling routes density map in London.
+        description: Maps of physical environment
+        keywords:
+            - London
+            - eMOTIONAL Cities
+            - Maps of physical environment
+            - Health determinates
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.2607653545419580,51.4096281337334560,0.1267201969466480,51.5800306780284501]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/hex250_grid_cycleroutes2021
+              id_field: fid              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/hex250_grid_cycleroutes2021/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    hex250_grid_hindex2020:
+        type: collection
+        title: Land use diversity in London.
+        description: Maps of physical environment
+        keywords:
+            - London
+            - eMOTIONAL Cities
+            - Maps of physical environment
+            - Health determinates
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.2607653545419580,51.4096281337334560,0.1267201969466480,51.5800306780284501]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/hex250_grid_hindex2020
+              id_field: fid              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/hex250_grid_hindex2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    hex250_grid_popden_2020:
+        type: collection
+        title: Population density map in London.
+        description: Maps of socioeconomic groups
+        keywords:
+            - London
+            - eMOTIONAL Cities
+            - Maps of socioeconomic groups
+            - Health determinates
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.2607653545419580,51.4096281337334560,0.1267201969466480,51.5800306780284501]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/hex250_grid_popden_2020
+              id_field: fid              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/hex250_grid_popden_2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    hex250_grid_gender2020:
+        type: collection
+        title: Map of the ratio of male in London.
+        description: Maps of socioeconomic groups
+        keywords:
+            - London
+            - eMOTIONAL Cities
+            - Maps of socioeconomic groups
+            - Health determinates
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.2607653545419580,51.4096281337334560,0.1267201969466480,51.5800306780284501]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/hex250_grid_gender2020
+              id_field: fid              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/hex250_grid_gender2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    hex250_grid_age2020:
+        type: collection
+        title: Map of the ratio of elder people in London.
+        description: Maps of socioeconomic groups
+        keywords:
+            - London
+            - eMOTIONAL Cities
+            - Maps of socioeconomic groups
+            - Health determinates
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.2607653545419580,51.4096281337334560,0.1267201969466480,51.5800306780284501]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/hex250_grid_age2020
+              id_field: fid              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/hex250_grid_age2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    hex250_grid_active2020:
+        type: collection
+        title: Map of ratio of active people in Inner London.
+        description: Maps of health behaviours
+        keywords:
+            - London
+            - eMOTIONAL Cities
+            - Maps of health behaviours
+            - Health determinates
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.2607653545419580,51.4096281337334560,0.1267201969466480,51.5800306780284501]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/hex250_grid_active2020
+              id_field: fid              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/hex250_grid_active2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    hex250_grid_crime_22:
+        type: collection
+        title: Map of number of recorded crimes in Inner London.
+        description: Maps of health behaviours
+        keywords:
+            - London
+            - eMOTIONAL Cities
+            - Maps of health behaviours
+            - Health determinates
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.2607653545419580,51.4096281337334560,0.1267201969466480,51.5800306780284501]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/hex250_grid_crime_22
+              id_field: fid              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/hex250_grid_crime_22/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    physical_data:
+        type: collection
+        title: Physical data
+        description: Data Platform IGOT
+        keywords:
+            - Lisbon
             - eMOTIONAL Cities
         links:
             - type: text/html
               rel: canonical
               title: metadata
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/11v2e1549c2t5669861d0e50cf6h66
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
               hreflang: en-US
         extents:
             spatial:
-                bbox: [-1.11,51.06,0.87,51.90]
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
                 crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/tweet_count_sample
-              id_field: id
+              data: http://elastic_search:9200/a0000000a
+              id_field: OBJECTID              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/a0000000a/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
               format:
-                    name: pbf
-                    mimetype: application/vnd.mapbox-vector-tile
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    socioeconomic_data:
+        type: collection
+        title: Socioeconomic data
+        description: Data Platform IGOT
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/a0000000b
+              id_field: OBJECTID              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/a0000000b/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    perception_data:
+        type: collection
+        title: Perception data
+        description: Data Platform IGOT
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/a0000000c
+              id_field: OBJECTID              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/a0000000c/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    urban_health_data:
+        type: collection
+        title: Urban health data
+        description: Data Platform IGOT
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/a00000009
+              id_field: OBJECTID              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/a00000009/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    munich:
+        type: collection
+        title: UNFAIR Data &#10060;
+        description: Data without metadata &#128560;
+        keywords:
+            - UNFAIR
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [11.5644449999999992,48.1301429999999968,11.5916280000000000,48.1480109999999968]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/munich_220713_all
+              id_field: id              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/munich_220713_all/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    #     activity_level_ldn:
+    #     type: collection
+    #     title: Physical activity levels in London Boroughs in 2019
+    #     description: Physical activity levels in London Boroughs in 2019 was extracted from the Active Lives Survey Nov 19/20. The number refers to the ratio of active people (at least 30mins per week).
+    #     keywords:
+    #         - Mesurements
+    #         - Health
+    #         - London
+    #         - eMOTIONAL Cities
+    #     links:
+    #         - type: text/html
+    #           rel: canonical
+    #           title: metadata
+    #           href: https://emotional.byteroad.net/collections/ec_catalog/items/9b32e1572c4f4c69861d0e50cf6782
+    #           hreflang: en-US
+    #     extents:
+    #         spatial:
+    #             bbox: [-1.11,51.06,0.87,51.90]
+    #             crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+    #     providers:
+    #         - type: feature
+    #           name: Elasticsearch
+    #           data: http://elastic_search:9200/activity_level_ldn
+    #           id_field: GSS_CODE
+    #           format:
+    #                 name: pbf
+    #                 mimetype: application/vnd.mapbox-vector-tile
+
+    # cardivasular_disease_ldn:
+    #     type: collection
+    #     title: Mortality rate from all cardiovascular diseases in London Boroughs 2020
+    #     description: Mortality rate per 100k people (under 75 mortality rate) from all cardiovascular diseases in London Boroughs 2020.
+    #     keywords:
+    #         - Mesurements
+    #         - Health
+    #         - London
+    #         - eMOTIONAL Cities
+    #     links:
+    #         - type: text/html
+    #           rel: canonical
+    #           title: metadata
+    #           href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+    #           hreflang: en-US
+    #     extents:
+    #         spatial:
+    #             bbox: [-1.11,51.06,0.87,51.90]
+    #             crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+    #     providers:
+    #         - type: feature
+    #           name: Elasticsearch
+    #           data: http://elastic_search:9200/cardivasular_disease_ldn
+    #           id_field: GSS_CODE
+    #           format:
+    #                 name: pbf
+    #                 mimetype: application/vnd.mapbox-vector-tile
+
+    # tweet_count_sample:
+    #     type: collection
+    #     title: Number of tweets in hexagon cells of London (August 2021)
+    #     description: Number of tweets in hexagon cells of London (August 2021). Twitter data was collected via Academic Research product track API. The horizontal and vertical spacing of hexagon cells are 500 meters.
+    #     keywords:
+    #         - Mesurements
+    #         - Health
+    #         - London
+    #         - eMOTIONAL Cities
+    #     links:
+    #         - type: text/html
+    #           rel: canonical
+    #           title: metadata
+    #           href: https://emotional.byteroad.net/collections/ec_catalog/items/11v2e1549c2t5669861d0e50cf6h66
+    #           hreflang: en-US
+    #     extents:
+    #         spatial:
+    #             bbox: [-1.11,51.06,0.87,51.90]
+    #             crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+    #     providers:
+    #         - type: feature
+    #           name: Elasticsearch
+    #           data: http://elastic_search:9200/tweet_count_sample
+    #           id_field: id
+    #           format:
+    #                 name: pbf
+    #                 mimetype: application/vnd.mapbox-vector-tile
 
     ec_catalog:
         type: collection
@@ -325,151 +1290,3 @@ resources:
                     #AWS_SESSION_TOKEN:
               id_field: field_1
               layer: shops
-
-    physical_data:
-        type: collection
-        title: physical data
-        description: Data Platform IGOT
-        keywords:
-            - Lisbon
-            - eMOTIONAL Cities
-        links:
-            - type: text/html
-              rel: canonical
-              title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
-              hreflang: en-US
-        extents:
-            spatial:
-                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
-                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-        providers:
-            - type: feature
-              name: Elasticsearch
-              data: http://elastic_search:9200/a0000000a
-              id_field: OBJECTID              
-            - type: tile
-              name: MVT
-              data: http://elastic_search:9200/a0000000a/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
-              options:
-                metadata_format: raw # default | tilejson
-                zoom:
-                    min: 0
-                    max: 15
-                schemes:
-                    - WorldCRS84Quad
-              format:
-                name: pbf
-                mimetype: application/vnd.mapbox-vector-tile
-
-    socioeconomic_data:
-        type: collection
-        title: socioeconomic data
-        description: Data Platform IGOT
-        keywords:
-            - Lisbon
-            - eMOTIONAL Cities
-        links:
-            - type: text/html
-              rel: canonical
-              title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
-              hreflang: en-US
-        extents:
-            spatial:
-                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
-                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-        providers:
-            - type: feature
-              name: Elasticsearch
-              data: http://elastic_search:9200/a0000000b
-              id_field: OBJECTID              
-            - type: tile
-              name: MVT
-              data: http://elastic_search:9200/a0000000b/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
-              options:
-                metadata_format: raw # default | tilejson
-                zoom:
-                    min: 0
-                    max: 15
-                schemes:
-                    - WorldCRS84Quad
-              format:
-                name: pbf
-                mimetype: application/vnd.mapbox-vector-tile
-
-    perception_data:
-        type: collection
-        title: perception data
-        description: Data Platform IGOT
-        keywords:
-            - Lisbon
-            - eMOTIONAL Cities
-        links:
-            - type: text/html
-              rel: canonical
-              title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
-              hreflang: en-US
-        extents:
-            spatial:
-                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
-                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-        providers:
-            - type: feature
-              name: Elasticsearch
-              data: http://elastic_search:9200/a0000000c
-              id_field: OBJECTID              
-            - type: tile
-              name: MVT
-              data: http://elastic_search:9200/a0000000c/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
-              options:
-                metadata_format: raw # default | tilejson
-                zoom:
-                    min: 0
-                    max: 15
-                schemes:
-                    - WorldCRS84Quad
-              format:
-                name: pbf
-                mimetype: application/vnd.mapbox-vector-tile
-
-    urban_health_data:
-        type: collection
-        title: urban health data
-        description: Data Platform IGOT
-        keywords:
-            - Lisbon
-            - eMOTIONAL Cities
-        links:
-            - type: text/html
-              rel: canonical
-              title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
-              hreflang: en-US
-        extents:
-            spatial:
-                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
-                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-        providers:
-            - type: feature
-              name: Elasticsearch
-              data: http://elastic_search:9200/a00000009
-              id_field: OBJECTID              
-            - type: tile
-              name: MVT
-              data: http://elastic_search:9200/a00000009/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
-              options:
-                metadata_format: raw # default | tilejson
-                zoom:
-                    min: 0
-                    max: 15
-                schemes:
-                    - WorldCRS84Quad
-              format:
-                name: pbf
-                mimetype: application/vnd.mapbox-vector-tile

@@ -73,13 +73,13 @@ python3 /load_es_data.py /in/tweet_count_sample.geojson id
 echo "Pushing EC metadata"
 python3 /load_es_data.py /in/metadata/ec_catalog.geojson id
 
-# echo "Loading igot data"
+echo "Loading igot data"
 python3 /load_es_data.py /in/a0000000a.geojson OBJECTID
 python3 /load_es_data.py /in/a0000000b.geojson OBJECTID
 python3 /load_es_data.py /in/a0000000c.geojson OBJECTID
 python3 /load_es_data.py /in/a00000009.geojson OBJECTID
 
-# echo "Loading camb data"
+echo "Loading camb data"
 python3 /load_es_data.py /in/Hex250_grid_popden_2020.geojson fid
 python3 /load_es_data.py /in/Hex250_grid_access2openspace.geojson fid
 python3 /load_es_data.py /in/Hex250_grid_active2020.geojson fid
@@ -101,8 +101,23 @@ python3 /load_es_data.py /in/Hex250_grid_obesity_1920.geojson fid
 python3 /load_es_data.py /in/Hex250_grid_pm10_2019.geojson fid
 python3 /load_es_data.py /in/Hex250_grid_pm25_2019.geojson fid
 
-# echo "Loading clima data"
+echo "Loading clima data"
 python3 /load_es_data.py /in/Munich_220713_All.geojson id
+
+echo "Loading nrg data"
+python3 /load_es_data.py /in/AirQuality.AirPressure.geojson id
+python3 /load_es_data.py /in/AirQuality.Humidity.geojson id
+python3 /load_es_data.py /in/AirQuality.IAQIndex.geojson id
+python3 /load_es_data.py /in/AirQuality.Temperature.geojson id
+python3 /load_es_data.py /in/AmbientLight.AmbientLight.geojson id
+python3 /load_es_data.py /in/AnalogIn.Voltage.geojson id
+python3 /load_es_data.py /in/CO2V2.CO2Conc.geojson id
+python3 /load_es_data.py /in/CO2V2.Humidity.geojson id
+python3 /load_es_data.py /in/CO2V2.Temperature.geojson id
+python3 /load_es_data.py /in/data/GPS.Data.geojson id
+python3 /load_es_data.py /in/GPS.Time.geojson id
+python3 /load_es_data.py /in/Humidity.Humidity.geojson id
+python3 /load_es_data.py /in/SoundPressureLevel.SPL.geojson id
 
 echo "Seems that data was loaded"
 

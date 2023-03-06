@@ -1056,6 +1056,487 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
+    airquality.airpressure.geojson:
+        type: collection
+        title: UNFAIR Data &#10060;
+        description: Data without metadata &#11088;
+        keywords:
+            - UNFAIR
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.1500809410000000,51.5373384769999987,-0.1427486290000000,51.5417284460000005]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/airquality.airpressure
+              id_field: id              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/airquality.airpressure/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    airquality.humidity.geojson:
+        type: collection
+        title: UNFAIR Data &#10060;
+        description: Data without metadata &#11088;
+        keywords:
+            - UNFAIR
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.1500809410000000,51.5373384769999987,-0.1427486290000000,51.5417284460000005]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/airquality.humidity
+              id_field: id              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/airquality.humidity/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    airquality.iaqindex.geojson:
+        type: collection
+        title: UNFAIR Data &#10060;
+        description: Data without metadata &#11088;
+        keywords:
+            - UNFAIR
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.1500809410000000,51.5373384769999987,-0.1427486290000000,51.5417284460000005]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/airquality.iaqindex
+              id_field: id              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/airquality.iaqindex/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    airquality.temperature.geojson:
+        type: collection
+        title: UNFAIR Data &#10060;
+        description: Data without metadata &#11088;
+        keywords:
+            - UNFAIR
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.1500809410000000,51.5373384769999987,-0.1427486290000000,51.5417284460000005]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/airquality.temperature
+              id_field: id              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/airquality.temperature/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    ambientlight.ambientlight.geojson:
+        type: collection
+        title: UNFAIR Data &#10060;
+        description: Data without metadata &#11088;
+        keywords:
+            - UNFAIR
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.1500809410000000,51.5373384769999987,-0.1427486290000000,51.5417284460000005]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/ambientlight.ambientlight
+              id_field: id              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/ambientlight.ambientlight/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    analogin.voltage.geojson:
+        type: collection
+        title: UNFAIR Data &#10060;
+        description: Data without metadata &#11088;
+        keywords:
+            - UNFAIR
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.1500809410000000,51.5373384769999987,-0.1427486290000000,51.5417284460000005]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/analogin.voltage
+              id_field: id              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/analogin.voltage/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    co2v2.co2conc.geojson:
+        type: collection
+        title: UNFAIR Data &#10060;
+        description: Data without metadata &#11088;
+        keywords:
+            - UNFAIR
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.1500809410000000,51.5373384769999987,-0.1427486290000000,51.5417284460000005]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/co2v2.co2conc
+              id_field: id              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/co2v2.co2conc/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    co2v2.humidity.geojson:
+        type: collection
+        title: UNFAIR Data &#10060;
+        description: Data without metadata &#11088;
+        keywords:
+            - UNFAIR
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.1500809410000000,51.5373384769999987,-0.1427486290000000,51.5417284460000005]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/co2v2.humidity
+              id_field: id              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/co2v2.humidity/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    co2v2.temperature.geojson:
+        type: collection
+        title: UNFAIR Data &#10060;
+        description: Data without metadata &#11088;
+        keywords:
+            - UNFAIR
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.1500809410000000,51.5373384769999987,-0.1427486290000000,51.5417284460000005]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/co2v2.temperature
+              id_field: id              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/co2v2.temperature/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    gps.data.geojson:
+        type: collection
+        title: UNFAIR Data &#10060;
+        description: Data without metadata &#11088;
+        keywords:
+            - UNFAIR
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.1500809410000000,51.5373384769999987,-0.1427486290000000,51.5417284460000005]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/gps.data
+              id_field: id              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/gps.data/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    gps.time:
+        type: collection
+        title: UNFAIR Data &#10060;
+        description: Data without metadata &#11088;
+        keywords:
+            - UNFAIR
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.1500809410000000,51.5373384769999987,-0.1427486290000000,51.5417284460000005]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/gps.time
+              id_field: id              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/gps.time/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    humidity.humidity:
+        type: collection
+        title: UNFAIR Data &#10060;
+        description: Data without metadata &#11088;
+        keywords:
+            - UNFAIR
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.1500809410000000,51.5373384769999987,-0.1427486290000000,51.5417284460000005]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/humidity.humidity
+              id_field: id              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/humidity.humidity/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    soundpressurelevel.spl:
+        type: collection
+        title: UNFAIR Data &#10060;
+        description: Data without metadata &#11088;
+        keywords:
+            - UNFAIR
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.1500809410000000,51.5373384769999987,-0.1427486290000000,51.5417284460000005]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/soundpressurelevel.spl
+              id_field: id              
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/soundpressurelevel.spl/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
     #     activity_level_ldn:
     #     type: collection
     #     title: Physical activity levels in London Boroughs in 2019

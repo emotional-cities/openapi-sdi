@@ -111,6 +111,8 @@ services:
       - elastic_search
     depends_on:
       - elastic_search
+    volumes:
+      - ./logstash/data:/in
 
     networks:
       - default

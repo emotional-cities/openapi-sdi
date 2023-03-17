@@ -50,28 +50,28 @@ done
 python3 /load_es_data.py /in/masked.geojson fid
 
 # Waiting for geopackage_pusher container to create the file
-while ! test -f "/in/activity_level_ldn.geojson"; do
-  sleep 10
-  echo "Still waiting"
-done
-python3 /load_es_data.py /in/activity_level_ldn.geojson GSS_CODE
+# while ! test -f "/in/activity_level_ldn.geojson"; do
+#   sleep 10
+#   echo "Still waiting"
+# done
+# python3 /load_es_data.py /in/activity_level_ldn.geojson GSS_CODE
 
-# Waiting for geopackage_pusher container to create the file
-while ! test -f "/in/cardivasular_disease_ldn.geojson"; do
-  sleep 10
-  echo "Still waiting"
-done
-python3 /load_es_data.py /in/cardivasular_disease_ldn.geojson GSS_CODE
+# # Waiting for geopackage_pusher container to create the file
+# while ! test -f "/in/cardivasular_disease_ldn.geojson"; do
+#   sleep 10
+#   echo "Still waiting"
+# done
+# python3 /load_es_data.py /in/cardivasular_disease_ldn.geojson GSS_CODE
 
-# Waiting for geopackage_pusher container to create the file
-while ! test -f "/in/tweet_count_sample.geojson"; do
-  sleep 10
-  echo "Still waiting"
-done
-python3 /load_es_data.py /in/tweet_count_sample.geojson id
+# # Waiting for geopackage_pusher container to create the file
+# while ! test -f "/in/tweet_count_sample.geojson"; do
+#   sleep 10
+#   echo "Still waiting"
+# done
+# python3 /load_es_data.py /in/tweet_count_sample.geojson id
 
-echo "Pushing EC metadata"
-python3 /load_es_data.py /in/metadata/ec_catalog.geojson id
+# echo "Pushing EC metadata"
+# python3 /load_es_data.py /in/metadata/ec_catalog.geojson id
 
 echo "Loading igot data"
 python3 /load_es_data.py /in/a0000000a.geojson OBJECTID

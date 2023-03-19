@@ -47,7 +47,7 @@ services:
     container_name: apache-httpd
 
   pygeoapi:
-    image: geopython/pygeoapi:0.14.0
+    image: geopython/pygeoapi:latest
     container_name: pygeoapi_es
     entrypoint:
       - /es-entrypoint.sh

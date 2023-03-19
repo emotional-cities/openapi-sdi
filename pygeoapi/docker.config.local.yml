@@ -383,6 +383,7 @@ resources:
         extents:
             spatial:
                 bbox: [-0.2607653545419580,51.4096281337334560,0.1267201969466480,51.5800306780284501]
+                # bbox: [51.4096281337334560,-0.2607653545419580,51.5800306780284501,0.1267201969466480]
                 crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
         providers:
             - type: feature
@@ -1204,7 +1205,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    ambientlight.ambientlight.geojson:
+    ambientlight.ambientlight:
         type: collection
         title: UNFAIR Data &#10060;
         description: Data without metadata &#11088;
@@ -1278,7 +1279,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    co2v2.co2conc.geojson:
+    co2v2.co2conc:
         type: collection
         title: UNFAIR Data &#10060;
         description: Data without metadata &#11088;
@@ -1315,7 +1316,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    co2v2.humidity.geojson:
+    co2v2.humidity:
         type: collection
         title: UNFAIR Data &#10060;
         description: Data without metadata &#11088;
@@ -1352,7 +1353,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    co2v2.temperature.geojson:
+    co2v2.temperature:
         type: collection
         title: UNFAIR Data &#10060;
         description: Data without metadata &#11088;
@@ -1389,7 +1390,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    gps.data.geojson:
+    gps.data:
         type: collection
         title: UNFAIR Data &#10060;
         description: Data without metadata &#11088;

@@ -61,5 +61,6 @@
 ./ES/data/GPS.Time.geojson
 ./ES/data/Humidity.Humidity.geojson
 ./ES/data/SoundPressureLevel.SPL.geojson
+./logstash/data/metadata.csv
 
 

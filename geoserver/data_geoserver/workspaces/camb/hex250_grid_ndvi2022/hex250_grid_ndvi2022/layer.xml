@@ -1,0 +1,16 @@
+<layer>
+  <name>hex250_grid_ndvi2022</name>
+  <id>LayerInfoImpl-1b83c0bb:187002cf1d4:-7faa</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-1b83c0bb:187002cf1d4:-7ffe</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-1b83c0bb:187002cf1d4:-7fab</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2023-03-21 08:18:05.747 UTC</dateCreated>
+</layer>

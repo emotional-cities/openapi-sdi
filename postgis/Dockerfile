@@ -1,4 +1,4 @@
-FROM postgis/postgis:9.6-3.1-alpine
+FROM postgis/postgis:12-3.0-alpine
 
 RUN mkdir -p /docker-entrypoint-initdb.d
 

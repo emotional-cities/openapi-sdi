@@ -2,7 +2,7 @@ FROM tomcat:9.0-jre11-openjdk-slim
 
 LABEL maintainer="ByteRoad <support@byteroad.net>"
 
-ENV GEOSERVER_VERSION 2.20.1
+ENV GEOSERVER_VERSION 2.22.2
 ENV GEOSERVER_DATA_DIR /var/local/geoserver
 ENV GEOSERVER_GWC_DIR /var/local/geoserver-gwc
 ENV GEOSERVER_INSTALL_DIR /usr/local/geoserver

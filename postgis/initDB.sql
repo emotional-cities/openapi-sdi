@@ -229,4 +229,28 @@ create table gs_attribute (
 
     create index idx_usergroup_name on gs_usergroup (groupName);
 
-    create sequence geostore.hibernate_sequence;
+    create sequence geostore.hibernate_sequence  START 14;
+
+    INSERT INTO geostore.gs_category (id,"name") VALUES
+     (1,'MAP'),
+     (2,'THUMBNAIL'),
+     (3,'DETAILS'),
+     (4,'DASHBOARD'),
+     (5,'GEOSTORY'),
+     (6,'CONTEXT'),
+     (7,'TEMPLATE'),
+     (8,'USERSESSION');
+
+INSERT INTO geostore.gs_user (id,"name",user_password,user_role,group_id,enabled) VALUES
+     (11,'guest',NULL,'GUEST',NULL,'Y'),
+     (12,'admin','digest1:3mwA1lcDpaRxtD4et7bSpx1olc8Hdvv6KLiTGT4tICpF7PirV0+QzGamzJEQa5pa','ADMIN',NULL,'Y'),
+     (13,'user','digest1:zs9hRcyg0C5RXmqTSyBzS24U2fkBFJw4Y90/+pxMwqlr8P91TslPfoBk24BOh1KZ','USER',NULL,'Y');
+
+     INSERT INTO geostore.gs_usergroup (id,groupname,description,enabled) VALUES
+     (9,'everyone',NULL,'Y'),
+     (10,'testGroup1','description','Y');
+
+INSERT INTO geostore.gs_usergroup_members (user_id,group_id) VALUES
+     (11,9),
+     (12,9),
+     (13,9);

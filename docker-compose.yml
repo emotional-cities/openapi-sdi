@@ -117,20 +117,20 @@ services:
     networks:
       - default
 
-  geopackage_pusher:
-    build: ./gdal
-    container_name: geopackage_pusher
-    volumes:
-      - ./gdal/data:/in
-      - ./ES/data:/out
-    links:
-      - elastic_search
-    depends_on:
-      - elastic_search
-    command: bash -c "/docker-entrypoint.sh"
+  # geopackage_pusher:
+  #   build: ./gdal
+  #   container_name: geopackage_pusher
+  #   volumes:
+  #     - ./gdal/data:/in
+  #     - ./ES/data:/out
+  #   links:
+  #     - elastic_search
+  #   depends_on:
+  #     - elastic_search
+  #   command: bash -c "/docker-entrypoint.sh"
 
-    networks:
-      - default
+  #   networks:
+  #     - default
 
   postgis:
     #build: ./postgis/

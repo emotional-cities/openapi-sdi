@@ -10,9 +10,25 @@
   <gridSubsets>
     <gridSubset>
       <gridSetName>EPSG:4326</gridSetName>
+      <extent>
+        <coords>
+          <double>-0.2623176564302007</double>
+          <double>51.40530208291765</double>
+          <double>0.1303887009551264</double>
+          <double>51.58307181471548</double>
+        </coords>
+      </extent>
     </gridSubset>
     <gridSubset>
       <gridSetName>EPSG:900913</gridSetName>
+      <extent>
+        <coords>
+          <double>-29201.067939894827</double>
+          <double>6693302.546318248</double>
+          <double>14514.803795521093</double>
+          <double>6725087.7352951225</double>
+        </coords>
+      </extent>
     </gridSubset>
   </gridSubsets>
   <metaWidthHeight>
@@ -26,7 +42,7 @@
       <key>STYLES</key>
       <defaultValue></defaultValue>
       <availableStyles class="sorted-set"/>
-      <defaultStyle>polygon</defaultStyle>
+      <defaultStyle>camb:hex250_grid_popden_2020</defaultStyle>
     </styleParameterFilter>
   </parameterFilters>
   <gutter>0</gutter>

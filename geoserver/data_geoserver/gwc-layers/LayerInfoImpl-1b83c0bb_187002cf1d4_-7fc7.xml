@@ -10,9 +10,25 @@
   <gridSubsets>
     <gridSubset>
       <gridSetName>EPSG:4326</gridSetName>
+      <extent>
+        <coords>
+          <double>-0.2623175800469519</double>
+          <double>51.405302088793775</double>
+          <double>0.13038868023161157</double>
+          <double>51.58307167877171</double>
+        </coords>
+      </extent>
     </gridSubset>
     <gridSubset>
       <gridSetName>EPSG:900913</gridSetName>
+      <extent>
+        <coords>
+          <double>-29201.059436950465</double>
+          <double>6693302.547366849</double>
+          <double>14514.801488589977</double>
+          <double>6725087.710940933</double>
+        </coords>
+      </extent>
     </gridSubset>
   </gridSubsets>
   <metaWidthHeight>
@@ -26,7 +42,7 @@
       <key>STYLES</key>
       <defaultValue></defaultValue>
       <availableStyles class="sorted-set"/>
-      <defaultStyle>polygon</defaultStyle>
+      <defaultStyle>camb:hex250_grid_cycleroutes2021</defaultStyle>
     </styleParameterFilter>
   </parameterFilters>
   <gutter>0</gutter>

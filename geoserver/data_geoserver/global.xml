@@ -1,5 +1,6 @@
 <global>
   <settings>
+    <id>SettingsInfoImpl-63b2b4e3:1870507d372:-8000</id>
     <contact>
       <id>contact</id>
       <contactEmail>info@byteroad.net</contactEmail>
@@ -7,21 +8,6 @@
       <contactPerson>Byte Road</contactPerson>
       <onlineResource>https://emotionalcities-h2020.eu/</onlineResource>
       <welcome>Mapping the cities through the senses of those who make them.</welcome>
-      <internationalAddress class="org.geotools.util.GrowableInternationalString"/>
-      <internationalAddressCity class="org.geotools.util.GrowableInternationalString"/>
-      <internationalAddressCountry class="org.geotools.util.GrowableInternationalString"/>
-      <internationalAddressDeliveryPoint class="org.geotools.util.GrowableInternationalString"/>
-      <internationalAddressPostalCode class="org.geotools.util.GrowableInternationalString"/>
-      <internationalAddressState class="org.geotools.util.GrowableInternationalString"/>
-      <internationalAddressType class="org.geotools.util.GrowableInternationalString"/>
-      <internationalContactEmail class="org.geotools.util.GrowableInternationalString"/>
-      <internationalContactFacsimile class="org.geotools.util.GrowableInternationalString"/>
-      <internationalContactOrganization class="org.geotools.util.GrowableInternationalString"/>
-      <internationalContactPerson class="org.geotools.util.GrowableInternationalString"/>
-      <internationalContactPosition class="org.geotools.util.GrowableInternationalString"/>
-      <internationalContactVoice class="org.geotools.util.GrowableInternationalString"/>
-      <internationalOnlineResource class="org.geotools.util.GrowableInternationalString"/>
-      <internationalWelcome class="org.geotools.util.GrowableInternationalString"/>
     </contact>
     <charset>UTF-8</charset>
     <numDecimals>4</numDecimals>
@@ -91,7 +77,7 @@
   <metadata>
     <entry key="logRequestsEnabled">false</entry>
   </metadata>
-  <updateSequence>106</updateSequence>
+  <updateSequence>175</updateSequence>
   <featureTypeCacheSize>0</featureTypeCacheSize>
   <globalServices>true</globalServices>
   <xmlPostRequestLogBufferSize>1024</xmlPostRequestLogBufferSize>

@@ -1,0 +1,16 @@
+<layer>
+  <name>hex250_grid_depression_1920</name>
+  <id>LayerInfoImpl-1b83c0bb:187002cf1d4:-7fc1</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-1b83c0bb:187002cf1d4:-7ffe</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-1b83c0bb:187002cf1d4:-7fc2</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2023-03-21 08:06:27.343 UTC</dateCreated>
+</layer>

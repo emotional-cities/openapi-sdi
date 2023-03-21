@@ -1,5 +1,13 @@
-CREATE SCHEMA IF NOT EXISTS geostore;
+-- CREATE SCHEMA geostore 
+CREATE user geostore LOGIN PASSWORD 'geostore123!4' NOSUPERUSER INHERIT NOCREATEDB NOCREATEROLE;
 
-CREATE USER geostore WITH ENCRYPTED PASSWORD 'geostore123!4';
+CREATE SCHEMA geostore;
 
-GRANT ALL PRIVILEGES ON SCHEMA geostore TO geostore;
+GRANT USAGE ON SCHEMA geostore TO geostore ;
+GRANT ALL ON SCHEMA geostore TO geostore ;
+
+--GRANT SELECT ON public.spatial_ref_sys to geostore;
+--GRANT SELECT,INSERT,DELETE ON public.geometry_columns to geostore;
+
+alter user geostore set search_path to geostore , public;
+

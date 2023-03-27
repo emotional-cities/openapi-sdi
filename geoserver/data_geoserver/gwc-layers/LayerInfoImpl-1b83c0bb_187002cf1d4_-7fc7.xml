@@ -2,7 +2,7 @@
   <id>LayerInfoImpl-1b83c0bb:187002cf1d4:-7fc7</id>
   <enabled>true</enabled>
   <inMemoryCached>true</inMemoryCached>
-  <name>camb:hex250_grid_cycleroutes2021</name>
+  <name>camb:hex350_grid_cycleroutes2021</name>
   <mimeFormats>
     <string>image/png</string>
     <string>image/jpeg</string>
@@ -42,7 +42,7 @@
       <key>STYLES</key>
       <defaultValue></defaultValue>
       <availableStyles class="sorted-set"/>
-      <defaultStyle>camb:hex250_grid_cycleroutes2021</defaultStyle>
+      <defaultStyle>camb:hex350_grid_cycleroutes2021</defaultStyle>
     </styleParameterFilter>
   </parameterFilters>
   <gutter>0</gutter>

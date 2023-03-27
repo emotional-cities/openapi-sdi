@@ -91,7 +91,7 @@ metadata:
 
 resources:
 
-    hex250_grid_cardio_1920:
+    hex350_grid_cardio_1920:
         type: collection
         title: Prevalence rates of cardiovascular diseases in London.
         description: Maps of physical health &#11088;&#11088;&#11088;
@@ -114,11 +114,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/hex250_grid_cardio_1920
+              data: http://elastic_search:9200/hex350_grid_cardio_1920
               id_field: fid              
             - type: tile
               name: MVT
-              data: http://elastic_search:9200/hex250_grid_cardio_1920/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/hex350_grid_cardio_1920/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: raw # default | tilejson
                 zoom:
@@ -130,7 +130,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    hex250_grid_obesity_1920:
+    hex350_grid_obesity_1920:
         type: collection
         title: Prevalence rates of obesity in London.
         description: Maps of physical health &#11088;&#11088;&#11088;
@@ -153,11 +153,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/hex250_grid_obesity_1920
+              data: http://elastic_search:9200/hex350_grid_obesity_1920
               id_field: fid              
             - type: tile
               name: MVT
-              data: http://elastic_search:9200/hex250_grid_obesity_1920/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/hex350_grid_obesity_1920/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: raw # default | tilejson
                 zoom:
@@ -169,7 +169,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    hex250_grid_depression_1920:
+    hex350_grid_depression_1920:
         type: collection
         title: Prevalence rates of depression in London.
         description: Maps of wellbeing outcomes &#11088;&#11088;&#11088;
@@ -192,11 +192,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/hex250_grid_depression_1920
+              data: http://elastic_search:9200/hex350_grid_depression_1920
               id_field: fid              
             - type: tile
               name: MVT
-              data: http://elastic_search:9200/hex250_grid_depression_1920/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/hex350_grid_depression_1920/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: raw # default | tilejson
                 zoom:
@@ -208,7 +208,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    hex250_grid_mental_1920:
+    hex350_grid_mental_1920:
         type: collection
         title: Prevalence rates of mental health issues in London.
         description: Maps of wellbeing outcomes &#11088;&#11088;&#11088;
@@ -231,11 +231,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/hex250_grid_mental_1920
+              data: http://elastic_search:9200/hex350_grid_mental_1920
               id_field: fid              
             - type: tile
               name: MVT
-              data: http://elastic_search:9200/hex250_grid_mental_1920/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/hex350_grid_mental_1920/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: raw # default | tilejson
                 zoom:
@@ -247,7 +247,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    hex250_grid_demantia_1920:
+    hex350_grid_demantia_1920:
         type: collection
         title: Prevalence rates of dementia in London.
         description: Maps of wellbeing outcomes &#11088;&#11088;&#11088;
@@ -270,11 +270,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/hex250_grid_demantia_1920
+              data: http://elastic_search:9200/hex350_grid_demantia_1920
               id_field: fid              
             - type: tile
               name: MVT
-              data: http://elastic_search:9200/hex250_grid_demantia_1920/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/hex350_grid_demantia_1920/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: raw # default | tilejson
                 zoom:
@@ -286,7 +286,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    hex250_grid_access2openspace:
+    hex350_grid_access2openspace:
         type: collection
         title: Proportion of population with access to public open space in London.
         description: Maps of physical environment &#11088;&#11088;&#11088;
@@ -309,11 +309,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/hex250_grid_access2openspace
+              data: http://elastic_search:9200/hex350_grid_access2openspace
               id_field: fid              
             - type: tile
               name: MVT
-              data: http://elastic_search:9200/hex250_grid_access2openspace/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/hex350_grid_access2openspace/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: raw # default | tilejson
                 zoom:
@@ -325,7 +325,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    hex250_grid_ndvi2022:
+    hex350_grid_ndvi2022:
         type: collection
         title: Normalized difference vegetation index (NDVI) in London.
         description: Maps of physical environment &#11088;&#11088;&#11088;
@@ -348,11 +348,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/hex250_grid_ndvi2022
+              data: http://elastic_search:9200/hex350_grid_ndvi2022
               id_field: fid              
             - type: tile
               name: MVT
-              data: http://elastic_search:9200/hex250_grid_ndvi2022/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/hex350_grid_ndvi2022/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: raw # default | tilejson
                 zoom:
@@ -364,7 +364,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    hex250_grid_pm25_2019:
+    hex350_grid_pm25_2019:
         type: collection
         title: Annual mean PM2.5 based on output areas average concentrations in London.
         description: Maps of physical environment &#11088;&#11088;&#11088;
@@ -387,11 +387,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/hex250_grid_pm25_2019
+              data: http://elastic_search:9200/hex350_grid_pm25_2019
               id_field: fid              
             - type: tile
               name: MVT
-              data: http://elastic_search:9200/hex250_grid_pm25_2019/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/hex350_grid_pm25_2019/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: raw # default | tilejson
                 zoom:
@@ -403,7 +403,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    hex250_grid_pm10_2019:
+    hex350_grid_pm10_2019:
         type: collection
         title: Annual mean PM10 based on output areas average concentrations in London.
         description: Maps of physical environment &#11088;&#11088;&#11088;
@@ -426,11 +426,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/hex250_grid_pm10_2019
+              data: http://elastic_search:9200/hex350_grid_pm10_2019
               id_field: fid              
             - type: tile
               name: MVT
-              data: http://elastic_search:9200/hex250_grid_pm10_2019/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/hex350_grid_pm10_2019/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: raw # default | tilejson
                 zoom:
@@ -442,7 +442,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    hex250_grid_no2_2019:
+    hex350_grid_no2_2019:
         type: collection
         title: Annual mean NO2 concentration in London.
         description: Maps of physical environment &#11088;&#11088;&#11088;
@@ -465,11 +465,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/hex250_grid_no2_2019
+              data: http://elastic_search:9200/hex350_grid_no2_2019
               id_field: fid              
             - type: tile
               name: MVT
-              data: http://elastic_search:9200/hex250_grid_no2_2019/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/hex350_grid_no2_2019/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: raw # default | tilejson
                 zoom:
@@ -481,7 +481,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    hex250_grid_laeq16h:
+    hex350_grid_laeq16h:
         type: collection
         title: Annual average noise levels of rail noise in London.
         description: Maps of physical environment &#11088;&#11088;&#11088;
@@ -504,11 +504,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/hex250_grid_laeq16h
+              data: http://elastic_search:9200/hex350_grid_laeq16h
               id_field: fid              
             - type: tile
               name: MVT
-              data: http://elastic_search:9200/hex250_grid_laeq16h/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/hex350_grid_laeq16h/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: raw # default | tilejson
                 zoom:
@@ -520,7 +520,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    hex250_grid_flood_4band:
+    hex350_grid_flood_4band:
         type: collection
         title: Risk of flooding from rivers and seas in London.
         description: Maps of physical environment &#11088;&#11088;&#11088;
@@ -543,11 +543,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/hex250_grid_flood_4band
+              data: http://elastic_search:9200/hex350_grid_flood_4band
               id_field: fid              
             - type: tile
               name: MVT
-              data: http://elastic_search:9200/hex250_grid_flood_4band/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/hex350_grid_flood_4band/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: raw # default | tilejson
                 zoom:
@@ -559,7 +559,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    hex250_grid_avglst:
+    hex350_grid_avglst:
         type: collection
         title: Major summer heat spots in London.
         description: Maps of physical environment &#11088;&#11088;&#11088;
@@ -582,11 +582,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/hex250_grid_avglst
+              data: http://elastic_search:9200/hex350_grid_avglst
               id_field: fid              
             - type: tile
               name: MVT
-              data: http://elastic_search:9200/hex250_grid_avglst/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/hex350_grid_avglst/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: raw # default | tilejson
                 zoom:
@@ -598,7 +598,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    hex250_grid_cycleroutes2021:
+    hex350_grid_cycleroutes2021:
         type: collection
         title: Cycling routes density map in London.
         description: Maps of physical environment &#11088;&#11088;&#11088;
@@ -621,11 +621,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/hex250_grid_cycleroutes2021
+              data: http://elastic_search:9200/hex350_grid_cycleroutes2021
               id_field: fid              
             - type: tile
               name: MVT
-              data: http://elastic_search:9200/hex250_grid_cycleroutes2021/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/hex350_grid_cycleroutes2021/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: raw # default | tilejson
                 zoom:
@@ -637,7 +637,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    hex250_grid_hindex2020:
+    hex350_grid_hindex2020:
         type: collection
         title: Land use diversity in London.
         description: Maps of physical environment &#11088;&#11088;&#11088;
@@ -660,11 +660,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/hex250_grid_hindex2020
+              data: http://elastic_search:9200/hex350_grid_hindex2020
               id_field: fid              
             - type: tile
               name: MVT
-              data: http://elastic_search:9200/hex250_grid_hindex2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/hex350_grid_hindex2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: raw # default | tilejson
                 zoom:
@@ -676,7 +676,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    hex250_grid_popden_2020:
+    hex350_grid_popden_2020:
         type: collection
         title: Population density map in London.
         description: Maps of socioeconomic groups &#11088;&#11088;&#11088;
@@ -699,11 +699,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/hex250_grid_popden_2020
+              data: http://elastic_search:9200/hex350_grid_popden_2020
               id_field: fid              
             - type: tile
               name: MVT
-              data: http://elastic_search:9200/hex250_grid_popden_2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/hex350_grid_popden_2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: raw # default | tilejson
                 zoom:
@@ -715,7 +715,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    hex250_grid_gender2020:
+    hex350_grid_gender2020:
         type: collection
         title: Map of the ratio of male in London.
         description: Maps of socioeconomic groups &#11088;&#11088;&#11088;
@@ -738,11 +738,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/hex250_grid_gender2020
+              data: http://elastic_search:9200/hex350_grid_gender2020
               id_field: fid              
             - type: tile
               name: MVT
-              data: http://elastic_search:9200/hex250_grid_gender2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/hex350_grid_gender2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: raw # default | tilejson
                 zoom:
@@ -754,7 +754,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    hex250_grid_age2020:
+    hex350_grid_age2020:
         type: collection
         title: Map of the ratio of elder people in London.
         description: Maps of socioeconomic groups &#11088;&#11088;&#11088;
@@ -777,11 +777,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/hex250_grid_age2020
+              data: http://elastic_search:9200/hex350_grid_age2020
               id_field: fid              
             - type: tile
               name: MVT
-              data: http://elastic_search:9200/hex250_grid_age2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/hex350_grid_age2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: raw # default | tilejson
                 zoom:
@@ -793,7 +793,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    hex250_grid_active2020:
+    hex350_grid_active2020:
         type: collection
         title: Map of ratio of active people in Inner London.
         description: Maps of health behaviours &#11088;&#11088;&#11088;
@@ -816,11 +816,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/hex250_grid_active2020
+              data: http://elastic_search:9200/hex350_grid_active2020
               id_field: fid              
             - type: tile
               name: MVT
-              data: http://elastic_search:9200/hex250_grid_active2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/hex350_grid_active2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: raw # default | tilejson
                 zoom:
@@ -832,7 +832,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    hex250_grid_crime_22:
+    hex350_grid_crime_22:
         type: collection
         title: Map of number of recorded crimes in Inner London.
         description: Maps of health behaviours &#11088;&#11088;&#11088;
@@ -855,11 +855,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/hex250_grid_crime_22
+              data: http://elastic_search:9200/hex350_grid_crime_22
               id_field: fid              
             - type: tile
               name: MVT
-              data: http://elastic_search:9200/hex250_grid_crime_22/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/hex350_grid_crime_22/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: raw # default | tilejson
                 zoom:

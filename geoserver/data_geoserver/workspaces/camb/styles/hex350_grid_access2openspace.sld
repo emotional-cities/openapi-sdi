@@ -13,11 +13,11 @@
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:And>
               <ogc:PropertyIsGreaterThanOrEqualTo>
-                <ogc:PropertyName>green_infrastructure_metric_table metric_table_cln_aod_prop</ogc:PropertyName>
+                <ogc:PropertyName>metric_table_cln_aod_prop</ogc:PropertyName>
                 <ogc:Literal>0</ogc:Literal>
               </ogc:PropertyIsGreaterThanOrEqualTo>
               <ogc:PropertyIsLessThanOrEqualTo>
-                <ogc:PropertyName>green_infrastructure_metric_table metric_table_cln_aod_prop</ogc:PropertyName>
+                <ogc:PropertyName>metric_table_cln_aod_prop</ogc:PropertyName>
                 <ogc:Literal>0.20000000000000001</ogc:Literal>
               </ogc:PropertyIsLessThanOrEqualTo>
             </ogc:And>
@@ -41,11 +41,11 @@
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:And>
               <ogc:PropertyIsGreaterThan>
-                <ogc:PropertyName>green_infrastructure_metric_table metric_table_cln_aod_prop</ogc:PropertyName>
+                <ogc:PropertyName>metric_table_cln_aod_prop</ogc:PropertyName>
                 <ogc:Literal>0.20000000000000001</ogc:Literal>
               </ogc:PropertyIsGreaterThan>
               <ogc:PropertyIsLessThanOrEqualTo>
-                <ogc:PropertyName>green_infrastructure_metric_table metric_table_cln_aod_prop</ogc:PropertyName>
+                <ogc:PropertyName>metric_table_cln_aod_prop</ogc:PropertyName>
                 <ogc:Literal>0.40000000000000002</ogc:Literal>
               </ogc:PropertyIsLessThanOrEqualTo>
             </ogc:And>
@@ -69,11 +69,11 @@
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:And>
               <ogc:PropertyIsGreaterThan>
-                <ogc:PropertyName>green_infrastructure_metric_table metric_table_cln_aod_prop</ogc:PropertyName>
+                <ogc:PropertyName>metric_table_cln_aod_prop</ogc:PropertyName>
                 <ogc:Literal>0.40000000000000002</ogc:Literal>
               </ogc:PropertyIsGreaterThan>
               <ogc:PropertyIsLessThanOrEqualTo>
-                <ogc:PropertyName>green_infrastructure_metric_table metric_table_cln_aod_prop</ogc:PropertyName>
+                <ogc:PropertyName>metric_table_cln_aod_prop</ogc:PropertyName>
                 <ogc:Literal>0.59999999999999998</ogc:Literal>
               </ogc:PropertyIsLessThanOrEqualTo>
             </ogc:And>
@@ -97,11 +97,11 @@
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:And>
               <ogc:PropertyIsGreaterThan>
-                <ogc:PropertyName>green_infrastructure_metric_table metric_table_cln_aod_prop</ogc:PropertyName>
+                <ogc:PropertyName>metric_table_cln_aod_prop</ogc:PropertyName>
                 <ogc:Literal>0.59999999999999998</ogc:Literal>
               </ogc:PropertyIsGreaterThan>
               <ogc:PropertyIsLessThanOrEqualTo>
-                <ogc:PropertyName>green_infrastructure_metric_table metric_table_cln_aod_prop</ogc:PropertyName>
+                <ogc:PropertyName>metric_table_cln_aod_prop</ogc:PropertyName>
                 <ogc:Literal>0.80000000000000004</ogc:Literal>
               </ogc:PropertyIsLessThanOrEqualTo>
             </ogc:And>
@@ -125,11 +125,11 @@
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:And>
               <ogc:PropertyIsGreaterThan>
-                <ogc:PropertyName>green_infrastructure_metric_table metric_table_cln_aod_prop</ogc:PropertyName>
+                <ogc:PropertyName>metric_table_cln_aod_prop</ogc:PropertyName>
                 <ogc:Literal>0.80000000000000004</ogc:Literal>
               </ogc:PropertyIsGreaterThan>
               <ogc:PropertyIsLessThanOrEqualTo>
-                <ogc:PropertyName>green_infrastructure_metric_table metric_table_cln_aod_prop</ogc:PropertyName>
+                <ogc:PropertyName>metric_table_cln_aod_prop</ogc:PropertyName>
                 <ogc:Literal>1</ogc:Literal>
               </ogc:PropertyIsLessThanOrEqualTo>
             </ogc:And>

@@ -1,17 +1,16 @@
 <layer>
-  <name>hex350_grid_avglst</name>
-  <id>LayerInfoImpl-1b83c0bb:187002cf1d4:-7fd0</id>
+  <name>hex350_grid_avgLST</name>
+  <id>LayerInfoImpl--2a87a890:187245fa702:-7fdf</id>
   <type>VECTOR</type>
   <defaultStyle>
     <id>StyleInfoImpl-63b2b4e3:1870507d372:-7feb</id>
   </defaultStyle>
   <resource class="featureType">
-    <id>FeatureTypeInfoImpl-1b83c0bb:187002cf1d4:-7fd1</id>
+    <id>FeatureTypeInfoImpl--2a87a890:187245fa702:-7fe0</id>
   </resource>
   <attribution>
     <logoWidth>0</logoWidth>
     <logoHeight>0</logoHeight>
   </attribution>
-  <dateCreated>2023-03-21 07:59:43.474 UTC</dateCreated>
-  <dateModified>2023-03-21 17:31:34.329 UTC</dateModified>
+  <dateCreated>2023-03-27 18:54:05.810 UTC</dateCreated>
 </layer>

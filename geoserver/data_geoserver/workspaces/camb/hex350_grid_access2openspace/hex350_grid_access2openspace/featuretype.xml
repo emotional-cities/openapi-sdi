@@ -1,15 +1,14 @@
 <featureType>
-  <id>FeatureTypeInfoImpl-1b83c0bb:187002cf1d4:-7fe0</id>
+  <id>FeatureTypeInfoImpl--2a87a890:187245fa702:-7fdc</id>
   <name>hex350_grid_access2openspace</name>
-  <nativeName>Hex350_grid_access2openspace</nativeName>
+  <nativeName>Hex250_grid_access2openspace</nativeName>
   <namespace>
     <id>NamespaceInfoImpl-1b83c0bb:187002cf1d4:-7fe3</id>
   </namespace>
-  <title>Proportion of population with access to public open space in London</title>
-  <abstract>Maps of physical environment</abstract>
+  <title>hex350_grid_access2openspace</title>
   <keywords>
     <string>features</string>
-    <string>Hex350_grid_access2openspace</string>
+    <string>Hex250_grid_access2openspace</string>
   </keywords>
   <nativeCRS class="projected">PROJCS[&quot;OSGB 1936 / British National Grid&quot;, 
   GEOGCS[&quot;OSGB 1936&quot;, 
@@ -53,7 +52,7 @@
     <entry key="cachingEnabled">false</entry>
   </metadata>
   <store class="dataStore">
-    <id>DataStoreInfoImpl-1b83c0bb:187002cf1d4:-7fe2</id>
+    <id>DataStoreInfoImpl--2a87a890:187245fa702:-7ff3</id>
   </store>
   <serviceConfiguration>false</serviceConfiguration>
   <simpleConversionEnabled>false</simpleConversionEnabled>

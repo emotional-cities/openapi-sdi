@@ -1,14 +1,13 @@
 <featureType>
-  <id>FeatureTypeInfoImpl-1b83c0bb:187002cf1d4:-7fa8</id>
+  <id>FeatureTypeInfoImpl--2a87a890:187245fa702:-7fa0</id>
   <name>hex350_grid_no2_2019</name>
-  <nativeName>hex350_grid_no2_2019</nativeName>
+  <nativeName>Hex250_grid_no2_2019</nativeName>
   <namespace>
     <id>NamespaceInfoImpl-1b83c0bb:187002cf1d4:-7fe3</id>
   </namespace>
-  <title>Annual mean NO2 concentration in London</title>
-  <abstract>Maps of physical environment</abstract>
+  <title>hex350_grid_no2_2019</title>
   <keywords>
-    <string>hex350_grid_no2_2019</string>
+    <string>Hex250_grid_no2_2019</string>
     <string>features</string>
   </keywords>
   <nativeCRS class="projected">PROJCS[&quot;OSGB 1936 / British National Grid&quot;, 
@@ -49,8 +48,11 @@
   </latLonBoundingBox>
   <projectionPolicy>FORCE_DECLARED</projectionPolicy>
   <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
   <store class="dataStore">
-    <id>DataStoreInfoImpl-1b83c0bb:187002cf1d4:-7fa9</id>
+    <id>DataStoreInfoImpl--2a87a890:187245fa702:-7fa3</id>
   </store>
   <serviceConfiguration>false</serviceConfiguration>
   <simpleConversionEnabled>false</simpleConversionEnabled>

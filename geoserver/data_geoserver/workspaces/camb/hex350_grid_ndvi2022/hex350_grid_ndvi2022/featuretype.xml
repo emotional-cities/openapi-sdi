@@ -1,15 +1,14 @@
 <featureType>
-  <id>FeatureTypeInfoImpl-1b83c0bb:187002cf1d4:-7fab</id>
+  <id>FeatureTypeInfoImpl--2a87a890:187245fa702:-7fa5</id>
   <name>hex350_grid_ndvi2022</name>
-  <nativeName>hex350_grid_ndvi2022</nativeName>
+  <nativeName>Hex250_grid_ndvi2022</nativeName>
   <namespace>
     <id>NamespaceInfoImpl-1b83c0bb:187002cf1d4:-7fe3</id>
   </namespace>
-  <title>Normalized difference vegetation index (NDVI) in London</title>
-  <abstract>Maps of physical environment</abstract>
+  <title>hex350_grid_ndvi2022</title>
   <keywords>
     <string>features</string>
-    <string>hex350_grid_ndvi2022</string>
+    <string>Hex250_grid_ndvi2022</string>
   </keywords>
   <nativeCRS class="projected">PROJCS[&quot;OSGB 1936 / British National Grid&quot;, 
   GEOGCS[&quot;OSGB 1936&quot;, 
@@ -49,8 +48,11 @@
   </latLonBoundingBox>
   <projectionPolicy>FORCE_DECLARED</projectionPolicy>
   <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
   <store class="dataStore">
-    <id>DataStoreInfoImpl-1b83c0bb:187002cf1d4:-7fac</id>
+    <id>DataStoreInfoImpl--2a87a890:187245fa702:-7fa8</id>
   </store>
   <serviceConfiguration>false</serviceConfiguration>
   <simpleConversionEnabled>false</simpleConversionEnabled>

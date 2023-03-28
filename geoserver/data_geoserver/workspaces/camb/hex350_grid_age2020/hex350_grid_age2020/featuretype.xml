@@ -1,15 +1,14 @@
 <featureType>
-  <id>FeatureTypeInfoImpl-1b83c0bb:187002cf1d4:-7fd6</id>
+  <id>FeatureTypeInfoImpl--2a87a890:187245fa702:-7fe6</id>
   <name>hex350_grid_age2020</name>
-  <nativeName>hex350_grid_age2020</nativeName>
+  <nativeName>Hex250_grid_age2020</nativeName>
   <namespace>
     <id>NamespaceInfoImpl-1b83c0bb:187002cf1d4:-7fe3</id>
   </namespace>
-  <title>Map of the ratio of elder people in London</title>
-  <abstract>Maps of socioeconomic groups</abstract>
+  <title>hex350_grid_age2020</title>
   <keywords>
     <string>features</string>
-    <string>hex350_grid_age2020</string>
+    <string>Hex250_grid_age2020</string>
   </keywords>
   <nativeCRS class="projected">PROJCS[&quot;OSGB 1936 / British National Grid&quot;, 
   GEOGCS[&quot;OSGB 1936&quot;, 
@@ -49,8 +48,11 @@
   </latLonBoundingBox>
   <projectionPolicy>FORCE_DECLARED</projectionPolicy>
   <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
   <store class="dataStore">
-    <id>DataStoreInfoImpl-1b83c0bb:187002cf1d4:-7fd7</id>
+    <id>DataStoreInfoImpl--2a87a890:187245fa702:-7fe9</id>
   </store>
   <serviceConfiguration>false</serviceConfiguration>
   <simpleConversionEnabled>false</simpleConversionEnabled>

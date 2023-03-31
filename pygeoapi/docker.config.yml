@@ -873,11 +873,15 @@ resources:
 
     physical_data:
         type: collection
-        title: Physical data
-        description: Data Platform IGOT &#11088;&#11088;
+        title: Physical Environment Data
+        description: Data Platform IGOT &#11088;&#11088;&#11088;
         keywords:
             - Lisbon
             - eMOTIONAL Cities
+            - Buildings
+            - Streets
+            - Land use
+            - Environmental
         links:
             - type: text/html
               rel: canonical
@@ -910,11 +914,13 @@ resources:
 
     socioeconomic_data:
         type: collection
-        title: Socioeconomic data
-        description: Data Platform IGOT &#11088;&#11088;
+        title: Socioeconomic Environment Data
+        description: Data Platform IGOT &#11088;&#11088;&#11088;
         keywords:
             - Lisbon
             - eMOTIONAL Cities
+            - Socioeconomics
+            - Demographics
         links:
             - type: text/html
               rel: canonical
@@ -948,10 +954,11 @@ resources:
     perception_data:
         type: collection
         title: Perception data
-        description: Data Platform IGOT &#11088;&#11088;
+        description: Data Platform IGOT &#11088;&#11088;&#11088;
         keywords:
             - Lisbon
             - eMOTIONAL Cities
+            - Sentiment analysis
         links:
             - type: text/html
               rel: canonical
@@ -985,10 +992,12 @@ resources:
     urban_health_data:
         type: collection
         title: Urban health data
-        description: Data Platform IGOT &#11088;&#11088;
+        description: Data Platform IGOT &#11088;&#11088;&#11088;
         keywords:
             - Lisbon
             - eMOTIONAL Cities
+            - Physical health
+            - Mental health
         links:
             - type: text/html
               rel: canonical

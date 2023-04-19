@@ -94,7 +94,7 @@ resources:
     hex350_grid_cardio_1920:
         type: collection
         title: Prevalence rates of cardiovascular diseases in London.
-        description: Maps of physical health &#11088;&#11088;&#11088;
+        description: Maps of physical health 
         keywords:
             - London
             - eMOTIONAL Cities
@@ -115,7 +115,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/hex350_grid_cardio_1920
-              id_field: fid              
+              id_field: fid
             - type: tile
               name: MVT
               data: http://elastic_search:9200/hex350_grid_cardio_1920/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -133,7 +133,7 @@ resources:
     hex350_grid_obesity_1920:
         type: collection
         title: Prevalence rates of obesity in London.
-        description: Maps of physical health &#11088;&#11088;&#11088;
+        description: Maps of physical health 
         keywords:
             - London
             - eMOTIONAL Cities
@@ -154,7 +154,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/hex350_grid_obesity_1920
-              id_field: fid              
+              id_field: fid
             - type: tile
               name: MVT
               data: http://elastic_search:9200/hex350_grid_obesity_1920/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -172,7 +172,7 @@ resources:
     hex350_grid_depression_1920:
         type: collection
         title: Prevalence rates of depression in London.
-        description: Maps of wellbeing outcomes &#11088;&#11088;&#11088;
+        description: Maps of wellbeing outcomes 
         keywords:
             - London
             - eMOTIONAL Cities
@@ -193,7 +193,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/hex350_grid_depression_1920
-              id_field: fid              
+              id_field: fid
             - type: tile
               name: MVT
               data: http://elastic_search:9200/hex350_grid_depression_1920/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -211,7 +211,7 @@ resources:
     hex350_grid_mental_1920:
         type: collection
         title: Prevalence rates of mental health issues in London.
-        description: Maps of wellbeing outcomes &#11088;&#11088;&#11088;
+        description: Maps of wellbeing outcomes 
         keywords:
             - London
             - eMOTIONAL Cities
@@ -232,7 +232,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/hex350_grid_mental_1920
-              id_field: fid              
+              id_field: fid
             - type: tile
               name: MVT
               data: http://elastic_search:9200/hex350_grid_mental_1920/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -250,7 +250,7 @@ resources:
     hex350_grid_demantia_1920:
         type: collection
         title: Prevalence rates of dementia in London.
-        description: Maps of wellbeing outcomes &#11088;&#11088;&#11088;
+        description: Maps of wellbeing outcomes 
         keywords:
             - London
             - eMOTIONAL Cities
@@ -271,7 +271,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/hex350_grid_demantia_1920
-              id_field: fid              
+              id_field: fid
             - type: tile
               name: MVT
               data: http://elastic_search:9200/hex350_grid_demantia_1920/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -289,7 +289,7 @@ resources:
     hex350_grid_access2openspace:
         type: collection
         title: Proportion of population with access to public open space in London.
-        description: Maps of physical environment &#11088;&#11088;&#11088;
+        description: Maps of physical environment 
         keywords:
             - London
             - eMOTIONAL Cities
@@ -310,7 +310,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/hex350_grid_access2openspace
-              id_field: fid              
+              id_field: fid
             - type: tile
               name: MVT
               data: http://elastic_search:9200/hex350_grid_access2openspace/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -328,7 +328,7 @@ resources:
     hex350_grid_ndvi2022:
         type: collection
         title: Normalized difference vegetation index (NDVI) in London.
-        description: Maps of physical environment &#11088;&#11088;&#11088;
+        description: Maps of physical environment 
         keywords:
             - London
             - eMOTIONAL Cities
@@ -349,7 +349,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/hex350_grid_ndvi2022
-              id_field: fid              
+              id_field: fid
             - type: tile
               name: MVT
               data: http://elastic_search:9200/hex350_grid_ndvi2022/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -367,7 +367,7 @@ resources:
     hex350_grid_pm25_2019:
         type: collection
         title: Annual mean PM2.5 based on output areas average concentrations in London.
-        description: Maps of physical environment &#11088;&#11088;&#11088;
+        description: Maps of physical environment 
         keywords:
             - London
             - eMOTIONAL Cities
@@ -388,7 +388,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/hex350_grid_pm25_2019
-              id_field: fid              
+              id_field: fid
             - type: tile
               name: MVT
               data: http://elastic_search:9200/hex350_grid_pm25_2019/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -406,7 +406,7 @@ resources:
     hex350_grid_pm10_2019:
         type: collection
         title: Annual mean PM10 based on output areas average concentrations in London.
-        description: Maps of physical environment &#11088;&#11088;&#11088;
+        description: Maps of physical environment 
         keywords:
             - London
             - eMOTIONAL Cities
@@ -427,7 +427,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/hex350_grid_pm10_2019
-              id_field: fid              
+              id_field: fid
             - type: tile
               name: MVT
               data: http://elastic_search:9200/hex350_grid_pm10_2019/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -445,7 +445,7 @@ resources:
     hex350_grid_no2_2019:
         type: collection
         title: Annual mean NO2 concentration in London.
-        description: Maps of physical environment &#11088;&#11088;&#11088;
+        description: Maps of physical environment 
         keywords:
             - London
             - eMOTIONAL Cities
@@ -466,7 +466,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/hex350_grid_no2_2019
-              id_field: fid              
+              id_field: fid
             - type: tile
               name: MVT
               data: http://elastic_search:9200/hex350_grid_no2_2019/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -484,7 +484,7 @@ resources:
     hex350_grid_laeq16h:
         type: collection
         title: Annual average noise levels of rail noise in London.
-        description: Maps of physical environment &#11088;&#11088;&#11088;
+        description: Maps of physical environment 
         keywords:
             - London
             - eMOTIONAL Cities
@@ -505,7 +505,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/hex350_grid_laeq16h
-              id_field: fid              
+              id_field: fid
             - type: tile
               name: MVT
               data: http://elastic_search:9200/hex350_grid_laeq16h/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -523,7 +523,7 @@ resources:
     hex350_grid_flood_4band:
         type: collection
         title: Risk of flooding from rivers and seas in London.
-        description: Maps of physical environment &#11088;&#11088;&#11088;
+        description: Maps of physical environment 
         keywords:
             - London
             - eMOTIONAL Cities
@@ -544,7 +544,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/hex350_grid_flood_4band
-              id_field: fid              
+              id_field: fid
             - type: tile
               name: MVT
               data: http://elastic_search:9200/hex350_grid_flood_4band/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -562,7 +562,7 @@ resources:
     hex350_grid_avglst:
         type: collection
         title: Major summer heat spots in London.
-        description: Maps of physical environment &#11088;&#11088;&#11088;
+        description: Maps of physical environment 
         keywords:
             - London
             - eMOTIONAL Cities
@@ -583,7 +583,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/hex350_grid_avglst
-              id_field: fid              
+              id_field: fid
             - type: tile
               name: MVT
               data: http://elastic_search:9200/hex350_grid_avglst/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -601,7 +601,7 @@ resources:
     hex350_grid_cycleroutes2021:
         type: collection
         title: Cycling routes density map in London.
-        description: Maps of physical environment &#11088;&#11088;&#11088;
+        description: Maps of physical environment 
         keywords:
             - London
             - eMOTIONAL Cities
@@ -622,7 +622,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/hex350_grid_cycleroutes2021
-              id_field: fid              
+              id_field: fid
             - type: tile
               name: MVT
               data: http://elastic_search:9200/hex350_grid_cycleroutes2021/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -640,7 +640,7 @@ resources:
     hex350_grid_hindex2020:
         type: collection
         title: Land use diversity in London.
-        description: Maps of physical environment &#11088;&#11088;&#11088;
+        description: Maps of physical environment 
         keywords:
             - London
             - eMOTIONAL Cities
@@ -661,7 +661,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/hex350_grid_hindex2020
-              id_field: fid              
+              id_field: fid
             - type: tile
               name: MVT
               data: http://elastic_search:9200/hex350_grid_hindex2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -679,7 +679,7 @@ resources:
     hex350_grid_popden_2020:
         type: collection
         title: Population density map in London.
-        description: Maps of socioeconomic groups &#11088;&#11088;&#11088;
+        description: Maps of socioeconomic groups 
         keywords:
             - London
             - eMOTIONAL Cities
@@ -700,7 +700,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/hex350_grid_popden_2020
-              id_field: fid              
+              id_field: fid
             - type: tile
               name: MVT
               data: http://elastic_search:9200/hex350_grid_popden_2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -718,7 +718,7 @@ resources:
     hex350_grid_gender2020:
         type: collection
         title: Map of the ratio of male in London.
-        description: Maps of socioeconomic groups &#11088;&#11088;&#11088;
+        description: Maps of socioeconomic groups 
         keywords:
             - London
             - eMOTIONAL Cities
@@ -739,7 +739,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/hex350_grid_gender2020
-              id_field: fid              
+              id_field: fid
             - type: tile
               name: MVT
               data: http://elastic_search:9200/hex350_grid_gender2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -757,7 +757,7 @@ resources:
     hex350_grid_age2020:
         type: collection
         title: Map of the ratio of elder people in London.
-        description: Maps of socioeconomic groups &#11088;&#11088;&#11088;
+        description: Maps of socioeconomic groups 
         keywords:
             - London
             - eMOTIONAL Cities
@@ -778,7 +778,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/hex350_grid_age2020
-              id_field: fid              
+              id_field: fid
             - type: tile
               name: MVT
               data: http://elastic_search:9200/hex350_grid_age2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -796,7 +796,7 @@ resources:
     hex350_grid_active2020:
         type: collection
         title: Map of ratio of active people in Inner London.
-        description: Maps of health behaviours &#11088;&#11088;&#11088;
+        description: Maps of health behaviours 
         keywords:
             - London
             - eMOTIONAL Cities
@@ -817,7 +817,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/hex350_grid_active2020
-              id_field: fid              
+              id_field: fid
             - type: tile
               name: MVT
               data: http://elastic_search:9200/hex350_grid_active2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -835,7 +835,7 @@ resources:
     hex350_grid_crime_22:
         type: collection
         title: Map of number of recorded crimes in Inner London.
-        description: Maps of health behaviours &#11088;&#11088;&#11088;
+        description: Maps of health behaviours 
         keywords:
             - London
             - eMOTIONAL Cities
@@ -856,7 +856,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/hex350_grid_crime_22
-              id_field: fid              
+              id_field: fid
             - type: tile
               name: MVT
               data: http://elastic_search:9200/hex350_grid_crime_22/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -874,7 +874,7 @@ resources:
     physical_data:
         type: collection
         title: Physical Environment Data
-        description: Data Platform IGOT &#11088;&#11088;&#11088;
+        description: Data Platform IGOT 
         keywords:
             - Lisbon
             - eMOTIONAL Cities
@@ -897,7 +897,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/a0000000a
-              id_field: OBJECTID              
+              id_field: OBJECTid
             - type: tile
               name: MVT
               data: http://elastic_search:9200/a0000000a/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -915,7 +915,7 @@ resources:
     socioeconomic_data:
         type: collection
         title: Socioeconomic Environment Data
-        description: Data Platform IGOT &#11088;&#11088;&#11088;
+        description: Data Platform IGOT 
         keywords:
             - Lisbon
             - eMOTIONAL Cities
@@ -936,7 +936,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/a0000000b
-              id_field: OBJECTID              
+              id_field: OBJECTid
             - type: tile
               name: MVT
               data: http://elastic_search:9200/a0000000b/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -954,7 +954,7 @@ resources:
     perception_data:
         type: collection
         title: Perception data
-        description: Data Platform IGOT &#11088;&#11088;&#11088;
+        description: Data Platform IGOT 
         keywords:
             - Lisbon
             - eMOTIONAL Cities
@@ -974,7 +974,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/a0000000c
-              id_field: OBJECTID              
+              id_field: OBJECTid
             - type: tile
               name: MVT
               data: http://elastic_search:9200/a0000000c/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -992,7 +992,7 @@ resources:
     urban_health_data:
         type: collection
         title: Urban health data
-        description: Data Platform IGOT &#11088;&#11088;&#11088;
+        description: Data Platform IGOT 
         keywords:
             - Lisbon
             - eMOTIONAL Cities
@@ -1013,7 +1013,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/a00000009
-              id_field: OBJECTID              
+              id_field: OBJECTid
             - type: tile
               name: MVT
               data: http://elastic_search:9200/a00000009/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -1030,10 +1030,10 @@ resources:
 
     munich:
         type: collection
-        title: UNFAIR Data &#10060;
-        description: Data without metadata &#11088;
+        title: Munich_220713_All
+        description: No metadata
         keywords:
-            - UNFAIR
+            - No metadata
             - eMOTIONAL Cities
         links:
             - type: text/html
@@ -1050,7 +1050,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/munich_220713_all
-              id_field: id              
+              id_field: id
             - type: tile
               name: MVT
               data: http://elastic_search:9200/munich_220713_all/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -1067,10 +1067,10 @@ resources:
 
     airquality.airpressure.geojson:
         type: collection
-        title: UNFAIR Data &#10060;
-        description: Data without metadata &#11088;
+        title: "London outdoor walk test data: Air Quality Air Pressure"
+        description: Air Pressure data collected from Air Quality sensors during a test walk in London for benchmarking data acquisition platform.
         keywords:
-            - UNFAIR
+            - test
             - eMOTIONAL Cities
         links:
             - type: text/html
@@ -1087,7 +1087,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/airquality.airpressure
-              id_field: id              
+              id_field: id
             - type: tile
               name: MVT
               data: http://elastic_search:9200/airquality.airpressure/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -1104,10 +1104,10 @@ resources:
 
     airquality.humidity.geojson:
         type: collection
-        title: UNFAIR Data &#10060;
-        description: Data without metadata &#11088;
+        title: "London outdoor walk test data: Air Quality Humidity"
+        description: Humidity data collected from Air Quality sensors during a test walk in London for benchmarking data acquisition platform.
         keywords:
-            - UNFAIR
+            - test
             - eMOTIONAL Cities
         links:
             - type: text/html
@@ -1124,7 +1124,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/airquality.humidity
-              id_field: id              
+              id_field: id
             - type: tile
               name: MVT
               data: http://elastic_search:9200/airquality.humidity/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -1141,10 +1141,10 @@ resources:
 
     airquality.iaqindex.geojson:
         type: collection
-        title: UNFAIR Data &#10060;
-        description: Data without metadata &#11088;
+        title: "London outdoor walk test data: Air Quality Air Quality Index"
+        description: Air Quality Index data collected from Air Quality sensors during a test walk in London for benchmarking data acquisition platform.
         keywords:
-            - UNFAIR
+            - test
             - eMOTIONAL Cities
         links:
             - type: text/html
@@ -1161,7 +1161,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/airquality.iaqindex
-              id_field: id              
+              id_field: id
             - type: tile
               name: MVT
               data: http://elastic_search:9200/airquality.iaqindex/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -1178,10 +1178,10 @@ resources:
 
     airquality.temperature.geojson:
         type: collection
-        title: UNFAIR Data &#10060;
-        description: Data without metadata &#11088;
+        title: "London outdoor walk test data: Air Quality Temperature"
+        description: Temperature data collected from Air Quality sensors during a test walk in London for benchmarking data acquisition platform.
         keywords:
-            - UNFAIR
+            - test
             - eMOTIONAL Cities
         links:
             - type: text/html
@@ -1198,7 +1198,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/airquality.temperature
-              id_field: id              
+              id_field: id
             - type: tile
               name: MVT
               data: http://elastic_search:9200/airquality.temperature/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -1215,10 +1215,10 @@ resources:
 
     ambientlight.ambientlight.geojson:
         type: collection
-        title: UNFAIR Data &#10060;
-        description: Data without metadata &#11088;
+        title: "London outdoor walk test data: Ambient Light"
+        description: Ambient Light data collected from Ambient Light sensors during a test walk in London for benchmarking data acquisition platform.
         keywords:
-            - UNFAIR
+            - test
             - eMOTIONAL Cities
         links:
             - type: text/html
@@ -1235,7 +1235,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/ambientlight.ambientlight
-              id_field: id              
+              id_field: id
             - type: tile
               name: MVT
               data: http://elastic_search:9200/ambientlight.ambientlight/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -1252,10 +1252,10 @@ resources:
 
     analogin.voltage.geojson:
         type: collection
-        title: UNFAIR Data &#10060;
-        description: Data without metadata &#11088;
+        title: "London outdoor walk test data: Synchronization pulses"
+        description: Raw synchronization traces collected from Analog Voltage sensors during a test walk in London for benchmarking data acquisition platform.
         keywords:
-            - UNFAIR
+            - test
             - eMOTIONAL Cities
         links:
             - type: text/html
@@ -1272,7 +1272,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/analogin.voltage
-              id_field: id              
+              id_field: id
             - type: tile
               name: MVT
               data: http://elastic_search:9200/analogin.voltage/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -1289,10 +1289,10 @@ resources:
 
     co2v2.co2conc.geojson:
         type: collection
-        title: UNFAIR Data &#10060;
-        description: Data without metadata &#11088;
+        title: "London outdoor walk test data: CO2 Concentration"
+        description: CO2 Concentration levels collected from CO2 sensors during a test walk in London for benchmarking data acquisition platform.
         keywords:
-            - UNFAIR
+            - test
             - eMOTIONAL Cities
         links:
             - type: text/html
@@ -1309,7 +1309,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/co2v2.co2conc
-              id_field: id              
+              id_field: id
             - type: tile
               name: MVT
               data: http://elastic_search:9200/co2v2.co2conc/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -1326,10 +1326,10 @@ resources:
 
     co2v2.humidity.geojson:
         type: collection
-        title: UNFAIR Data &#10060;
-        description: Data without metadata &#11088;
+        title: "London outdoor walk test data: Humidity CO2"
+        description: Humidity data collected from CO2 sensors during a test walk in London for benchmarking data acquisition platform.
         keywords:
-            - UNFAIR
+            - test
             - eMOTIONAL Cities
         links:
             - type: text/html
@@ -1346,7 +1346,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/co2v2.humidity
-              id_field: id              
+              id_field: id
             - type: tile
               name: MVT
               data: http://elastic_search:9200/co2v2.humidity/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -1363,10 +1363,10 @@ resources:
 
     co2v2.temperature.geojson:
         type: collection
-        title: UNFAIR Data &#10060;
-        description: Data without metadata &#11088;
+        title: "London outdoor walk test data: Temperature CO2"
+        description: Temperature data collected from CO2 sensors during a test walk in London for benchmarking data acquisition platform.
         keywords:
-            - UNFAIR
+            - test
             - eMOTIONAL Cities
         links:
             - type: text/html
@@ -1383,7 +1383,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/co2v2.temperature
-              id_field: id              
+              id_field: id
             - type: tile
               name: MVT
               data: http://elastic_search:9200/co2v2.temperature/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -1400,10 +1400,10 @@ resources:
 
     gps.data.geojson:
         type: collection
-        title: UNFAIR Data &#10060;
-        description: Data without metadata &#11088;
+        title: "London outdoor walk test data: GPS Data"
+        description: Navigation traces collected from GPS sensors during a test walk in London for benchmarking data acquisition platform.
         keywords:
-            - UNFAIR
+            - test
             - eMOTIONAL Cities
         links:
             - type: text/html
@@ -1420,7 +1420,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/gps.data
-              id_field: id              
+              id_field: id
             - type: tile
               name: MVT
               data: http://elastic_search:9200/gps.data/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -1437,10 +1437,10 @@ resources:
 
     gps.time:
         type: collection
-        title: UNFAIR Data &#10060;
-        description: Data without metadata &#11088;
+        title: "London outdoor walk test data: GPS Internal Clock"
+        description: Internal clock data collected from GPS sensors during a test walk in London for benchmarking data acquisition platform.
         keywords:
-            - UNFAIR
+            - test
             - eMOTIONAL Cities
         links:
             - type: text/html
@@ -1457,7 +1457,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/gps.time
-              id_field: id              
+              id_field: id
             - type: tile
               name: MVT
               data: http://elastic_search:9200/gps.time/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -1474,10 +1474,10 @@ resources:
 
     humidity.humidity:
         type: collection
-        title: UNFAIR Data &#10060;
-        description: Data without metadata &#11088;
+        title: "London outdoor walk test data: Humidity"
+        description: Humidity data collected from Humidity sensors during a test walk in London for benchmarking data acquisition platform.
         keywords:
-            - UNFAIR
+            - test
             - eMOTIONAL Cities
         links:
             - type: text/html
@@ -1494,7 +1494,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/humidity.humidity
-              id_field: id              
+              id_field: id
             - type: tile
               name: MVT
               data: http://elastic_search:9200/humidity.humidity/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -1511,10 +1511,10 @@ resources:
 
     soundpressurelevel.spl:
         type: collection
-        title: UNFAIR Data &#10060;
-        description: Data without metadata &#11088;
+        title: "London outdoor walk test data: Sound Pressure levels"
+        description: Sound Pressure Levels collected from environmental sensors during a test walk in London for benchmarking data acquisition platform.
         keywords:
-            - UNFAIR
+            - test
             - eMOTIONAL Cities
         links:
             - type: text/html
@@ -1531,7 +1531,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/soundpressurelevel.spl
-              id_field: id              
+              id_field: id
             - type: tile
               name: MVT
               data: http://elastic_search:9200/soundpressurelevel.spl/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
@@ -1545,90 +1545,6 @@ resources:
               format:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
-
-    #     activity_level_ldn:
-    #     type: collection
-    #     title: Physical activity levels in London Boroughs in 2019
-    #     description: Physical activity levels in London Boroughs in 2019 was extracted from the Active Lives Survey Nov 19/20. The number refers to the ratio of active people (at least 30mins per week).
-    #     keywords:
-    #         - Mesurements
-    #         - Health
-    #         - London
-    #         - eMOTIONAL Cities
-    #     links:
-    #         - type: text/html
-    #           rel: canonical
-    #           title: metadata
-    #           href: https://emotional.byteroad.net/collections/ec_catalog/items/9b32e1572c4f4c69861d0e50cf6782
-    #           hreflang: en-US
-    #     extents:
-    #         spatial:
-    #             bbox: [-1.11,51.06,0.87,51.90]
-    #             crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-    #     providers:
-    #         - type: feature
-    #           name: Elasticsearch
-    #           data: http://elastic_search:9200/activity_level_ldn
-    #           id_field: GSS_CODE
-    #           format:
-    #                 name: pbf
-    #                 mimetype: application/vnd.mapbox-vector-tile
-
-    # cardivasular_disease_ldn:
-    #     type: collection
-    #     title: Mortality rate from all cardiovascular diseases in London Boroughs 2020
-    #     description: Mortality rate per 100k people (under 75 mortality rate) from all cardiovascular diseases in London Boroughs 2020.
-    #     keywords:
-    #         - Mesurements
-    #         - Health
-    #         - London
-    #         - eMOTIONAL Cities
-    #     links:
-    #         - type: text/html
-    #           rel: canonical
-    #           title: metadata
-    #           href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
-    #           hreflang: en-US
-    #     extents:
-    #         spatial:
-    #             bbox: [-1.11,51.06,0.87,51.90]
-    #             crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-    #     providers:
-    #         - type: feature
-    #           name: Elasticsearch
-    #           data: http://elastic_search:9200/cardivasular_disease_ldn
-    #           id_field: GSS_CODE
-    #           format:
-    #                 name: pbf
-    #                 mimetype: application/vnd.mapbox-vector-tile
-
-    # tweet_count_sample:
-    #     type: collection
-    #     title: Number of tweets in hexagon cells of London (August 2021)
-    #     description: Number of tweets in hexagon cells of London (August 2021). Twitter data was collected via Academic Research product track API. The horizontal and vertical spacing of hexagon cells are 500 meters.
-    #     keywords:
-    #         - Mesurements
-    #         - Health
-    #         - London
-    #         - eMOTIONAL Cities
-    #     links:
-    #         - type: text/html
-    #           rel: canonical
-    #           title: metadata
-    #           href: https://emotional.byteroad.net/collections/ec_catalog/items/11v2e1549c2t5669861d0e50cf6h66
-    #           hreflang: en-US
-    #     extents:
-    #         spatial:
-    #             bbox: [-1.11,51.06,0.87,51.90]
-    #             crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-    #     providers:
-    #         - type: feature
-    #           name: Elasticsearch
-    #           data: http://elastic_search:9200/tweet_count_sample
-    #           id_field: id
-    #           format:
-    #                 name: pbf
-    #                 mimetype: application/vnd.mapbox-vector-tile
 
     ec_catalog:
         type: collection

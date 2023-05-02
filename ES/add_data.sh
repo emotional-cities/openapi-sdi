@@ -114,7 +114,7 @@ python3 /load_es_data.py /in/AnalogIn.Voltage.geojson id
 python3 /load_es_data.py /in/CO2V2.CO2Conc.geojson id
 python3 /load_es_data.py /in/CO2V2.Humidity.geojson id
 python3 /load_es_data.py /in/CO2V2.Temperature.geojson id
-python3 /load_es_data.py /in/data/GPS.Data.geojson id
+python3 /load_es_data.py /in/GPS.Data.geojson id
 python3 /load_es_data.py /in/GPS.Time.geojson id
 python3 /load_es_data.py /in/Humidity.Humidity.geojson id
 python3 /load_es_data.py /in/SoundPressureLevel.SPL.geojson id

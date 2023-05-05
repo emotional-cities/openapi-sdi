@@ -1852,6 +1852,274 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
+    lansing_city_block_group_nationalwalkabilityindex_2021:
+        type: collection
+        title: "National Walkability Index"
+        description: "National walkability index in 2021. The National Walkability Index identifies areas with mixtures of land use and transportation infrastructure that may encourage walking as a mode of transportation. This index is comprised of four ranked measures: intersection density, distance to the nearest transit stop, employment diversity, and employment and housing diversity. More walkable areas rate higher on intersection density, have lower distances to the nearest transit stop, and have higher employment and employment plus housing diversity.The Environmental Protection Agency’s (EPA) Smart Location Database was created to address the demand for tools that compare location efficiency. The Smart Location Database (SLD) summarizes several demographic, employment, and built environment variables for every Census block group."
+        keywords:
+            - Walkability Index
+            - Lansing
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/lansing_city_block_group_nationalwalkabilityindex_2021
+              id_field: id
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/lansing_city_block_group_nationalwalkabilityindex_2021/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    lansing_city_block_group_percapitaincome_2020:
+        type: collection
+        title: "Per Capita Income"
+        description: Estimated per capita income.
+        keywords:
+            - Income
+            - Per Capita Income
+            - Lansing
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/lansing_city_block_group_percapitaincome_2020
+              id_field: id
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/lansing_city_block_group_percapitaincome_2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    lansing_city_census_tracts_depression:
+        type: collection
+        title: "Crude percent of adults with depression"
+        description: Crude percent of adults with depression in 2019. (Model-based estimate for crude prevalence of depression among adults aged >=18 years, 2019 AND Estimated confidence interval for crude prevalence of depression among adults aged >=18 years, 2019).
+        keywords:
+            - Depression
+            - Lansing
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/lansing_city_census_tracts_depression
+              id_field: id
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/lansing_city_census_tracts_depression/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    lansing_city_census_tracts_disability_2017_21:
+        type: collection
+        title: "Percentage of people with Disability"
+        description: Estimated percent of the civilian noninstitutionalized population with one or more types of disabilities, between 2017-2021. Percentage calculations are suppressed in cases where the denominator of the calculation was less than 10 of the unit that is being described (e.g., households, people, householders, etc.).
+        keywords:
+            - Disability
+            - Lansing
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/lansing_city_census_tracts_disability_2017_21
+              id_field: id
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/lansing_city_census_tracts_disability_2017_21/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    lansing_city_census_tracts_lifeexpectancyatbirth_10_15:
+        type: collection
+        title: "Life Expectancy at birth"
+        description: "The average number of years a person born in this tract would be expected to live, as of 2010 to 2015."
+        keywords:
+            - Life Expectancy
+            - Lansing
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/lansing_city_census_tracts_lifeexpectancyatbirth_10_15
+              id_field: id
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/lansing_city_census_tracts_lifeexpectancyatbirth_10_15/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    lansing_city_census_tracts_lowaccesstofood:
+        type: collection
+        title: "Low Access to Food"
+        description: "Low Access tracts, as of 2019. Includes tracts with at least 500 people or 33 percent of the population living more than .5 miles (in urban areas) or more than 10 miles (in rural areas) from the nearest supermarket, supercenter, or large grocery store. Tracts for where no data were available are labeled 'Insufficient Data' on the map."
+        keywords:
+            - Life Access to Food
+            - Lansing
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/lansing_city_census_tracts_lowaccesstofood
+              id_field: id
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/lansing_city_census_tracts_lowaccesstofood/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    lansing_city_census_tracts_lowincomelowaccess:
+        type: collection
+        title: "Low Income Low Access to Food"
+        description: "Low Income and Low Access tracts, as of 2019. Includes low-income tracts with at least 500 people or 33 percent of the population living more than .5 miles (in urban areas) or more than 10 miles (in rural areas) from the nearest supermarket, supercenter, or large grocery store. A low-income tract has a poverty rate of greater than 20 percent, has a median family income (MFI) of less than or equal to 80 percent of the state-wide MFI, or is in a metropolitan area and its MFI is less than or equal to 80 percent of the metropolitan Tracts for where no data were available are labeled 'Insufficient Data' on the map."
+        keywords:
+            - Low Income
+            - Low Access to Food
+            - Lansing
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/lansing_city_census_tracts_lowincomelowaccess
+              id_field: id
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/lansing_city_census_tracts_lowincomelowaccess/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
     ec_catalog:
         type: collection
         title: eMOTIONAL Cities Metadata catalog

@@ -124,10 +124,10 @@ python3 /load_es_data.py /in/ucr_2019.geojson ObjectID
 python3 /load_es_data.py /in/tl_rd22_26_bg.geojson id
 python3 /load_es_data.py /in/500cities_city_11082016.geojson id
 python3 /load_es_data.py /in/500cities_tracts_11082016.geojson id
-# python3 /load_es_data.py /in/lansing_chronicobstructivepulmonarydiseaseageabove18yrs_2019_cdc.geojson id
+python3 /load_es_data.py /in/lansing_chronicobstructivepulmonarydiseaseageabove18yrs_2019_cdc.geojson id
 # python3 /load_es_data.py /in/lansing_city_block_group_areadeprivationindex_nationalscore_2020.geojson
-# python3 /load_es_data.py /in/lansing_city_blockgroup_areadeprivationindex_statescore_2020.geojson
-# python3 /load_es_data.py /in/lansing_city_block_group_genderratio_mtow_2017_21.geojson
+python3 /load_es_data.py /in/lansing_city_blockgroup_areadeprivationindex_statescore_2020.geojson
+python3 /load_es_data.py /in/lansing_city_block_group_genderratio_mtow_2017_21.geojson
 # python3 /load_es_data.py /in/lansing_city_block_group_nationalwalkabilityindex_2021.geojson
 # python3 /load_es_data.py /in/lansing_city_block_group_percapitaincome_2020.geojson
 # python3 /load_es_data.py /in/lansing_city_census_tracts_depression.geojson

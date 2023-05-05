@@ -2120,6 +2120,501 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
+    # lansing_city_census_tracts_numberofpeopleaged65andabove_2020:
+    #     type: collection
+    #     title: "Percentage, Ratio and Number of People Aged 65+"
+    #     description: "Number: Estimated count of the population age 65 years and older, between 2017-2021."                                        Percentage: Estimated percent of the population age 65 years and older, between 2017-2021. Percentage calculations are suppressed in cases where the denominator of the calculation was less than 10 of the unit that is being described (e.g., households, people, householders, etc.)."
+    #     keywords:
+    #         - Older Adults
+    #         - Seniors
+    #         - Lansing
+    #         - eMOTIONAL Cities
+    #     links:
+    #         - type: text/html
+    #           rel: canonical
+    #           title: metadata
+    #           # TODO: replace this later
+    #           href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+    #           hreflang: en-US
+    #     extents:
+    #         spatial:
+    #             bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+    #             crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+    #     providers:
+    #         - type: feature
+    #           name: Elasticsearch
+    #           data: http://elastic_search:9200/lansing_city_census_tracts_numberofpeopleaged65andabove_2020
+    #           id_field: id
+    #         - type: tile
+    #           name: MVT
+    #           data: http://elastic_search:9200/lansing_city_census_tracts_numberofpeopleaged65andabove_2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+    #           options:
+    #             metadata_format: raw # default | tilejson
+    #             zoom:
+    #                 min: 0
+    #                 max: 15
+    #             schemes:
+    #                 - WorldCRS84Quad
+    #           format:
+    #             name: pbf
+    #             mimetype: application/vnd.mapbox-vector-tile
+
+    lansing_city_census_tracts_numberofpeoplebiketowork_2020:
+        type: collection
+        title: "No. Of People Travel by Bicycle to Work"
+        description: "Estimated percent of workers age 16 years or older who did not work at home who commuted to work by bicycle in 2017-2021. Percentage calculations are suppressed in cases where the denominator of the calculation was less than 10 of the unit that is being described (e.g., households, people, householders, etc.)."
+        keywords:
+            - Bike to Work
+            - Lansing
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/lansing_city_census_tracts_numberofpeoplebiketowork_2020
+              id_field: id
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/lansing_city_census_tracts_numberofpeoplebiketowork_2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    lansing_city_census_tracts_peopleagedabove5disability:
+        type: collection
+        title: "Number of People with Disability (aged 5 and above)"
+        description: "Count of civilian noninstitutionalized population with one or more types of disabilities, between 2017-2021. According to the Census, disability is defined as the product of interactions among individuals' bodies, and it takes into consideration physical, emotional, and mental health, as well as the physical and social environment in which people live, work or play. Disability occurs where these interactions result in limitations of activity and restrictions to full participation in school, work, home or the community."
+        keywords:
+            - Disability
+            - Lansing
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/lansing_city_census_tracts_peopleagedabove5disability
+              id_field: id
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/lansing_city_census_tracts_peopleagedabove5disability/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    # lansing_city_census_tracts_percentageofpeoplebiketowork_2020:
+    #     type: collection
+    #     title: "Number of People with Disability (aged 5 and above)"
+    #     description: "Count of civilian noninstitutionalized population with one or more types of disabilities, between 2017-2021. According to the Census, disability is defined as the product of interactions among individuals' bodies, and it takes into consideration physical, emotional, and mental health, as well as the physical and social environment in which people live, work or play. Disability occurs where these interactions result in limitations of activity and restrictions to full participation in school, work, home or the community."
+    #     keywords:
+    #         - Disability
+    #         - Lansing
+    #         - eMOTIONAL Cities
+    #     links:
+    #         - type: text/html
+    #           rel: canonical
+    #           title: metadata
+    #           # TODO: replace this later
+    #           href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+    #           hreflang: en-US
+    #     extents:
+    #         spatial:
+    #             bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+    #             crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+    #     providers:
+    #         - type: feature
+    #           name: Elasticsearch
+    #           data: http://elastic_search:9200/lansing_city_census_tracts_percentageofpeoplebiketowork_2020
+    #           id_field: id
+    #         - type: tile
+    #           name: MVT
+    #           data: http://elastic_search:9200/lansing_city_census_tracts_percentageofpeoplebiketowork_2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+    #           options:
+    #             metadata_format: raw # default | tilejson
+    #             zoom:
+    #                 min: 0
+    #                 max: 15
+    #             schemes:
+    #                 - WorldCRS84Quad
+    #           format:
+    #             name: pbf
+    #             mimetype: application/vnd.mapbox-vector-tile
+
+    lansing_city_census_tracts_traveltimetowork_17_21:
+        type: collection
+        title: "Average Travel Time to Work"
+        description: "Estimated average travel time to work in 2017-2021. The average travel time to work is the number of minutes required to reach place of employment for workers age 16 years or older. Averages are suppressed in cases where the sample of the average was less than 10 of the unit that is being described (e.g., households, people, householders, etc.)."
+        keywords:
+            - Travel Time to Work
+            - Lansing
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/lansing_city_census_tracts_traveltimetowork_17_21
+              id_field: id
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/lansing_city_census_tracts_traveltimetowork_17_21/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    lansing_coronaryheartdiseaseageabove18yrs_2019_cdc:
+        type: collection
+        title: "CrudeP - Coronary Heart Disease - Age Above 18 years"
+        description: "Model-based estimate for crude prevalence of coronary heart disease among adults aged >=18 years, 2019 AND Estimated confidence interval for crude prevalence of coronary heart disease among adults aged >=18 years"
+        keywords:
+            - Coronary Hearth Disease
+            - Lansing
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/lansing_coronaryheartdiseaseageabove18yrs_2019_cdc
+              id_field: id
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/lansing_coronaryheartdiseaseageabove18yrs_2019_cdc/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    lansing_currentasthmaageabove18yrs_2019_cdc:
+        type: collection
+        title: "CrudeP - Current Ashthma - Age Above 18 years"
+        description: "Model-based estimate for crude prevalence of current asthma among adults aged >=18 years, 2019 AND Estimated confidence interval for crude prevalence of current asthma among adults aged >=18 years"
+        keywords:
+            - Asthma
+            - Lansing
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/lansing_currentasthmaageabove18yrs_2019_cdc
+              id_field: id
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/lansing_currentasthmaageabove18yrs_2019_cdc/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    lansing_diabetesageabove18yrs_2019_cdc:
+        type: collection
+        title: "CrudeP - Diabeties - Age Above 18 years"
+        description: "Model-based estimate for crude prevalence of diagnosed diabetes among adults aged >=18 years, 2019 AND Estimated confidence interval for crude prevalence of diagnosed diabetes among adults aged >=18 years"
+        keywords:
+            - Diabetes
+            - Lansing
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/lansing_diabetesageabove18yrs_2019_cdc
+              id_field: id
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/lansing_diabetesageabove18yrs_2019_cdc/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    lansing_highbpageabove18yrs_2019_cdc:
+        type: collection
+        title: "CrudeP - High Blood Pressure - Age Above 18 years"
+        description: "Model-based estimate for crude prevalence of high blood pressure among adults aged >=18 years, 2019 AND Estimated confidence interval for crude prevalence of high blood pressure among adults aged >=18 years"
+        keywords:
+            - High Blood Pressure
+            - Lansing
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/lansing_highbpageabove18yrs_2019_cdc
+              id_field: id
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/lansing_highbpageabove18yrs_2019_cdc/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    lansing_noleisuretimepaageabove18yrs_2019_cdc:
+        type: collection
+        title: "CrudeP - No Leisure Time Physical Activity - Age Above 18 years"
+        description: "Model-based estimate for crude prevalence of no leisure-time physical activity among adults aged >=18 years, 2019 AND Estimated confidence interval for crude prevalence of no leisure-time physical activity among adults aged >=18 years"
+        keywords:
+            - Pysical Activity
+            - Lansing
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/lansing_noleisuretimepaageabove18yrs_2019_cdc
+              id_field: id
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/lansing_noleisuretimepaageabove18yrs_2019_cdc/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    lansing_obesityageabove18yrs_2019_cdc:
+        type: collection
+        title: "CrudeP - Obesity - Age Above 18 years"
+        description: "Model-based estimate for crude prevalence of obesity among adults aged >=18 years, 2019 AND Estimated confidence interval for crude prevalence of obesity among adults aged >=18 years"
+        keywords:
+            - Obesity
+            - Lansing
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/lansing_obesityageabove18yrs_2019_cdc
+              id_field: id
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/lansing_obesityageabove18yrs_2019_cdc/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    lansing_physicalhealthnotgoodageabove18yrs_2019_cdc:
+        type: collection
+        title: "CrudeP - Physical Health Not Good for People Aged Above 18 Years"
+        description: "Model-based estimate for crude prevalence of physical health not good for >=14 days among adults aged >=18 years, 2019 AND Estimated confidence interval for crude prevalence of physical health not good for >=14 days among adults aged >=18 years"
+        keywords:
+            - Physical Health
+            - Lansing
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/lansing_physicalhealthnotgoodageabove18yrs_2019_cdc
+              id_field: id
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/lansing_physicalhealthnotgoodageabove18yrs_2019_cdc/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    lansing_strokeageabove18yrs_2019_cdc:
+        type: collection
+        title: "CrudeP - Stroke -Age Above 18 Years"
+        description: "Model-based estimate for crude prevalence of stroke among adults aged >=18 years, 2019 AND Estimated confidence interval for crude prevalence of stroke among adults aged >=18 years"
+        keywords:
+            - Stroke
+            - Lansing
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/lansing_strokeageabove18yrs_2019_cdc
+              id_field: id
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/lansing_strokeageabove18yrs_2019_cdc/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
     ec_catalog:
         type: collection
         title: eMOTIONAL Cities Metadata catalog

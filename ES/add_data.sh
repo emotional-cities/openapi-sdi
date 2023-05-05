@@ -135,19 +135,19 @@ python3 /load_es_data.py /in/lansing_city_census_tracts_disability_2017_21.geojs
 python3 /load_es_data.py /in/lansing_city_census_tracts_lifeexpectancyatbirth_10_15.geojson id
 python3 /load_es_data.py /in/lansing_city_census_tracts_lowaccesstofood.geojson id
 python3 /load_es_data.py /in/lansing_city_census_tracts_lowincomelowaccess.geojson id
-# python3 /load_es_data.py /in/lansing_city_census_tracts_numberofpeopleaged65andabove_2020.geojson id
-# python3 /load_es_data.py /in/lansing_city_census_tracts_numberofpeoplebiketowork_2020.geojson id
-# python3 /load_es_data.py /in/lansing_city_census_tracts_peopleagedabove5disability.geojson id
+python3 /load_es_data.py /in/lansing_city_census_tracts_numberofpeopleaged65andabove_2020.geojson id
+python3 /load_es_data.py /in/lansing_city_census_tracts_numberofpeoplebiketowork_2020.geojson id
+python3 /load_es_data.py /in/lansing_city_census_tracts_peopleagedabove5disability.geojson id
 # python3 /load_es_data.py /in/lansing_city_census_tracts_percentageofpeoplebiketowork_2020.geojson id
-# python3 /load_es_data.py /in/lansing_city_census_tracts_traveltimetowork_17_21.geojson id
-# python3 /load_es_data.py /in/lansing_coronaryheartdiseaseageabove18yrs_2019_cdc.geojson id
-# python3 /load_es_data.py /in/lansing_currentasthmaageabove18yrs_2019_cdc.geojson id
-# python3 /load_es_data.py /in/lansing_diabetesageabove18yrs_2019_cdc.geojson id
-# python3 /load_es_data.py /in/lansing_highbpageabove18yrs_2019_cdc.geojson id
-# python3 /load_es_data.py /in/lansing_noleisuretimepaageabove18yrs_2019_cdc.geojson id
-# python3 /load_es_data.py /in/lansing_obesityageabove18yrs_2019_cdc.geojson id
-# python3 /load_es_data.py /in/lansing_physicalhealthnotgoodageabove18yrs_2019_cdc.geojson id
-# python3 /load_es_data.py /in/lansing_strokeageabove18yrs_2019_cdc.geojson id
+python3 /load_es_data.py /in/lansing_city_census_tracts_traveltimetowork_17_21.geojson id
+python3 /load_es_data.py /in/lansing_coronaryheartdiseaseageabove18yrs_2019_cdc.geojson id
+python3 /load_es_data.py /in/lansing_currentasthmaageabove18yrs_2019_cdc.geojson id
+python3 /load_es_data.py /in/lansing_diabetesageabove18yrs_2019_cdc.geojson id
+python3 /load_es_data.py /in/lansing_highbpageabove18yrs_2019_cdc.geojson id
+python3 /load_es_data.py /in/lansing_noleisuretimepaageabove18yrs_2019_cdc.geojson id
+python3 /load_es_data.py /in/lansing_obesityageabove18yrs_2019_cdc.geojson id
+python3 /load_es_data.py /in/lansing_physicalhealthnotgoodageabove18yrs_2019_cdc.geojson id
+python3 /load_es_data.py /in/lansing_strokeageabove18yrs_2019_cdc.geojson id
 
 
 echo "Seems that data was loaded"

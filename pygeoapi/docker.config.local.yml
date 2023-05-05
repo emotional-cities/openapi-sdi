@@ -1546,6 +1546,159 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
+    ucr_2019:
+        type: collection
+        title: "Lansing crime"
+        description: Lansing crime data (2019)
+        keywords:
+            - Lansing
+            - crime
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/ucr_2019
+              id_field: ObjectID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/ucr_2019/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    tl_rd22_26_bg:
+        type: collection
+        title: "Block Group"
+        description: Block group geometry
+        keywords:
+            - Block Group
+            - Lansing
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/tl_rd22_26_bg
+              id_field: ObjectID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/tl_rd22_26_bg/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    500cities_city_11082016:
+        type: collection
+        title: "City Boundary"
+        description: City boundary geometry
+        keywords:
+            - Boundary
+            - City
+            - Lansing
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/500cities_city_11082016
+              id_field: ObjectID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/500cities_city_11082016/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    500cities_tracts_11082016:
+        type: collection
+        title: "Census Tracts"
+        description: Census tracts geometry
+        keywords:
+            - Census Track
+            - Lansing
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/500cities_tracts_11082016
+              id_field: ObjectID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/500cities_tracts_11082016/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
     ec_catalog:
         type: collection
         title: eMOTIONAL Cities Metadata catalog

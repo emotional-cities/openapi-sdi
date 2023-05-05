@@ -119,6 +119,37 @@ python3 /load_es_data.py /in/GPS.Time.geojson id
 python3 /load_es_data.py /in/Humidity.Humidity.geojson id
 python3 /load_es_data.py /in/SoundPressureLevel.SPL.geojson id
 
+echo "Loading msu data"
+python3 /load_es_data.py /in/ucr_2019.geojson ObjectID
+python3 /load_es_data.py /in/tl_rd22_26_bg.geojson id
+python3 /load_es_data.py /in/500cities_city_11082016.geojson id
+python3 /load_es_data.py /in/500cities_tracts_11082016.geojson id
+# python3 /load_es_data.py /in/lansing_chronicobstructivepulmonarydiseaseageabove18yrs_2019_cdc.geojson id
+# python3 /load_es_data.py /in/lansing_city_block_group_areadeprivationindex_nationalscore_2020.geojson
+# python3 /load_es_data.py /in/lansing_city_blockgroup_areadeprivationindex_statescore_2020.geojson
+# python3 /load_es_data.py /in/lansing_city_block_group_genderratio_mtow_2017_21.geojson
+# python3 /load_es_data.py /in/lansing_city_block_group_nationalwalkabilityindex_2021.geojson
+# python3 /load_es_data.py /in/lansing_city_block_group_percapitaincome_2020.geojson
+# python3 /load_es_data.py /in/lansing_city_census_tracts_depression.geojson
+# python3 /load_es_data.py /in/lansing_city_census_tracts_disability_2017_21.geojson
+# python3 /load_es_data.py /in/lansing_city_census_tracts_lifeexpectancyatbirth_10_15.geojson
+# python3 /load_es_data.py /in/lansing_city_census_tracts_lowaccesstofood.geojson
+# python3 /load_es_data.py /in/lansing_city_census_tracts_lowincomelowaccess.geojson
+# python3 /load_es_data.py /in/lansing_city_census_tracts_numberofpeopleaged65andabove_2020.geojson
+# python3 /load_es_data.py /in/lansing_city_census_tracts_numberofpeoplebiketowork_2020.geojson
+# python3 /load_es_data.py /in/lansing_city_census_tracts_peopleagedabove5disability.geojson
+# python3 /load_es_data.py /in/lansing_city_census_tracts_percentageofpeoplebiketowork_2020.geojson
+# python3 /load_es_data.py /in/lansing_city_census_tracts_traveltimetowork_17_21.geojson
+# python3 /load_es_data.py /in/lansing_coronaryheartdiseaseageabove18yrs_2019_cdc.geojson
+# python3 /load_es_data.py /in/lansing_currentasthmaageabove18yrs_2019_cdc.geojson
+# python3 /load_es_data.py /in/lansing_diabetesageabove18yrs_2019_cdc.geojson
+# python3 /load_es_data.py /in/lansing_highbpageabove18yrs_2019_cdc.geojson
+# python3 /load_es_data.py /in/lansing_noleisuretimepaageabove18yrs_2019_cdc.geojson
+# python3 /load_es_data.py /in/lansing_obesityageabove18yrs_2019_cdc.geojson
+# python3 /load_es_data.py /in/lansing_physicalhealthnotgoodageabove18yrs_2019_cdc.geojson
+# python3 /load_es_data.py /in/lansing_strokeageabove18yrs_2019_cdc.geojson
+
+
 echo "Seems that data was loaded"
 
 ## *************************************************************

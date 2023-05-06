@@ -138,7 +138,7 @@ python3 /load_es_data.py /in/lansing_city_census_tracts_lowincomelowaccess.geojs
 python3 /load_es_data.py /in/lansing_city_census_tracts_numberofpeopleaged65andabove_2020.geojson id
 python3 /load_es_data.py /in/lansing_city_census_tracts_numberofpeoplebiketowork_2020.geojson id
 python3 /load_es_data.py /in/lansing_city_census_tracts_peopleagedabove5disability.geojson id
-# python3 /load_es_data.py /in/lansing_city_census_tracts_percentageofpeoplebiketowork_2020.geojson id
+python3 /load_es_data.py /in/lansing_city_census_tracts_percentageofpeoplebiketowork_2020.geojson id
 python3 /load_es_data.py /in/lansing_city_census_tracts_traveltimetowork_17_21.geojson id
 python3 /load_es_data.py /in/lansing_coronaryheartdiseaseageabove18yrs_2019_cdc.geojson id
 python3 /load_es_data.py /in/lansing_currentasthmaageabove18yrs_2019_cdc.geojson id

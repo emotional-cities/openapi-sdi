@@ -189,8 +189,8 @@ services:
       - mapstore
       - geoserver
     volumes:
-      - "/etc/letsencrypt/archive/emotional.byteroad.net/fullchain3.pem:/usr/local/apache2/conf/emotional/fullchain1.pem"
-      - "/etc/letsencrypt/archive/emotional.byteroad.net/privkey3.pem:/usr/local/apache2/conf/emotional/privkey1.pem"
+      - "/etc/letsencrypt/archive/emotional.byteroad.net/fullchain4.pem:/usr/local/apache2/conf/emotional/fullchain1.pem"
+      - "/etc/letsencrypt/archive/emotional.byteroad.net/privkey4.pem:/usr/local/apache2/conf/emotional/privkey1.pem"
       - "/etc/letsencrypt/archive/oldskool.byteroad.net/fullchain3.pem:/usr/local/apache2/conf/oldskool/fullchain1.pem"
       - "/etc/letsencrypt/archive/oldskool.byteroad.net/privkey3.pem:/usr/local/apache2/conf/oldskool/privkey1.pem"
       - ./apache-httpd/httpd-ssl.conf:/usr/local/apache2/conf/httpd.conf

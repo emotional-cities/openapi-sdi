@@ -1065,6 +1065,44 @@ resources:
     #             name: pbf
     #             mimetype: application/vnd.mapbox-vector-tile
 
+    lisbon_20210912_pr_:
+        type: collection
+        title: "Lisbon outdoor walk: test data"
+        description: Outdoor walk test data for calibrating instruments; run on 12/09/2021.
+        keywords:
+            - test
+            - sensors
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.1353880000000007,38.7098030000000008,-9.1282750000000004,38.7172610000000006]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/lisbon_20210912_pr_
+              id_field: fid
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/lisbon_20210912_pr_/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
     # airquality.airpressure.geojson:
     #     type: collection
     #     title: "London outdoor walk test data: Air Quality Air Pressure"
@@ -1737,44 +1775,44 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    # lansing_city_block_group_areadeprivationindex_nationalscore_2020:
-    #     type: collection
-    #     title: "Area Deprivation Index-State"
-    #     description: Area Deprivation Index state score in 2020. The Area Deprivation Index (ADI) ranks neighborhoods on the basis of socioeconomic disadvantage in the areas of income, education, employment, and housing quality. Areas with greater disadvantage are ranked higher. National scores are normalized to the whole country, and state scores are normalized to a particular state. Higher Area Deprivation Index scores have been shown to correlate with worse health outcomes in measures such as life expectancy. This index was created by researchers at the University of Wisconsin-Madison based on a methodology originally developed by the Health Resources and Services Administration. Areas on this map are ranked against other areas within the state. State scores represent deciles. In other words, they are divided into 10 groups of the same size, where 1 is the lowest rate of disadvantage and 10 is the highest.
-    #     keywords:
-    #         - Area Deprivation Index
-    #         - Lansing
-    #         - USA
-    #         - eMOTIONAL Cities
-    #     links:
-    #         - type: text/html
-    #           rel: canonical
-    #           title: metadata
-    #           # TODO: replace this later
-    #           href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
-    #           hreflang: en-US
-    #     extents:
-    #         spatial:
-    #             bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
-    #             crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-    #     providers:
-    #         - type: feature
-    #           name: Elasticsearch
-    #           data: http://elastic_search:9200/lansing_city_block_group_areadeprivationindex_nationalscore_2020
-    #           id_field: id
-    #         - type: tile
-    #           name: MVT
-    #           data: http://elastic_search:9200/lansing_city_block_group_areadeprivationindex_nationalscore_2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
-    #           options:
-    #             metadata_format: raw # default | tilejson
-    #             zoom:
-    #                 min: 0
-    #                 max: 15
-    #             schemes:
-    #                 - WorldCRS84Quad
-    #           format:
-    #             name: pbf
-    #             mimetype: application/vnd.mapbox-vector-tile
+    lansing_city_block_group_areadeprivationindex_nationalscore_2020:
+        type: collection
+        title: "Area Deprivation Index-State"
+        description: Area Deprivation Index state score in 2020. The Area Deprivation Index (ADI) ranks neighborhoods on the basis of socioeconomic disadvantage in the areas of income, education, employment, and housing quality. Areas with greater disadvantage are ranked higher. National scores are normalized to the whole country, and state scores are normalized to a particular state. Higher Area Deprivation Index scores have been shown to correlate with worse health outcomes in measures such as life expectancy. This index was created by researchers at the University of Wisconsin-Madison based on a methodology originally developed by the Health Resources and Services Administration. Areas on this map are ranked against other areas within the state. State scores represent deciles. In other words, they are divided into 10 groups of the same size, where 1 is the lowest rate of disadvantage and 10 is the highest.
+        keywords:
+            - Area Deprivation Index
+            - Lansing
+            - USA
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/lansing_city_block_group_areadeprivationindex_nationalscore_2020
+              id_field: id
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/lansing_city_block_group_areadeprivationindex_nationalscore_2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: raw # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
 
     lansing_city_blockgroup_areadeprivationindex_statescore_2020:
         type: collection

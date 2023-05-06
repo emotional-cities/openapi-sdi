@@ -105,6 +105,7 @@ echo "Loading clima data"
 python3 /load_es_data.py /in/Munich_220713_All.geojson id
 
 echo "Loading nrg data"
+python3 /load_es_data.py /in/lisbon_20210912_pr_.geojson fid
 python3 /load_es_data.py /in/AirQuality.AirPressure.geojson id
 python3 /load_es_data.py /in/AirQuality.Humidity.geojson id
 python3 /load_es_data.py /in/AirQuality.IAQIndex.geojson id
@@ -125,7 +126,7 @@ python3 /load_es_data.py /in/tl_rd22_26_bg.geojson id
 python3 /load_es_data.py /in/500cities_city_11082016.geojson id
 python3 /load_es_data.py /in/500cities_tracts_11082016.geojson id
 python3 /load_es_data.py /in/lansing_chronicobstructivepulmonarydiseaseageabove18yrs_2019_cdc.geojson id
-# python3 /load_es_data.py /in/lansing_city_block_group_areadeprivationindex_nationalscore_2020.geojson id
+python3 /load_es_data.py /in/lansing_city_block_group_areadeprivationindex_nationalscore_2020.geojson id
 python3 /load_es_data.py /in/lansing_city_blockgroup_areadeprivationindex_statescore_2020.geojson id
 python3 /load_es_data.py /in/lansing_city_block_group_genderratio_mtow_2017_21.geojson id
 python3 /load_es_data.py /in/lansing_city_block_group_nationalwalkabilityindex_2021.geojson id
@@ -148,7 +149,6 @@ python3 /load_es_data.py /in/lansing_noleisuretimepaageabove18yrs_2019_cdc.geojs
 python3 /load_es_data.py /in/lansing_obesityageabove18yrs_2019_cdc.geojson id
 python3 /load_es_data.py /in/lansing_physicalhealthnotgoodageabove18yrs_2019_cdc.geojson id
 python3 /load_es_data.py /in/lansing_strokeageabove18yrs_2019_cdc.geojson id
-
 
 echo "Seems that data was loaded"
 

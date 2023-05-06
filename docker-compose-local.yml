@@ -68,6 +68,7 @@ services:
       - elastic_search
     depends_on:
       - elastic_search
+    restart: on-failure
 
   elastic_search:
     build: ./ES

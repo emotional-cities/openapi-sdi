@@ -1,0 +1,23 @@
+<dataStore>
+  <id>DataStoreInfoImpl-15bc0f48:187faec7bda:-7ffa</id>
+  <name>ucr_2019</name>
+  <description>Lansing crime data (2019)</description>
+  <type>GeoPackage</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-15bc0f48:187faec7bda:-7ffc</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="fetch size">1000</entry>
+    <entry key="Expose primary keys">false</entry>
+    <entry key="Batch insert size">1</entry>
+    <entry key="database">file:///home/tomcat/ec_data/geopackage/ucr_2019.gpkg</entry>
+    <entry key="read_only">false</entry>
+    <entry key="dbtype">geopkg</entry>
+    <entry key="namespace">msu</entry>
+  </connectionParameters>
+  <__default>false</__default>
+  <dateCreated>2023-05-08 11:14:13.41 UTC</dateCreated>
+  <dateModified>2023-05-08 11:14:17.125 UTC</dateModified>
+  <disableOnConnFailure>false</disableOnConnFailure>
+</dataStore>

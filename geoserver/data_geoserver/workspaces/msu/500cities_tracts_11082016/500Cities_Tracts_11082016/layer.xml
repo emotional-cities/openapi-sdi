@@ -1,0 +1,16 @@
+<layer>
+  <name>500Cities_Tracts_11082016</name>
+  <id>LayerInfoImpl-15bc0f48:187faec7bda:-7fed</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-1b83c0bb:187002cf1d4:-7ffe</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-15bc0f48:187faec7bda:-7fee</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2023-05-08 11:22:44.497 UTC</dateCreated>
+</layer>

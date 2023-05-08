@@ -1,0 +1,22 @@
+<dataStore>
+  <id>DataStoreInfoImpl-15bc0f48:187faec7bda:-7fda</id>
+  <name>lansing_city_census_tracts_disability_2017_21</name>
+  <description>Percentage of people with Disability</description>
+  <type>GeoPackage</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-15bc0f48:187faec7bda:-7ffc</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="fetch size">1000</entry>
+    <entry key="Expose primary keys">false</entry>
+    <entry key="Batch insert size">1</entry>
+    <entry key="database">file:///home/tomcat/ec_data/geopackage/lansing_city_census_tracts_disability_2017_21.gpkg</entry>
+    <entry key="read_only">false</entry>
+    <entry key="dbtype">geopkg</entry>
+    <entry key="namespace">msu</entry>
+  </connectionParameters>
+  <__default>false</__default>
+  <dateCreated>2023-05-08 11:42:02.978 UTC</dateCreated>
+  <disableOnConnFailure>false</disableOnConnFailure>
+</dataStore>

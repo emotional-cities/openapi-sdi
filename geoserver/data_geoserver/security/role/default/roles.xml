@@ -3,6 +3,7 @@
 <role id="ADMIN"/>
 <role id="CAMB"/>
 <role id="GROUP_ADMIN"/>
+<role id="MSU"/>
 </roleList>
 <userList>
 <userRoles username="admin">

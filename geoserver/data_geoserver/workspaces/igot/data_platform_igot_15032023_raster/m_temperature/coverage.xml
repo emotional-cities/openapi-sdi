@@ -1,0 +1,120 @@
+<coverage>
+  <id>CoverageInfoImpl--5686dd53:187fb4157cb:-7fdf</id>
+  <name>m_temperature</name>
+  <nativeName>m_temperature</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--5686dd53:187fb4157cb:-7ffb</id>
+  </namespace>
+  <title>m_temperature</title>
+  <description>Generated from GeoPackage (mosaic)</description>
+  <keywords>
+    <string>m_temperature</string>
+    <string>WCS</string>
+    <string>GeoPackage (mosaic)</string>
+  </keywords>
+  <nativeCRS class="projected">PROJCS[&quot;ETRS89 / Portugal TM06&quot;, 
+  GEOGCS[&quot;ETRS89&quot;, 
+    DATUM[&quot;European Terrestrial Reference System 1989&quot;, 
+      SPHEROID[&quot;GRS 1980&quot;, 6378137.0, 298.257222101, AUTHORITY[&quot;EPSG&quot;,&quot;7019&quot;]], 
+      TOWGS84[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 
+      AUTHORITY[&quot;EPSG&quot;,&quot;6258&quot;]], 
+    PRIMEM[&quot;Greenwich&quot;, 0.0, AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]], 
+    UNIT[&quot;degree&quot;, 0.017453292519943295], 
+    AXIS[&quot;Geodetic longitude&quot;, EAST], 
+    AXIS[&quot;Geodetic latitude&quot;, NORTH], 
+    AUTHORITY[&quot;EPSG&quot;,&quot;4258&quot;]], 
+  PROJECTION[&quot;Transverse_Mercator&quot;, AUTHORITY[&quot;EPSG&quot;,&quot;9807&quot;]], 
+  PARAMETER[&quot;central_meridian&quot;, -8.133108333333334], 
+  PARAMETER[&quot;latitude_of_origin&quot;, 39.66825833333334], 
+  PARAMETER[&quot;scale_factor&quot;, 1.0], 
+  PARAMETER[&quot;false_easting&quot;, 0.0], 
+  PARAMETER[&quot;false_northing&quot;, 0.0], 
+  UNIT[&quot;m&quot;, 1.0], 
+  AXIS[&quot;Easting&quot;, EAST], 
+  AXIS[&quot;Northing&quot;, NORTH], 
+  AUTHORITY[&quot;EPSG&quot;,&quot;3763&quot;]]</nativeCRS>
+  <srs>EPSG:3763</srs>
+  <nativeBoundingBox>
+    <minx>-95481.72980056284</minx>
+    <maxx>-69881.72980056283</maxx>
+    <miny>-121866.6820811107</miny>
+    <maxy>-96266.68208111076</maxy>
+    <crs class="projected">EPSG:3763</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-9.232168652305866</minx>
+    <maxx>-8.934949502620242</maxx>
+    <miny>38.565409250853314</miny>
+    <maxy>38.798377982368834</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>REPROJECT_TO_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="dirName">data_platform_igot_15032023_raster_m_temperature</entry>
+  </metadata>
+  <store class="coverageStore">
+    <id>CoverageStoreInfoImpl--5686dd53:187fb4157cb:-7fe6</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <internationalTitle/>
+  <internationalAbstract/>
+  <nativeFormat>GeoPackage (mosaic)</nativeFormat>
+  <grid dimension="2">
+    <range>
+      <low>0 0</low>
+      <high>256 256</high>
+    </range>
+    <transform>
+      <scaleX>24.95673606398597</scaleX>
+      <scaleY>-24.956736063985915</scaleY>
+      <shearX>0.0</shearX>
+      <shearY>0.0</shearY>
+      <translateX>-95400.45739863932</translateX>
+      <translateY>-96325.8014676836</translateY>
+    </transform>
+    <crs>EPSG:3763</crs>
+  </grid>
+  <supportedFormats>
+    <string>GEOTIFF</string>
+    <string>ArcGrid</string>
+    <string>GeoPackage (mosaic)</string>
+    <string>GIF</string>
+    <string>PNG</string>
+    <string>JPEG</string>
+    <string>TIFF</string>
+    <string>ImageMosaic</string>
+  </supportedFormats>
+  <interpolationMethods>
+    <string>nearest neighbor</string>
+    <string>bilinear</string>
+    <string>bicubic</string>
+  </interpolationMethods>
+  <defaultInterpolationMethod>nearest neighbor</defaultInterpolationMethod>
+  <dimensions>
+    <coverageDimension>
+      <name>m_temperature</name>
+      <description>GridSampleDimension[0.0,255.0]</description>
+      <range>
+        <min>0.0</min>
+        <max>255.0</max>
+      </range>
+      <dimensionType>
+        <name>UNSIGNED_8BITS</name>
+      </dimensionType>
+    </coverageDimension>
+    <coverageDimension>
+      <name>m_temperature</name>
+      <description>GridSampleDimension[0.0,255.0]</description>
+      <range>
+        <min>0.0</min>
+        <max>255.0</max>
+      </range>
+      <dimensionType>
+        <name>UNSIGNED_8BITS</name>
+      </dimensionType>
+    </coverageDimension>
+  </dimensions>
+  <nativeCoverageName>m_temperature</nativeCoverageName>
+</coverage>

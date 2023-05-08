@@ -1,0 +1,115 @@
+<coverage>
+  <id>CoverageInfoImpl--5686dd53:187fb4157cb:-7fe1</id>
+  <name>ff_density</name>
+  <nativeName>ff_density</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--5686dd53:187fb4157cb:-7ffb</id>
+  </namespace>
+  <title>ff_density</title>
+  <description>Generated from GeoPackage (mosaic)</description>
+  <keywords>
+    <string>ff_density</string>
+    <string>WCS</string>
+    <string>GeoPackage (mosaic)</string>
+  </keywords>
+  <nativeCRS class="projected">PROJCS[&quot;NAD83 / Austin&quot;, 
+  GEOGCS[&quot;NAD83&quot;, 
+    DATUM[&quot;North_American_Datum_1983&quot;, 
+      SPHEROID[&quot;GRS 1980&quot;, 6378137.0, 298.257222101], 
+      TOWGS84[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]], 
+    PRIMEM[&quot;Greenwich&quot;, 0.0], 
+    UNIT[&quot;degree&quot;, 0.017453292519943295], 
+    AXIS[&quot;Longitude&quot;, EAST], 
+    AXIS[&quot;Latitude&quot;, NORTH]], 
+  PROJECTION[&quot;Lambert_Conformal_Conic_2SP&quot;], 
+  PARAMETER[&quot;central_meridian&quot;, -100.333333333333], 
+  PARAMETER[&quot;latitude_of_origin&quot;, 29.6666666666667], 
+  PARAMETER[&quot;standard_parallel_1&quot;, 31.8833333333333], 
+  PARAMETER[&quot;false_easting&quot;, 2296583.333333], 
+  PARAMETER[&quot;false_northing&quot;, 9842500.0], 
+  PARAMETER[&quot;scale_factor&quot;, 1.0], 
+  PARAMETER[&quot;standard_parallel_2&quot;, 30.1166666666667], 
+  UNIT[&quot;m&quot;, 1.0], 
+  AXIS[&quot;x&quot;, EAST], 
+  AXIS[&quot;y&quot;, NORTH], 
+  AUTHORITY[&quot;EPSG&quot;,&quot;100002&quot;]]</nativeCRS>
+  <srs>EPSG:100002</srs>
+  <nativeBoundingBox>
+    <minx>-95412.91290000072</minx>
+    <maxx>-82612.91290000072</maxx>
+    <miny>-109118.3289999979</miny>
+    <maxy>-96318.32899999796</maxy>
+    <crs class="projected">EPSG:100002</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-113.12534756496683</minx>
+    <maxx>-113.04970095019291</maxx>
+    <miny>-39.3568770474014</miny>
+    <maxy>-39.298125698729784</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>REPROJECT_TO_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="dirName">data_platform_igot_15032023_raster_ff_density</entry>
+  </metadata>
+  <store class="coverageStore">
+    <id>CoverageStoreInfoImpl--5686dd53:187fb4157cb:-7fe6</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <internationalTitle/>
+  <internationalAbstract/>
+  <nativeFormat>GeoPackage (mosaic)</nativeFormat>
+  <grid dimension="2">
+    <range>
+      <low>0 0</low>
+      <high>512 512</high>
+    </range>
+    <transform>
+      <scaleX>24.95673606398597</scaleX>
+      <scaleY>-24.956736063985915</scaleY>
+      <shearX>0.0</shearX>
+      <shearY>0.0</shearY>
+      <translateX>-95400.45739863932</translateX>
+      <translateY>-96325.8014676836</translateY>
+    </transform>
+    <crs>EPSG:100002</crs>
+  </grid>
+  <supportedFormats>
+    <string>GEOTIFF</string>
+    <string>ArcGrid</string>
+    <string>GeoPackage (mosaic)</string>
+    <string>GIF</string>
+    <string>PNG</string>
+    <string>JPEG</string>
+    <string>TIFF</string>
+    <string>ImageMosaic</string>
+  </supportedFormats>
+  <interpolationMethods>
+    <string>nearest neighbor</string>
+    <string>bilinear</string>
+    <string>bicubic</string>
+  </interpolationMethods>
+  <defaultInterpolationMethod>nearest neighbor</defaultInterpolationMethod>
+  <dimensions>
+    <coverageDimension>
+      <name>ff_density</name>
+      <description>GridSampleDimension[0.0,255.0]</description>
+      <range>
+        <min>0.0</min>
+        <max>255.0</max>
+      </range>
+      <dimensionType>
+        <name>UNSIGNED_8BITS</name>
+      </dimensionType>
+    </coverageDimension>
+  </dimensions>
+  <requestSRS>
+    <string>EPSG:100002</string>
+  </requestSRS>
+  <responseSRS>
+    <string>EPSG:100002</string>
+  </responseSRS>
+  <nativeCoverageName>ff_density</nativeCoverageName>
+</coverage>

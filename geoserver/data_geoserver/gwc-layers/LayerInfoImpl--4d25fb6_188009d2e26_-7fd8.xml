@@ -1,8 +1,8 @@
 <GeoServerTileLayer>
-  <id>LayerInfoImpl--5686dd53:187fb4157cb:-7fe8</id>
+  <id>LayerInfoImpl--4d25fb6:188009d2e26:-7fd8</id>
   <enabled>true</enabled>
   <inMemoryCached>true</inMemoryCached>
-  <name>igot:urban_health_data</name>
+  <name>ngr:GPS.Data</name>
   <mimeFormats>
     <string>image/png</string>
     <string>image/jpeg</string>
@@ -26,7 +26,7 @@
       <key>STYLES</key>
       <defaultValue></defaultValue>
       <availableStyles class="sorted-set"/>
-      <defaultStyle>polygon</defaultStyle>
+      <defaultStyle>point</defaultStyle>
     </styleParameterFilter>
   </parameterFilters>
   <gutter>0</gutter>

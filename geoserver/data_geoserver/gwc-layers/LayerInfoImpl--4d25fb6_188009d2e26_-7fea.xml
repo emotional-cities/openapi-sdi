@@ -1,8 +1,8 @@
 <GeoServerTileLayer>
-  <id>LayerInfoImpl--5686dd53:187fb4157cb:-7fde</id>
+  <id>LayerInfoImpl--4d25fb6:188009d2e26:-7fea</id>
   <enabled>true</enabled>
   <inMemoryCached>true</inMemoryCached>
-  <name>igot:m_temperature</name>
+  <name>ngr:AirQuality.Temperature</name>
   <mimeFormats>
     <string>image/png</string>
     <string>image/jpeg</string>
@@ -26,7 +26,7 @@
       <key>STYLES</key>
       <defaultValue></defaultValue>
       <availableStyles class="sorted-set"/>
-      <defaultStyle>raster</defaultStyle>
+      <defaultStyle>point</defaultStyle>
     </styleParameterFilter>
   </parameterFilters>
   <gutter>0</gutter>

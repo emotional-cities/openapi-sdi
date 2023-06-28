@@ -203,18 +203,12 @@ services:
 
 volumes:
   elastic_search_data: {}
-  geoserver_data:
-    driver: local
-  geoserver_gwc_data:
-    driver: local
   postgis_data:
     driver: local
 
 networks:
   default:
     driver: bridge
-  proxynet:
-    name: minioNet # Minio's network
 
 #NOTE: Host requires changes in configuration to run ES
 #sudo sysctl -w vm.max_map_count=262144

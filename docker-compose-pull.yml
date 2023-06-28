@@ -188,15 +188,9 @@ services:
 
 volumes:
   elastic_search_data: {}
-  geoserver_data:
-    driver: local
-  geoserver_gwc_data:
-    driver: local
   postgis_data:
     driver: local
 
 networks:
   default:
     driver: bridge
-  proxynet:
-    name: minioNet # Minio's network

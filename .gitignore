@@ -62,5 +62,8 @@
 ./ES/data/Humidity.Humidity.geojson
 ./ES/data/SoundPressureLevel.SPL.geojson
 ./logstash/data/metadata.csv
+./geoserver/data_geoserver/gwc-layers/
+./geoserver/data_geoserver/logs/
+./geoserver/data_geoserver/security/
 
 

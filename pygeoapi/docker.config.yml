@@ -1494,7 +1494,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    munich:
+    munich_220713_all:
         type: collection
         title: Munich_220713_All
         description: No metadata

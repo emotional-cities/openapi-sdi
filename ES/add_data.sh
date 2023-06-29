@@ -114,7 +114,7 @@ python3 /load_es_data.py /in/hex350_grid_pm10_2019.geojson fid
 python3 /load_es_data.py /in/hex350_grid_pm25_2019.geojson fid
 
 echo "Loading clima data"
-python3 /load_es_data.py /in/Munich_220713_All.geojson id
+python3 /load_es_data.py /in/munich_220713_all.geojson id
 
 echo "Loading nrg data"
 python3 /load_es_data.py /in/lisbon_20210912_pr_.geojson fid

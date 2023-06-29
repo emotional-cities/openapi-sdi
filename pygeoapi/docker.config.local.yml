@@ -1574,42 +1574,42 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    # munich:
-    #     type: collection
-    #     title: Munich_220713_All
-    #     description: No metadata
-    #     keywords:
-    #         - No metadata
-    #         - eMOTIONAL Cities
-    #     links:
-    #         - type: text/html
-    #           rel: canonical
-    #           title: metadata
-    #           # TODO: replace this later
-    #           href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
-    #           hreflang: en-US
-    #     extents:
-    #         spatial:
-    #             bbox: [11.5644449999999992,48.1301429999999968,11.5916280000000000,48.1480109999999968]
-    #             crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-    #     providers:
-    #         - type: feature
-    #           name: Elasticsearch
-    #           data: http://elastic_search:9200/munich_220713_all
-    #           id_field: id
-    #         - type: tile
-    #           name: MVT
-    #           data: http://elastic_search:9200/munich_220713_all/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
-    #           options:
-    #             metadata_format: default # default | tilejson
-    #             zoom:
-    #                 min: 0
-    #                 max: 15
-    #             schemes:
-    #                 - WorldCRS84Quad
-    #           format:
-    #             name: pbf
-    #             mimetype: application/vnd.mapbox-vector-tile
+    munich_220713_all:
+        type: collection
+        title: Munich_220713_All
+        description: No metadata
+        keywords:
+            - No metadata
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # TODO: replace this later
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [11.5644449999999992,48.1301429999999968,11.5916280000000000,48.1480109999999968]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/munich_220713_all
+              id_field: id
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/munich_220713_all/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: default # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
 
     # lisbon_20210912_pr_:
     #     type: collection

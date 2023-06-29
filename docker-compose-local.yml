@@ -61,9 +61,6 @@ services:
       - ./pygeoapi/es-entrypoint.sh:/es-entrypoint.sh
       - ./pygeoapi/wait-for-elasticsearch.sh:/wait-for-elasticsearch.sh
       - ./ES/data:/data
-    networks:
-      - proxynet
-      - default
     links:
       - elastic_search
     depends_on:
@@ -179,10 +176,6 @@ volumes:
   elastic_search_data: {}
   postgis_data:
     driver: local
-
-networks:
-  default:
-    driver: bridge
 
 #NOTE: Host requires changes in configuration to run ES
 #sudo sysctl -w vm.max_map_count=262144

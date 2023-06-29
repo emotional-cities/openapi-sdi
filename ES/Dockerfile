@@ -47,16 +47,15 @@ RUN apt update && apt install -y wget
 
 RUN wget https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh -O bin/wait-for-it.sh
 RUN chmod +x bin/wait-for-it.sh
-# RUN wget https://raw.githubusercontent.com/geopython/pygeoapi/master/tests/data/ne_110m_populated_places_simple.geojson -O ${DATA_FOLDER}/ne_110m_populated_places_simple.geojson
 RUN wget https://raw.githubusercontent.com/geopython/pygeoapi/master/tests/load_es_data.py -O /load_es_data.py
 
 RUN echo "xpack.security.enabled: false" >> config/elasticsearch.yml
 RUN echo "http.host: 0.0.0.0" >> config/elasticsearch.yml
 RUN echo "discovery.type: single-node" >> config/elasticsearch.yml
 
-RUN     apt install -y python3 python3-pip python3-setuptools python-typing \
-        && pip3 install --upgrade pip elasticsearch==8.4.0 elasticsearch-dsl \
-	&& apt clean packages
+RUN     apt install -y python3 python3-pip python3-setuptools python-typing
+RUN     pip3 install --upgrade pip elasticsearch==8.4.0 elasticsearch-dsl
+RUN     apt clean packages
 
 USER elasticsearch
 

@@ -74,10 +74,22 @@ python3 /load_es_data.py /in/masked.geojson fid
 # python3 /load_es_data.py /in/metadata/ec_catalog.geojson id
 
 echo "Loading igot data"
-python3 /load_es_data.py /in/a0000000a.geojson OBJECTID
-python3 /load_es_data.py /in/a0000000b.geojson OBJECTID
 python3 /load_es_data.py /in/a0000000c.geojson OBJECTID
-python3 /load_es_data.py /in/a00000009.geojson OBJECTID
+python3 /load_es_data.py /in/l_birth_ra.geojson FID
+python3 /load_es_data.py /in/morta_rat.geojson FID
+python3 /load_es_data.py /in/als.geojson FID
+python3 /load_es_data.py /in/pp_diabete.geojson FID
+python3 /load_es_data.py /in/pp_alcohol.geojson FID
+python3 /load_es_data.py /in/pp_tobacco.geojson FID
+python3 /load_es_data.py /in/pp_overwei.geojson FID
+python3 /load_es_data.py /in/pp_obesity.geojson FID
+python3 /load_es_data.py /in/pp_hyperte.geojson FID
+python3 /load_es_data.py /in/pp_myo_inf.geojson FID
+python3 /load_es_data.py /in/pp_isc_myo.geojson FID
+python3 /load_es_data.py /in/pp_dementi.geojson FID
+python3 /load_es_data.py /in/pp_anxi_di.geojson FID
+python3 /load_es_data.py /in/pp_an_ne_t.geojson FID
+python3 /load_es_data.py /in/pp_depress.geojson FID
 
 echo "Loading camb data"
 python3 /load_es_data.py /in/hex350_grid_popden_2020.geojson fid

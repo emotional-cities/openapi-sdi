@@ -42,9 +42,6 @@ services:
       AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
     env_file:
       - .env     # path to your .env file
-    networks:
-      - proxynet
-      - default
     volumes:
       #- ./pygeoapi/docker.config.yml:/pygeoapi/local.config-orig.yml
       - ./pygeoapi/docker.config.yml:/pygeoapi/local.config.yml
@@ -190,7 +187,3 @@ volumes:
   elastic_search_data: {}
   postgis_data:
     driver: local
-
-networks:
-  default:
-    driver: bridge

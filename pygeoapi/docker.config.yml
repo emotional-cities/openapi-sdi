@@ -104,8 +104,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/hex350_grid_cardio_1920
               hreflang: en-US
         extents:
             spatial:
@@ -143,8 +143,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/hex350_grid_obesity_1920
               hreflang: en-US
         extents:
             spatial:
@@ -182,8 +182,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/hex350_grid_depression_1920
               hreflang: en-US
         extents:
             spatial:
@@ -221,8 +221,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/hex350_grid_mental_1920
               hreflang: en-US
         extents:
             spatial:
@@ -260,8 +260,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/hex350_grid_demantia_1920
               hreflang: en-US
         extents:
             spatial:
@@ -299,8 +299,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/hex350_grid_access2openspace
               hreflang: en-US
         extents:
             spatial:
@@ -338,8 +338,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/hex350_grid_ndvi2022
               hreflang: en-US
         extents:
             spatial:
@@ -377,8 +377,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/hex350_grid_pm25_2019
               hreflang: en-US
         extents:
             spatial:
@@ -416,8 +416,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/hex350_grid_pm10_2019
               hreflang: en-US
         extents:
             spatial:
@@ -455,8 +455,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/hex350_grid_no2_2019
               hreflang: en-US
         extents:
             spatial:
@@ -494,8 +494,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/hex350_grid_laeq16h
               hreflang: en-US
         extents:
             spatial:
@@ -533,8 +533,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/hex350_grid_flood_4band
               hreflang: en-US
         extents:
             spatial:
@@ -572,8 +572,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/hex350_grid_avglst
               hreflang: en-US
         extents:
             spatial:
@@ -611,8 +611,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/hex350_grid_cycleroutes2021
               hreflang: en-US
         extents:
             spatial:
@@ -650,8 +650,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/hex350_grid_hindex2020
               hreflang: en-US
         extents:
             spatial:
@@ -689,8 +689,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/hex350_grid_popden_2020
               hreflang: en-US
         extents:
             spatial:
@@ -728,8 +728,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/hex350_grid_gender2020
               hreflang: en-US
         extents:
             spatial:
@@ -767,8 +767,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/hex350_grid_age2020
               hreflang: en-US
         extents:
             spatial:
@@ -806,8 +806,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/hex350_grid_active2020
               hreflang: en-US
         extents:
             spatial:
@@ -845,8 +845,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/hex350_grid_crime_22
               hreflang: en-US
         extents:
             spatial:
@@ -883,8 +883,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/perception_data
               hreflang: en-US
         extents:
             spatial:
@@ -922,8 +922,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/l_birth_ra
               hreflang: en-US
         extents:
             spatial:
@@ -961,8 +961,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/morta_rat
               hreflang: en-US
         extents:
             spatial:
@@ -1000,8 +1000,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/als
               hreflang: en-US
         extents:
             spatial:
@@ -1039,8 +1039,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_diabete
               hreflang: en-US
         extents:
             spatial:
@@ -1078,8 +1078,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_alcohol
               hreflang: en-US
         extents:
             spatial:
@@ -1117,8 +1117,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_tobacco
               hreflang: en-US
         extents:
             spatial:
@@ -1156,8 +1156,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_overwei
               hreflang: en-US
         extents:
             spatial:
@@ -1195,8 +1195,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_obesity
               hreflang: en-US
         extents:
             spatial:
@@ -1234,8 +1234,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_hyperte
               hreflang: en-US
         extents:
             spatial:
@@ -1273,8 +1273,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_myo_inf
               hreflang: en-US
         extents:
             spatial:
@@ -1312,8 +1312,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_isc_myo
               hreflang: en-US
         extents:
             spatial:
@@ -1351,8 +1351,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_dementi
               hreflang: en-US
         extents:
             spatial:
@@ -1390,8 +1390,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_anxi_di
               hreflang: en-US
         extents:
             spatial:
@@ -1429,8 +1429,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_an_ne_t
               hreflang: en-US
         extents:
             spatial:
@@ -1468,8 +1468,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
               hreflang: en-US
         extents:
             spatial:
@@ -1505,8 +1505,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/munich_220713_all
               hreflang: en-US
         extents:
             spatial:
@@ -1543,8 +1543,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/lisbon_20210912_pr_
               hreflang: en-US
         extents:
             spatial:
@@ -1580,8 +1580,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/airquality.airpressure.geojson
               hreflang: en-US
         extents:
             spatial:
@@ -1617,8 +1617,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/airquality.humidity.geojson
               hreflang: en-US
         extents:
             spatial:
@@ -1654,8 +1654,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/airquality.iaqindex.geojson
               hreflang: en-US
         extents:
             spatial:
@@ -1691,8 +1691,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/airquality.temperature.geojson
               hreflang: en-US
         extents:
             spatial:
@@ -1728,8 +1728,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/ambientlight.ambientlight.geojson
               hreflang: en-US
         extents:
             spatial:
@@ -1765,8 +1765,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/analogin.voltage.geojson
               hreflang: en-US
         extents:
             spatial:
@@ -1802,8 +1802,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/co2v2.co2conc.geojson
               hreflang: en-US
         extents:
             spatial:
@@ -1839,8 +1839,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/co2v2.humidity.geojson
               hreflang: en-US
         extents:
             spatial:
@@ -1876,8 +1876,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/co2v2.temperature.geojson
               hreflang: en-US
         extents:
             spatial:
@@ -1913,8 +1913,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/gps.data.geojson
               hreflang: en-US
         extents:
             spatial:
@@ -1950,8 +1950,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/gps.time
               hreflang: en-US
         extents:
             spatial:
@@ -1987,8 +1987,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/humidity.humidity
               hreflang: en-US
         extents:
             spatial:
@@ -2024,8 +2024,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/soundpressurelevel.spl
               hreflang: en-US
         extents:
             spatial:
@@ -2062,8 +2062,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/ucr_2019
               hreflang: en-US
         extents:
             spatial:
@@ -2100,8 +2100,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/tl_rd22_26_bg
               hreflang: en-US
         extents:
             spatial:
@@ -2139,8 +2139,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/500cities_city_11082016
               hreflang: en-US
         extents:
             spatial:
@@ -2177,8 +2177,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/500cities_tracts_11082016
               hreflang: en-US
         extents:
             spatial:
@@ -2215,8 +2215,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/lansing_chronicobstructivepulmonarydiseaseageabove18yrs_2019_cdc
               hreflang: en-US
         extents:
             spatial:
@@ -2254,8 +2254,8 @@ resources:
     #         - type: text/html
     #           rel: canonical
     #           title: metadata
-    #           # TODO: replace this later
-    #           href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+    #           # The link to metadata record
+    #           href: https://emotional.byteroad.net/collections/ec_catalog/items/lansing_city_block_group_areadeprivationindex_nationalscore_2020
     #           hreflang: en-US
     #     extents:
     #         spatial:
@@ -2292,8 +2292,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/lansing_city_blockgroup_areadeprivationindex_statescore_2020
               hreflang: en-US
         extents:
             spatial:
@@ -2330,8 +2330,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/lansing_city_block_group_genderratio_mtow_2017_21
               hreflang: en-US
         extents:
             spatial:
@@ -2368,8 +2368,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/lansing_city_block_group_nationalwalkabilityindex_2021
               hreflang: en-US
         extents:
             spatial:
@@ -2407,8 +2407,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/lansing_city_block_group_percapitaincome_2020
               hreflang: en-US
         extents:
             spatial:
@@ -2445,8 +2445,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/lansing_city_census_tracts_depression
               hreflang: en-US
         extents:
             spatial:
@@ -2483,8 +2483,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/lansing_city_census_tracts_disability_2017_21
               hreflang: en-US
         extents:
             spatial:
@@ -2521,8 +2521,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/lansing_city_census_tracts_lifeexpectancyatbirth_10_15
               hreflang: en-US
         extents:
             spatial:
@@ -2559,8 +2559,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/lansing_city_census_tracts_lowaccesstofood
               hreflang: en-US
         extents:
             spatial:
@@ -2598,8 +2598,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/lansing_city_census_tracts_lowincomelowaccess
               hreflang: en-US
         extents:
             spatial:
@@ -2637,8 +2637,8 @@ resources:
     #         - type: text/html
     #           rel: canonical
     #           title: metadata
-    #           # TODO: replace this later
-    #           href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+    #           # The link to metadata record
+    #           href: https://emotional.byteroad.net/collections/ec_catalog/items/lansing_city_census_tracts_numberofpeopleaged65andabove_2020
     #           hreflang: en-US
     #     extents:
     #         spatial:
@@ -2675,8 +2675,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/lansing_city_census_tracts_numberofpeoplebiketowork_2020
               hreflang: en-US
         extents:
             spatial:
@@ -2713,8 +2713,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/lansing_city_census_tracts_peopleagedabove5disability
               hreflang: en-US
         extents:
             spatial:
@@ -2751,8 +2751,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/lansing_city_census_tracts_percentageofpeoplebiketowork_2020
               hreflang: en-US
         extents:
             spatial:
@@ -2789,8 +2789,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/lansing_city_census_tracts_traveltimetowork_17_21
               hreflang: en-US
         extents:
             spatial:
@@ -2827,8 +2827,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/lansing_coronaryheartdiseaseageabove18yrs_2019_cdc
               hreflang: en-US
         extents:
             spatial:
@@ -2865,8 +2865,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/lansing_currentasthmaageabove18yrs_2019_cdc
               hreflang: en-US
         extents:
             spatial:
@@ -2903,8 +2903,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/lansing_diabetesageabove18yrs_2019_cdc
               hreflang: en-US
         extents:
             spatial:
@@ -2941,8 +2941,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/lansing_highbpageabove18yrs_2019_cdc
               hreflang: en-US
         extents:
             spatial:
@@ -2979,8 +2979,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/lansing_noleisuretimepaageabove18yrs_2019_cdc
               hreflang: en-US
         extents:
             spatial:
@@ -3017,8 +3017,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/lansing_obesityageabove18yrs_2019_cdc
               hreflang: en-US
         extents:
             spatial:
@@ -3055,8 +3055,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/lansing_physicalhealthnotgoodageabove18yrs_2019_cdc
               hreflang: en-US
         extents:
             spatial:
@@ -3093,8 +3093,8 @@ resources:
             - type: text/html
               rel: canonical
               title: metadata
-              # TODO: replace this later
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/6c22e1572c4f4a44121d0e50cf6141
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/lansing_strokeageabove18yrs_2019_cdc
               hreflang: en-US
         extents:
             spatial:

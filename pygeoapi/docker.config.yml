@@ -873,8 +873,8 @@ resources:
 
     perception_data:
         type: collection
-        title: Perception data
-        description: Data Platform IGOT 
+        title: Positive tweets
+        description: Data Platform IGOT - Perception data
         keywords:
             - Lisbon
             - eMOTIONAL Cities
@@ -912,7 +912,7 @@ resources:
     l_birth_ra:
         type: collection
         title: Life births rate
-        description: Data Platform IGOT 
+        description: Data Platform IGOT - Urban health
         keywords:
             - Lisbon
             - eMOTIONAL Cities
@@ -951,7 +951,7 @@ resources:
     morta_rat:
         type: collection
         title: Mortality rate
-        description: Data Platform IGOT 
+        description: Data Platform IGOT - Urban health
         keywords:
             - Lisbon
             - eMOTIONAL Cities
@@ -990,7 +990,7 @@ resources:
     als:
         type: collection
         title: Amyotrophic lateral sclerosis cases
-        description: Data Platform IGOT 
+        description: Data Platform IGOT - Urban health
         keywords:
             - Lisbon
             - eMOTIONAL Cities
@@ -1029,7 +1029,7 @@ resources:
     pp_diabete:
         type: collection
         title: Patients with Diabetes Mellitus
-        description: Data Platform IGOT 
+        description: Data Platform IGOT - Urban health
         keywords:
             - Lisbon
             - eMOTIONAL Cities
@@ -1068,7 +1068,7 @@ resources:
     pp_alcohol:
         type: collection
         title: Patients with chronic alcohol abuse
-        description: Data Platform IGOT 
+        description: Data Platform IGOT - Urban health
         keywords:
             - Lisbon
             - eMOTIONAL Cities
@@ -1107,7 +1107,7 @@ resources:
     pp_tobacco:
         type: collection
         title: Patients with tobacco abuse
-        description: Data Platform IGOT 
+        description: Data Platform IGOT - Urban health
         keywords:
             - Lisbon
             - eMOTIONAL Cities
@@ -1146,7 +1146,7 @@ resources:
     pp_overwei:
         type: collection
         title: Patients with overweight
-        description: Data Platform IGOT 
+        description: Data Platform IGOT - Urban health
         keywords:
             - Lisbon
             - eMOTIONAL Cities
@@ -1185,7 +1185,7 @@ resources:
     pp_obesity:
         type: collection
         title: Patients with obesity
-        description: Data Platform IGOT 
+        description: Data Platform IGOT - Urban health
         keywords:
             - Lisbon
             - eMOTIONAL Cities
@@ -1224,7 +1224,7 @@ resources:
     pp_hyperte:
         type: collection
         title: Patients with hypertension
-        description: Data Platform IGOT 
+        description: Data Platform IGOT - Urban health
         keywords:
             - Lisbon
             - eMOTIONAL Cities
@@ -1263,7 +1263,7 @@ resources:
     pp_myo_inf:
         type: collection
         title: Patients with acute myocardial infarction
-        description: Data Platform IGOT 
+        description: Data Platform IGOT - Urban health
         keywords:
             - Lisbon
             - eMOTIONAL Cities
@@ -1302,7 +1302,7 @@ resources:
     pp_isc_myo:
         type: collection
         title: Patients with ischemic heart disease
-        description: Data Platform IGOT 
+        description: Data Platform IGOT - Urban health
         keywords:
             - Lisbon
             - eMOTIONAL Cities
@@ -1341,7 +1341,7 @@ resources:
     pp_dementi:
         type: collection
         title: Patients diagnosed with dementia
-        description: Data Platform IGOT 
+        description: Data Platform IGOT - Urban health
         keywords:
             - Lisbon
             - eMOTIONAL Cities
@@ -1380,7 +1380,7 @@ resources:
     pp_anxi_di:
         type: collection
         title: Patients diagnosed with anxiety disorder
-        description: Data Platform IGOT 
+        description: Data Platform IGOT - Urban health
         keywords:
             - Lisbon
             - eMOTIONAL Cities
@@ -1419,7 +1419,7 @@ resources:
     pp_an_ne_t:
         type: collection
         title: Patients with the diagnosis of "feeling anxious / nervous / tense"
-        description: Data Platform IGOT 
+        description: Data Platform IGOT - Urban health
         keywords:
             - Lisbon
             - eMOTIONAL Cities
@@ -1458,7 +1458,7 @@ resources:
     pp_depress:
         type: collection
         title: Patients diagnosed with depressive disorder
-        description: Data Platform IGOT 
+        description: Data Platform IGOT - Urban health
         keywords:
             - Lisbon
             - eMOTIONAL Cities
@@ -1483,6 +1483,630 @@ resources:
             - type: tile
               name: MVT
               data: http://elastic_search:9200/pp_depress/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: default # default | tilejson
+                zoom:
+                    min: 0
+                    max: 29
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    av_age_bui:
+        type: collection
+        title: Average age of buildings
+        description: Data Platform IGOT - Physical Environment Data 
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+            - Physical Environment Data
+            - IGOT
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/av_age_bui
+              id_field: FID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/av_age_bui/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: default # default | tilejson
+                zoom:
+                    min: 0
+                    max: 29
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    build_repai:
+        type: collection
+        title: Buildings with repair needs ratio
+        description: Data Platform IGOT - Physical Environment Data 
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+            - Physical Environment Data
+            - IGOT
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/build_repai
+              id_field: FID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/build_repai/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: default # default | tilejson
+                zoom:
+                    min: 0
+                    max: 29
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    av_buil_he:
+        type: collection
+        title: Average building height
+        description: Data Platform IGOT - Physical Environment Data 
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+            - Physical Environment Data
+            - IGOT
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/av_buil_he
+              id_field: FID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/av_buil_he/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: default # default | tilejson
+                zoom:
+                    min: 0
+                    max: 29
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    buil_area_:
+        type: collection
+        title: Building area ratio
+        description: Data Platform IGOT - Physical Environment Data 
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+            - Physical Environment Data
+            - IGOT
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/buil_area_
+              id_field: FID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/buil_area_/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: default # default | tilejson
+                zoom:
+                    min: 0
+                    max: 29
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    walkabilit:
+        type: collection
+        title: Walkability index
+        description: Data Platform IGOT - Physical Environment Data 
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+            - Physical Environment Data
+            - IGOT
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/walkabilit
+              id_field: FID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/walkabilit/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: default # default | tilejson
+                zoom:
+                    min: 0
+                    max: 29
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    altimetry:
+        type: collection
+        title: Altimetry
+        description: Data Platform IGOT - Physical Environment Data 
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+            - Physical Environment Data
+            - IGOT
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/altimetry
+              id_field: FID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/altimetry/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: default # default | tilejson
+                zoom:
+                    min: 0
+                    max: 29
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    beds_tour_:
+        type: collection
+        title: Beds/customers in tourist accomodations
+        description: Data Platform IGOT - Physical Environment Data 
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+            - Physical Environment Data
+            - IGOT
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/beds_tour_
+              id_field: FID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/beds_tour_/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: default # default | tilejson
+                zoom:
+                    min: 0
+                    max: 29
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    ff_out_den:
+        type: collection
+        title: Density of fast food outlets
+        description: Data Platform IGOT - Physical Environment Data 
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+            - Physical Environment Data
+            - IGOT
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/ff_out_den
+              id_field: FID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/ff_out_den/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: default # default | tilejson
+                zoom:
+                    min: 0
+                    max: 29
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    ndvi:
+        type: collection
+        title: Normalized Difference Vegetation Index (NDVI)
+        description: Data Platform IGOT - Physical Environment Data 
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+            - Physical Environment Data
+            - IGOT
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/ndvi
+              id_field: FID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/ndvi/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: default # default | tilejson
+                zoom:
+                    min: 0
+                    max: 29
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    gre_spa_po:
+        type: collection
+        title: Green space area
+        description: Data Platform IGOT - Physical Environment Data 
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+            - Physical Environment Data
+            - IGOT
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/gre_spa_po
+              id_field: FID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/gre_spa_po/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: default # default | tilejson
+                zoom:
+                    min: 0
+                    max: 29
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    noise:
+        type: collection
+        title: Noise level
+        description: Data Platform IGOT - Physical Environment Data 
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+            - Physical Environment Data
+            - IGOT
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/noise
+              id_field: FID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/noise/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: default # default | tilejson
+                zoom:
+                    min: 0
+                    max: 29
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    pm25:
+        type: collection
+        title: Particulate Matter (PM2.5)
+        description: Data Platform IGOT - Physical Environment Data 
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+            - Physical Environment Data
+            - IGOT
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/pm25
+              id_field: FID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/pm25/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: default # default | tilejson
+                zoom:
+                    min: 0
+                    max: 29
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    pm10:
+        type: collection
+        title: Particulate Matter (PM10)
+        description: Data Platform IGOT - Physical Environment Data 
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+            - Physical Environment Data
+            - IGOT
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/pm10
+              id_field: FID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/pm10/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: default # default | tilejson
+                zoom:
+                    min: 0
+                    max: 29
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    mean_temp:
+        type: collection
+        title: Mean temperature
+        description: Data Platform IGOT - Physical Environment Data 
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+            - Physical Environment Data
+            - IGOT
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/mean_temp
+              id_field: FID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/mean_temp/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: default # default | tilejson
+                zoom:
+                    min: 0
+                    max: 29
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    ex_heat_vu:
+        type: collection
+        title: Patients diagnosed with depressive disorder
+        description: Data Platform IGOT - Physical Environment Data 
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+            - Physical Environment Data
+            - IGOT
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/ex_heat_vu
+              id_field: FID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/ex_heat_vu/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: default # default | tilejson
+                zoom:
+                    min: 0
+                    max: 29
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    ffloods_vu:
+        type: collection
+        title: Vulnerability to flash floods index
+        description: Data Platform IGOT - Physical Environment Data 
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+            - Physical Environment Data
+            - IGOT
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/ffloods_vu
+              id_field: FID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/ffloods_vu/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
                 zoom:

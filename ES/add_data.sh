@@ -90,6 +90,22 @@ python3 /load_es_data.py /in/pp_dementi.geojson FID
 python3 /load_es_data.py /in/pp_anxi_di.geojson FID
 python3 /load_es_data.py /in/pp_an_ne_t.geojson FID
 python3 /load_es_data.py /in/pp_depress.geojson FID
+python3 /load_es_data.py /in/av_age_bui.geojson FID
+python3 /load_es_data.py /in/build_repai.geojson FID
+python3 /load_es_data.py /in/av_buil_he.geojson FID
+python3 /load_es_data.py /in/buil_area_.geojson FID
+python3 /load_es_data.py /in/walkabilit.geojson FID
+python3 /load_es_data.py /in/altimetry.geojson FID
+python3 /load_es_data.py /in/beds_tour_.geojson FID
+python3 /load_es_data.py /in/ff_out_den.geojson FID
+python3 /load_es_data.py /in/ndvi.geojson FID
+python3 /load_es_data.py /in/gre_spa_po.geojson FID
+python3 /load_es_data.py /in/noise.geojson FID
+python3 /load_es_data.py /in/pm25.geojson FID
+python3 /load_es_data.py /in/pm10.geojson FID
+python3 /load_es_data.py /in/mean_temp.geojson FID
+python3 /load_es_data.py /in/ex_heat_vu.geojson FID
+python3 /load_es_data.py /in/ffloods_vu.geojson FID
 
 echo "Loading camb data"
 python3 /load_es_data.py /in/hex350_grid_popden_2020.geojson fid

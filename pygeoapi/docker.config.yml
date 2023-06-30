@@ -2118,6 +2118,279 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
+    pur_power:
+        type: collection
+        title: Purchasing power
+        description: Data Platform IGOT - Socioeconomic Data 
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+            - Socioeconomic
+            - IGOT
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/pur_power
+              id_field: FID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/pur_power/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: default # default | tilejson
+                zoom:
+                    min: 0
+                    max: 29
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    ppo_low_ed:
+        type: collection
+        title: Unemployed people ratio
+        description: Data Platform IGOT - Socioeconomic Data 
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+            - Socioeconomic
+            - IGOT
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/ppo_low_ed
+              id_field: FID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/ppo_low_ed/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: default # default | tilejson
+                zoom:
+                    min: 0
+                    max: 29
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    ppop_unemp:
+        type: collection
+        title: People with low education level ratio
+        description: Data Platform IGOT - Socioeconomic Data 
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+            - Socioeconomic
+            - IGOT
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/ppop_unemp
+              id_field: FID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/ppop_unemp/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: default # default | tilejson
+                zoom:
+                    min: 0
+                    max: 29
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    pop_densit:
+        type: collection
+        title: Population density
+        description: Data Platform IGOT - Socioeconomic Data 
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+            - Socioeconomic
+            - IGOT
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/pop_densit
+              id_field: FID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/pop_densit/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: default # default | tilejson
+                zoom:
+                    min: 0
+                    max: 29
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    gender_rat:
+        type: collection
+        title: Gender ratio
+        description: Data Platform IGOT - Socioeconomic Data 
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+            - Socioeconomic
+            - IGOT
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/gender_rat
+              id_field: FID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/gender_rat/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: default # default | tilejson
+                zoom:
+                    min: 0
+                    max: 29
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    yt_peop_ra:
+        type: collection
+        title: Youth people ratio
+        description: Data Platform IGOT - Socioeconomic Data 
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+            - Socioeconomic
+            - IGOT
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/yt_peop_ra
+              id_field: FID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/yt_peop_ra/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: default # default | tilejson
+                zoom:
+                    min: 0
+                    max: 29
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    ed_peop_ra:
+        type: collection
+        title: Elderly people ratio
+        description: Data Platform IGOT - Socioeconomic Data 
+        keywords:
+            - Lisbon
+            - eMOTIONAL Cities
+            - Socioeconomic
+            - IGOT
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/ed_peop_ra
+              id_field: FID
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/ed_peop_ra/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: default # default | tilejson
+                zoom:
+                    min: 0
+                    max: 29
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
     munich_220713_all:
         type: collection
         title: Munich_220713_All

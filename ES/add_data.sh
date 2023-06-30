@@ -106,6 +106,13 @@ python3 /load_es_data.py /in/pm10.geojson FID
 python3 /load_es_data.py /in/mean_temp.geojson FID
 python3 /load_es_data.py /in/ex_heat_vu.geojson FID
 python3 /load_es_data.py /in/ffloods_vu.geojson FID
+python3 /load_es_data.py /in/pur_power.geojson FID
+python3 /load_es_data.py /in/ppo_low_ed.geojson FID
+python3 /load_es_data.py /in/ppop_unemp.geojson FID
+python3 /load_es_data.py /in/pop_densit.geojson FID
+python3 /load_es_data.py /in/gender_rat.geojson FID
+python3 /load_es_data.py /in/yt_peop_ra.geojson FID
+python3 /load_es_data.py /in/ed_peop_ra.geojson FID
 
 echo "Loading camb data"
 python3 /load_es_data.py /in/hex350_grid_popden_2020.geojson fid

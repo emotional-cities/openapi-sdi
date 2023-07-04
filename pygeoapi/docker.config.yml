@@ -878,7 +878,10 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Sentiment analysis
+            - sentiment
+            - Twitter
+            - social media
+            - IGOT
         links:
             - type: text/html
               rel: canonical
@@ -916,7 +919,8 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Urban health
+            - urban health
+            - social determinant
             - IGOT
         links:
             - type: text/html
@@ -955,7 +959,8 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Urban health
+            - urban health
+            - social determinant
             - IGOT
         links:
             - type: text/html
@@ -994,7 +999,8 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Urban health
+            - urban health
+            - health
             - IGOT
         links:
             - type: text/html
@@ -1033,7 +1039,8 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Urban health
+            - urban health
+            - health
             - IGOT
         links:
             - type: text/html
@@ -1072,7 +1079,9 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Urban health
+            - urban health
+            - health
+            - life style
             - IGOT
         links:
             - type: text/html
@@ -1111,7 +1120,9 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Urban health
+            - urban health
+            - health
+            - life style
             - IGOT
         links:
             - type: text/html
@@ -1150,7 +1161,8 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Urban health
+            - urban health
+            - health
             - IGOT
         links:
             - type: text/html
@@ -1185,11 +1197,12 @@ resources:
     pp_obesity:
         type: collection
         title: Patients with obesity
-        description: Data Platform IGOT - Urban health
+        description: Data Platform IGOT - Urban health 
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Urban health
+            - urban health
+            - health
             - IGOT
         links:
             - type: text/html
@@ -1228,7 +1241,8 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Urban health
+            - urban health
+            - health
             - IGOT
         links:
             - type: text/html
@@ -1263,11 +1277,12 @@ resources:
     pp_myo_inf:
         type: collection
         title: Patients with acute myocardial infarction
-        description: Data Platform IGOT - Urban health
+        description: Data Platform IGOT - Urban health 
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Urban health
+            - urban health
+            - health
             - IGOT
         links:
             - type: text/html
@@ -1306,7 +1321,8 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Urban health
+            - urban health
+            - health
             - IGOT
         links:
             - type: text/html
@@ -1345,7 +1361,8 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Urban health
+            - urban health
+            - mental health
             - IGOT
         links:
             - type: text/html
@@ -1384,7 +1401,8 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Urban health
+            - urban health
+            - mental health
             - IGOT
         links:
             - type: text/html
@@ -1423,7 +1441,8 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Urban health
+            - urban health
+            - mental health
             - IGOT
         links:
             - type: text/html
@@ -1462,7 +1481,8 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Urban health
+            - urban health
+            - mental health
             - IGOT
         links:
             - type: text/html
@@ -1501,14 +1521,16 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Physical Environment Data
             - IGOT
+            - built environment
+            - urban design
+            - urban fabric
         links:
             - type: text/html
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/av_age_bui
               hreflang: en-US
         extents:
             spatial:
@@ -1540,8 +1562,10 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Physical Environment Data
             - IGOT
+            - built environment
+            - urban design
+            - urban fabric
         links:
             - type: text/html
               rel: canonical
@@ -1579,14 +1603,16 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Physical Environment Data
             - IGOT
+            - built environment
+            - urban design
+            - urban fabric
         links:
             - type: text/html
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/av_buil_he
               hreflang: en-US
         extents:
             spatial:
@@ -1618,14 +1644,16 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Physical Environment Data
             - IGOT
+            - built environment
+            - urban design
+            - urban fabric
         links:
             - type: text/html
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/buil_area_
               hreflang: en-US
         extents:
             spatial:
@@ -1657,14 +1685,16 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Physical Environment Data
             - IGOT
+            - urban design
+            - urban health
+            - walkability
         links:
             - type: text/html
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/walkabilit
               hreflang: en-US
         extents:
             spatial:
@@ -1696,14 +1726,14 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Physical Environment Data
             - IGOT
+            - urban morphology
         links:
             - type: text/html
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/altimetry
               hreflang: en-US
         extents:
             spatial:
@@ -1735,14 +1765,16 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Physical Environment Data
             - IGOT
+            - urban density
+            - urban design
+            - urban planning
         links:
             - type: text/html
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/beds_tour_
               hreflang: en-US
         extents:
             spatial:
@@ -1774,14 +1806,15 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Physical Environment Data
             - IGOT
+            - urban planning
+            - urban health
         links:
             - type: text/html
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/ff_out_den
               hreflang: en-US
         extents:
             spatial:
@@ -1813,14 +1846,16 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Physical Environment Data
             - IGOT
+            - green
+            - urban
+            - green areas
         links:
             - type: text/html
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/ndvi
               hreflang: en-US
         extents:
             spatial:
@@ -1852,14 +1887,16 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Physical Environment Data
             - IGOT
+            - green
+            - urban
+            - green areas
         links:
             - type: text/html
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/gre_spa_po
               hreflang: en-US
         extents:
             spatial:
@@ -1891,14 +1928,17 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Physical Environment Data
             - IGOT
+            - pollution
+            - noise
+            - noise pollution
+            - urban planning
         links:
             - type: text/html
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/noise
               hreflang: en-US
         extents:
             spatial:
@@ -1930,14 +1970,17 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Physical Environment Data
             - IGOT
+            - air pollution
+            - pollution
+            - air quality
+            - urban planning            
         links:
             - type: text/html
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pm25
               hreflang: en-US
         extents:
             spatial:
@@ -1969,14 +2012,17 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Physical Environment Data
             - IGOT
+            - air pollution
+            - pollution
+            - air quality
+            - urban planning
         links:
             - type: text/html
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pm10
               hreflang: en-US
         extents:
             spatial:
@@ -2008,14 +2054,17 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Physical Environment Data
             - IGOT
+            - weather
+            - urban climate
+            - urban comfort
+            - climate change
         links:
             - type: text/html
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/mean_temp
               hreflang: en-US
         extents:
             spatial:
@@ -2042,19 +2091,22 @@ resources:
 
     ex_heat_vu:
         type: collection
-        title: Patients diagnosed with depressive disorder
+        title: Vulnerability to excessive heat index
         description: Data Platform IGOT - Physical Environment Data 
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Physical Environment Data
             - IGOT
+            - weather
+            - urban climate
+            - urban comfort
+            - climate change
         links:
             - type: text/html
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/ex_heat_vu
               hreflang: en-US
         extents:
             spatial:
@@ -2086,14 +2138,17 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Physical Environment Data
             - IGOT
+            - weather
+            - urban climate
+            - urban comfort
+            - climate change
         links:
             - type: text/html
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/ffloods_vu
               hreflang: en-US
         extents:
             spatial:
@@ -2125,14 +2180,16 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Socioeconomic
             - IGOT
+            - urban design
+            - urban planning
+            - urban determinants
         links:
             - type: text/html
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pur_power
               hreflang: en-US
         extents:
             spatial:
@@ -2159,19 +2216,21 @@ resources:
 
     ppo_low_ed:
         type: collection
-        title: Unemployed people ratio
+        title: People with low education level ratio
         description: Data Platform IGOT - Socioeconomic Data 
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Socioeconomic
             - IGOT
+            - urban design
+            - urban planning
+            - urban determinants
         links:
             - type: text/html
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/ppo_low_ed
               hreflang: en-US
         extents:
             spatial:
@@ -2198,19 +2257,21 @@ resources:
 
     ppop_unemp:
         type: collection
-        title: People with low education level ratio
+        title: Unemployed people ratio
         description: Data Platform IGOT - Socioeconomic Data 
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Socioeconomic
             - IGOT
+            - urban design
+            - urban planning
+            - urban determinants
         links:
             - type: text/html
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/ppop_unemp
               hreflang: en-US
         extents:
             spatial:
@@ -2242,14 +2303,16 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Socioeconomic
             - IGOT
+            - urban design
+            - urban planning
+            - urban determinants
         links:
             - type: text/html
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/pop_densit
               hreflang: en-US
         extents:
             spatial:
@@ -2281,14 +2344,16 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Socioeconomic
             - IGOT
+            - urban design
+            - urban planning
+            - urban determinants
         links:
             - type: text/html
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/gender_rat
               hreflang: en-US
         extents:
             spatial:
@@ -2320,14 +2385,15 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Socioeconomic
             - IGOT
+            - social determinants
+            - urban design
         links:
             - type: text/html
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/yt_peop_ra
               hreflang: en-US
         extents:
             spatial:
@@ -2359,14 +2425,15 @@ resources:
         keywords:
             - Lisbon
             - eMOTIONAL Cities
-            - Socioeconomic
             - IGOT
+            - social determinants
+            - urban design
         links:
             - type: text/html
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/pp_depress
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/ed_peop_ra
               hreflang: en-US
         extents:
             spatial:

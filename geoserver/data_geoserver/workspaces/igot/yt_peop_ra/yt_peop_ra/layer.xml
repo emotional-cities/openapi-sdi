@@ -1,0 +1,16 @@
+<layer>
+  <name>yt_peop_ra</name>
+  <id>LayerInfoImpl--16808b89:18940e48977:-7f90</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-1b83c0bb:187002cf1d4:-7ffc</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--16808b89:18940e48977:-7f91</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2023-07-10 18:23:02.479 UTC</dateCreated>
+</layer>

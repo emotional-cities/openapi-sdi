@@ -1,0 +1,16 @@
+<layer>
+  <name>AnalogIn.Voltage</name>
+  <id>LayerInfoImpl--4d25fb6:188009d2e26:-7fe4</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-1b83c0bb:187002cf1d4:-8000</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--4d25fb6:188009d2e26:-7fe5</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2023-05-15 07:55:49.480 UTC</dateCreated>
+</layer>

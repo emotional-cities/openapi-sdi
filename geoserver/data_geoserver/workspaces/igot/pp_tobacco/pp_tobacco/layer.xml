@@ -1,0 +1,16 @@
+<layer>
+  <name>pp_tobacco</name>
+  <id>LayerInfoImpl--16808b89:18940e48977:-7fe7</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-1b83c0bb:187002cf1d4:-7ffc</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--16808b89:18940e48977:-7fe8</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2023-07-10 17:57:02.278 UTC</dateCreated>
+</layer>

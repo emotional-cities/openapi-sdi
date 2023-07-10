@@ -5,6 +5,8 @@
   </workspace>
   <enabled>true</enabled>
   <name>WCS</name>
+  <internationalTitle/>
+  <internationalAbstract/>
   <versions>
     <org.geotools.util.Version>
       <version>1.0.0</version>
@@ -21,8 +23,8 @@
   <verbose>false</verbose>
   <gmlPrefixing>false</gmlPrefixing>
   <latLon>false</latLon>
-  <maxInputMemory>-1</maxInputMemory>
-  <maxOutputMemory>-1</maxOutputMemory>
+  <maxInputMemory>0</maxInputMemory>
+  <maxOutputMemory>0</maxOutputMemory>
   <defaultDeflateCompressionLevel>9</defaultDeflateCompressionLevel>
   <subsamplingEnabled>true</subsamplingEnabled>
   <overviewPolicy>IGNORE</overviewPolicy>

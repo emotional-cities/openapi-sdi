@@ -157,7 +157,7 @@ services:
       - ./geoserver/data_geoserver:/var/local/geoserver
       - ./geoserver/data_geoserver/gwc:/var/local/geoserver-gwc
       - ./geoserver/ec_data/geopackage:/home/tomcat/ec_data/geopackage
-      - ./geoserver/ec_data/geopackage:/home/tomcat/ec_data/geotiff
+      - ./geoserver/ec_data/geotiff:/home/tomcat/ec_data/geotiff
 
     container_name: geoserver
 

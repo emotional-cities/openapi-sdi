@@ -3014,43 +3014,43 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    ucr_2019:
-        type: collection
-        title: "Lansing crime"
-        description: Lansing crime data (2019)
-        keywords:
-            - Lansing
-            - crime
-            - eMOTIONAL Cities
-        links:
-            - type: text/html
-              rel: canonical
-              title: metadata
-              # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/ucr_2019
-              hreflang: en-US
-        extents:
-            spatial:
-                bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
-                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-        providers:
-            - type: feature
-              name: Elasticsearch
-              data: http://elastic_search:9200/ucr_2019
-              id_field: ObjectID
-            - type: tile
-              name: MVT
-              data: http://elastic_search:9200/ucr_2019/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
-              options:
-                metadata_format: default # default | tilejson
-                zoom:
-                    min: 0
-                    max: 15
-                schemes:
-                    - WorldCRS84Quad
-              format:
-                name: pbf
-                mimetype: application/vnd.mapbox-vector-tile
+    # ucr_2019:
+    #     type: collection
+    #     title: "Lansing crime"
+    #     description: Lansing crime data (2019)
+    #     keywords:
+    #         - Lansing
+    #         - crime
+    #         - eMOTIONAL Cities
+    #     links:
+    #         - type: text/html
+    #           rel: canonical
+    #           title: metadata
+    #           # The link to metadata record
+    #           href: https://emotional.byteroad.net/collections/ec_catalog/items/ucr_2019
+    #           hreflang: en-US
+    #     extents:
+    #         spatial:
+    #             bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+    #             crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+    #     providers:
+    #         - type: feature
+    #           name: Elasticsearch
+    #           data: http://elastic_search:9200/ucr_2019
+    #           id_field: ObjectID
+    #         - type: tile
+    #           name: MVT
+    #           data: http://elastic_search:9200/ucr_2019/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+    #           options:
+    #             metadata_format: default # default | tilejson
+    #             zoom:
+    #                 min: 0
+    #                 max: 15
+    #             schemes:
+    #                 - WorldCRS84Quad
+    #           format:
+    #             name: pbf
+    #             mimetype: application/vnd.mapbox-vector-tile
 
     tl_rd22_26_bg:
         type: collection

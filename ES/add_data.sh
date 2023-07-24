@@ -156,7 +156,7 @@ python3 /load_es_data.py /in/Humidity.Humidity.geojson id
 python3 /load_es_data.py /in/SoundPressureLevel.SPL.geojson id
 
 echo "Loading msu data"
-python3 /load_es_data.py /in/ucr_2019.geojson ObjectID
+# python3 /load_es_data.py /in/ucr_2019.geojson ObjectID
 python3 /load_es_data.py /in/tl_rd22_26_bg.geojson id
 python3 /load_es_data.py /in/500cities_city_11082016.geojson id
 python3 /load_es_data.py /in/500cities_tracts_11082016.geojson id

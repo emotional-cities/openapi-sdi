@@ -110,17 +110,17 @@ services:
     volumes:
       - ./logstash/data:/in
 
-  geopackage_pusher:
-    build: ./gdal
-    container_name: geopackage_pusher
-    volumes:
-      - ./gdal/data:/in
-      - ./ES/data:/out
-    links:
-      - elastic_search
-    depends_on:
-      - elastic_search
-    command: bash -c "/docker-entrypoint.sh"
+  # geopackage_pusher:
+  #   build: ./gdal
+  #   container_name: geopackage_pusher
+  #   volumes:
+  #     - ./gdal/data:/in
+  #     - ./ES/data:/out
+  #   links:
+  #     - elastic_search
+  #   depends_on:
+  #     - elastic_search
+  #   command: bash -c "/docker-entrypoint.sh"
 
   postgis:
     build: ./postgis/
@@ -128,6 +128,7 @@ services:
     environment:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}
+      #POSTGRES_MULTIPLE_EXTENSIONS: hstore,uuid-ossp
     env_file:
       - .env     # path to your .env file
     expose:
@@ -172,6 +173,26 @@ services:
     depends_on:
       - postgis
     container_name: mapstore
+
+  frost:
+    image: fraunhoferiosb/frost-server:2.0
+    environment:
+      - serviceRootUrl=http://localhost:8080/FROST-Server
+      - plugins.multiDatastream.enable=true
+      - http_cors_enable=true
+      - http_cors_allowed_origins=*
+      - persistence_db_driver=org.postgresql.Driver
+      - persistence_db_url=jdbc:postgresql://postgis:5432/sensorthings
+      - persistence_db_username=${STA_USER}
+      - persistence_db_password=${STA_PASSWORD}
+      - persistence_autoUpdateDatabase=true
+      - persistence_persistenceManagerImplementationClass=de.fraunhofer.iosb.ilt.sta.persistence.pgjooq.imp.PostgresPersistenceManagerString
+      - persistence_idGenerationMode=ServerAndClientGenerated
+    ports:
+      - 8080:8080
+      - 1883:1883
+    depends_on:
+      - postgis
 
 volumes:
   elastic_search_data: {}

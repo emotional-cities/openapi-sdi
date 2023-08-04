@@ -3205,44 +3205,44 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    # lansing_city_block_group_areadeprivationindex_nationalscore_2020:
-    #     type: collection
-    #     title: "Area Deprivation Index-State"
-    #     description: Area Deprivation Index state score in 2020. The Area Deprivation Index (ADI) ranks neighborhoods on the basis of socioeconomic disadvantage in the areas of income, education, employment, and housing quality. Areas with greater disadvantage are ranked higher. National scores are normalized to the whole country, and state scores are normalized to a particular state. Higher Area Deprivation Index scores have been shown to correlate with worse health outcomes in measures such as life expectancy. This index was created by researchers at the University of Wisconsin-Madison based on a methodology originally developed by the Health Resources and Services Administration. Areas on this map are ranked against other areas within the state. State scores represent deciles. In other words, they are divided into 10 groups of the same size, where 1 is the lowest rate of disadvantage and 10 is the highest.
-    #     keywords:
-    #         - Area Deprivation Index
-    #         - Lansing
-    #         - USA
-    #         - eMOTIONAL Cities
-    #     links:
-    #         - type: text/html
-    #           rel: canonical
-    #           title: metadata
-    #           # The link to metadata record
-    #           href: https://emotional.byteroad.net/collections/ec_catalog/items/lansing_city_block_group_areadeprivationindex_nationalscore_2020
-    #           hreflang: en-US
-    #     extents:
-    #         spatial:
-    #             bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
-    #             crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-    #     providers:
-    #         - type: feature
-    #           name: Elasticsearch
-    #           data: http://elastic_search:9200/lansing_city_block_group_areadeprivationindex_nationalscore_2020
-    #           id_field: id
-    #         - type: tile
-    #           name: MVT
-    #           data: http://elastic_search:9200/lansing_city_block_group_areadeprivationindex_nationalscore_2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
-    #           options:
-    #             metadata_format: default # default | tilejson
-    #             zoom:
-    #                 min: 0
-    #                 max: 15
-    #             schemes:
-    #                 - WorldCRS84Quad
-    #           format:
-    #             name: pbf
-    #             mimetype: application/vnd.mapbox-vector-tile
+    lansing_city_block_group_areadeprivationindex_nationalscore_2020:
+        type: collection
+        title: "TODO"
+        description: lansing_city_block_group_areadeprivationindex_nationalscore_2020.
+        keywords:
+            - Area Deprivation Index
+            - Lansing
+            - USA
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/lansing_city_block_group_areadeprivationindex_nationalscore_2020
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-84.6152831208922436,42.6555100041266542,-84.4991605004521631,42.7697938845623256]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/lansing_city_block_group_areadeprivationindex_nationalscore_2020
+              id_field: id
+            - type: tile
+              name: MVT
+              data: http://elastic_search:9200/lansing_city_block_group_areadeprivationindex_nationalscore_2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                metadata_format: default # default | tilejson
+                zoom:
+                    min: 0
+                    max: 15
+                schemes:
+                    - WorldCRS84Quad
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
 
     lansing_city_blockgroup_areadeprivationindex_statescore_2020:
         type: collection
@@ -3705,8 +3705,8 @@ resources:
 
     lansing_city_census_tracts_percentageofpeoplebiketowork_2020:
         type: collection
-        title: "Number of People with Disability (aged 5 and above)"
-        description: "Count of civilian noninstitutionalized population with one or more types of disabilities, between 2017-2021. According to the Census, disability is defined as the product of interactions among individuals' bodies, and it takes into consideration physical, emotional, and mental health, as well as the physical and social environment in which people live, work or play. Disability occurs where these interactions result in limitations of activity and restrictions to full participation in school, work, home or the community."
+        title: "TODO"
+        description: "lansing_city_census_tracts_percentageofpeoplebiketowork_2020."
         keywords:
             - Disability
             - Lansing

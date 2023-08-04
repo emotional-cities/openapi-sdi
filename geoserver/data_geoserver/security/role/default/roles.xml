@@ -2,6 +2,7 @@
 <roleList>
 <role id="ADMIN"/>
 <role id="CAMB"/>
+<role id="FMUL"/>
 <role id="GROUP_ADMIN"/>
 <role id="IGOT"/>
 <role id="MSU"/>
@@ -10,6 +11,12 @@
 <userRoles username="admin">
 <roleRef roleID="ADMIN"/>
 <roleRef roleID="GROUP_ADMIN"/>
+</userRoles>
+<userRoles username="leonardo">
+<roleRef roleID="FMUL"/>
+</userRoles>
+<userRoles username="zeenat">
+<roleRef roleID="MSU"/>
 </userRoles>
 </userList>
 <groupList/>

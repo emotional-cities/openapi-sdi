@@ -9,7 +9,7 @@
       <onlineResource>https://emotionalcities-h2020.eu/</onlineResource>
     </contact>
     <charset>UTF-8</charset>
-    <numDecimals>4</numDecimals>
+    <numDecimals>8</numDecimals>
     <verbose>true</verbose>
     <verboseExceptions>false</verboseExceptions>
     <metadata>
@@ -24,6 +24,7 @@
     <showCreatedTimeColumnsInAdminList>false</showCreatedTimeColumnsInAdminList>
     <showModifiedTimeColumnsInAdminList>false</showModifiedTimeColumnsInAdminList>
     <defaultLocale>en_001</defaultLocale>
+    <useHeadersProxyURL>false</useHeadersProxyURL>
   </settings>
   <jai>
     <allowInterpolation>false</allowInterpolation>
@@ -75,7 +76,7 @@
   <metadata>
     <entry key="logRequestsEnabled">false</entry>
   </metadata>
-  <updateSequence>797</updateSequence>
+  <updateSequence>946</updateSequence>
   <featureTypeCacheSize>0</featureTypeCacheSize>
   <globalServices>true</globalServices>
   <xmlPostRequestLogBufferSize>1024</xmlPostRequestLogBufferSize>

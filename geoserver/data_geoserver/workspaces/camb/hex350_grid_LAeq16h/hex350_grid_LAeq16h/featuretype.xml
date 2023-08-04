@@ -21,7 +21,7 @@
     AXIS[&quot;Geodetic longitude&quot;, EAST], 
     AXIS[&quot;Geodetic latitude&quot;, NORTH], 
     AUTHORITY[&quot;EPSG&quot;,&quot;4277&quot;]], 
-  PROJECTION[&quot;Transverse_Mercator&quot;, AUTHORITY[&quot;EPSG&quot;,&quot;9807&quot;]], 
+  PROJECTION[&quot;Transverse_Mercator&quot;], 
   PARAMETER[&quot;central_meridian&quot;, -2.0], 
   PARAMETER[&quot;latitude_of_origin&quot;, 49.0], 
   PARAMETER[&quot;scale_factor&quot;, 0.9996012717], 
@@ -56,8 +56,6 @@
   </store>
   <serviceConfiguration>false</serviceConfiguration>
   <simpleConversionEnabled>false</simpleConversionEnabled>
-  <internationalTitle/>
-  <internationalAbstract/>
   <maxFeatures>0</maxFeatures>
   <numDecimals>0</numDecimals>
   <padWithZeros>false</padWithZeros>

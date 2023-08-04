@@ -10,18 +10,6 @@
           <se:Description>
             <se:Title>[0.00 , 0.20)</se:Title>
           </se:Description>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:And>
-              <ogc:PropertyIsGreaterThanOrEqualTo>
-                <ogc:PropertyName>metric_table_cln_aod_prop</ogc:PropertyName>
-                <ogc:Literal>0</ogc:Literal>
-              </ogc:PropertyIsGreaterThanOrEqualTo>
-              <ogc:PropertyIsLessThanOrEqualTo>
-                <ogc:PropertyName>metric_table_cln_aod_prop</ogc:PropertyName>
-                <ogc:Literal>0.20000000000000001</ogc:Literal>
-              </ogc:PropertyIsLessThanOrEqualTo>
-            </ogc:And>
-          </ogc:Filter>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#ffffcc</se:SvgParameter>
@@ -38,18 +26,6 @@
           <se:Description>
             <se:Title>[0.20 , 0.40)</se:Title>
           </se:Description>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:And>
-              <ogc:PropertyIsGreaterThan>
-                <ogc:PropertyName>metric_table_cln_aod_prop</ogc:PropertyName>
-                <ogc:Literal>0.20000000000000001</ogc:Literal>
-              </ogc:PropertyIsGreaterThan>
-              <ogc:PropertyIsLessThanOrEqualTo>
-                <ogc:PropertyName>metric_table_cln_aod_prop</ogc:PropertyName>
-                <ogc:Literal>0.40000000000000002</ogc:Literal>
-              </ogc:PropertyIsLessThanOrEqualTo>
-            </ogc:And>
-          </ogc:Filter>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#c2e699</se:SvgParameter>
@@ -66,18 +42,6 @@
           <se:Description>
             <se:Title>[0.40 , 0.60)</se:Title>
           </se:Description>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:And>
-              <ogc:PropertyIsGreaterThan>
-                <ogc:PropertyName>metric_table_cln_aod_prop</ogc:PropertyName>
-                <ogc:Literal>0.40000000000000002</ogc:Literal>
-              </ogc:PropertyIsGreaterThan>
-              <ogc:PropertyIsLessThanOrEqualTo>
-                <ogc:PropertyName>metric_table_cln_aod_prop</ogc:PropertyName>
-                <ogc:Literal>0.59999999999999998</ogc:Literal>
-              </ogc:PropertyIsLessThanOrEqualTo>
-            </ogc:And>
-          </ogc:Filter>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#78c679</se:SvgParameter>
@@ -94,18 +58,6 @@
           <se:Description>
             <se:Title>[0.60 , 0.80)</se:Title>
           </se:Description>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:And>
-              <ogc:PropertyIsGreaterThan>
-                <ogc:PropertyName>metric_table_cln_aod_prop</ogc:PropertyName>
-                <ogc:Literal>0.59999999999999998</ogc:Literal>
-              </ogc:PropertyIsGreaterThan>
-              <ogc:PropertyIsLessThanOrEqualTo>
-                <ogc:PropertyName>metric_table_cln_aod_prop</ogc:PropertyName>
-                <ogc:Literal>0.80000000000000004</ogc:Literal>
-              </ogc:PropertyIsLessThanOrEqualTo>
-            </ogc:And>
-          </ogc:Filter>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#31a354</se:SvgParameter>
@@ -122,18 +74,6 @@
           <se:Description>
             <se:Title>[0.80 , 1.00)</se:Title>
           </se:Description>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:And>
-              <ogc:PropertyIsGreaterThan>
-                <ogc:PropertyName>metric_table_cln_aod_prop</ogc:PropertyName>
-                <ogc:Literal>0.80000000000000004</ogc:Literal>
-              </ogc:PropertyIsGreaterThan>
-              <ogc:PropertyIsLessThanOrEqualTo>
-                <ogc:PropertyName>metric_table_cln_aod_prop</ogc:PropertyName>
-                <ogc:Literal>1</ogc:Literal>
-              </ogc:PropertyIsLessThanOrEqualTo>
-            </ogc:And>
-          </ogc:Filter>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#006837</se:SvgParameter>

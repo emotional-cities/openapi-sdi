@@ -1,0 +1,338 @@
+{
+	"name": "Outdoor walk test",
+	"description": "Test data collected with the purpose of calibrating the instruments.",
+	"Locations": [
+		{
+			"@iot.id": "loc-1",
+			"name": "loc-1",
+			"description": "GPS coordinates of a data point.",
+			"encodingType": "application/vnd.geo+json",
+			"location": {
+				"type": "Point",
+				"coordinates": [-0.1476921575,51.539352587],
+				"time": "2022-09-22T09:30:19.708989Z"
+			}
+		},
+		{
+			"@iot.id": "loc-2",
+			"name": "loc-2",
+			"description": "GPS coordinates of a data point.",
+			"encodingType": "application/vnd.geo+json",
+			"location": {
+				"type": "Point",
+				"coordinates": [-0.147690435,51.539353625],
+				"time": "2022-09-22T09:30:20.708989Z"
+			}
+		},				
+		{
+			"name": "loc-3",
+			"description": "GPS coordinates of a data point.",
+			"encodingType": "application/vnd.geo+json",
+			"location": {
+				"type": "Point",
+				"coordinates": [-0.147689234,51.539353408],
+				"time": "2022-09-22T09:30:21.708989Z"
+			}
+		},
+		{
+			"name": "loc-4",
+			"description": "GPS coordinates of a data point.",
+			"encodingType": "application/vnd.geo+json",
+			"location": {
+				"type": "Point",
+				"coordinates": [-0.147690316,51.539353548],
+				"time": "2022-09-22T09:30:22.708989Z"
+			}
+		},
+		{
+			"name": "loc-5",
+			"description": "GPS coordinates of a data point.",
+			"encodingType": "application/vnd.geo+json",
+			"location": {
+				"type": "Point",
+				"coordinates": [-0.14769043,51.539353616],
+				"time": "2022-09-22T09:30:23.708989Z"
+			}
+		},
+		{
+			"name": "loc-6",
+			"description": "GPS coordinates of a data point.",
+			"encodingType": "application/vnd.geo+json",
+			"location": {
+				"type": "Point",
+				"coordinates": [-0.147690937,51.539353496],
+				"time": "2022-09-22T09:30:24.708989Z"
+			}
+		},
+		{
+			"name": "loc-7",
+			"description": "GPS coordinates of a data point.",
+			"encodingType": "application/vnd.geo+json",
+			"location": {
+				"type": "Point",
+				"coordinates": [-0.14769132,51.539352261],
+				"time": "2022-09-22T09:30:25.708989Z"
+			}
+		},
+		{
+			"name": "loc-8",
+			"description": "GPS coordinates of a data point.",
+			"encodingType": "application/vnd.geo+json",
+			"location": {
+				"type": "Point",
+				"coordinates": [-0.147689979,51.539352861],
+				"time": "2022-09-22T09:30:26.708989Z"
+			}
+		},
+		{
+			"name": "loc-9",
+			"description": "GPS coordinates of a data point.",
+			"encodingType": "application/vnd.geo+json",
+			"location": {
+				"type": "Point",
+				"coordinates": [-0.147689986,51.539352877],
+				"time": "2022-09-22T09:30:27.708989Z"
+			}
+		},
+		{
+			"name": "loc-10",
+			"description": "GPS coordinates of a data point.",
+			"encodingType": "application/vnd.geo+json",
+			"location": {
+				"type": "Point",
+				"coordinates": [-0.147690113,51.53935343],
+				"time": "2022-09-22T09:30:28.708989Z"
+			}
+		},
+		{
+			"name": "loc-11",
+			"description": "GPS coordinates of a data point.",
+			"encodingType": "application/vnd.geo+json",
+			"location": {
+				"type": "Point",
+				"coordinates": [-0.147690479,51.539353977],
+				"time": "2022-09-22T09:30:29.708989Z"
+			}
+		}
+	],
+	"Datastreams": [
+		{
+			"name": "Temperature",
+			"description": "The temperature during the walk",
+			"observationType": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
+			"unitOfMeasurement": {
+				"name": "Centigrade",
+				"symbol": "C",
+				"definition": "http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#DegreeCentigrade"
+			},
+			"Sensor": {
+				"name": "DHT22/Temperature",
+				"description": "Temperature sensor of a DHT22",
+				"encodingType": "application/pdf",
+				"metadata": "https://www.sparkfun.com/datasheets/Sensors/Temperature/DHT22.pdf"
+			},
+			"ObservedProperty": {
+				"name": "Temperature",
+				"definition": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#ThermodynamicTemperature",
+				"description": "The temperature."
+			},
+			"Observations": [
+				{
+					"phenomenonTime": "2022-09-22T09:30:19.708989Z",
+					"result": 2492.11881188119,
+					"FeatureOfInterest": {
+						"@iot.id": "foid-1",
+						"name": "gps",
+						"description": "GPS coordinates of a data point.",
+						"encodingType": "application/vnd.geo+json",
+						"feature": {
+						  "type": "Feature",
+						  "geometry":{
+							"type": "Point",
+							"coordinates": [-0.1476921575,51.539352587]
+						  }
+						}
+					}
+				},
+				{
+					"phenomenonTime": "2022-09-22T09:30:20.708989Z",
+					"result": 2494,
+					"FeatureOfInterest": {
+						"@iot.id": "foid-2",
+						"name": "gps",
+						"description": "GPS coordinates of a data point.",
+						"encodingType": "application/vnd.geo+json",
+						"feature": {
+						  "type": "Feature",
+						  "geometry":{
+							"type": "Point",
+							"coordinates": [-0.147690435,51.539353625]
+						  }			
+					}
+				   }
+				},				
+				{
+					"phenomenonTime": "2022-09-22T09:30:21.708989Z",
+					"result": 2495.92
+				},
+				{
+					"phenomenonTime": "2022-09-22T09:30:22.708989Z",
+					"result": 2497
+				},
+				{
+					"phenomenonTime": "2022-09-22T09:30:23.708989Z",
+					"result": 2498.93069306931
+				},
+				{
+					"phenomenonTime": "2022-09-22T09:30:24.708989Z",
+					"result": 2500
+				},
+				{
+					"phenomenonTime": "2022-09-22T09:30:25.708989Z",
+					"result": 2500
+				},
+				{
+					"phenomenonTime": "2022-09-22T09:30:26.708989Z",
+					"result": 2500
+				},
+				{
+					"phenomenonTime": "2022-09-22T09:30:27.708989Z",
+					"result": 2500.68316831683
+				},																			
+				{
+					"phenomenonTime": "2022-09-22T09:30:28.708989Z",
+					"result": 2501
+				},				
+				{
+					"phenomenonTime": "2022-09-22T09:30:29.708989Z",
+					"result": 2507.93069306931
+				}				
+			]
+		},
+		{
+			"name": "Humidity",
+			"description": "The humidity during the walk",
+			"observationType": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
+			"unitOfMeasurement": {
+				"name": "percentage",
+				"symbol": "%",
+				"definition": "https://en.wikipedia.org/wiki/Percentage"
+			},
+			"Sensor": {
+				"name": "DHT22/Humidity",
+				"description": "Relative humidity sensor of a DHT22",
+				"encodingType": "application/pdf",
+				"metadata": "https://www.sparkfun.com/datasheets/Sensors/Temperature/DHT22.pdf"
+			},
+			"ObservedProperty": {
+				"name": "Relative Humidity",
+				"definition": "https://en.wikipedia.org/wiki/Relative_humidity",
+				"description": "The relative humidity"
+			},
+			"Observations": [
+				{
+					"phenomenonTime": "2022-09-22T09:30:19.708989Z",
+					"result": 4249.27722772277,
+					"FeatureOfInterest": {
+						"@iot.id": "foid-1"
+					}
+				},
+				{
+					"phenomenonTime": "2022-09-22T09:30:20.708989Z",
+					"result": 4241,
+					"FeatureOfInterest": {
+						"@iot.id": "foid-2"
+					}
+				},
+				{
+					"phenomenonTime": "2022-09-22T09:30:21.708989Z",
+					"result": 4233.96
+				},
+				{
+					"phenomenonTime": "2022-09-22T09:30:22.708989Z",
+					"result": 4230
+				},
+				{
+					"phenomenonTime": "2022-09-22T09:30:23.708989Z",
+					"result": 4220.9900990099
+				},
+				{
+					"phenomenonTime": "2022-09-22T09:30:24.708989Z",
+					"result": 4216
+				},
+				{
+					"phenomenonTime": "2022-09-22T09:30:25.708989Z",
+					"result": 4206.0495049505
+				},
+				{
+					"phenomenonTime": "2022-09-22T09:30:26.708989Z",
+					"result": 4201
+				},
+				{
+					"phenomenonTime": "2022-09-22T09:30:27.708989Z",
+					"result": 4201
+				},																			
+				{
+					"phenomenonTime": "2022-09-22T09:30:28.708989Z",
+					"result": 4201
+				},				
+				{
+					"phenomenonTime": "2022-09-22T09:30:29.708989Z",
+					"result": 4196.14851485149
+				}				
+				
+			]
+		}
+	],
+	"MultiDatastreams": [
+		{
+			"name": "Experiment 1",
+			"description": "Dry run",
+			"observationType": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_ComplexObservation",
+			"multiObservationDataTypes": [
+				"http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
+				"http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"
+			],
+			"unitOfMeasurements": [
+				{
+					"name": "m/s",
+					"symbol": "m/s",
+					"definition": "ucum:m/s"
+				},
+				{
+					"name": "deg",
+					"symbol": "deg",
+					"definition": "ucum:deg"
+				}
+			],
+			"Sensor": {
+				"name": "Wind Sensor Type XYZ",
+				"description": "Wind Velocity and direction",
+				"encodingType": "text",
+				"metadata": "A description of this sensor should go here."
+			},
+			"ObservedProperties": [
+				{
+					"name": "Wind Velocity",
+					"definition": "http://dbpedia.org/page/Wind_speed",
+					"description": "The wind speed."
+				},
+				{
+					"name": "Wind Direction",
+					"definition": "http://dbpedia.org/page/Wind_direction",
+					"description": "The wind direction."
+				}
+			],
+			"Observations": [
+				{
+					"phenomenonTime": "2022-09-22T09:30:19.708989Z",
+					"result": [5.1, 40]
+				},
+				{
+					"phenomenonTime": "2022-09-22T09:30:20.708989Z",
+					"result": [5.3, 44]
+				}
+				]
+		}
+	]
+}

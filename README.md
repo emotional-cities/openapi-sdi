@@ -126,6 +126,31 @@ MINIO_ROOT_USER="SOMEPASSWORD"
 MINIO_ROOT_PASSWORD="SOMEPASSWORD"
 ```
 
+## Basic authentication
+
+Services exposed via Apache Http Server could be protected by basic authentication. To do so, you need to add a Location tag to files `apache-httpd/httpd-ssl.conf` and `apache-httpd/httpd.conf` as the following:
+
+```
+<Location "/FROST-Server/">
+    Order deny,allow
+    Allow from all
+    Authtype Basic
+    Authname "Password Required"
+    AuthUserFile /etc/apache2/.htpasswd
+    Require valid-user
+</Location>
+```
+The file .htpasswd is mounted in the apache-httpd but it has to be created locally. It's not committed and is git ignored. To create an .htpasswd locally you can use the following commands:
+
+```
+htpasswd -c -B -b ./apache-httpd/.htpasswd <user_name> <password>
+```
+
+Next time you want to add a new user, just remove the `-c`
+
+```
+htpasswd -B -b ./apache-httpd/.htpasswd <user_name> <password>
+```
 
 ## Troubleshooting
 
@@ -150,6 +175,51 @@ docker_elastic_search_1 exited with code 78
 ```
 
 it is very likely that you need to setup the `sysctl`.
+
+
+# SensorThings API Server
+
+This server is the [FROST](https://fraunhoferiosb.github.io/FROST-Server/deployment/docker.html) implementation of the [OGC Sensor Things API Standard](https://docs.ogc.org/is/18-088/18-088.html).
+
+## Quick Setup
+
+You will need `docker` and `docker-compose` installed in your system, in order to run this infrastructure. 
+
+First create a `.env` file with the environment variables. For example:
+
+```
+POSTGRES_PASSWORD="CHANGEme"
+POSTGRES_USER="postgres"
+```
+
+Change script permission:
+
+```
+sudo chmod +x sensorthings.sh
+```
+
+Then run:
+
+```
+docker-compose up -d
+```
+
+Access the server on:
+http://localhost:8080/FROST-Server/
+
+## Add Data
+
+```
+curl -X POST -H "Content-Type: application/json" -d @sample-locations.json http://localhost:8080/FROST-Server/v1.1/Things
+```
+
+## Consume Data
+
+You can view/analyse data using any sensorthings API compliant client, for instance the [SensorThingsAPI QGIS plugin](https://github.com/AirBreak-UIA/SensorThingsAPI_QGIS-plugin) (see screenshots bellow).
+
+![screenshot of the SensorThingsAPI QGIS plugin](./frost/sta2.png)
+
+![screenshot of the SensorThingsAPI QGIS plugin](./frost/sta1.png) 
 
 ## License
 

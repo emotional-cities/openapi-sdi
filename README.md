@@ -124,32 +124,8 @@ POSTGRES_DB="SOMEPASSWORD"
 POSTGRES_USER="SOMEPASSWORD"
 MINIO_ROOT_USER="SOMEPASSWORD"
 MINIO_ROOT_PASSWORD="SOMEPASSWORD"
-```
-
-## Basic authentication
-
-Services exposed via Apache Http Server could be protected by basic authentication. To do so, you need to add a Location tag to files `apache-httpd/httpd-ssl.conf` and `apache-httpd/httpd.conf` as the following:
-
-```
-<Location "/FROST-Server/">
-    Order deny,allow
-    Allow from all
-    Authtype Basic
-    Authname "Password Required"
-    AuthUserFile /etc/apache2/.htpasswd
-    Require valid-user
-</Location>
-```
-The file .htpasswd is mounted in the apache-httpd but it has to be created locally. It's not committed and is git ignored. To create an .htpasswd locally you can use the following commands:
-
-```
-htpasswd -c -B -b ./apache-httpd/.htpasswd <user_name> <password>
-```
-
-Next time you want to add a new user, just remove the `-c`
-
-```
-htpasswd -B -b ./apache-httpd/.htpasswd <user_name> <password>
+FROST_USER="SOMEUSERNAME"
+FROST_PASSWORD="SOMEPASSWORD"
 ```
 
 ## Troubleshooting

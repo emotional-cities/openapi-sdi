@@ -10,7 +10,7 @@ ENV GEOSERVER_EXT_DIR /var/local/geoserver-exts
 ENV TOMCAT_INSTALL_DIR /usr/local/tomcat
 
 # Fonts
-RUN echo "deb http://httpredir.debian.org/debian stretch contrib" >> /etc/apt/sources.list
+RUN echo "deb http://archive.debian.org/debian stretch contrib" >> /etc/apt/sources.list
 RUN set -x \
     && apt-get update \
     && apt-get install -yq unzip \

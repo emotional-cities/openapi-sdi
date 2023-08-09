@@ -187,6 +187,7 @@ services:
       - pygeoapi
       - mapstore
       - geoserver
+      - frost
     volumes:
       - "/etc/letsencrypt/archive/emotional.byteroad.net/fullchain6.pem:/usr/local/apache2/conf/emotional/fullchain1.pem"
       - "/etc/letsencrypt/archive/emotional.byteroad.net/privkey6.pem:/usr/local/apache2/conf/emotional/privkey1.pem"
@@ -196,11 +197,49 @@ services:
     ports:
       - "80:80"
       - "443:443"
+    command: sh -c "/usr/local/apache2/bin/htpasswd -b -c /usr/local/apache2/.htpasswd $FROST_USER $FROST_PASSWORD && httpd-foreground"
     container_name: apache-httpd
+
+  frost:
+    image: fraunhoferiosb/frost-server:2.0
+    environment:
+      - serviceRootUrl=http://localhost:8080/FROST-Server
+      - plugins.multiDatastream.enable=true
+      - http_cors_enable=true
+      - http_cors_allowed_origins=*
+      - persistence_db_driver=org.postgresql.Driver
+      - persistence_db_url=jdbc:postgresql://postgis_frost:5432/sensorthings
+      - persistence_db_username=${POSTGRES_USER}
+      - persistence_db_password=${POSTGRES_PASSWORD}
+      - persistence_autoUpdateDatabase=true
+      - persistence_persistenceManagerImplementationClass=de.fraunhofer.iosb.ilt.sta.persistence.pgjooq.imp.PostgresPersistenceManagerString
+      - persistence_idGenerationMode=ServerAndClientGenerated
+    expose:
+      - 8080
+    depends_on:
+      - postgis_frost
+    container_name: frost
+
+  postgis_frost:
+    image: postgis/postgis:14-3.2-alpine
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: sensorthings
+    expose:
+      - 5432
+    env_file:
+      - .env     # path to your .env file
+    volumes:
+      - postgis_frost_volume:/var/lib/postgresql/data
+      - ./frost/sensorthings.sh:/docker-entrypoint-initdb.d/sensorthings.sh
+    container_name: postgis_frost
 
 volumes:
   elastic_search_data: {}
   postgis_data:
+    driver: local
+  postgis_frost_volume:
     driver: local
 
 #NOTE: Host requires changes in configuration to run ES

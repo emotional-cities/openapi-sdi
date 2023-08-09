@@ -124,8 +124,9 @@ POSTGRES_DB="SOMEPASSWORD"
 POSTGRES_USER="SOMEPASSWORD"
 MINIO_ROOT_USER="SOMEPASSWORD"
 MINIO_ROOT_PASSWORD="SOMEPASSWORD"
+FROST_USER="SOMEUSERNAME"
+FROST_PASSWORD="SOMEPASSWORD"
 ```
-
 
 ## Troubleshooting
 
@@ -150,6 +151,62 @@ docker_elastic_search_1 exited with code 78
 ```
 
 it is very likely that you need to setup the `sysctl`.
+
+
+# SensorThings API Server
+
+This server is the [FROST](https://fraunhoferiosb.github.io/FROST-Server/deployment/docker.html) implementation of the [OGC Sensor Things API Standard](https://docs.ogc.org/is/18-088/18-088.html).
+
+## Quick Setup
+
+You will need `docker` and `docker-compose` installed in your system, in order to run this infrastructure. 
+
+First create a `.env` file with the environment variables. For example (replace the values for sensible values):
+
+```
+POSTGRES_PASSWORD="nenwwnew"
+POSTGRES_DB="ddmdwlmwe"
+POSTGRES_USER="dmwledmw"
+MINIO_ROOT_USER="dwlkdmmdklwmed"
+MINIO_ROOT_PASSWORD="dqkmwmdwwqlmw"
+AWS_SECRET_ACCESS_KEY="dlmeklmwldmweçmmfmçwfmçwmwwçwwefmç"
+AWS_ACCESS_KEY_ID="edmwldmdwmwemweew"
+STA_USER="dqkmqdwlmwwmwl"
+STA_PASSWORD=dddddddddddd
+FROST_USER=dd
+FROST_PASSWORD=edl,el,eed
+```
+
+Change script permission:
+
+```
+sudo chmod +x sensorthings.sh
+```
+
+Then run:
+
+```
+docker-compose up -d
+```
+
+Access the server on:
+http://localhost/FROST-Server/
+
+## Add Data
+
+The frost endpoint is protected with basic authentication. Replace `user` with your user, defined in the .env file with `FROST_USER` and `mypassword` with the defined  `FROST_PASSWORD`.
+
+```
+curl -X POST -u "user:mypassword" -H "Content-Type: application/json" -d @frost/sample-locations.json http://localhost/FROST-Server/v1.1/Things
+```
+
+## Consume Data
+
+You can view/analyse data using any sensorthings API compliant client, for instance the [SensorThingsAPI QGIS plugin](https://github.com/AirBreak-UIA/SensorThingsAPI_QGIS-plugin) (see screenshots bellow).
+
+![screenshot of the SensorThingsAPI QGIS plugin](./frost/sta2.png)
+
+![screenshot of the SensorThingsAPI QGIS plugin](./frost/sta1.png) 
 
 ## License
 

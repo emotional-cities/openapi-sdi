@@ -1,4 +1,5 @@
 .env
+.htpasswd
 ./ES/data/a0000000a.geojson
 ./ES/data/a0000000b.geojson
 ./ES/data/a0000000c.geojson

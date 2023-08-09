@@ -3207,8 +3207,8 @@ resources:
 
     lansing_city_block_group_areadeprivationindex_nationalscore_2020:
         type: collection
-        title: "TODO"
-        description: lansing_city_block_group_areadeprivationindex_nationalscore_2020.
+        title: "Area Deprivation Index-National"
+        description: Area Deprivation Index national score in 2020. The Area Deprivation Index (ADI) ranks neighborhoods on the basis of socioeconomic disadvantage in the areas of income, education, employment, and housing quality. Areas with greater disadvantage are ranked higher. National scores are normalized to the whole country, and state scores are normalized to a particular state. Higher Area Deprivation Index scores have been shown to correlate with worse health outcomes in measures such as life expectancy. This index was created by researchers at the University of Wisconsin-Madison based on a methodology originally developed by the Health Resources and Services Administration. Areas on this map are ranked against all other areas in the nation. National scores represent percentiles. In other words, they are divided into 100 groups of the same size, where 1 is the lowest rate of disadvantage and 100 is the highest.
         keywords:
             - Area Deprivation Index
             - Lansing
@@ -3629,8 +3629,8 @@ resources:
 
     lansing_city_census_tracts_numberofpeoplebiketowork_2020:
         type: collection
-        title: "No. Of People Travel by Bicycle to Work"
-        description: "Estimated percent of workers age 16 years or older who did not work at home who commuted to work by bicycle in 2017-2021. Percentage calculations are suppressed in cases where the denominator of the calculation was less than 10 of the unit that is being described (e.g., households, people, householders, etc.)."
+        title: "Number of People Travel by Bicycle to Work"
+        description: "Number of workers age 16 years or older who did not work at home who commuted to work by bicycle in 2017-2021. Percentage calculations are suppressed in cases where the denominator of the calculation was less than 10 of the unit that is being described (e.g., households, people, householders, etc.)."
         keywords:
             - Bike to Work
             - Lansing
@@ -3705,10 +3705,10 @@ resources:
 
     lansing_city_census_tracts_percentageofpeoplebiketowork_2020:
         type: collection
-        title: "TODO"
-        description: "lansing_city_census_tracts_percentageofpeoplebiketowork_2020."
+        title: "Percent of People Travel by Bicycle to Work"
+        description: "Estimated percent of workers age 16 years or older who did not work at home who commuted to work by bicycle in 2017-2021. Percentage calculations are suppressed in cases where the denominator of the calculation was less than 10 of the unit that is being described (e.g., households, people, householders, etc.)."
         keywords:
-            - Disability
+            - Bike to Work
             - Lansing
             - eMOTIONAL Cities
         links:

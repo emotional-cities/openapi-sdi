@@ -42,10 +42,10 @@ services:
       - frost
     volumes:
       - ./apache-httpd/httpd.conf:/usr/local/apache2/conf/httpd.conf
-      - ./apache-httpd/.htpasswd:/etc/apache2/.htpasswd
     ports:
       - "80:80"
       - "443:443"
+    command: sh -c "/usr/local/apache2/bin/htpasswd -b -c /usr/local/apache2/.htpasswd $FROST_USER $FROST_PASSWORD && httpd-foreground"
     container_name: apache-httpd
 
   pygeoapi:

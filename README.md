@@ -185,11 +185,20 @@ This server is the [FROST](https://fraunhoferiosb.github.io/FROST-Server/deploym
 
 You will need `docker` and `docker-compose` installed in your system, in order to run this infrastructure. 
 
-First create a `.env` file with the environment variables. For example:
+First create a `.env` file with the environment variables. For example (replace the values for sensible values):
 
 ```
-POSTGRES_PASSWORD="CHANGEme"
-POSTGRES_USER="postgres"
+POSTGRES_PASSWORD="nenwwnew"
+POSTGRES_DB="ddmdwlmwe"
+POSTGRES_USER="dmwledmw"
+MINIO_ROOT_USER="dwlkdmmdklwmed"
+MINIO_ROOT_PASSWORD="dqkmwmdwwqlmw"
+AWS_SECRET_ACCESS_KEY="dlmeklmwldmweçmmfmçwfmçwmwwçwwefmç"
+AWS_ACCESS_KEY_ID="edmwldmdwmwemweew"
+STA_USER="dqkmqdwlmwwmwl"
+STA_PASSWORD=dddddddddddd
+FROST_USER=dd
+FROST_PASSWORD=edl,el,eed
 ```
 
 Change script permission:
@@ -205,12 +214,14 @@ docker-compose up -d
 ```
 
 Access the server on:
-http://localhost:8080/FROST-Server/
+http://localhost/FROST-Server/
 
 ## Add Data
 
+The frost endpoint is protected with basic authentication. Replace `user` with your user, defined in the .env file with `FROST_USER` and `mypassword` with the defined  `FROST_PASSWORD`.
+
 ```
-curl -X POST -H "Content-Type: application/json" -d @sample-locations.json http://localhost:8080/FROST-Server/v1.1/Things
+curl -X POST -u "user:mypassword" -H "Content-Type: application/json" -d @frost/sample-locations.json http://localhost/FROST-Server/v1.1/Things
 ```
 
 ## Consume Data

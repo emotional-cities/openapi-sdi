@@ -4151,3 +4151,34 @@ resources:
               id_field: field_1
               layer: shops
 
+    sta-demo:
+        type: collection
+        title: Demo data for Sensor Things API 
+        description: Data from a neuroscience experiment. For demonstrations purposes, only.
+        keywords:
+            - Neuroscience
+            - Sensors
+            - STA
+            - Things
+            - Experiment
+        links:
+            - type: text/html
+              rel: canonical
+              title: information
+              href: https://www.sawcer.com/
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+            temporal:
+                begin: 2011-11-11
+                end: null  # or empty
+        providers:
+            - type: feature
+              name: SensorThings
+              data: http://frost:8080/FROST-Server/v1.0/
+              # uri_field: uri
+              entity: Datastreams
+              time_field: phenomenonTime
+              # intralink: true

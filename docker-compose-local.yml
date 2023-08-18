@@ -178,7 +178,7 @@ services:
   frost:
     image: fraunhoferiosb/frost-server:2.0
     environment:
-      - serviceRootUrl=http://emotional.byteroad.net/FROST-Server
+      - serviceRootUrl=http://localhost/FROST-Server
       - plugins.multiDatastream.enable=true
       - http_cors_enable=true
       - http_cors_allowed_origins=*

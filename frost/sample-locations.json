@@ -1,9 +1,8 @@
 {
-	"name": "Outdoor walk test",
-	"description": "Test data collected with the purpose of calibrating the instruments.",
+	"name": "Backpack",
+	"description": "Walk to collect test data, with the purpose of calibrating the instruments.",
 	"Locations": [
 		{
-			"@iot.id": "loc-1",
 			"name": "loc-1",
 			"description": "GPS coordinates of a data point.",
 			"encodingType": "application/vnd.geo+json",
@@ -14,7 +13,6 @@
 			}
 		},
 		{
-			"@iot.id": "loc-2",
 			"name": "loc-2",
 			"description": "GPS coordinates of a data point.",
 			"encodingType": "application/vnd.geo+json",
@@ -139,37 +137,11 @@
 			"Observations": [
 				{
 					"phenomenonTime": "2022-09-22T09:30:19.708989Z",
-					"result": 2492.11881188119,
-					"FeatureOfInterest": {
-						"@iot.id": "foid-1",
-						"name": "gps",
-						"description": "GPS coordinates of a data point.",
-						"encodingType": "application/vnd.geo+json",
-						"feature": {
-						  "type": "Feature",
-						  "geometry":{
-							"type": "Point",
-							"coordinates": [-0.1476921575,51.539352587]
-						  }
-						}
-					}
+					"result": 2492.11881188119
 				},
 				{
 					"phenomenonTime": "2022-09-22T09:30:20.708989Z",
-					"result": 2494,
-					"FeatureOfInterest": {
-						"@iot.id": "foid-2",
-						"name": "gps",
-						"description": "GPS coordinates of a data point.",
-						"encodingType": "application/vnd.geo+json",
-						"feature": {
-						  "type": "Feature",
-						  "geometry":{
-							"type": "Point",
-							"coordinates": [-0.147690435,51.539353625]
-						  }			
-					}
-				   }
+					"result": 2494
 				},				
 				{
 					"phenomenonTime": "2022-09-22T09:30:21.708989Z",
@@ -232,17 +204,11 @@
 			"Observations": [
 				{
 					"phenomenonTime": "2022-09-22T09:30:19.708989Z",
-					"result": 4249.27722772277,
-					"FeatureOfInterest": {
-						"@iot.id": "foid-1"
-					}
+					"result": 4249.27722772277
 				},
 				{
 					"phenomenonTime": "2022-09-22T09:30:20.708989Z",
-					"result": 4241,
-					"FeatureOfInterest": {
-						"@iot.id": "foid-2"
-					}
+					"result": 4241
 				},
 				{
 					"phenomenonTime": "2022-09-22T09:30:21.708989Z",

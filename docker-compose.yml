@@ -203,6 +203,7 @@ services:
     environment:
       - serviceRootUrl=https://emotional.byteroad.net/FROST-Server
       - plugins.multiDatastream.enable=true
+      - plugins.batchProcessing.enable=true
       - http_cors_enable=true
       - http_cors_allowed_origins=*
       - persistence_db_driver=org.postgresql.Driver

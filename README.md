@@ -196,9 +196,7 @@ http://localhost/FROST-Server/
 
 The frost endpoint is protected with basic authentication. Replace `user` with your user, defined in the .env file with `FROST_USER` and `mypassword` with the defined  `FROST_PASSWORD`.
 
-```
-curl -X POST -u "user:mypassword" -H "Content-Type: application/json" -d @frost/sample-locations.json http://localhost/FROST-Server/v1.1/Things
-```
+We recommend using a client like the [frost-sta-client](https://pypi.org/project/frost-sta-client/)
 
 ## Consume Data
 

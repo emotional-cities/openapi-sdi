@@ -203,6 +203,7 @@ services:
     environment:
       - serviceRootUrl=https://emotional.byteroad.net/FROST-Server
       - plugins.multiDatastream.enable=true
+      - plugins.batchProcessing.enable=true
       - http_cors_enable=true
       - http_cors_allowed_origins=*
       - persistence_db_driver=org.postgresql.Driver
@@ -232,6 +233,26 @@ services:
       - postgis_frost_volume:/var/lib/postgresql/data
       - ./frost/sensorthings.sh:/docker-entrypoint-initdb.d/sensorthings.sh
     container_name: postgis_frost
+
+  sisyphus:
+    image: ghcr.io/emotional-cities/sisyphusapi:main
+
+    container_name: sisyphus
+
+    environment:
+      ENV_STATE: "dev"
+      DEV_ELASTIC_HOST: "elastic"
+      DEV_ELASTIC_PORT: "9200"
+      DEV_ELASTIC_INDEX: "ec_catalog"
+      DEV_LOG_PATH: "./logs"
+      DEV_LOG_FILENAME: "sisyphus.log"
+      DEV_LOG_LEVEL: "DEBUG"
+      DEV_LOG_ROTATION: "500 MB"
+      DEV_LOG_RETENTION: "10 days"
+      DEV_LOG_FORMAT: "{time} {level} {message}"
+
+    expose:
+      - 80
 
 volumes:
   elastic_search_data: {}

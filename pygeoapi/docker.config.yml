@@ -4180,11 +4180,11 @@ resources:
                 end: null
         providers:
           - type: feature
-            name: SensorThings 
+            name: SensorThings
             data: http://frost:8080/FROST-Server/v1.1/
             id_field: '@iot.id'
-            entity: Things 
-            intralink: true
+            entity: Things
+#            intralink: true
             properties:
                 - name
                 - Datastreams
@@ -4218,13 +4218,13 @@ resources:
             temporal:
                 begin: 2022-09-22
                 end: null
-        providers:          
+        providers:
           - type: feature
-            name: SensorThings 
+            name: SensorThings
             data: http://frost:8080/FROST-Server/v1.1/
-            entity: Datastreams 
+            entity: Datastreams
             time_field: phenomenonTime
-            intralink: true
+#            intralink: true
             properties:
                 - name
                 - Thing
@@ -4261,11 +4261,11 @@ resources:
                 end: null
         providers:
           - type: feature
-            name: SensorThings 
+            name: SensorThings
             data: http://frost:8080/FROST-Server/v1.1/
-            entity: Observations 
+            entity: Observations
             time_field: phenomenonTime
-            intralink: true
+#            intralink: true
             properties:
                 - phenomenonTime
                 - result
@@ -4273,4 +4273,36 @@ resources:
                 - '@iot.selfLink'
 
 
-
+#    sta-demo:
+#        type: collection
+#        title: Demo data for Sensor Things API 
+#        description: Backpack experiment in London, using Temperature and Humidity Sensors.
+#        keywords:
+#            - Biosignals
+#            - Sensors
+#            - STA
+#            - Things
+#            - Experiment
+#            - Temperature
+#            - Humidity
+#        links:
+#            - type: text/html
+#              rel: canonical
+#              title: information
+#              href: https://emotional.byteroad.net/FROST-Server/v1.1/Things
+#              hreflang: en-US
+#        extents:
+#            spatial:
+#                bbox: [-0.1500810000000000,51.5373379999999983,-0.1427490000000000,51.5417279999999991]
+#                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+#            temporal:
+#                begin: 2022-09-22
+#                end: null  # or empty
+#        providers:
+#            - type: feature
+#              name: SensorThings
+#              data: http://frost:8080/FROST-Server/v1.1/
+#              # uri_field: uri
+#              entity: Datastreams
+#              time_field: phenomenonTime
+#              # intralink: true

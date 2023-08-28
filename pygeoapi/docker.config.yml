@@ -4151,34 +4151,125 @@ resources:
               id_field: field_1
               layer: shops
 
-    sta-demo:
+    things:
         type: collection
-        title: Demo data for Sensor Things API 
-        description: Data from a neuroscience experiment. For demonstrations purposes, only.
+        title: STA Things
+        description: SensorThings API Things
         keywords:
-            - Neuroscience
-            - Sensors
-            - STA
             - Things
-            - Experiment
+            - SensorThings
+            - Biosignals
+        linked-data:
+            context:
+                - sosa: "http://www.w3.org/ns/sosa/"
+                  ssn: "http://www.w3.org/ns/ssn/"
+                  Datastreams: sosa:ObservationCollection
+                  name: schema:name
         links:
-            - type: text/html
+            - type: application/html
               rel: canonical
-              title: information
-              href: https://www.sawcer.com/
+              title: data source
+              href: https://emotional.byteroad.net/FROST-Server/v1.1/Things
               hreflang: en-US
         extents:
             spatial:
-                bbox: [-9.2298355643394778,38.6913993330390724,-9.0873870796450795,38.7967596910924826]
+                bbox: [-0.1500810000000000,51.5373379999999983,-0.1427490000000000,51.5417279999999991]
                 crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
             temporal:
-                begin: 2011-11-11
-                end: null  # or empty
+                begin: 2022-09-22
+                end: null
         providers:
-            - type: feature
-              name: SensorThings
-              data: http://frost:8080/FROST-Server/v1.0/
-              # uri_field: uri
-              entity: Datastreams
-              time_field: phenomenonTime
-              # intralink: true
+          - type: feature
+            name: SensorThings 
+            data: http://frost:8080/FROST-Server/v1.1/
+            id_field: '@iot.id'
+            entity: Things 
+            intralink: true
+            properties:
+                - name
+                - Datastreams
+                - Locations
+                - '@iot.selfLink'
+    datastreams:
+        type: collection
+        title: STA Datastreams
+        description: SensorThings API Datastreams
+        keywords:
+            - Datastreams
+            - SensorThings
+            - Biosignals
+        linked-data:
+            context:
+                - sosa: http://www.w3.org/ns/sosa/
+                  ssn: http://www.w3.org/ns/ssn/
+                  Observations: sosa:hasMember
+                  Thing: sosa:hasFeatureOfInterest
+                  name: schema:name
+        links:
+            - type: application/html
+              rel: canonical
+              title: data source
+              href: https://www.brgm.fr/en
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.1500810000000000,51.5373379999999983,-0.1427490000000000,51.5417279999999991]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+            temporal:
+                begin: 2022-09-22
+                end: null
+        providers:          
+          - type: feature
+            name: SensorThings 
+            data: http://frost:8080/FROST-Server/v1.1/
+            entity: Datastreams 
+            time_field: phenomenonTime
+            intralink: true
+            properties:
+                - name
+                - Thing
+                - Observations
+                - Sensor
+                - ObservedProperty
+                - '@iot.selfLink'
+    observations:
+        type: collection
+        title: STA Observations
+        description: SensorThings API Observations
+        keywords:
+            - Observations
+            - SensorThings
+            - Biosignals
+        linked-data:
+            context:
+                - sosa: http://www.w3.org/ns/sosa/
+                  ssn: http://www.w3.org/ns/ssn/
+                  Datastream: sosa:isMemberOf
+                  name: schema:name
+        links:
+            - type: application/html
+              rel: canonical
+              title: data source
+              href: https://www.brgm.fr/en
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-0.1500810000000000,51.5373379999999983,-0.1427490000000000,51.5417279999999991]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+            temporal:
+                begin: 2022-09-22
+                end: null
+        providers:
+          - type: feature
+            name: SensorThings 
+            data: http://frost:8080/FROST-Server/v1.1/
+            entity: Observations 
+            time_field: phenomenonTime
+            intralink: true
+            properties:
+                - phenomenonTime
+                - result
+                - Datastream
+                - FeatureOfInterest
+                - '@iot.selfLink'
+

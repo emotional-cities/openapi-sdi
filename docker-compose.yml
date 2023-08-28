@@ -201,8 +201,8 @@ services:
     image: fraunhoferiosb/frost-server:2.0
     environment:
       - serviceRootUrl=https://emotional.byteroad.net/FROST-Server
-      - plugins.multiDatastream.enable=true
-      - plugins.batchProcessing.enable=true
+      - plugins_multiDatastream_enable=true
+      - plugins_batchProcessing_enable=true
       - http_cors_enable=true
       - http_cors_allowed_origins=*
       - persistence_db_driver=org.postgresql.Driver
@@ -212,6 +212,13 @@ services:
       - persistence_autoUpdateDatabase=true
       - persistence_persistenceManagerImplementationClass=de.fraunhofer.iosb.ilt.sta.persistence.pgjooq.imp.PostgresPersistenceManagerString
       - persistence_idGenerationMode=ServerAndClientGenerated
+      - mqtt_SubscribeThreadPoolSize=3072
+      - mqtt_SubscribeMessageQueueSize=3276
+      - bus_sendQueueSize=3276
+      - bus_recvWorkerPoolSize=3072
+      - bus_workerPoolSize=4
+      - bus_queueSize=3276
+      - FROST_LL=DEBUG
     expose:
       - 8080
     depends_on:

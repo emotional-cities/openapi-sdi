@@ -214,6 +214,7 @@ services:
       - persistence_idGenerationMode=ServerAndClientGenerated
       - mqtt_SubscribeThreadPoolSize=3072
       - mqtt_SubscribeMessageQueueSize=3276
+      - mqtt_session_timeout_seconds=10800
       - bus_sendQueueSize=3276
       - bus_recvWorkerPoolSize=3072
       - bus_workerPoolSize=4

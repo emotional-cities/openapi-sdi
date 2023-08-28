@@ -154,6 +154,7 @@ python3 /load_es_data.py /in/GPS.Data.geojson id
 python3 /load_es_data.py /in/GPS.Time.geojson id
 python3 /load_es_data.py /in/Humidity.Humidity.geojson id
 python3 /load_es_data.py /in/SoundPressureLevel.SPL.geojson id
+python3 /load_es_data.py /in/london_whitechapel_sub-oe309002.geojson id
 
 echo "Loading msu data"
 # python3 /load_es_data.py /in/ucr_2019.geojson ObjectID
@@ -184,6 +185,7 @@ python3 /load_es_data.py /in/lansing_noleisuretimepaageabove18yrs_2019_cdc.geojs
 python3 /load_es_data.py /in/lansing_obesityageabove18yrs_2019_cdc.geojson id
 python3 /load_es_data.py /in/lansing_physicalhealthnotgoodageabove18yrs_2019_cdc.geojson id
 python3 /load_es_data.py /in/lansing_strokeageabove18yrs_2019_cdc.geojson id
+
 
 echo "Seems that data was loaded"
 

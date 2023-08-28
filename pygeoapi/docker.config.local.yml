@@ -4271,7 +4271,6 @@ resources:
                 - phenomenonTime
                 - result
                 - Datastream
-                # - FeatureOfInterest
                 - '@iot.selfLink'
 
 

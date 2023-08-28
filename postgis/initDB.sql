@@ -80,7 +80,7 @@ create table gs_attribute (
         user_password varchar(255),
         user_role varchar(255) not null,
         group_id int8,
-		enabled char(1) NOT NULL DEFAULT 'Y',
+        enabled char(1) NOT NULL DEFAULT 'Y',
         primary key (id),
         unique (name)
     );
@@ -97,8 +97,8 @@ create table gs_attribute (
     create table gs_usergroup (
         id int8 not null,
         groupName varchar(255) not null,
-		description varchar(255),
-		enabled char(1) NOT NULL DEFAULT 'Y',
+        description varchar(255),
+        enabled char(1) NOT NULL DEFAULT 'Y',
         primary key (id),
         unique (groupName)
     );
@@ -110,22 +110,22 @@ create table gs_attribute (
           userGroup_id bigint not null,
           primary key (id)
       );
-	
-	create table gs_usergroup_members (
-		user_id int8 not null, 
-		group_id int8 not null, 
-		primary key (user_id, group_id)
-	);
-	
-	alter table gs_usergroup_members 
-		add constraint FKFDE460DB62224F72 
-		foreign key (user_id) 
-		references gs_user;
-		
+
+    create table gs_usergroup_members (
+        user_id int8 not null, 
+        group_id int8 not null, 
+        primary key (user_id, group_id)
+    );
+    
     alter table gs_usergroup_members 
-		add constraint FKFDE460DB9EC981B7 
-		foreign key (group_id) 
-		references gs_usergroup;
+        add constraint FKFDE460DB62224F72 
+        foreign key (user_id) 
+        references gs_user;
+        
+    alter table gs_usergroup_members 
+        add constraint FKFDE460DB9EC981B7 
+        foreign key (group_id) 
+        references gs_usergroup;
 
     create index idx_attribute_name on gs_attribute (name);
 

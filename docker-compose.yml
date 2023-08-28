@@ -130,7 +130,7 @@ services:
   #     - default
 
   postgis:
-    #build: ./postgis/
+    build: ./postgis/
     environment:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}
@@ -139,11 +139,10 @@ services:
     expose:
        - 5432
     volumes:
-      - postgis_data:/var/lib/postgresql/data
+      - ../openapi-sdi-data/mapstore-postgis:/var/lib/postgresql/data
     ports:
       - "5432:5432"
     container_name: postgis
-    image: emotionalcities/sdi-template-postgis
 
   geoserver:
     #build: ./geoserver/
@@ -256,8 +255,6 @@ services:
 
 volumes:
   elastic_search_data: {}
-  postgis_data:
-    driver: local
   postgis_frost_volume:
     driver: local
 

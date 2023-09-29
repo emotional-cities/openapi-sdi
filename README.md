@@ -211,3 +211,7 @@ You can view/analyse data using any sensorthings API compliant client, for insta
 This project is released under an [MIT License](./LICENSE)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Note
+
+Modified version for the ANSOL Workshop!

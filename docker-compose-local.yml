@@ -37,8 +37,8 @@ services:
     image: httpd:2.4
     depends_on:
       - pygeoapi
-      - geoserver
-      - mapstore
+      # - geoserver
+      # - mapstore
       - frost
     volumes:
       - ./apache-httpd/httpd.conf:/usr/local/apache2/conf/httpd.conf
@@ -52,8 +52,8 @@ services:
   pygeoapi:
     image: geopython/pygeoapi:latest
     container_name: pygeoapi_es
-    entrypoint:
-      - /es-entrypoint.sh
+    # entrypoint:
+    #   - /es-entrypoint.sh
     expose:
       - "80"
     environment:
@@ -66,117 +66,117 @@ services:
       - ./pygeoapi/es-entrypoint.sh:/es-entrypoint.sh
       - ./pygeoapi/wait-for-elasticsearch.sh:/wait-for-elasticsearch.sh
       - ./ES/data:/data
-    links:
-      - elastic_search
-    depends_on:
-      - elastic_search
+    # links:
+    #   - elastic_search
+    # depends_on:
+    #   - elastic_search
     restart: on-failure
 
-  elastic_search:
-    build: ./ES
+  # elastic_search:
+  #   build: ./ES
 
-    container_name: elastic
+  #   container_name: elastic
 
-    environment:
-       - "discovery.type=single-node"
-       - bootstrap.memory_lock=true
-       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-    ulimits:
-       memlock:
-         soft: -1
-         hard: -1
+  #   environment:
+  #      - "discovery.type=single-node"
+  #      - bootstrap.memory_lock=true
+  #      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+  #   ulimits:
+  #      memlock:
+  #        soft: -1
+  #        hard: -1
 
-    ports:
-      - 9300:9300
-      - 9200:9200
-    volumes:
-      - elastic_search_data:/usr/share/elasticsearch/data
-      - ./ES/data:/in
+  #   ports:
+  #     - 9300:9300
+  #     - 9200:9200
+  #   volumes:
+  #     - elastic_search_data:/usr/share/elasticsearch/data
+  #     - ./ES/data:/in
 
-  kib01:
-    image: docker.elastic.co/kibana/kibana:8.4.0
-    container_name: kibana
-    environment:
-      ELASTICSEARCH_URL: http://elastic:9200
-      ELASTICSEARCH_HOSTS: '["http://elastic:9200"]'
-      SERVER_BASEPATH: /dashboard
+  # kib01:
+  #   image: docker.elastic.co/kibana/kibana:8.4.0
+  #   container_name: kibana
+  #   environment:
+  #     ELASTICSEARCH_URL: http://elastic:9200
+  #     ELASTICSEARCH_HOSTS: '["http://elastic:9200"]'
+  #     SERVER_BASEPATH: /dashboard
 
-  metadata_logstash:
-    build: ./logstash
-    container_name: metadata_logstash
-    environment:
-      ELASTICSEARCH_URL: http://elastic:9200
-      ELASTICSEARCH_HOSTS: '["http://elastic:9200"]'
-      XPACK_MONITORING_ENABLED: 'false'
-    links:
-      - elastic_search
-    depends_on:
-      - elastic_search
-    volumes:
-      - ./logstash/data:/in
+  # metadata_logstash:
+  #   build: ./logstash
+  #   container_name: metadata_logstash
+  #   environment:
+  #     ELASTICSEARCH_URL: http://elastic:9200
+  #     ELASTICSEARCH_HOSTS: '["http://elastic:9200"]'
+  #     XPACK_MONITORING_ENABLED: 'false'
+  #   links:
+  #     - elastic_search
+  #   depends_on:
+  #     - elastic_search
+  #   volumes:
+  #     - ./logstash/data:/in
 
-  geopackage_pusher:
-    build: ./gdal
-    container_name: geopackage_pusher
-    volumes:
-      - ./gdal/data:/in
-      - ./ES/data:/out
-    links:
-      - elastic_search
-    depends_on:
-      - elastic_search
-    command: bash -c "/docker-entrypoint.sh"
+  # geopackage_pusher:
+  #   build: ./gdal
+  #   container_name: geopackage_pusher
+  #   volumes:
+  #     - ./gdal/data:/in
+  #     - ./ES/data:/out
+  #   links:
+  #     - elastic_search
+  #   depends_on:
+  #     - elastic_search
+  #   command: bash -c "/docker-entrypoint.sh"
 
-  postgis:
-    build: ./postgis/
-    image: emotionalcities/sdi-template-postgis
-    environment:
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-      POSTGRES_DB: ${POSTGRES_DB}
-    env_file:
-      - .env     # path to your .env file
-    expose:
-       - 5432
-    volumes:
-      - ../openapi-sdi-data/mapstore-postgis:/var/lib/postgresql/data
-    ports:
-      - "5432:5432"
-    container_name: postgis
+  # postgis:
+  #   build: ./postgis/
+  #   image: emotionalcities/sdi-template-postgis
+  #   environment:
+  #     POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+  #     POSTGRES_DB: ${POSTGRES_DB}
+  #   env_file:
+  #     - .env     # path to your .env file
+  #   expose:
+  #      - 5432
+  #   volumes:
+  #     - ../openapi-sdi-data/mapstore-postgis:/var/lib/postgresql/data
+  #   ports:
+  #     - "5432:5432"
+  #   container_name: postgis
 
-  geoserver:
-    build: ./geoserver/
-    image: emotionalcities/geoserver
-    expose:
-      - 8080
-    environment:
-      DB_BACKEND: POSTGRES
-      HOST: postgis
-      POSTGRES_PORT: 5432
-      POSTGRES_DB: ${POSTGRES_DB}
-      POSTGRES_USER: ${POSTGRES_USER}
-      POSTGRES_PASS: ${POSTGRES_PASSWORD}
-      GEOSERVER_DATA_DIR: /var/local/geoserver
-    env_file:
-      - .env     # path to your .env file
-    volumes:
-      - ./geoserver/data_geoserver:/var/local/geoserver
-      - ./geoserver/data_geoserver/gwc:/var/local/geoserver-gwc
-      - ./geoserver/ec_data/geopackage:/home/tomcat/ec_data/geopackage
+  # geoserver:
+  #   build: ./geoserver/
+  #   image: emotionalcities/geoserver
+  #   expose:
+  #     - 8080
+  #   environment:
+  #     DB_BACKEND: POSTGRES
+  #     HOST: postgis
+  #     POSTGRES_PORT: 5432
+  #     POSTGRES_DB: ${POSTGRES_DB}
+  #     POSTGRES_USER: ${POSTGRES_USER}
+  #     POSTGRES_PASS: ${POSTGRES_PASSWORD}
+  #     GEOSERVER_DATA_DIR: /var/local/geoserver
+  #   env_file:
+  #     - .env     # path to your .env file
+  #   volumes:
+  #     - ./geoserver/data_geoserver:/var/local/geoserver
+  #     - ./geoserver/data_geoserver/gwc:/var/local/geoserver-gwc
+  #     - ./geoserver/ec_data/geopackage:/home/tomcat/ec_data/geopackage
 
-    container_name: geoserver
+  #   container_name: geoserver
 
-  mapstore:
-    build: ./mapstore/
-    image: emotionalcities/sdi-template-mapstore
-    expose:
-      - 8080
-    environment:
-      - "JAVA_OPTS=-Dgeostore-ovr=file:///usr/local/tomcat/conf/geostore-datasource-ovr.properties "
-    volumes:
-      - ./mapstore/geostore-datasource-ovr.properties:/usr/local/tomcat/conf/geostore-datasource-ovr.properties
-    depends_on:
-      - postgis
-    container_name: mapstore
+  # mapstore:
+  #   build: ./mapstore/
+  #   image: emotionalcities/sdi-template-mapstore
+  #   expose:
+  #     - 8080
+  #   environment:
+  #     - "JAVA_OPTS=-Dgeostore-ovr=file:///usr/local/tomcat/conf/geostore-datasource-ovr.properties "
+  #   volumes:
+  #     - ./mapstore/geostore-datasource-ovr.properties:/usr/local/tomcat/conf/geostore-datasource-ovr.properties
+  #   depends_on:
+  #     - postgis
+  #   container_name: mapstore
 
   frost:
     image: fraunhoferiosb/frost-server:2.0

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><userRegistry xmlns="http://www.geoserver.org/security/users" version="1.0">
 <users>
 <user enabled="true" name="admin" password="crypt1:RK03S6ZCqa/Qd4+J9QOmmqRyB7h+8Jtm"/>
-<user enabled="true" name="leonardo" password="crypt1:2j1pL2ifAwL6e+SzaZsDfk5qJ4RRv72ZkCCBDAdbYZs="/>
-<user enabled="true" name="zeenat" password="crypt1:M3ip2ZTlOZ849me4qwSysP/vbu6vbQl1"/>
+<user enabled="true" name="climateflux" password="crypt1:OKGaQKHdqUN975a0PgyZ2cr32PufkWX0"/>
+<user enabled="true" name="fmul" password="crypt1:i7WYTPvmo6IYy46j0TcYlzuWGfhSxU05"/>
+<user enabled="true" name="msu" password="crypt1:2rs2z1LZiI9SQL+A5W3k4vOuieAwoDzZ"/>
 </users>
 <groups/>
 </userRegistry>

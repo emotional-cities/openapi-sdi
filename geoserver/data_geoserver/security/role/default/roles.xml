@@ -2,6 +2,7 @@
 <roleList>
 <role id="ADMIN"/>
 <role id="CAMB"/>
+<role id="CLIMA"/>
 <role id="FMUL"/>
 <role id="GROUP_ADMIN"/>
 <role id="IGOT"/>
@@ -11,6 +12,15 @@
 <userRoles username="admin">
 <roleRef roleID="ADMIN"/>
 <roleRef roleID="GROUP_ADMIN"/>
+</userRoles>
+<userRoles username="ardaman">
+<roleRef roleID="MSU"/>
+</userRoles>
+<userRoles username="climateflux">
+<roleRef roleID="CLIMA"/>
+</userRoles>
+<userRoles username="fmul">
+<roleRef roleID="FMUL"/>
 </userRoles>
 <userRoles username="leonardo">
 <roleRef roleID="FMUL"/>

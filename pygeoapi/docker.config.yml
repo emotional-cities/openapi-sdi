@@ -117,7 +117,7 @@ resources:
               data: http://elastic_search:9200/hex350_grid_cardio_1920
               id_field: fid
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/hex350_grid_cardio_1920/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -156,7 +156,7 @@ resources:
               data: http://elastic_search:9200/hex350_grid_obesity_1920
               id_field: fid
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/hex350_grid_obesity_1920/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -195,7 +195,7 @@ resources:
               data: http://elastic_search:9200/hex350_grid_depression_1920
               id_field: fid
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/hex350_grid_depression_1920/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -234,7 +234,7 @@ resources:
               data: http://elastic_search:9200/hex350_grid_mental_1920
               id_field: fid
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/hex350_grid_mental_1920/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -273,7 +273,7 @@ resources:
               data: http://elastic_search:9200/hex350_grid_demantia_1920
               id_field: fid
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/hex350_grid_demantia_1920/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -312,7 +312,7 @@ resources:
               data: http://elastic_search:9200/hex350_grid_access2openspace
               id_field: fid
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/hex350_grid_access2openspace/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -351,7 +351,7 @@ resources:
               data: http://elastic_search:9200/hex350_grid_ndvi2022
               id_field: fid
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/hex350_grid_ndvi2022/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -390,7 +390,7 @@ resources:
               data: http://elastic_search:9200/hex350_grid_pm25_2019
               id_field: fid
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/hex350_grid_pm25_2019/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -429,7 +429,7 @@ resources:
               data: http://elastic_search:9200/hex350_grid_pm10_2019
               id_field: fid
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/hex350_grid_pm10_2019/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -468,7 +468,7 @@ resources:
               data: http://elastic_search:9200/hex350_grid_no2_2019
               id_field: fid
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/hex350_grid_no2_2019/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -507,7 +507,7 @@ resources:
               data: http://elastic_search:9200/hex350_grid_laeq16h
               id_field: fid
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/hex350_grid_laeq16h/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -546,7 +546,7 @@ resources:
               data: http://elastic_search:9200/hex350_grid_flood_4band
               id_field: fid
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/hex350_grid_flood_4band/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -585,7 +585,7 @@ resources:
               data: http://elastic_search:9200/hex350_grid_avglst
               id_field: fid
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/hex350_grid_avglst/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -624,7 +624,7 @@ resources:
               data: http://elastic_search:9200/hex350_grid_cycleroutes2021
               id_field: fid
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/hex350_grid_cycleroutes2021/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -663,7 +663,7 @@ resources:
               data: http://elastic_search:9200/hex350_grid_hindex2020
               id_field: fid
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/hex350_grid_hindex2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -702,7 +702,7 @@ resources:
               data: http://elastic_search:9200/hex350_grid_popden_2020
               id_field: fid
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/hex350_grid_popden_2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -741,7 +741,7 @@ resources:
               data: http://elastic_search:9200/hex350_grid_gender2020
               id_field: fid
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/hex350_grid_gender2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -780,7 +780,7 @@ resources:
               data: http://elastic_search:9200/hex350_grid_age2020
               id_field: fid
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/hex350_grid_age2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -819,7 +819,7 @@ resources:
               data: http://elastic_search:9200/hex350_grid_active2020
               id_field: fid
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/hex350_grid_active2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -858,7 +858,7 @@ resources:
               data: http://elastic_search:9200/hex350_grid_crime_22
               id_field: fid
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/hex350_grid_crime_22/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -899,7 +899,7 @@ resources:
               data: http://elastic_search:9200/a0000000c
               id_field: OBJECTid
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/a0000000c/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -939,7 +939,7 @@ resources:
               data: http://elastic_search:9200/l_birth_ra
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/l_birth_ra/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -979,7 +979,7 @@ resources:
               data: http://elastic_search:9200/morta_rat
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/morta_rat/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -1019,7 +1019,7 @@ resources:
               data: http://elastic_search:9200/als
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/als/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -1059,7 +1059,7 @@ resources:
               data: http://elastic_search:9200/pp_diabete
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/pp_diabete/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -1100,7 +1100,7 @@ resources:
               data: http://elastic_search:9200/pp_alcohol
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/pp_alcohol/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -1141,7 +1141,7 @@ resources:
               data: http://elastic_search:9200/pp_tobacco
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/pp_tobacco/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -1181,7 +1181,7 @@ resources:
               data: http://elastic_search:9200/pp_overwei
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/pp_overwei/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -1221,7 +1221,7 @@ resources:
               data: http://elastic_search:9200/pp_obesity
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/pp_obesity/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -1261,7 +1261,7 @@ resources:
               data: http://elastic_search:9200/pp_hyperte
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/pp_hyperte/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -1301,7 +1301,7 @@ resources:
               data: http://elastic_search:9200/pp_myo_inf
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/pp_myo_inf/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -1341,7 +1341,7 @@ resources:
               data: http://elastic_search:9200/pp_isc_myo
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/pp_isc_myo/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -1381,7 +1381,7 @@ resources:
               data: http://elastic_search:9200/pp_dementi
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/pp_dementi/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -1421,7 +1421,7 @@ resources:
               data: http://elastic_search:9200/pp_anxi_di
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/pp_anxi_di/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -1461,7 +1461,7 @@ resources:
               data: http://elastic_search:9200/pp_an_ne_t
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/pp_an_ne_t/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -1501,7 +1501,7 @@ resources:
               data: http://elastic_search:9200/pp_depress
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/pp_depress/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -1542,7 +1542,7 @@ resources:
               data: http://elastic_search:9200/av_age_bui
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/av_age_bui/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -1583,7 +1583,7 @@ resources:
               data: http://elastic_search:9200/build_repai
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/build_repai/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -1624,7 +1624,7 @@ resources:
               data: http://elastic_search:9200/av_buil_he
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/av_buil_he/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -1665,7 +1665,7 @@ resources:
               data: http://elastic_search:9200/buil_area_
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/buil_area_/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -1706,7 +1706,7 @@ resources:
               data: http://elastic_search:9200/walkabilit
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/walkabilit/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -1745,7 +1745,7 @@ resources:
               data: http://elastic_search:9200/altimetry
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/altimetry/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -1786,7 +1786,7 @@ resources:
               data: http://elastic_search:9200/beds_tour_
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/beds_tour_/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -1826,7 +1826,7 @@ resources:
               data: http://elastic_search:9200/ff_out_den
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/ff_out_den/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -1867,7 +1867,7 @@ resources:
               data: http://elastic_search:9200/ndvi
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/ndvi/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -1908,7 +1908,7 @@ resources:
               data: http://elastic_search:9200/gre_spa_po
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/gre_spa_po/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -1950,7 +1950,7 @@ resources:
               data: http://elastic_search:9200/noise
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/noise/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -1992,7 +1992,7 @@ resources:
               data: http://elastic_search:9200/pm25
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/pm25/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -2034,7 +2034,7 @@ resources:
               data: http://elastic_search:9200/pm10
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/pm10/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -2076,7 +2076,7 @@ resources:
               data: http://elastic_search:9200/mean_temp
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/mean_temp/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -2118,7 +2118,7 @@ resources:
               data: http://elastic_search:9200/ex_heat_vu
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/ex_heat_vu/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -2160,7 +2160,7 @@ resources:
               data: http://elastic_search:9200/ffloods_vu
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/ffloods_vu/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -2201,7 +2201,7 @@ resources:
               data: http://elastic_search:9200/pur_power
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/pur_power/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -2242,7 +2242,7 @@ resources:
               data: http://elastic_search:9200/ppo_low_ed
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/ppo_low_ed/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -2283,7 +2283,7 @@ resources:
               data: http://elastic_search:9200/ppop_unemp
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/ppop_unemp/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -2324,7 +2324,7 @@ resources:
               data: http://elastic_search:9200/pop_densit
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/pop_densit/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -2365,7 +2365,7 @@ resources:
               data: http://elastic_search:9200/gender_rat
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/gender_rat/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -2405,7 +2405,7 @@ resources:
               data: http://elastic_search:9200/yt_peop_ra
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/yt_peop_ra/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -2445,7 +2445,7 @@ resources:
               data: http://elastic_search:9200/ed_peop_ra
               id_field: FID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/ed_peop_ra/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -2482,7 +2482,7 @@ resources:
               data: http://elastic_search:9200/munich_220713_all
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/munich_220713_all/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -2520,7 +2520,7 @@ resources:
               data: http://elastic_search:9200/lisbon_20210912_pr_
               id_field: fid
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/lisbon_20210912_pr_/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -2557,7 +2557,7 @@ resources:
               data: http://elastic_search:9200/airquality.airpressure
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/airquality.airpressure/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -2594,7 +2594,7 @@ resources:
               data: http://elastic_search:9200/airquality.humidity
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/airquality.humidity/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -2631,7 +2631,7 @@ resources:
               data: http://elastic_search:9200/airquality.iaqindex
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/airquality.iaqindex/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -2668,7 +2668,7 @@ resources:
               data: http://elastic_search:9200/airquality.temperature
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/airquality.temperature/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -2705,7 +2705,7 @@ resources:
               data: http://elastic_search:9200/ambientlight.ambientlight
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/ambientlight.ambientlight/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -2742,7 +2742,7 @@ resources:
               data: http://elastic_search:9200/analogin.voltage
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/analogin.voltage/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -2779,7 +2779,7 @@ resources:
               data: http://elastic_search:9200/co2v2.co2conc
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/co2v2.co2conc/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -2816,7 +2816,7 @@ resources:
               data: http://elastic_search:9200/co2v2.humidity
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/co2v2.humidity/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -2853,7 +2853,7 @@ resources:
               data: http://elastic_search:9200/co2v2.temperature
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/co2v2.temperature/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -2890,7 +2890,7 @@ resources:
               data: http://elastic_search:9200/gps.data
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/gps.data/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -2927,7 +2927,7 @@ resources:
               data: http://elastic_search:9200/gps.time
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/gps.time/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -2964,7 +2964,7 @@ resources:
               data: http://elastic_search:9200/humidity.humidity
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/humidity.humidity/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -3001,7 +3001,7 @@ resources:
               data: http://elastic_search:9200/soundpressurelevel.spl
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/soundpressurelevel.spl/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -3042,7 +3042,7 @@ resources:
               data: http://elastic_search:9200/london_whitechapel_sub-oe309002
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/london_whitechapel_sub-oe309002/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -3080,7 +3080,7 @@ resources:
     #           data: http://elastic_search:9200/ucr_2019
     #           id_field: ObjectID
     #         - type: tile
-    #           name: MVT
+    #           name: MVT-elastic
     #           data: http://elastic_search:9200/ucr_2019/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
     #           options:
     #             metadata_format: default # default | tilejson
@@ -3118,7 +3118,7 @@ resources:
               data: http://elastic_search:9200/tl_rd22_26_bg
               id_field: ObjectID
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/tl_rd22_26_bg/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -3157,7 +3157,7 @@ resources:
               data: http://elastic_search:9200/500cities_city_11082016
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/500cities_city_11082016/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -3195,7 +3195,7 @@ resources:
               data: http://elastic_search:9200/500cities_tracts_11082016
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/500cities_tracts_11082016/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -3233,7 +3233,7 @@ resources:
               data: http://elastic_search:9200/lansing_chronicobstructivepulmonarydiseaseageabove18yrs_2019_cdc
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/lansing_chronicobstructivepulmonarydiseaseageabove18yrs_2019_cdc/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -3272,7 +3272,7 @@ resources:
               data: http://elastic_search:9200/lansing_city_block_group_areadeprivationindex_nationalscore_2020
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/lansing_city_block_group_areadeprivationindex_nationalscore_2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -3310,7 +3310,7 @@ resources:
               data: http://elastic_search:9200/lansing_city_blockgroup_areadeprivationindex_statescore_2020
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/lansing_city_blockgroup_areadeprivationindex_statescore_2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -3348,7 +3348,7 @@ resources:
               data: http://elastic_search:9200/lansing_city_block_group_genderratio_mtow_2017_21
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/lansing_city_block_group_genderratio_mtow_2017_21/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -3386,7 +3386,7 @@ resources:
               data: http://elastic_search:9200/lansing_city_block_group_nationalwalkabilityindex_2021
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/lansing_city_block_group_nationalwalkabilityindex_2021/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -3425,7 +3425,7 @@ resources:
               data: http://elastic_search:9200/lansing_city_block_group_percapitaincome_2020
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/lansing_city_block_group_percapitaincome_2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -3463,7 +3463,7 @@ resources:
               data: http://elastic_search:9200/lansing_city_census_tracts_depression
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/lansing_city_census_tracts_depression/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -3501,7 +3501,7 @@ resources:
               data: http://elastic_search:9200/lansing_city_census_tracts_disability_2017_21
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/lansing_city_census_tracts_disability_2017_21/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -3539,7 +3539,7 @@ resources:
               data: http://elastic_search:9200/lansing_city_census_tracts_lifeexpectancyatbirth_10_15
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/lansing_city_census_tracts_lifeexpectancyatbirth_10_15/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -3577,7 +3577,7 @@ resources:
               data: http://elastic_search:9200/lansing_city_census_tracts_lowaccesstofood
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/lansing_city_census_tracts_lowaccesstofood/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -3616,7 +3616,7 @@ resources:
               data: http://elastic_search:9200/lansing_city_census_tracts_lowincomelowaccess
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/lansing_city_census_tracts_lowincomelowaccess/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -3655,7 +3655,7 @@ resources:
     #           data: http://elastic_search:9200/lansing_city_census_tracts_numberofpeopleaged65andabove_2020
     #           id_field: id
     #         - type: tile
-    #           name: MVT
+    #           name: MVT-elastic
     #           data: http://elastic_search:9200/lansing_city_census_tracts_numberofpeopleaged65andabove_2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
     #           options:
     #             metadata_format: default # default | tilejson
@@ -3693,7 +3693,7 @@ resources:
               data: http://elastic_search:9200/lansing_city_census_tracts_numberofpeoplebiketowork_2020
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/lansing_city_census_tracts_numberofpeoplebiketowork_2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -3731,7 +3731,7 @@ resources:
               data: http://elastic_search:9200/lansing_city_census_tracts_peopleagedabove5disability
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/lansing_city_census_tracts_peopleagedabove5disability/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -3769,7 +3769,7 @@ resources:
               data: http://elastic_search:9200/lansing_city_census_tracts_percentageofpeoplebiketowork_2020
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/lansing_city_census_tracts_percentageofpeoplebiketowork_2020/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -3807,7 +3807,7 @@ resources:
               data: http://elastic_search:9200/lansing_city_census_tracts_traveltimetowork_17_21
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/lansing_city_census_tracts_traveltimetowork_17_21/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -3845,7 +3845,7 @@ resources:
               data: http://elastic_search:9200/lansing_coronaryheartdiseaseageabove18yrs_2019_cdc
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/lansing_coronaryheartdiseaseageabove18yrs_2019_cdc/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -3883,7 +3883,7 @@ resources:
               data: http://elastic_search:9200/lansing_currentasthmaageabove18yrs_2019_cdc
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/lansing_currentasthmaageabove18yrs_2019_cdc/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -3921,7 +3921,7 @@ resources:
               data: http://elastic_search:9200/lansing_diabetesageabove18yrs_2019_cdc
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/lansing_diabetesageabove18yrs_2019_cdc/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -3959,7 +3959,7 @@ resources:
               data: http://elastic_search:9200/lansing_highbpageabove18yrs_2019_cdc
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/lansing_highbpageabove18yrs_2019_cdc/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -3997,7 +3997,7 @@ resources:
               data: http://elastic_search:9200/lansing_noleisuretimepaageabove18yrs_2019_cdc
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/lansing_noleisuretimepaageabove18yrs_2019_cdc/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -4035,7 +4035,7 @@ resources:
               data: http://elastic_search:9200/lansing_obesityageabove18yrs_2019_cdc
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/lansing_obesityageabove18yrs_2019_cdc/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -4073,7 +4073,7 @@ resources:
               data: http://elastic_search:9200/lansing_physicalhealthnotgoodageabove18yrs_2019_cdc
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/lansing_physicalhealthnotgoodageabove18yrs_2019_cdc/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson
@@ -4111,7 +4111,7 @@ resources:
               data: http://elastic_search:9200/lansing_strokeageabove18yrs_2019_cdc
               id_field: id
             - type: tile
-              name: MVT
+              name: MVT-elastic
               data: http://elastic_search:9200/lansing_strokeageabove18yrs_2019_cdc/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 metadata_format: default # default | tilejson

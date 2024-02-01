@@ -47,6 +47,11 @@ services:
       - "443:443"
     command: sh -c "/usr/local/apache2/bin/htpasswd -b -c /usr/local/apache2/.htpasswd $FROST_USER $FROST_PASSWORD && httpd-foreground"
     container_name: apache-httpd
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 1G
 
   pygeoapi:
     image: geopython/pygeoapi:latest
@@ -70,12 +75,15 @@ services:
     depends_on:
       - elastic_search
     restart: on-failure
+    deploy:
+      resources:
+        limits:
+          cpus: '1.00'
+          memory: 2G
 
   elastic_search:
     build: ./ES
-
     container_name: elastic
-
     environment:
        - "discovery.type=single-node"
        - bootstrap.memory_lock=true
@@ -84,47 +92,56 @@ services:
        memlock:
          soft: -1
          hard: -1
-
     ports:
       - 9300:9300
       - 9200:9200
     volumes:
       - elastic_search_data:/usr/share/elasticsearch/data
       - ./ES/data:/in
+    deploy:
+      resources:
+        limits:
+          cpus: '1.50'
+          memory: 6G
 
-  kib01:
-    image: docker.elastic.co/kibana/kibana:8.4.0
-    container_name: kibana
-    environment:
-      ELASTICSEARCH_URL: http://elastic:9200
-      ELASTICSEARCH_HOSTS: '["http://elastic:9200"]'
-      SERVER_BASEPATH: /dashboard
+  # kib01:
+  #   image: docker.elastic.co/kibana/kibana:8.4.0
+  #   container_name: kibana
+  #   environment:
+  #     ELASTICSEARCH_URL: http://elastic:9200
+  #     ELASTICSEARCH_HOSTS: '["http://elastic:9200"]'
+  #     SERVER_BASEPATH: /dashboard
+  #   deploy:
+  #     resources:
+  #       limits:
+  #         cpus: '1.00'
+  #         memory: 1G
 
-  metadata_logstash:
-    build: ./logstash
-    container_name: metadata_logstash
-    environment:
-      ELASTICSEARCH_URL: http://elastic:9200
-      ELASTICSEARCH_HOSTS: '["http://elastic:9200"]'
-      XPACK_MONITORING_ENABLED: 'false'
-    links:
-      - elastic_search
-    depends_on:
-      - elastic_search
-    volumes:
-      - ./logstash/data:/in
+  # metadata_logstash:
+  #   build: ./logstash
+  #   container_name: metadata_logstash
+  #   environment:
+  #     ELASTICSEARCH_URL: http://elastic:9200
+  #     ELASTICSEARCH_HOSTS: '["http://elastic:9200"]'
+  #     XPACK_MONITORING_ENABLED: 'false'
+  #   links:
+  #     - elastic_search
+  #   depends_on:
+  #     - elastic_search
+  #   volumes:
+  #     - ./logstash/data:/in
 
-  geopackage_pusher:
-    build: ./gdal
-    container_name: geopackage_pusher
-    volumes:
-      - ./gdal/data:/in
-      - ./ES/data:/out
-    links:
-      - elastic_search
-    depends_on:
-      - elastic_search
-    command: bash -c "/docker-entrypoint.sh"
+  # geopackage_pusher:
+  #   build: ./gdal
+  #   container_name: geopackage_pusher
+  #   volumes:
+  #     - ./gdal/data:/in
+  #     - ./ES/data:/out
+  #   links:
+  #     - elastic_search
+  #   depends_on:
+  #     - elastic_search
+  #   command: bash -c "/docker-entrypoint.sh"
 
   postgis:
     build: ./postgis/
@@ -141,6 +158,11 @@ services:
     ports:
       - "5432:5432"
     container_name: postgis
+    deploy:
+      resources:
+        limits:
+          cpus: '1.00'
+          memory: 1G
 
   geoserver:
     build: ./geoserver/
@@ -161,8 +183,12 @@ services:
       - ./geoserver/data_geoserver:/var/local/geoserver
       - ./geoserver/data_geoserver/gwc:/var/local/geoserver-gwc
       - ./geoserver/ec_data/geopackage:/home/tomcat/ec_data/geopackage
-
     container_name: geoserver
+    deploy:
+      resources:
+        limits:
+          cpus: '1.00'
+          memory: 2G
 
   mapstore:
     build: ./mapstore/
@@ -176,6 +202,11 @@ services:
     depends_on:
       - postgis
     container_name: mapstore
+    deploy:
+      resources:
+        limits:
+          cpus: '1.00'
+          memory: 2G
 
   frost:
     image: fraunhoferiosb/frost-server:2.0
@@ -205,6 +236,11 @@ services:
     depends_on:
       - postgis_frost
     container_name: frost
+    deploy:
+      resources:
+        limits:
+          cpus: '1.00'
+          memory: 2G
 
   postgis_frost:
     image: postgis/postgis:14-3.2-alpine
@@ -220,12 +256,15 @@ services:
       - postgis_frost_volume:/var/lib/postgresql/data
       - ./frost/sensorthings.sh:/docker-entrypoint-initdb.d/sensorthings.sh
     container_name: postgis_frost
+    deploy:
+      resources:
+        limits:
+          cpus: '1.00'
+          memory: 2G
 
   sisyphus:
     image: ghcr.io/emotional-cities/sisyphusapi:main
-
     container_name: sisyphus
-
     environment:
       ENV_STATE: "dev"
       DEV_ELASTIC_HOST: "elastic"
@@ -237,9 +276,13 @@ services:
       DEV_LOG_ROTATION: "500 MB"
       DEV_LOG_RETENTION: "10 days"
       DEV_LOG_FORMAT: "{time} {level} {message}"
-
     expose:
       - 80
+    deploy:
+      resources:
+        limits:
+          cpus: '1.00'
+          memory: 2G
 
 volumes:
   elastic_search_data: {}

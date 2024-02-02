@@ -45,7 +45,6 @@ services:
       - .env     # path to your .env file
 
     volumes:
-      #- ./pygeoapi/docker.config.yml:/pygeoapi/local.config-orig.yml
       - ./pygeoapi/docker.config.yml:/pygeoapi/local.config.yml
       - ./pygeoapi/es-entrypoint.sh:/es-entrypoint.sh
       - ./pygeoapi/wait-for-elasticsearch.sh:/wait-for-elasticsearch.sh
@@ -91,7 +90,6 @@ services:
       ELASTICSEARCH_URL: http://elastic:9200
       ELASTICSEARCH_HOSTS: '["http://elastic:9200"]'
       SERVER_BASEPATH: /dashboard
-      #SERVER_HOST: emotional.byteroad.net
 
     networks:
       - default
@@ -113,21 +111,6 @@ services:
 
     networks:
       - default
-
-  # geopackage_pusher:
-  #   build: ./gdal
-  #   container_name: geopackage_pusher
-  #   volumes:
-  #     - ./gdal/data:/in
-  #     - ./ES/data:/out
-  #   links:
-  #     - elastic_search
-  #   depends_on:
-  #     - elastic_search
-  #   command: bash -c "/docker-entrypoint.sh"
-
-  #   networks:
-  #     - default
 
   postgis:
     build: ./postgis/

@@ -4052,79 +4052,78 @@ resources:
               id_field: id
               time_field: datetime
 
-    # byteroad-workshop:
-    #     type: collection
-    #     title: Demo data for workshop 
-    #     description: Read data from the data lake
-    #     keywords:
-    #         - AWS
-    #     links:
-    #         - type: text/html
-    #           rel: canonical
-    #           title: information
-    #           href: https://www.sawcer.com/
-    #           hreflang: en-US
-    #     extents:
-    #         spatial:
-    #             bbox: [-180, -90, 180, 90]
-    #             crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-    #         temporal:
-    #             begin: 2011-11-11
-    #             end: null  # or empty
-    #     providers:
-    #         - type: feature
-    #           name: OGR
-    #           data:
-    #             source_type: GeoJSON
-    #             # TODO: edit this to read data from a bucket /vsis3/emotional-cities/data/[BUCKET NAME]/[FILE NAME]
-    #             source: /vsis3/emotional-cities/data/utartu/shops.geojson
-    #             gdal_ogr_options:
-    #                 AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
-    #                 AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
-    #                 #AWS_SESSION_TOKEN:
-    #           id_field: field_1
-    #           layer: shops
-
-
-    things:
+    s3-test:
         type: collection
-        title: STA Things
-        description: SensorThings API Things
+        title: S3 test 
+        description: Read data from the data lake
         keywords:
-            - Things
-            - SensorThings
-            - Biosignals
-        linked-data:
-            context:
-                - sosa: "http://www.w3.org/ns/sosa/"
-                  ssn: "http://www.w3.org/ns/ssn/"
-                  Datastreams: sosa:ObservationCollection
-                  name: schema:name
+            - AWS
         links:
-            - type: application/html
+            - type: text/html
               rel: canonical
-              title: data source
-              href: https://emotional.byteroad.net/FROST-Server/v1.1/Things
+              title: information
+              href: https://www.sawcer.com/
               hreflang: en-US
         extents:
             spatial:
-                bbox: [-0.1500810000000000,51.5373379999999983,-0.1427490000000000,51.5417279999999991]
+                bbox: [-180, -90, 180, 90]
                 crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
             temporal:
-                begin: 2022-09-22
-                end: null
+                begin: 2011-11-11
+                end: null  # or empty
         providers:
-          - type: feature
-            name: SensorThings 
-            data: http://frost:8080/FROST-Server/v1.1/
-            id_field: '@iot.id'
-            entity: Things 
-            intralink: true
-            properties:
-                - name
-                - Datastreams
-                - Locations
-                - '@iot.selfLink'
+            - type: feature
+              name: OGR
+              data:
+                source_type: GeoJSON
+                # TODO: edit this to read data from a bucket /vsis3/emotional-cities/sdi/[BUCKET NAME]/[FILE NAME]
+                source: /vsis3/emotional-cities/sdi/hex350_grid_pm25_2019.geojson
+                gdal_ogr_options:
+                    AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+                    AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+                    #AWS_SESSION_TOKEN:
+              id_field: id
+              layer: hex350_grid_pm25_2019
+
+    # things:
+    #     type: collection
+    #     title: STA Things
+    #     description: SensorThings API Things
+    #     keywords:
+    #         - Things
+    #         - SensorThings
+    #         - Biosignals
+    #     linked-data:
+    #         context:
+    #             - sosa: "http://www.w3.org/ns/sosa/"
+    #               ssn: "http://www.w3.org/ns/ssn/"
+    #               Datastreams: sosa:ObservationCollection
+    #               name: schema:name
+    #     links:
+    #         - type: application/html
+    #           rel: canonical
+    #           title: data source
+    #           href: https://emotional.byteroad.net/FROST-Server/v1.1/Things
+    #           hreflang: en-US
+    #     extents:
+    #         spatial:
+    #             bbox: [-0.1500810000000000,51.5373379999999983,-0.1427490000000000,51.5417279999999991]
+    #             crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+    #         temporal:
+    #             begin: 2022-09-22
+    #             end: null
+    #     providers:
+    #       - type: feature
+    #         name: SensorThings 
+    #         data: http://frost:8080/FROST-Server/v1.1/
+    #         id_field: '@iot.id'
+    #         entity: Things 
+    #         intralink: true
+    #         properties:
+    #             - name
+    #             - Datastreams
+    #             - Locations
+    #             - '@iot.selfLink'
     # datastreams:
     #     type: collection
     #     title: STA Datastreams
@@ -4208,36 +4207,36 @@ resources:
     #             - '@iot.selfLink'
 
 
-    sta-demo:
-        type: collection
-        title: Demo data for Sensor Things API 
-        description: Backpack experiment in London, using Temperature and Humidity Sensors.
-        keywords:
-            - Biosignals
-            - Sensors
-            - STA
-            - Things
-            - Experiment
-            - Temperature
-            - Humidity
-        links:
-            - type: text/html
-              rel: canonical
-              title: information
-              href: https://emotional.byteroad.net/FROST-Server/v1.1/Things
-              hreflang: en-US
-        extents:
-            spatial:
-                bbox: [-0.1500810000000000,51.5373379999999983,-0.1427490000000000,51.5417279999999991]
-                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-            temporal:
-                begin: 2022-09-22
-                end: null  # or empty
-        providers:
-            - type: feature
-              name: SensorThings
-              data: http://frost:8080/FROST-Server/v1.0/
-              # uri_field: uri
-              entity: Datastreams
-              time_field: phenomenonTime
-              # intralink: true
+    # sta-demo:
+    #     type: collection
+    #     title: Demo data for Sensor Things API 
+    #     description: Backpack experiment in London, using Temperature and Humidity Sensors.
+    #     keywords:
+    #         - Biosignals
+    #         - Sensors
+    #         - STA
+    #         - Things
+    #         - Experiment
+    #         - Temperature
+    #         - Humidity
+    #     links:
+    #         - type: text/html
+    #           rel: canonical
+    #           title: information
+    #           href: https://emotional.byteroad.net/FROST-Server/v1.1/Things
+    #           hreflang: en-US
+    #     extents:
+    #         spatial:
+    #             bbox: [-0.1500810000000000,51.5373379999999983,-0.1427490000000000,51.5417279999999991]
+    #             crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+    #         temporal:
+    #             begin: 2022-09-22
+    #             end: null  # or empty
+    #     providers:
+    #         - type: feature
+    #           name: SensorThings
+    #           data: http://frost:8080/FROST-Server/v1.0/
+    #           # uri_field: uri
+    #           entity: Datastreams
+    #           time_field: phenomenonTime
+    #           # intralink: true

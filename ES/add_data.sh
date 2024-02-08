@@ -134,7 +134,8 @@ python3 /load_es_data.py /in/hex350_grid_ndvi2022.geojson fid
 python3 /load_es_data.py /in/hex350_grid_no2_2019.geojson fid
 python3 /load_es_data.py /in/hex350_grid_obesity_1920.geojson fid
 python3 /load_es_data.py /in/hex350_grid_pm10_2019.geojson fid
-python3 /load_es_data.py /in/hex350_grid_pm25_2019.geojson fid
+
+python3 /load_es_data.py /vsis3/emotional-cities/sdi/hex350_grid_pm25_2019.geojson fid
 
 echo "Loading clima data"
 python3 /load_es_data.py /in/munich_220713_all.geojson id

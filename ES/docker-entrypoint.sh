@@ -33,5 +33,7 @@
 # wait for Elasticsearch to start, then run the setup script to
 # create and configure the index.
 
+exec /usr/bin/sudo -n /usr/bin/mount-s3 emotional-cities /mount_s3 &
+
 exec /usr/share/elasticsearch/bin/wait-for-it.sh localhost:9200 -- /add_data.sh &
 exec $@

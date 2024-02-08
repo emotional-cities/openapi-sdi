@@ -84,10 +84,13 @@ services:
   elastic_search:
     build: ./ES
     container_name: elastic
+    privileged: true
     environment:
        - "discovery.type=single-node"
        - bootstrap.memory_lock=true
        - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+       - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+       - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
     ulimits:
        memlock:
          soft: -1
@@ -98,6 +101,9 @@ services:
     volumes:
       - elastic_search_data:/usr/share/elasticsearch/data
       - ./ES/data:/in
+      # - ./ES/docker-entrypoint.sh:/docker-entrypoint.sh
+      # - ./ES/add_data.sh:/add_data.sh
+    # entrypoint: ["/bin/sh","/docker-entrypoint.sh"]
     deploy:
       resources:
         limits:

@@ -60,7 +60,7 @@ services:
     env_file:
       - .env     # path to your .env file
     volumes:
-      - ./pygeoapi/docker.config.local.yml:/pygeoapi/local.config.yml
+      - ./pygeoapi/docker.config.yml:/pygeoapi/local.config.yml
       - ./pygeoapi/es-entrypoint.sh:/es-entrypoint.sh
       - ./pygeoapi/wait-for-elasticsearch.sh:/wait-for-elasticsearch.sh
       - ./ES/data:/data

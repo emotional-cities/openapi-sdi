@@ -61,7 +61,8 @@ unzip awscliv2.zip && \
 RUN wget https://s3.amazonaws.com/mountpoint-s3-release/latest/x86_64/mount-s3.deb && \
 apt-get install -y ./mount-s3.deb && \
 rm mount-s3.deb && \
-mkdir /mount_s3
+mkdir /mount_s3 && \
+chown -R elasticsearch:elasticsearch /mount_s3
 
 RUN mkdir -p /root/.aws
 RUN cp /credentials /root/.aws/credentials

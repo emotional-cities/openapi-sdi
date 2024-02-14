@@ -128,6 +128,23 @@ FROST_USER="SOMEUSERNAME"
 FROST_PASSWORD="SOMEPASSWORD"
 ```
 
+Elasticsearch ingests Geojson files stored in remote S3 bucket. To access the S3 bucket it's necessary to create a file inside ES directory, named `credentials` with following content:
+
+```
+[default]
+aws_access_key_id=YOURSECRET_WITHOUTQUOTES
+aws_secret_access_key=YOURSECRET_WITHOUTQUOTES
+aws_region=eu-central-1
+```
+
+`ES/credentials` is loaded in the image, so it must exists during build time. So, every time you change it, please remember to run:
+
+```
+docker-compose -f docker-compose-local.yml build
+```
+
+With .env file it's not necessary, because it's injected during docker compose `up`.
+
 ## Troubleshooting
 
 If you cannot launch the docker-composition due to permission errors, try this:
@@ -169,8 +186,6 @@ POSTGRES_DB="ddmdwlmwe"
 POSTGRES_USER="dmwledmw"
 MINIO_ROOT_USER="dwlkdmmdklwmed"
 MINIO_ROOT_PASSWORD="dqkmwmdwwqlmw"
-AWS_SECRET_ACCESS_KEY="dlmeklmwldmweçmmfmçwfmçwmwwçwwefmç"
-AWS_ACCESS_KEY_ID="edmwldmdwmwemweew"
 STA_USER="dqkmqdwlmwwmwl"
 STA_PASSWORD=dddddddddddd
 FROST_USER=dd

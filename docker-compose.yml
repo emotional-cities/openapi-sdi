@@ -34,7 +34,6 @@ version: '3.3'
 services:
   pygeoapi:
     image: geopython/pygeoapi:latest
-
     container_name: pygeoapi_es
     entrypoint:
       - /es-entrypoint.sh
@@ -43,7 +42,6 @@ services:
       AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
     env_file:
       - .env     # path to your .env file
-
     volumes:
       - ./pygeoapi/docker.config.yml:/pygeoapi/local.config.yml
       - ./pygeoapi/es-entrypoint.sh:/es-entrypoint.sh
@@ -51,18 +49,15 @@ services:
       - ./ES/data:/data
     links:
       - elastic_search
-
     depends_on:
       - elastic_search
-      
     restart: on-failure
 
 
   elastic_search:
     build: ./ES
-
     container_name: elastic
-
+    privileged: true
     environment:
       - "discovery.type=single-node"
       - bootstrap.memory_lock=true
@@ -72,14 +67,12 @@ services:
       memlock:
         soft: -1
         hard: -1
-
     ports:
       - 9300:9300
       - 9200:9200
     volumes:
       - elastic_search_data:/usr/share/elasticsearch/data
-      - ./ES/data:/in
-
+      # - ./ES/data:/in
     networks:
       - default
 
@@ -90,7 +83,6 @@ services:
       ELASTICSEARCH_URL: http://elastic:9200
       ELASTICSEARCH_HOSTS: '["http://elastic:9200"]'
       SERVER_BASEPATH: /dashboard
-
     networks:
       - default
 
@@ -108,7 +100,6 @@ services:
       - elastic_search
     volumes:
       - ./logstash/data:/in
-
     networks:
       - default
 
@@ -226,9 +217,7 @@ services:
 
   sisyphus:
     image: ghcr.io/emotional-cities/sisyphusapi:main
-
     container_name: sisyphus
-
     environment:
       ENV_STATE: "dev"
       DEV_ELASTIC_HOST: "elastic"
@@ -240,7 +229,6 @@ services:
       DEV_LOG_ROTATION: "500 MB"
       DEV_LOG_RETENTION: "10 days"
       DEV_LOG_FORMAT: "{time} {level} {message}"
-
     expose:
       - 80
 

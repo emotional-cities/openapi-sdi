@@ -65,7 +65,7 @@ mkdir /mount_s3 && \
 chown -R elasticsearch:elasticsearch /mount_s3
 
 RUN mkdir -p /root/.aws
-RUN cp /credentials /root/.aws/credentials
+ADD ./credentials /root/.aws/credentials
 
 RUN echo "elasticsearch ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 

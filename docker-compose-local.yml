@@ -108,6 +108,24 @@ services:
           cpus: '1.50'
           memory: 4G
 
+  metadata_logstash:
+    build: ./logstash
+    container_name: metadata_logstash
+    environment:
+      ELASTICSEARCH_URL: http://elastic:9200
+      ELASTICSEARCH_HOSTS: '["http://elastic:9200"]'
+      XPACK_MONITORING_ENABLED: 'false'
+      LOG_LEVEL: 'error'
+    links:
+      - elastic_search
+    depends_on:
+      - elastic_search
+    volumes:
+      - ./logstash/data:/in
+
+    networks:
+      - default
+
   postgis:
     build: ./postgis/
     image: emotionalcities/sdi-template-postgis

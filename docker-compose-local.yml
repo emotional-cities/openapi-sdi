@@ -84,6 +84,7 @@ services:
   elastic_search:
     build: ./ES
     container_name: elastic
+    privileged: true
     environment:
        - "discovery.type=single-node"
        - bootstrap.memory_lock=true
@@ -98,50 +99,32 @@ services:
     volumes:
       - elastic_search_data:/usr/share/elasticsearch/data
       - ./ES/data:/in
+      # - ./ES/docker-entrypoint.sh:/docker-entrypoint.sh
+      # - ./ES/add_data.sh:/add_data.sh
+    # entrypoint: ["/bin/sh","/docker-entrypoint.sh"]
     deploy:
       resources:
         limits:
           cpus: '1.50'
-          memory: 6G
+          memory: 4G
 
-  # kib01:
-  #   image: docker.elastic.co/kibana/kibana:8.4.0
-  #   container_name: kibana
-  #   environment:
-  #     ELASTICSEARCH_URL: http://elastic:9200
-  #     ELASTICSEARCH_HOSTS: '["http://elastic:9200"]'
-  #     SERVER_BASEPATH: /dashboard
-  #   deploy:
-  #     resources:
-  #       limits:
-  #         cpus: '1.00'
-  #         memory: 1G
+  metadata_logstash:
+    build: ./logstash
+    container_name: metadata_logstash
+    environment:
+      ELASTICSEARCH_URL: http://elastic:9200
+      ELASTICSEARCH_HOSTS: '["http://elastic:9200"]'
+      XPACK_MONITORING_ENABLED: 'false'
+      LOG_LEVEL: 'error'
+    links:
+      - elastic_search
+    depends_on:
+      - elastic_search
+    volumes:
+      - ./logstash/data:/in
 
-  # metadata_logstash:
-  #   build: ./logstash
-  #   container_name: metadata_logstash
-  #   environment:
-  #     ELASTICSEARCH_URL: http://elastic:9200
-  #     ELASTICSEARCH_HOSTS: '["http://elastic:9200"]'
-  #     XPACK_MONITORING_ENABLED: 'false'
-  #   links:
-  #     - elastic_search
-  #   depends_on:
-  #     - elastic_search
-  #   volumes:
-  #     - ./logstash/data:/in
-
-  # geopackage_pusher:
-  #   build: ./gdal
-  #   container_name: geopackage_pusher
-  #   volumes:
-  #     - ./gdal/data:/in
-  #     - ./ES/data:/out
-  #   links:
-  #     - elastic_search
-  #   depends_on:
-  #     - elastic_search
-  #   command: bash -c "/docker-entrypoint.sh"
+    networks:
+      - default
 
   postgis:
     build: ./postgis/

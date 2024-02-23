@@ -8,7 +8,7 @@ This document describes how to setup and run the Spatial Data Infrastructure (SD
 
 These docker-compositions are loosely based on the compositions from the [pygeoapi project](https://pygeoapi.io/). They enable building and running a stack of FOSS & FOSS4G/[OSGeo](https://www.osgeo.org/) software, which implements an SDI using the latest [OGC API](https://ogcapi.ogc.org/) standards. This infrastructure is mostly focused on **sharing vector data, and its related metadata**.
 
-Regardess of the docker-composition you choose to run, you will launch a system which includes `pygeoapi` using an `Elasticsearch` backend for storing both, data and metadata. Vector tiles are served from a `MinIO` bucket, which is launched by another composition.
+Regardess of the docker-composition you choose to run, you will launch a system which includes `pygeoapi` using an `Elasticsearch` backend for storing both, data and metadata. 
 
 In addition, we have leveraged other tools from the [ELK](https://www.elastic.co/what-is/elk-stack): `logstash` to transform and insert metadata and `kibana` to visualize the content of the elasticsearch indexes.
 
@@ -19,53 +19,6 @@ You will need `docker` and `docker-compose` installed in your system, in order t
 ```
 ./install_docker.sh
 ```
-
-## Preparing the vector tiles backend
-
-Start by generating the vector tiles, using [tippecanoe](https://github.com/mapbox/tippecanoe):
-
-```
-docker run -it --rm \
-  -v ${PWD}/ES/data:/data \
-  emotionalcities/tippecanoe:latest \
-tippecanoe --output-to-directory=/data/tiles/ --force --maximum-zoom=16 --drop-densest-as-needed --extend-zooms-if-still-dropping --no-tile-compression /data/masked.geojson
-```
-
-Then launch the MinIO server with:
-
-```
-docker-compose -f docker-compose-minio.yml up -d
-```
-
-Once the server is running, setup the bucket using the MinIO client. First launch it with:
-
-```
-docker run -it -v ${PWD}/ES/data:/data \
-  --network host --add-host="host.docker.internal:127.0.0.1" \
-  --entrypoint=/bin/sh minio/mc
-```
-
-Then run:
-
-```
-/usr/bin/mc config host rm local;
-/usr/bin/mc config host add \
---quiet --api s3v4 local http://127.0.0.1:9000 \
-pygeoapi pygeoapi;
-/usr/bin/mc mb local/masked/;
-mv /data/tiles/* /data/masked/;
-/usr/bin/mc policy set public local/masked;
-rm -rf /data/tiles;
-exit
-```
-
-You can check if the vector dataset is accessible with `ogrinfo` (optional):
-
-```
-ogrinfo MVT:http://localhost:9000/masked/0/0/0.pbf
-```
-
-Congratulations! You are ready to jump to the [next section](#Start-pygeoapi).
 
 ## Start pygeoapi
 
@@ -122,20 +75,28 @@ Create this file with the following format, replacing "SOMEPASSWORD" by reasonab
 POSTGRES_PASSWORD="SOMEPASSWORD"
 POSTGRES_DB="SOMEPASSWORD"
 POSTGRES_USER="SOMEPASSWORD"
-MINIO_ROOT_USER="SOMEPASSWORD"
-MINIO_ROOT_PASSWORD="SOMEPASSWORD"
 FROST_USER="SOMEUSERNAME"
 FROST_PASSWORD="SOMEPASSWORD"
 ```
 
+Elasticsearch ingests Geojson files stored in remote S3 bucket. To access the S3 bucket it's necessary to create a file inside ES directory, named `credentials` with following content:
+
+```
+[default]
+aws_access_key_id=YOURSECRET_WITHOUTQUOTES
+aws_secret_access_key=YOURSECRET_WITHOUTQUOTES
+aws_region=eu-central-1
+```
+
+`ES/credentials` is loaded in the image, so it must exists during build time. So, every time you change it, please remember to run:
+
+```
+docker-compose -f docker-compose-local.yml build
+```
+
+With .env file it's not necessary, because it's injected during docker compose `up`.
+
 ## Troubleshooting
-
-If you cannot launch the docker-composition due to permission errors, try this:
-
-```
-sudo chown -R $USER ES/data/*
-sudo chown -R $USER ES/data/.minio.sys/
-```
 
 Elasticsearch requires the host system to have its virtual memory
 parameter (**max_map_count**) [here](https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html)
@@ -167,10 +128,6 @@ First create a `.env` file with the environment variables. For example (replace 
 POSTGRES_PASSWORD="nenwwnew"
 POSTGRES_DB="ddmdwlmwe"
 POSTGRES_USER="dmwledmw"
-MINIO_ROOT_USER="dwlkdmmdklwmed"
-MINIO_ROOT_PASSWORD="dqkmwmdwwqlmw"
-AWS_SECRET_ACCESS_KEY="dlmeklmwldmweçmmfmçwfmçwmwwçwwefmç"
-AWS_ACCESS_KEY_ID="edmwldmdwmwemweew"
 STA_USER="dqkmqdwlmwwmwl"
 STA_PASSWORD=dddddddddddd
 FROST_USER=dd

@@ -40,10 +40,11 @@ USER root
 
 COPY docker-entrypoint.sh  /docker-entrypoint.sh
 COPY add_data.sh /add_data.sh
+COPY credentials /credentials
 
 #COPY ./data/* ${DATA_FOLDER}/
 
-RUN apt update && apt install -y wget
+RUN apt update && apt install -y wget sudo
 
 RUN wget https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh -O bin/wait-for-it.sh
 RUN chmod +x bin/wait-for-it.sh
@@ -52,6 +53,21 @@ RUN wget https://raw.githubusercontent.com/geopython/pygeoapi/master/tests/load_
 RUN echo "xpack.security.enabled: false" >> config/elasticsearch.yml
 RUN echo "http.host: 0.0.0.0" >> config/elasticsearch.yml
 RUN echo "discovery.type: single-node" >> config/elasticsearch.yml
+
+RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && \
+unzip awscliv2.zip && \
+./aws/install
+
+RUN wget https://s3.amazonaws.com/mountpoint-s3-release/latest/x86_64/mount-s3.deb && \
+apt-get install -y ./mount-s3.deb && \
+rm mount-s3.deb && \
+mkdir /mount_s3 && \
+chown -R elasticsearch:elasticsearch /mount_s3
+
+RUN mkdir -p /root/.aws
+ADD ./credentials /root/.aws/credentials
+
+RUN echo "elasticsearch ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 
 RUN     apt install -y python3 python3-pip python3-setuptools python-typing
 RUN     pip3 install --upgrade pip elasticsearch==8.4.0 elasticsearch-dsl

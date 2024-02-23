@@ -98,10 +98,6 @@ services:
       - 9200:9200
     volumes:
       - elastic_search_data:/usr/share/elasticsearch/data
-      - ./ES/data:/in
-      # - ./ES/docker-entrypoint.sh:/docker-entrypoint.sh
-      # - ./ES/add_data.sh:/add_data.sh
-    # entrypoint: ["/bin/sh","/docker-entrypoint.sh"]
     deploy:
       resources:
         limits:

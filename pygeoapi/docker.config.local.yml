@@ -848,6 +848,19 @@ resources:
               format:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
+            # - type: tile
+            #   name: WMTSFacade
+            #   data: https://emotional.byteroad.net/geoserver/gwc/service/wmts
+            #   format:
+            #     name: png  # png or jpeg
+            #     mimetype: image/png
+            #   options:
+            #     wmts_layer: igot:perception_data # the layer name of the wmts
+            #     wmts_tile_matrix_set: WebMercatorQuad  # the name of the tile matrix set of the wmts.
+            #     scheme: WebMercatorQuad  # the aligning scheme in pygeoapi.
+            #     zoom:
+            #         min: 0
+                    max: 20
 
     l_birth_ra:
         type: collection

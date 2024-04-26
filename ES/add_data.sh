@@ -149,6 +149,18 @@ python3 /load_es_data.py /mount_s3/geojson/lansing_obesityageabove18yrs_2019_cdc
 python3 /load_es_data.py /mount_s3/geojson/lansing_physicalhealthnotgoodageabove18yrs_2019_cdc.geojson id
 python3 /load_es_data.py /mount_s3/geojson/lansing_strokeageabove18yrs_2019_cdc.geojson id
 
+echo "Loading dtu data"
+python3 /load_es_data.py /mount_s3/geojson/Air_pollution_wZones.geojson zoneid
+python3 /load_es_data.py /mount_s3/geojson/dst_2012_wZones.geojson zoneid
+python3 /load_es_data.py /mount_s3/geojson/dst_2013_wZones.geojson zoneid
+python3 /load_es_data.py /mount_s3/geojson/dst_2014_wZones.geojson zoneid
+python3 /load_es_data.py /mount_s3/geojson/dst_2015_wZones.geojson zoneid
+python3 /load_es_data.py /mount_s3/geojson/dst_2016_wZones.geojson zoneid
+python3 /load_es_data.py /mount_s3/geojson/dst_2017_wZones.geojson zoneid
+python3 /load_es_data.py /mount_s3/geojson/dst_2018_wZones.geojson zoneid
+python3 /load_es_data.py /mount_s3/geojson/landuse_POI_wZones.geojson zoneid
+python3 /load_es_data.py /mount_s3/geojson/noise_wZones.geojson zoneid
+python3 /load_es_data.py /mount_s3/geojson/zones.geojson zoneid
 
 echo "Seems that data was loaded"
 

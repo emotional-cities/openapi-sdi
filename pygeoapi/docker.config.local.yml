@@ -3716,3 +3716,414 @@ resources:
               format:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
+
+    Air_pollution_wZones:
+        type: collection
+        title: Air pollution data for the zones considered in the greater Copenhagen
+        description: This dataset contains air pollution data for the zones considered in the greater copenhagen spatial analysis report. The data consists of PM2.5, PM10, NO2, Black carbon, and the number of particles as mean values aggregated over the zones.
+        keywords:
+            - air pollution
+            - pollution
+            - air quality
+            - urban planning
+            - DTU
+            - Copenhagen
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/Air_pollution_wZones
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [12.459943,55.649288,12.660993,55.742474]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/Air_pollution_wZones
+              id_field: zoneid
+            - type: tile
+              name: MVT-elastic
+              data: http://elastic_search:9200/Air_pollution_wZones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                zoom:
+                    min: 0
+                    max: 29
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    dst_2012_wZones:
+        type: collection
+        title: Demographic and health 2012
+        description: The demographic and health data for the zones used in spatial analysis acquired from Danish Statistics. Year 2012
+        keywords:
+            - urban health
+            - health
+            - DTU
+            - Copenhagen
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/dst_2012_wZones
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [12.459943,55.649288,12.660993,55.742474]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/dst_2012_wZones
+              id_field: zoneid
+            - type: tile
+              name: MVT-elastic
+              data: http://elastic_search:9200/dst_2012_wZones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                zoom:
+                    min: 0
+                    max: 29
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    dst_2013_wZones:
+        type: collection
+        title: Demographic and health 2013
+        description: The demographic and health data for the zones used in spatial analysis acquired from Danish Statistics. Year 2013
+        keywords:
+            - urban health
+            - health
+            - DTU
+            - Copenhagen
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/dst_2013_wZones
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [12.459943,55.649288,12.660993,55.742474]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/dst_2013_wZones
+              id_field: zoneid
+            - type: tile
+              name: MVT-elastic
+              data: http://elastic_search:9200/dst_2013_wZones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                zoom:
+                    min: 0
+                    max: 29
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    dst_2014_wZones:
+        type: collection
+        title: Demographic and health 2014
+        description: The demographic and health data for the zones used in spatial analysis acquired from Danish Statistics. Year 2014
+        keywords:
+            - urban health
+            - health
+            - DTU
+            - Copenhagen
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/dst_2014_wZones
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [12.459943,55.649288,12.660993,55.742474]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/dst_2014_wZones
+              id_field: zoneid
+            - type: tile
+              name: MVT-elastic
+              data: http://elastic_search:9200/dst_2014_wZones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                zoom:
+                    min: 0
+                    max: 29
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    dst_2015_wZones:
+        type: collection
+        title: Demographic and health 2015
+        description: The demographic and health data for the zones used in spatial analysis acquired from Danish Statistics. Year 2015
+        keywords:
+            - urban health
+            - health
+            - DTU
+            - Copenhagen
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/dst_2015_wZones
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [12.459943,55.649288,12.660993,55.742474]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/dst_2015_wZones
+              id_field: zoneid
+            - type: tile
+              name: MVT-elastic
+              data: http://elastic_search:9200/dst_2015_wZones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                zoom:
+                    min: 0
+                    max: 29
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    dst_2016_wZones:
+        type: collection
+        title: Demographic and health 2016
+        description: The demographic and health data for the zones used in spatial analysis acquired from Danish Statistics. Year 2016
+        keywords:
+            - urban health
+            - health
+            - DTU
+            - Copenhagen
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/dst_2016_wZones
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [12.459943,55.649288,12.660993,55.742474]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/dst_2016_wZones
+              id_field: zoneid
+            - type: tile
+              name: MVT-elastic
+              data: http://elastic_search:9200/dst_2016_wZones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                zoom:
+                    min: 0
+                    max: 29
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    dst_2017_wZones:
+        type: collection
+        title: Demographic and health 2017
+        description: The demographic and health data for the zones used in spatial analysis acquired from Danish Statistics. Year 2017
+        keywords:
+            - urban health
+            - health
+            - DTU
+            - Copenhagen
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/dst_2017_wZones
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [12.459943,55.649288,12.660993,55.742474]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/dst_2017_wZones
+              id_field: zoneid
+            - type: tile
+              name: MVT-elastic
+              data: http://elastic_search:9200/dst_2017_wZones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                zoom:
+                    min: 0
+                    max: 29
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    dst_2018_wZones:
+        type: collection
+        title: Demographic and health 2018
+        description: The demographic and health data for the zones used in spatial analysis acquired from Danish Statistics. Year 2018
+        keywords:
+            - urban health
+            - health
+            - DTU
+            - Copenhagen
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/dst_2018_wZones
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [12.459943,55.649288,12.660993,55.742474]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/dst_2018_wZones
+              id_field: zoneid
+            - type: tile
+              name: MVT-elastic
+              data: http://elastic_search:9200/dst_2018_wZones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                zoom:
+                    min: 0
+                    max: 29
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    landuse_POI_wZones:
+        type: collection
+        title: Land Use and POIs for Copenhagen
+        description: OpenStreetMap (OSM) POI and land-use data extracted and aggregated for each of the zones in the Copenhagen area.
+        keywords:
+            - land use
+            - POI
+            - urban planning
+            - DTU
+            - Copenhagen
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/landuse_POI_wZones
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [12.459943,55.649288,12.660993,55.742474]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/landuse_POI_wZones
+              id_field: zoneid
+            - type: tile
+              name: MVT-elastic
+              data: http://elastic_search:9200/landuse_POI_wZones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                zoom:
+                    min: 0
+                    max: 29
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    zones:
+        type: collection
+        title: Spatial Zones for the greater Copenhagen Area
+        description: This file contains the Polygons of the zones used in the greater copenhagen area and a zone id for each zone.
+        keywords:
+            - zones
+            - traffic zones
+            - DTU
+            - Copenhagen
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/zones
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [12.459943,55.649288,12.660993,55.742474]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/zones
+              id_field: zoneid
+            - type: tile
+              name: MVT-elastic
+              data: http://elastic_search:9200/zones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                zoom:
+                    min: 0
+                    max: 29
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    noise_wZones:
+        type: collection
+        title: Noise data for the zones considered in the greater Copenhagen
+        description: Mean of the total noise levels for each noise point within that particular zone.
+        keywords:
+            - noise
+            - pollution
+            - urban planning
+            - DTU
+            - Copenhagen
+            - eMOTIONAL Cities
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/noise_wZones
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [12.459943,55.649288,12.660993,55.742474]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/noise_wZones
+              id_field: zoneid
+            - type: tile
+              name: MVT-elastic
+              data: http://elastic_search:9200/noise_wZones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                zoom:
+                    min: 0
+                    max: 29
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile

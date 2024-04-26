@@ -3716,7 +3716,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    Air_pollution_wZones:
+    air_pollution_wzones:
         type: collection
         title: Air pollution data for the zones considered in the greater Copenhagen
         description: This dataset contains air pollution data for the zones considered in the greater copenhagen spatial analysis report. The data consists of PM2.5, PM10, NO2, Black carbon, and the number of particles as mean values aggregated over the zones.
@@ -3733,7 +3733,7 @@ resources:
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/Air_pollution_wZones
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/air_pollution_wzones
               hreflang: en-US
         extents:
             spatial:
@@ -3742,11 +3742,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/Air_pollution_wZones
+              data: http://elastic_search:9200/air_pollution_wzones
               id_field: zoneid
             - type: tile
               name: MVT-elastic
-              data: http://elastic_search:9200/Air_pollution_wZones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/air_pollution_wzones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 zoom:
                     min: 0
@@ -3755,7 +3755,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    dst_2012_wZones:
+    dst_2012_wzones:
         type: collection
         title: Demographic and health 2012
         description: The demographic and health data for the zones used in spatial analysis acquired from Danish Statistics. Year 2012
@@ -3770,7 +3770,7 @@ resources:
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/dst_2012_wZones
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/dst_2012_wzones
               hreflang: en-US
         extents:
             spatial:
@@ -3779,11 +3779,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/dst_2012_wZones
+              data: http://elastic_search:9200/dst_2012_wzones
               id_field: zoneid
             - type: tile
               name: MVT-elastic
-              data: http://elastic_search:9200/dst_2012_wZones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/dst_2012_wzones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 zoom:
                     min: 0
@@ -3792,7 +3792,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    dst_2013_wZones:
+    dst_2013_wzones:
         type: collection
         title: Demographic and health 2013
         description: The demographic and health data for the zones used in spatial analysis acquired from Danish Statistics. Year 2013
@@ -3807,7 +3807,7 @@ resources:
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/dst_2013_wZones
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/dst_2013_wzones
               hreflang: en-US
         extents:
             spatial:
@@ -3816,11 +3816,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/dst_2013_wZones
+              data: http://elastic_search:9200/dst_2013_wzones
               id_field: zoneid
             - type: tile
               name: MVT-elastic
-              data: http://elastic_search:9200/dst_2013_wZones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/dst_2013_wzones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 zoom:
                     min: 0
@@ -3829,7 +3829,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    dst_2014_wZones:
+    dst_2014_wzones:
         type: collection
         title: Demographic and health 2014
         description: The demographic and health data for the zones used in spatial analysis acquired from Danish Statistics. Year 2014
@@ -3844,7 +3844,7 @@ resources:
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/dst_2014_wZones
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/dst_2014_wzones
               hreflang: en-US
         extents:
             spatial:
@@ -3853,11 +3853,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/dst_2014_wZones
+              data: http://elastic_search:9200/dst_2014_wzones
               id_field: zoneid
             - type: tile
               name: MVT-elastic
-              data: http://elastic_search:9200/dst_2014_wZones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/dst_2014_wzones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 zoom:
                     min: 0
@@ -3866,7 +3866,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    dst_2015_wZones:
+    dst_2015_wzones:
         type: collection
         title: Demographic and health 2015
         description: The demographic and health data for the zones used in spatial analysis acquired from Danish Statistics. Year 2015
@@ -3881,7 +3881,7 @@ resources:
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/dst_2015_wZones
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/dst_2015_wzones
               hreflang: en-US
         extents:
             spatial:
@@ -3890,11 +3890,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/dst_2015_wZones
+              data: http://elastic_search:9200/dst_2015_wzones
               id_field: zoneid
             - type: tile
               name: MVT-elastic
-              data: http://elastic_search:9200/dst_2015_wZones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/dst_2015_wzones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 zoom:
                     min: 0
@@ -3903,7 +3903,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    dst_2016_wZones:
+    dst_2016_wzones:
         type: collection
         title: Demographic and health 2016
         description: The demographic and health data for the zones used in spatial analysis acquired from Danish Statistics. Year 2016
@@ -3918,7 +3918,7 @@ resources:
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/dst_2016_wZones
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/dst_2016_wzones
               hreflang: en-US
         extents:
             spatial:
@@ -3927,11 +3927,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/dst_2016_wZones
+              data: http://elastic_search:9200/dst_2016_wzones
               id_field: zoneid
             - type: tile
               name: MVT-elastic
-              data: http://elastic_search:9200/dst_2016_wZones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/dst_2016_wzones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 zoom:
                     min: 0
@@ -3940,7 +3940,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    dst_2017_wZones:
+    dst_2017_wzones:
         type: collection
         title: Demographic and health 2017
         description: The demographic and health data for the zones used in spatial analysis acquired from Danish Statistics. Year 2017
@@ -3955,7 +3955,7 @@ resources:
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/dst_2017_wZones
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/dst_2017_wzones
               hreflang: en-US
         extents:
             spatial:
@@ -3964,11 +3964,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/dst_2017_wZones
+              data: http://elastic_search:9200/dst_2017_wzones
               id_field: zoneid
             - type: tile
               name: MVT-elastic
-              data: http://elastic_search:9200/dst_2017_wZones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/dst_2017_wzones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 zoom:
                     min: 0
@@ -3977,7 +3977,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    dst_2018_wZones:
+    dst_2018_wzones:
         type: collection
         title: Demographic and health 2018
         description: The demographic and health data for the zones used in spatial analysis acquired from Danish Statistics. Year 2018
@@ -3992,7 +3992,7 @@ resources:
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/dst_2018_wZones
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/dst_2018_wzones
               hreflang: en-US
         extents:
             spatial:
@@ -4001,11 +4001,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/dst_2018_wZones
+              data: http://elastic_search:9200/dst_2018_wzones
               id_field: zoneid
             - type: tile
               name: MVT-elastic
-              data: http://elastic_search:9200/dst_2018_wZones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/dst_2018_wzones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 zoom:
                     min: 0
@@ -4014,7 +4014,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    landuse_POI_wZones:
+    landuse_poi_wzones:
         type: collection
         title: Land Use and POIs for Copenhagen
         description: OpenStreetMap (OSM) POI and land-use data extracted and aggregated for each of the zones in the Copenhagen area.
@@ -4030,7 +4030,7 @@ resources:
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/landuse_POI_wZones
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/landuse_poi_wzones
               hreflang: en-US
         extents:
             spatial:
@@ -4039,11 +4039,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/landuse_POI_wZones
+              data: http://elastic_search:9200/landuse_poi_wzones
               id_field: zoneid
             - type: tile
               name: MVT-elastic
-              data: http://elastic_search:9200/landuse_POI_wZones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/landuse_poi_wzones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 zoom:
                     min: 0
@@ -4089,7 +4089,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    noise_wZones:
+    noise_wzones:
         type: collection
         title: Noise data for the zones considered in the greater Copenhagen
         description: Mean of the total noise levels for each noise point within that particular zone.
@@ -4105,7 +4105,7 @@ resources:
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/noise_wZones
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/noise_wzones
               hreflang: en-US
         extents:
             spatial:
@@ -4114,11 +4114,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/noise_wZones
+              data: http://elastic_search:9200/noise_wzones
               id_field: zoneid
             - type: tile
               name: MVT-elastic
-              data: http://elastic_search:9200/noise_wZones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/noise_wzones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 zoom:
                     min: 0

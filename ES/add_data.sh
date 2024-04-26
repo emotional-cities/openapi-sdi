@@ -150,16 +150,16 @@ python3 /load_es_data.py /mount_s3/geojson/lansing_physicalhealthnotgoodageabove
 python3 /load_es_data.py /mount_s3/geojson/lansing_strokeageabove18yrs_2019_cdc.geojson id
 
 echo "Loading dtu data"
-python3 /load_es_data.py /mount_s3/geojson/Air_pollution_wZones.geojson zoneid
-python3 /load_es_data.py /mount_s3/geojson/dst_2012_wZones.geojson zoneid
-python3 /load_es_data.py /mount_s3/geojson/dst_2013_wZones.geojson zoneid
-python3 /load_es_data.py /mount_s3/geojson/dst_2014_wZones.geojson zoneid
-python3 /load_es_data.py /mount_s3/geojson/dst_2015_wZones.geojson zoneid
-python3 /load_es_data.py /mount_s3/geojson/dst_2016_wZones.geojson zoneid
-python3 /load_es_data.py /mount_s3/geojson/dst_2017_wZones.geojson zoneid
-python3 /load_es_data.py /mount_s3/geojson/dst_2018_wZones.geojson zoneid
-python3 /load_es_data.py /mount_s3/geojson/landuse_POI_wZones.geojson zoneid
-python3 /load_es_data.py /mount_s3/geojson/noise_wZones.geojson zoneid
+python3 /load_es_data.py /mount_s3/geojson/air_pollution_wzones.geojson zoneid
+python3 /load_es_data.py /mount_s3/geojson/dst_2012_wzones.geojson zoneid
+python3 /load_es_data.py /mount_s3/geojson/dst_2013_wzones.geojson zoneid
+python3 /load_es_data.py /mount_s3/geojson/dst_2014_wzones.geojson zoneid
+python3 /load_es_data.py /mount_s3/geojson/dst_2015_wzones.geojson zoneid
+python3 /load_es_data.py /mount_s3/geojson/dst_2016_wzones.geojson zoneid
+python3 /load_es_data.py /mount_s3/geojson/dst_2017_wzones.geojson zoneid
+python3 /load_es_data.py /mount_s3/geojson/dst_2018_wzones.geojson zoneid
+python3 /load_es_data.py /mount_s3/geojson/landuse_poi_wzones.geojson zoneid
+python3 /load_es_data.py /mount_s3/geojson/noise_wzones.geojson zoneid
 python3 /load_es_data.py /mount_s3/geojson/zones.geojson zoneid
 
 echo "Seems that data was loaded"

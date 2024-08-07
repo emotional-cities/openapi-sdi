@@ -3741,7 +3741,7 @@ resources:
             - type: feature
               name: Elasticsearch
               data: http://elastic_search:9200/lisbon_vibrancy_index
-              id_field: FID
+              id_field: fid
             - type: tile
               name: MVT-elastic
               data: http://elastic_search:9200/lisbon_vibrancy_index/_mvt/geometry/{z}/{x}/{y}?grid_precision=0

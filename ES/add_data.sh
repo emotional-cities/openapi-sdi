@@ -76,6 +76,7 @@ python3 /load_es_data.py /mount_s3/geojson/lisbon_no2.geojson FID
 python3 /load_es_data.py /mount_s3/geojson/lisbon_distance_green_spaces.geojson FID
 python3 /load_es_data.py /mount_s3/geojson/lisbon_patients_anxiety_disorder.geojson FID
 python3 /load_es_data.py /mount_s3/geojson/lisbon_patients_depressive_disorder.geojson FID
+python3 /load_es_data.py /mount_s3/geojson/lisbon_vibrancy_index.geojson FID
 
 echo "Loading camb data"
 python3 /load_es_data.py /mount_s3/geojson/hex350_grid_popden_2020.geojson fid

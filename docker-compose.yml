@@ -135,8 +135,11 @@ services:
     volumes:
       - "/etc/letsencrypt/archive/emotional.byteroad.net/fullchain9.pem:/usr/local/apache2/conf/emotional/fullchain1.pem"
       - "/etc/letsencrypt/archive/emotional.byteroad.net/privkey9.pem:/usr/local/apache2/conf/emotional/privkey1.pem"
-      - "/etc/letsencrypt/archive/oldskool.byteroad.net/fullchain7.pem:/usr/local/apache2/conf/oldskool/fullchain1.pem"
-      - "/etc/letsencrypt/archive/oldskool.byteroad.net/privkey7.pem:/usr/local/apache2/conf/oldskool/privkey1.pem"
+      # - "/etc/letsencrypt/archive/oldskool.byteroad.net/fullchain7.pem:/usr/local/apache2/conf/oldskool/fullchain1.pem"
+      # - "/etc/letsencrypt/archive/oldskool.byteroad.net/privkey7.pem:/usr/local/apache2/conf/oldskool/privkey1.pem"
+      - "/etc/letsencrypt/archive/doi.byteroad.net/fullchain1.pem:/usr/local/apache2/conf/doi/fullchain.pem"
+      - "/etc/letsencrypt/archive/doi.byteroad.net/privkey1.pem:/usr/local/apache2/conf/doi/privkey.pem"
+
       - ./apache-httpd/httpd-ssl.conf:/usr/local/apache2/conf/httpd.conf
     ports:
       - "80:80"

@@ -1,0 +1,33 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: openapi-sdi
+message: eMOTIONAL Cities Spatial Data Infrastructure
+type: software
+authors:
+  - given-names: Antonio
+    family-names: Cerciello
+    email: ant@byteroad.net
+    orcid: 'https://orcid.org/0009-0002-4417-1461'
+    affiliation: Byteroad
+  - given-names: Joana
+    family-names: Simoes
+    email: jo@byteroad.net
+    orcid: 'https://orcid.org/0000-0002-7180-3367'
+    affiliation: Byteroad
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.8330877
+    description: Version v2.0.0
+repository-code: 'https://github.com/emotional-cities/openapi-sdi'
+url: 'https://emotional.byteroad.net/'
+keywords:
+  - pygeoapi
+  - SDI
+  - OGC API
+  - Spatial Data Infrastructure
+license: MIT
+commit: 948863d5d83bc728683cc49446504e7f2209f15e
+version: v2.0.0
+date-released: '2023-09-09'

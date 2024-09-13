@@ -18,8 +18,8 @@ authors:
     affiliation: Byteroad
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.8330877
-    description: Version v2.0.0
+    value: 10.5281/zenodo.13758189
+    description: Version v3.0.0
 repository-code: 'https://github.com/emotional-cities/openapi-sdi'
 url: 'https://emotional.byteroad.net/'
 keywords:
@@ -28,6 +28,6 @@ keywords:
   - OGC API
   - Spatial Data Infrastructure
 license: MIT
-commit: 948863d5d83bc728683cc49446504e7f2209f15e
-version: v2.0.0
-date-released: '2023-09-09'
+commit: f5e409d250c041f92b106741a15a001311b88d7a
+version: v3.0.0
+date-released: '2023-09-13'

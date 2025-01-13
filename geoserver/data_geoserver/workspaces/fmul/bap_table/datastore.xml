@@ -1,0 +1,20 @@
+<dataStore>
+  <id>DataStoreInfoImpl--3799f569:18a4c55dba7:-7ffc</id>
+  <name>bap_table</name>
+  <type>GeoPackage</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--10d3fa42:1894556b2fb:-7ff8</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="fetch size">1000</entry>
+    <entry key="Expose primary keys">false</entry>
+    <entry key="Batch insert size">1</entry>
+    <entry key="database">file:///home/tomcat/ec_data/geopackage/bap_table.gpkg</entry>
+    <entry key="read_only">false</entry>
+    <entry key="dbtype">geopkg</entry>
+    <entry key="namespace">fmul</entry>
+  </connectionParameters>
+  <__default>false</__default>
+  <dateCreated>2023-08-31 16:05:54.811 UTC</dateCreated>
+</dataStore>

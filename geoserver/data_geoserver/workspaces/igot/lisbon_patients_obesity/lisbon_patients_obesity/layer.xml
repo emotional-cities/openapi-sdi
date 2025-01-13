@@ -1,0 +1,17 @@
+<layer>
+  <name>lisbon_patients_obesity</name>
+  <id>LayerInfoImpl-2b813aa2:1910e12a481:-7fb2</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-2b813aa2:1910e12a481:-7f6e</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2b813aa2:1910e12a481:-7fb3</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2024-08-01 14:23:10.600 UTC</dateCreated>
+  <dateModified>2024-08-01 15:30:11.526 UTC</dateModified>
+</layer>

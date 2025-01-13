@@ -1,0 +1,17 @@
+<layer>
+  <name>lisbon_beds_tourist_accomodations</name>
+  <id>LayerInfoImpl-2b813aa2:1910e12a481:-7feb</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-2b813aa2:1910e12a481:-7ff7</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2b813aa2:1910e12a481:-7fec</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2024-08-01 14:12:50.953 UTC</dateCreated>
+  <dateModified>2024-08-01 15:26:09.360 UTC</dateModified>
+</layer>

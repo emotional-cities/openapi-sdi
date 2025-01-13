@@ -1,0 +1,17 @@
+<layer>
+  <name>lisbon_prescription_antidepressants_N06A</name>
+  <id>LayerInfoImpl-2b813aa2:1910e12a481:-7fa0</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-2b813aa2:1910e12a481:-7f68</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2b813aa2:1910e12a481:-7fa1</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2024-08-01 14:25:54.798 UTC</dateCreated>
+  <dateModified>2024-08-01 15:31:44.620 UTC</dateModified>
+</layer>

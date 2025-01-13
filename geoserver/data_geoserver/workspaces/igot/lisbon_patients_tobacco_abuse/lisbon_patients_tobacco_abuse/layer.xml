@@ -1,0 +1,17 @@
+<layer>
+  <name>lisbon_patients_tobacco_abuse</name>
+  <id>LayerInfoImpl-2b813aa2:1910e12a481:-7faf</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-2b813aa2:1910e12a481:-7f6d</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2b813aa2:1910e12a481:-7fb0</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2024-08-01 14:23:34.937 UTC</dateCreated>
+  <dateModified>2024-08-01 15:30:50.852 UTC</dateModified>
+</layer>

@@ -1,0 +1,17 @@
+<layer>
+  <name>lisbon_building_repair_needs_ratio</name>
+  <id>LayerInfoImpl-2b813aa2:1910e12a481:-7fe5</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-2b813aa2:1910e12a481:-7f83</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2b813aa2:1910e12a481:-7fe6</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2024-08-01 14:14:10.206 UTC</dateCreated>
+  <dateModified>2024-08-01 15:26:48.322 UTC</dateModified>
+</layer>

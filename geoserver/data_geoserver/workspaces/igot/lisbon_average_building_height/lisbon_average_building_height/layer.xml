@@ -1,0 +1,17 @@
+<layer>
+  <name>lisbon_average_building_height</name>
+  <id>LayerInfoImpl-2b813aa2:1910e12a481:-7fee</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-624ed697:1910dedc4ae:-7ffc</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2b813aa2:1910e12a481:-7fef</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2024-08-01 13:48:52.207 UTC</dateCreated>
+  <dateModified>2024-08-01 14:37:18.586 UTC</dateModified>
+</layer>

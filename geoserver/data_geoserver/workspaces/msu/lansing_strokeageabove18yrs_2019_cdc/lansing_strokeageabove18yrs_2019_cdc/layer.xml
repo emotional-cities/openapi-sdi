@@ -1,0 +1,16 @@
+<layer>
+  <name>lansing_strokeageabove18yrs_2019_cdc</name>
+  <id>LayerInfoImpl--2ff20dcc:1943cb7a13f:-7fe2</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-1b83c0bb:187002cf1d4:-7ffe</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--2ff20dcc:1943cb7a13f:-7fe3</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2025-01-06 18:10:19.495 UTC</dateCreated>
+</layer>

@@ -1,0 +1,17 @@
+<layer>
+  <name>lisbon_population_density</name>
+  <id>LayerInfoImpl-2b813aa2:1910e12a481:-7fa9</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-2b813aa2:1910e12a481:-7f6b</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2b813aa2:1910e12a481:-7faa</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2024-08-01 14:24:26.342 UTC</dateCreated>
+  <dateModified>2024-08-01 15:31:10.804 UTC</dateModified>
+</layer>

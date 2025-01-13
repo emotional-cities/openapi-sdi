@@ -1,0 +1,17 @@
+<layer>
+  <name>lisbon_vibrancy_index</name>
+  <id>LayerInfoImpl-2b813aa2:1910e12a481:-7f91</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-2b813aa2:1910e12a481:-7f63</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2b813aa2:1910e12a481:-7f92</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2024-08-01 14:28:08.113 UTC</dateCreated>
+  <dateModified>2024-08-01 15:33:17.99 UTC</dateModified>
+</layer>

@@ -1,0 +1,17 @@
+<layer>
+  <name>lisbon_distance_green_spaces</name>
+  <id>LayerInfoImpl-2b813aa2:1910e12a481:-7fe2</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-2b813aa2:1910e12a481:-7f82</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2b813aa2:1910e12a481:-7fe3</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2024-08-01 14:14:45.143 UTC</dateCreated>
+  <dateModified>2024-08-01 15:26:58.885 UTC</dateModified>
+</layer>

@@ -1,0 +1,17 @@
+<layer>
+  <name>lisbon_average_age_buildings</name>
+  <id>LayerInfoImpl-2b813aa2:1910e12a481:-7ff1</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--2403cddd:190316fbd2f:-7c87</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2b813aa2:1910e12a481:-7ff2</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2024-08-01 13:48:05.287 UTC</dateCreated>
+  <dateModified>2024-08-01 14:37:06.55 UTC</dateModified>
+</layer>

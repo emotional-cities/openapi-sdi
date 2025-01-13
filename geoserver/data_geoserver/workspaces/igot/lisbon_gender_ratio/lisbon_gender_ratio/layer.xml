@@ -1,0 +1,17 @@
+<layer>
+  <name>lisbon_gender_ratio</name>
+  <id>LayerInfoImpl-2b813aa2:1910e12a481:-7fd9</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-2b813aa2:1910e12a481:-7f7b</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2b813aa2:1910e12a481:-7fda</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2024-08-01 14:16:25.956 UTC</dateCreated>
+  <dateModified>2024-08-01 15:27:32.754 UTC</dateModified>
+</layer>

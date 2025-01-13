@@ -1,0 +1,17 @@
+<layer>
+  <name>lisbon_life_births_rate</name>
+  <id>LayerInfoImpl-2b813aa2:1910e12a481:-7fd6</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-2b813aa2:1910e12a481:-7f7a</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2b813aa2:1910e12a481:-7fd7</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2024-08-01 14:16:52.235 UTC</dateCreated>
+  <dateModified>2024-08-01 15:27:43.537 UTC</dateModified>
+</layer>

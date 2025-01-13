@@ -1,0 +1,17 @@
+<layer>
+  <name>lisbon_patients_depressive_disorder</name>
+  <id>LayerInfoImpl-2b813aa2:1910e12a481:-7fbb</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-2b813aa2:1910e12a481:-7f71</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2b813aa2:1910e12a481:-7fbc</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2024-08-01 14:21:08.342 UTC</dateCreated>
+  <dateModified>2024-08-01 15:29:43.375 UTC</dateModified>
+</layer>

@@ -1,0 +1,17 @@
+<layer>
+  <name>lisbon_altimetry</name>
+  <id>LayerInfoImpl-2b813aa2:1910e12a481:-7ff4</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--2403cddd:190316fbd2f:-7c88</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2b813aa2:1910e12a481:-7ff5</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2024-08-01 13:46:54.546 UTC</dateCreated>
+  <dateModified>2024-08-01 14:36:54.194 UTC</dateModified>
+</layer>

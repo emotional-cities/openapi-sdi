@@ -1,0 +1,17 @@
+<layer>
+  <name>lisbon_temperature</name>
+  <id>LayerInfoImpl-2b813aa2:1910e12a481:-7f97</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-2b813aa2:1910e12a481:-7f65</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2b813aa2:1910e12a481:-7f98</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2024-08-01 14:27:18.185 UTC</dateCreated>
+  <dateModified>2024-08-01 15:32:29.854 UTC</dateModified>
+</layer>

@@ -1,7 +1,6 @@
 <dataStore>
-  <id>DataStoreInfoImpl-15bc0f48:187faec7bda:-7fbc</id>
+  <id>DataStoreInfoImpl--2ff20dcc:1943cb7a13f:-7ff3</id>
   <name>lansing_diabetesageabove18yrs_2019_cdc</name>
-  <description>CrudeP - Diabeties - Age Above 18 years</description>
   <type>GeoPackage</type>
   <enabled>true</enabled>
   <workspace>
@@ -17,6 +16,6 @@
     <entry key="namespace">msu</entry>
   </connectionParameters>
   <__default>false</__default>
-  <dateCreated>2023-05-08 11:54:24.733 UTC</dateCreated>
+  <dateCreated>2025-01-06 18:06:42.7 UTC</dateCreated>
   <disableOnConnFailure>false</disableOnConnFailure>
 </dataStore>

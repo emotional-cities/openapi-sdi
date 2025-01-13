@@ -1,0 +1,53 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-2b813aa2:1910e12a481:-7fa1</id>
+  <name>lisbon_prescription_antidepressants_N06A</name>
+  <nativeName>lisbon_prescription_antidepressants_N06A</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--5686dd53:187fb4157cb:-7ffb</id>
+  </namespace>
+  <title>lisbon_prescription_antidepressants_N06A</title>
+  <keywords>
+    <string>features</string>
+    <string>lisbon_prescription_antidepressants_N06A</string>
+  </keywords>
+  <nativeCRS>GEOGCS[&quot;WGS 84&quot;, 
+  DATUM[&quot;World Geodetic System 1984&quot;, 
+    SPHEROID[&quot;WGS 84&quot;, 6378137.0, 298.257223563, AUTHORITY[&quot;EPSG&quot;,&quot;7030&quot;]], 
+    AUTHORITY[&quot;EPSG&quot;,&quot;6326&quot;]], 
+  PRIMEM[&quot;Greenwich&quot;, 0.0, AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]], 
+  UNIT[&quot;degree&quot;, 0.017453292519943295], 
+  AXIS[&quot;Geodetic longitude&quot;, EAST], 
+  AXIS[&quot;Geodetic latitude&quot;, NORTH], 
+  AUTHORITY[&quot;EPSG&quot;,&quot;4326&quot;]]</nativeCRS>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>-9.229835564339474</minx>
+    <maxx>-9.087387079645085</maxx>
+    <miny>38.69139933211832</miny>
+    <maxy>38.79675969017098</maxy>
+    <crs>EPSG:4326</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-9.229835564339474</minx>
+    <maxx>-9.087387079645085</maxx>
+    <miny>38.69139933211832</miny>
+    <maxy>38.79675969017098</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-2b813aa2:1910e12a481:-7fa2</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <internationalTitle/>
+  <internationalAbstract/>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

@@ -1,0 +1,17 @@
+<layer>
+  <name>lisbon_patients_hypertension</name>
+  <id>LayerInfoImpl-2b813aa2:1910e12a481:-7fb5</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-2b813aa2:1910e12a481:-7f6f</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2b813aa2:1910e12a481:-7fb6</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2024-08-01 14:22:44.334 UTC</dateCreated>
+  <dateModified>2024-08-01 15:30:01.966 UTC</dateModified>
+</layer>

@@ -1,0 +1,16 @@
+<layer>
+  <name>bap_table</name>
+  <id>LayerInfoImpl--3799f569:18a4c55dba7:-7ffa</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-1b83c0bb:187002cf1d4:-8000</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--3799f569:18a4c55dba7:-7ffb</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2023-08-31 16:06:09.864 UTC</dateCreated>
+</layer>

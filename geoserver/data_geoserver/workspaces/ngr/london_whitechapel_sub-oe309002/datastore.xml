@@ -1,0 +1,21 @@
+<dataStore>
+  <id>DataStoreInfoImpl-59335771:18a3bfebdcd:-7ffc</id>
+  <name>london_whitechapel_sub-oe309002</name>
+  <description>London Outdoor Walk: WhiteChapel Subject OE309002</description>
+  <type>GeoPackage</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--4d25fb6:188009d2e26:-7ffc</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="fetch size">1000</entry>
+    <entry key="Expose primary keys">false</entry>
+    <entry key="Batch insert size">1</entry>
+    <entry key="database">file:///home/tomcat/ec_data/geopackage/london_whitechapel_sub-oe309002.gpkg</entry>
+    <entry key="read_only">false</entry>
+    <entry key="dbtype">geopkg</entry>
+    <entry key="namespace">ngr</entry>
+  </connectionParameters>
+  <__default>false</__default>
+  <dateCreated>2023-08-28 22:10:00.662 UTC</dateCreated>
+</dataStore>

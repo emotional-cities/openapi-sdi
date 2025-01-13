@@ -1,0 +1,16 @@
+<layer>
+  <name>dst_2016_wzones</name>
+  <id>LayerInfoImpl-71b76a5d:18ed1d8208c:-7f94</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-1b83c0bb:187002cf1d4:-7ffe</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-71b76a5d:18ed1d8208c:-7f95</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2024-04-26 15:57:41.702 UTC</dateCreated>
+</layer>

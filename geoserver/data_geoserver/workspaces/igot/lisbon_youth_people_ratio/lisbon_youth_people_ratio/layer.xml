@@ -1,0 +1,17 @@
+<layer>
+  <name>lisbon_youth_people_ratio</name>
+  <id>LayerInfoImpl-2b813aa2:1910e12a481:-7f85</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-2b813aa2:1910e12a481:-7f5f</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2b813aa2:1910e12a481:-7f86</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2024-08-01 14:30:04.356 UTC</dateCreated>
+  <dateModified>2024-08-01 15:33:47.820 UTC</dateModified>
+</layer>

@@ -166,6 +166,26 @@ python3 /load_es_data.py /mount_s3/geojson/zones.geojson zoneid
 echo "Loading fmul data"
 python3 /load_es_data.py /mount_s3/geojson/lisbon_agudo_sub-oe109003_2024-08-27t150441z.geojson id
 
+echo "Creating the ec_catalog index"
+ELASTIC_HOST="http://localhost:9200"
+INDEX_NAME="ec_catalog"
+
+# Use curl to send a HEAD request to check if the index exists
+response=$(curl -s -o /dev/null -w "%{http_code}" "$ELASTIC_HOST/$INDEX_NAME")
+
+# Check the HTTP status code
+if [ "$response" -eq 200 ]; then
+    echo "Index '$INDEX_NAME' exists."
+elif [ "$response" -eq 404 ]; then
+    echo "Index '$INDEX_NAME' does not exist. Creating..."
+    response=$(curl -X PUT "$ELASTIC_HOST/$INDEX_NAME")
+  echo $response
+  echo "Index '$INDEX_NAME' created."
+else
+    echo "Unexpected response code: $response"
+fi
+
+
 echo "Seems that data was loaded"
 
 ## *************************************************************

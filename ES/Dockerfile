@@ -31,7 +31,7 @@
 #
 # =================================================================
 
-FROM docker.elastic.co/elasticsearch/elasticsearch:8.4.0
+FROM docker.elastic.co/elasticsearch/elasticsearch:8.17.0
 
 LABEL maintainer="jorge.dejesus@geocat.net justb4@gmail.com"
 ARG DATA_FOLDER=/usr/share/elasticsearch/data

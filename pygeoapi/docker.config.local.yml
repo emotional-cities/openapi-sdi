@@ -2347,35 +2347,35 @@ resources:
     #             name: pbf
     #             mimetype: application/vnd.mapbox-vector-tile
 
-    ec_catalog:
-        type: collection
-        title: eMOTIONAL Cities Metadata catalog
-        description: eMOTIONAL Cities Metadata catalog (OGC API Records)
-        keywords:
-            - Mesurements
-            - Environmental
-            - Lisbon
-            - London
-            - eMOTIONAL Cities
-            - Neuroscience
-            - Urban Planning
-            - H2020
-        links:
-            - type: text/html
-              rel: canonical
-              title: information
-              href: https://emotionalcities-h2020.eu/
-              hreflang: en-US
-        extents:
-            spatial:
-                bbox: [-170, -80, 170, 80]
-                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
-        providers:
-            - type: record
-              name: Elasticsearch
-              data: http://elastic_search:9200/ec_catalog
-              id_field: id
-              time_field: datetime
+    # ec_catalog:
+    #     type: collection
+    #     title: eMOTIONAL Cities Metadata catalog
+    #     description: eMOTIONAL Cities Metadata catalog (OGC API Records)
+    #     keywords:
+    #         - Mesurements
+    #         - Environmental
+    #         - Lisbon
+    #         - London
+    #         - eMOTIONAL Cities
+    #         - Neuroscience
+    #         - Urban Planning
+    #         - H2020
+    #     links:
+    #         - type: text/html
+    #           rel: canonical
+    #           title: information
+    #           href: https://emotionalcities-h2020.eu/
+    #           hreflang: en-US
+    #     extents:
+    #         spatial:
+    #             bbox: [-170, -80, 170, 80]
+    #             crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+    #     providers:
+    #         - type: record
+    #           name: Elasticsearch
+    #           data: http://elastic_search:9200/ec_catalog
+    #           id_field: id
+    #           time_field: datetime
 
     # things:
     #     type: collection
@@ -4120,6 +4120,44 @@ resources:
             - type: tile
               name: MVT-elastic
               data: http://elastic_search:9200/noise_wzones/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              options:
+                zoom:
+                    min: 0
+                    max: 29
+              format:
+                name: pbf
+                mimetype: application/vnd.mapbox-vector-tile
+
+    lisbon_agudo_sub-oe109003_2024-08-27t150441z:
+        type: collection
+        title: "Lisbon Outdoor Walk: Agudo Subject OE109003"
+        description: Outdoor walk data collection.
+        keywords:
+            - Lisbon
+            - Outdoor
+            - eMOTIONAL Cities
+            - Walk
+            - Microclimate
+            - Biosignals
+        links:
+            - type: text/html
+              rel: canonical
+              title: metadata
+              # The link to metadata record
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/lisbon_agudo_sub-oe109003_2024-08-27t150441z
+              hreflang: en-US
+        extents:
+            spatial:
+                bbox: [-9.1314633959999991,38.7252267770000032,-9.1229591449999994,38.7269771550000002]
+                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+        providers:
+            - type: feature
+              name: Elasticsearch
+              data: http://elastic_search:9200/lisbon_agudo_sub-oe109003_2024-08-27t150441z
+              id_field: id
+            - type: tile
+              name: MVT-elastic
+              data: http://elastic_search:9200/lisbon_agudo_sub-oe109003_2024-08-27t150441z/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 zoom:
                     min: 0

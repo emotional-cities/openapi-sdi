@@ -164,7 +164,7 @@ python3 /load_es_data.py /mount_s3/geojson/noise_wzones.geojson zoneid
 python3 /load_es_data.py /mount_s3/geojson/zones.geojson zoneid
 
 echo "Loading fmul data"
-python3 /load_es_data.py /mount_s3/geojson/lisbon_agudo_sub-oe109003_2024-08-27t150441z.geojson id
+python3 /load_es_data.py /mount_s3/geojson/lisbon_agudo_sub-oe109003.geojson id
 
 echo "Loading the catalog to 03/01/2025"
 python3 /load_es_data.py /mount_s3/geojson/ec_catalog.geojson id

@@ -4164,7 +4164,7 @@ resources:
                 name: pbf
                 mimetype: application/vnd.mapbox-vector-tile
 
-    lisbon_agudo_sub-oe109003_2024-08-27t150441z:
+    lisbon_agudo_sub-oe109003:
         type: collection
         title: "Lisbon Outdoor Walk: Agudo Subject OE109003"
         description: Outdoor walk data collection.
@@ -4180,7 +4180,7 @@ resources:
               rel: canonical
               title: metadata
               # The link to metadata record
-              href: https://emotional.byteroad.net/collections/ec_catalog/items/lisbon_agudo_sub-oe109003_2024-08-27t150441z
+              href: https://emotional.byteroad.net/collections/ec_catalog/items/lisbon_agudo_sub-oe109003
               hreflang: en-US
         extents:
             spatial:
@@ -4189,11 +4189,11 @@ resources:
         providers:
             - type: feature
               name: Elasticsearch
-              data: http://elastic_search:9200/lisbon_agudo_sub-oe109003_2024-08-27t150441z
+              data: http://elastic_search:9200/lisbon_agudo_sub-oe109003
               id_field: id
             - type: tile
               name: MVT-elastic
-              data: http://elastic_search:9200/lisbon_agudo_sub-oe109003_2024-08-27t150441z/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
+              data: http://elastic_search:9200/lisbon_agudo_sub-oe109003/_mvt/geometry/{z}/{x}/{y}?grid_precision=0
               options:
                 zoom:
                     min: 0

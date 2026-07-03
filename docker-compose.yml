@@ -53,7 +53,8 @@ services:
     depends_on:
       - elastic_search
       
-    restart: on-failure
+    restart: unless-stopped
+
 
 
   elastic_search:
@@ -73,6 +74,7 @@ services:
       - 9200:9200
     volumes:
       - elastic_search_data:/usr/share/elasticsearch/data
+    restart: unless-stopped
 
   postgis:
     build: ./postgis/
@@ -88,7 +90,8 @@ services:
     ports:
       - "5432:5432"
     container_name: postgis
-
+    restart: unless-stopped
+    
   geoserver:
     build: ./geoserver/
     expose:
@@ -109,6 +112,7 @@ services:
       - ./geoserver/ec_data/geopackage:/home/tomcat/ec_data/geopackage
     container_name: geoserver
     image: emotionalcities/geoserver
+    restart: unless-stopped
 
   mapstore:
     build: ./mapstore/
@@ -122,6 +126,7 @@ services:
       - postgis
     container_name: mapstore
     image: emotionalcities/sdi-template-mapstore
+    restart: unless-stopped
 
   apache-httpd:
     image: httpd:2.4
@@ -140,6 +145,7 @@ services:
       # - "443:443"
     command: sh -c "/usr/local/apache2/bin/htpasswd -b -c /usr/local/apache2/.htpasswd $FROST_USER $FROST_PASSWORD && httpd-foreground"
     container_name: apache-httpd
+    restart: unless-stopped
 
   frost:
     image: fraunhoferiosb/frost-server:2.0
@@ -169,6 +175,7 @@ services:
     depends_on:
       - postgis_frost
     container_name: frost
+    restart: unless-stopped
 
   postgis_frost:
     image: postgis/postgis:14-3.2-alpine
@@ -184,6 +191,7 @@ services:
       - postgis_frost_volume:/var/lib/postgresql/data
       - ./frost/sensorthings.sh:/docker-entrypoint-initdb.d/sensorthings.sh
     container_name: postgis_frost
+    restart: unless-stopped
 
   sisyphus:
     image: ghcr.io/emotional-cities/sisyphusapi:main
@@ -204,7 +212,8 @@ services:
 
     expose:
       - 80
-
+    restart: unless-stopped
+    
 volumes:
   elastic_search_data: {}
   postgis_frost_volume:

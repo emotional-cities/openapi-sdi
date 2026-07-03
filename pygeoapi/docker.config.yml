@@ -9,7 +9,10 @@ server:
     language: en-US
     cors: true
     pretty_print: true
-    limit: 10
+    limits:
+        default_items: 100
+        max_items: 5000
+        on_exceed: throttle
     map:
         url: https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>

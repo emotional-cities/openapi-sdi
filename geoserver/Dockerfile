@@ -1,4 +1,4 @@
-FROM tomcat:9.0-jre17-openjdk-slim
+FROM tomcat:9.0-jre17-temurin
 
 LABEL maintainer="ByteRoad <support@byteroad.net>"
 

@@ -10,11 +10,11 @@ ENV GEOSERVER_EXT_DIR /var/local/geoserver-exts
 ENV TOMCAT_INSTALL_DIR /usr/local/tomcat
 
 # Fonts
-RUN echo "deb http://archive.debian.org/debian stretch contrib" >> /etc/apt/sources.list
 RUN set -x \
     && apt-get update \
     && apt-get install -yq unzip \
-    && apt-get install -yq ttf-mscorefonts-installer \
+    && echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true" | debconf-set-selections \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -yq ttf-mscorefonts-installer \
     && apt-get install -y --no-install-recommends libfontconfig1 \
     && rm -rf /var/lib/apt/lists/*
 

@@ -1,0 +1,422 @@
+/* =================================================================
+   pygeoapi "Excalidraw" theme
+   A hand-drawn / whiteboard visual style for the pygeoapi HTML UI:
+   marker fonts, wobbly sketch borders, marker-highlight headings
+   and a paper canvas with a faint dot grid.
+   ================================================================= */
+
+:root {
+    --ink: #1e1e1e;
+    --ink-soft: #3f3f3f;
+    --paper: #fbfaf5;
+    --card: #ffffff;
+    --accent: #4772e3;        /* "blue marker" */
+    --accent-soft: rgba(71, 114, 227, 0.35);
+    --highlight: #ffd479;     /* yellow highlighter */
+    --pink: #e03131;
+    --shadow: 2px 3px 0 rgba(30, 30, 30, 0.18);
+    /* the classic "hand-drawn box" radius; a couple of variants for variety */
+    --sketch-r: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    --sketch-r2: 15px 225px 15px 255px / 255px 15px 225px 15px;
+    --sketch-r3: 12px 8px 14px 10px / 10px 14px 8px 12px;
+}
+
+html,
+body {
+    background-color: var(--paper);
+    background-image: radial-gradient(circle, #d9d6c9 1px, transparent 1.2px);
+    background-size: 26px 26px;
+    color: var(--ink);
+    font-family: "Patrick Hand", "Comic Sans MS", "Segoe Print", cursive;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+::selection {
+    background: var(--highlight);
+    color: var(--ink);
+}
+
+/* ---------- typography ---------- */
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Permanent Marker", "Patrick Hand", cursive;
+    font-weight: 400;
+    color: var(--ink);
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    font-size: 2rem;
+    transform: rotate(-0.4deg);
+    background-image: linear-gradient(97deg,
+        rgba(255, 212, 121, 0) 1%,
+        var(--highlight) 4%,
+        var(--highlight) 96%,
+        rgba(255, 212, 121, 0) 99%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.75em;
+    background-position: 0 78%;
+    display: inline-block;
+    padding: 0 0.15em;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+h2 { font-size: 1.5rem; transform: rotate(-0.3deg); }
+h3 { font-size: 1.25rem; }
+h4, h5, h6 { font-size: 1.1rem; }
+
+a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 1px;
+    text-decoration-color: var(--accent-soft);
+    text-underline-offset: 4px;
+}
+
+a:hover {
+    color: #2650b8;
+    text-decoration-color: var(--accent);
+}
+
+small, .small { font-size: 0.85em; }
+
+hr {
+    border: 0;
+    border-top: 2px dashed #c8c4b6;
+    margin: 1.25rem 0;
+}
+
+blockquote {
+    border-left: 5px solid var(--highlight);
+    background: rgba(255, 212, 121, 0.12);
+    padding: 0.5rem 1rem;
+    border-radius: var(--sketch-r3);
+    font-style: italic;
+}
+
+/* ---------- header / nav ---------- */
+
+.sticky-top,
+header.sticky-top,
+.bg-light.sticky-top {
+    border-bottom: 2px solid var(--ink) !important;
+    background-color: rgba(251, 250, 245, 0.95) !important;
+}
+
+.nav-pills {
+    --sketch-gap: 6px;
+}
+
+.nav-pills .nav-link {
+    font-family: "Patrick Hand", cursive;
+    font-size: 1.05rem;
+    color: var(--ink);
+    background: var(--card);
+    border: 2px solid var(--ink);
+    border-radius: var(--sketch-r3);
+    padding: 0.1rem 0.9rem 0.25rem;
+    box-shadow: var(--shadow);
+    transform: rotate(-0.3deg);
+    transition: transform 0.1s ease;
+}
+
+.nav-pills .nav-link:nth-child(odd) { transform: rotate(0.3deg); }
+
+.nav-pills .nav-link:hover,
+.nav-pills .nav-link:focus {
+    background: var(--highlight);
+    transform: rotate(0deg);
+}
+
+.nav-pills .nav-link.active { background: var(--highlight); }
+
+/* ---------- breadcrumbs / crumbs bar ---------- */
+
+.crumbs {
+    margin-top: 0.75rem;
+}
+
+.crumbs > .container {
+    padding: 0.4rem 1rem;
+}
+
+.crumbs a {
+    color: var(--ink-soft);
+    text-decoration: none;
+}
+
+.crumbs a:hover { color: var(--accent); }
+
+.crumbs > .container > .row > .col-sm-12 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    border: 2px dashed #b9b5a6;
+    border-radius: var(--sketch-r3);
+    padding: 0.35rem 0.9rem;
+    background: rgba(255, 253, 231, 0.7);
+}
+
+.bootstrap5 .breadcrumb,
+.breadcrumb {
+    background: transparent;
+    margin-bottom: 0;
+    font-size: 1.05rem;
+}
+
+.breadcrumb .active { font-weight: 700; }
+
+/* ---------- sketchy boxes (cards, buttons, badges, inputs) ---------- */
+
+.card,
+.card .card-header,
+.table-responsive,
+.modal-content,
+.popover,
+.list-group,
+.dropdown-menu {
+    border: 2px solid var(--ink);
+    border-radius: var(--sketch-r);
+    background-color: var(--card);
+    box-shadow: var(--shadow);
+}
+
+.card {
+    transform: rotate(-0.15deg);
+}
+
+.card:nth-of-type(even) { transform: rotate(0.2deg); }
+
+.card .card-header {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    border-top: none !important;
+    border-bottom: 2px solid var(--ink) !important;
+    border-left: none !important;
+    border-right: none !important;
+    background: #fffdf2 !important;
+}
+
+.btn {
+    font-family: "Patrick Hand", cursive;
+    font-size: 1.05rem;
+    border: 2px solid var(--ink);
+    border-radius: var(--sketch-r3);
+    background: var(--card);
+    color: var(--ink);
+    box-shadow: 2px 2px 0 rgba(30, 30, 30, 0.2);
+    transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+
+.btn:hover,
+.btn:focus {
+    background: var(--highlight);
+    color: var(--ink);
+    transform: translate(-1px, -1px);
+    box-shadow: 3px 3px 0 rgba(30, 30, 30, 0.25);
+}
+
+.btn:active {
+    transform: translate(1px, 1px);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.btn-primary,
+.btn:disabled {
+    color: var(--ink) !important;
+}
+
+.btn-primary { background: var(--highlight) !important; }
+.btn-danger { background: #ffd7d0 !important; }
+
+.badge {
+    border: 1.5px solid var(--ink);
+    border-radius: 999px;
+    font-family: "Patrick Hand", cursive;
+    background: var(--highlight);
+    box-shadow: 1px 1px 0 rgba(30, 30, 30, 0.15);
+}
+
+input,
+select,
+textarea {
+    border: 2px solid var(--ink);
+    border-radius: var(--sketch-r3);
+    font-family: "Patrick Hand", cursive;
+    font-size: 1rem;
+    background: var(--card);
+    box-shadow: inset 1px 1px 0 rgba(30, 30, 30, 0.08);
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+a:focus-visible,
+.btn:focus-visible {
+    outline: 2px dashed var(--accent);
+    outline-offset: 2px;
+    box-shadow: var(--shadow);
+}
+
+/* ---------- tables ---------- */
+
+table:not(.horizontal) {
+    max-height: none;
+}
+
+.table {
+    --bs-table-bg: transparent;
+    font-size: 1rem;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table > :not(caption) > * > * {
+    border-bottom: 1.5px solid #cfcab9;
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
+}
+
+.table thead th {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-size: 0.95rem;
+    border-bottom: 2px solid var(--ink);
+    background: #fffdf2;
+}
+
+.table tbody tr:nth-child(odd) {
+    background: rgba(255, 253, 241, 0.55);
+}
+
+.table-bordered,
+.table-bordered td,
+.table-bordered th {
+    border: 2px solid var(--ink);
+}
+
+.table-responsive {
+    overflow-x: auto;
+    padding: 0.3rem;
+}
+
+/* ---------- code ---------- */
+
+code,
+kbd,
+pre,
+pre code {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.9em;
+}
+
+code {
+    background: rgba(255, 212, 121, 0.35);
+    padding: 0 0.3em;
+    border-radius: 4px;
+}
+
+pre {
+    border: 2px solid var(--ink);
+    border-radius: var(--sketch-r3);
+    background: #fffdf2;
+    box-shadow: var(--shadow);
+    padding: 0.75rem;
+}
+
+/* ---------- alerts / status ---------- */
+
+.alert {
+    border: 2px solid var(--ink);
+    border-radius: var(--sketch-r3);
+    background: var(--card);
+    box-shadow: var(--shadow);
+}
+
+mark.successful { background-color: #b9f6ca; color: #1e1e1e; }
+mark.accepted { background-color: #fff3bf; color: #1e1e1e; }
+mark.failed { background-color: #ffd7d0; color: #1e1e1e; }
+mark.running { background-color: #ffd479; color: #1e1e1e; }
+
+/* ---------- pagination ---------- */
+
+.pagination .page-item .page-link {
+    font-family: "Patrick Hand", cursive;
+    border: 2px solid var(--ink);
+    border-radius: var(--sketch-r3) !important;
+    background: var(--card);
+    color: var(--ink);
+    margin-right: 4px;
+    box-shadow: 1px 1px 0 rgba(30, 30, 30, 0.15);
+}
+
+.pagination .page-item.active .page-link {
+    background: var(--highlight);
+    color: var(--ink);
+    border-color: var(--ink);
+}
+
+.pagination .page-link:hover {
+    background: var(--highlight);
+    color: var(--ink);
+}
+
+/* ---------- misc structural ---------- */
+
+.flat {
+    border: 0;
+}
+
+main {
+    padding-bottom: 70px; /* keep content clear of the sticky footer */
+}
+
+footer.sticky-bottom {
+    border-top: 2px solid var(--ink) !important;
+    background-color: rgba(251, 250, 245, 0.95) !important;
+    font-size: 0.95rem;
+}
+
+details > summary {
+    cursor: pointer;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-size: 1.05rem;
+}
+
+/* ---------- maps ---------- */
+
+#items-map,
+#collection-map {
+    width: 100%;
+    height: 400px;
+    border: 2px solid var(--ink);
+    border-radius: var(--sketch-r3);
+    box-shadow: var(--shadow);
+}
+
+#coverages-map {
+    width: 100%;
+    height: 80vh;
+    border: 2px solid var(--ink);
+    border-radius: var(--sketch-r3);
+    box-shadow: var(--shadow);
+}
+
+.c3-tooltip-container {
+    z-index: 300;
+}
+
+/* keep pygeoapi's own header buttons from being uppercased by mini-css resets */
+header button,
+header [type="button"],
+header .button,
+header [role="button"] {
+    text-transform: none;
+}

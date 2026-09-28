@@ -47,6 +47,7 @@ services:
       - ./pygeoapi/es-entrypoint.sh:/es-entrypoint.sh
       - ./pygeoapi/wait-for-elasticsearch.sh:/wait-for-elasticsearch.sh
       - ./ES/data:/data
+      - ./pygeoapi/themes:/pygeoapi/themes
     links:
       - elastic_search
 

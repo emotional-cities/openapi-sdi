@@ -19,7 +19,9 @@ server:
             contributors'
     admin: false
     templates:
-        path: /pygeoapi/pygeoapi/templates
+        path: /pygeoapi/themes/excalidraw/templates
+        static: /pygeoapi/themes/excalidraw/static
+
 logging:
     level: ERROR
 metadata:

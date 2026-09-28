@@ -1,0 +1,47 @@
+{% extends "_base.html" %}
+{% block title %}{{ super() }} {% trans %}TileMatrixSets{% endtrans %} {% endblock %}
+{% block crumbs %}{{ super() }}
+/ <a href="./TileMatrixSets">{% trans %}TileMatrixSets{% endtrans %}</a>
+{% endblock %}
+{% block body %}
+<section id="tilematrixsets">
+
+  <h1 style="display:inline-block">{% trans %}TileMatrixSets{% endtrans %}</h1>
+  <p class="text-muted">
+    {% trans %}
+    Tile matrix sets describe how the map is split into square tiles at each
+    level of detail. Pick one below to inspect its individual tile matrices.
+    {% endtrans %}
+  </p>
+
+  <div class="card">
+    <div class="card-header">{% trans %}Tile matrix sets available in this service{% endtrans %}</div>
+    <div class="table-responsive">
+      <table class="table table-striped align-middle mb-0">
+        <thead>
+          <tr>
+            <th style="width: 30%">{% trans %}Tile matrix set{% endtrans %}</th>
+            <th>{% trans %}Title{% endtrans %}</th>
+            <th style="width: 90px"></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for p in data['tileMatrixSets'] %}
+          <tr itemscope itemtype="https://schema.org/WebAPI">
+            <td itemprop="name" data-label="title">
+              <a title="{{ p.id }}" href="{{ p.links[0].href }}">{{ p.id }}</a>
+            </td>
+            <td itemprop="description" data-label="description">{{ p.title }}</td>
+            <td>
+              <a class="badge text-dark text-decoration-none"
+                 href="?f=json" title="{% trans %}JSON representation{% endtrans %}">json</a>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</section>
+{% endblock %}

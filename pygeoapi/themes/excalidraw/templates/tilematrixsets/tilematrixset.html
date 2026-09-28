@@ -1,0 +1,69 @@
+{% extends "_base.html" %}
+{% block title %}{{ super() }} {% trans %}TileMatrixSet{% endtrans %} {{ data['id'] }}{% endblock %}
+{% block crumbs %}{{ super() }}
+/ <a href="../TileMatrixSets/">{% trans %}TileMatrixSets{% endtrans %}</a>
+/ <a href="../TileMatrixSets/{{ data['id'] }}?f=html">{{ data['id'] }}</a>
+{% endblock %}
+{% block body %}
+<section id="tilematrixset">
+
+  <h1 style="display:inline-block">{{ data['id'] }} {% trans %}tile matrix set{% endtrans %}</h1>
+  <p class="text-muted">
+    {% trans %}
+    This tile matrix set defines a named grid: one square tile matrix per
+    level of detail (zoom level), each smaller than the one above it.
+    {% endtrans %}
+  </p>
+
+  <div class="card mb-4">
+    <div class="card-header">{% trans %}Summary{% endtrans %}</div>
+    <div class="card-body">
+      <dl class="row mb-0" style="font-size: 1.05rem">
+        <dt class="col-sm-4">{% trans %}Identifier{% endtrans %}</dt>
+        <dd class="col-sm-8"><span class="badge text-dark">{{ data['id'] }}</span></dd>
+        <dt class="col-sm-4">{% trans %}Coordinate reference system{% endtrans %}</dt>
+        <dd class="col-sm-8"><i>{{ data['crs'] }}</i></dd>
+        <dt class="col-sm-4">{% trans %}Ordered axes{% endtrans %}</dt>
+        <dd class="col-sm-8">{{ data['orderedAxes'] | join(', ') }}</dd>
+        <dt class="col-sm-4">{% trans %}URI{% endtrans %}</dt>
+        <dd class="col-sm-8"><i>{{ data['uri'] }}</i></dd>
+        <dt class="col-sm-4">{% trans %}Well known scale set{% endtrans %}</dt>
+        <dd class="col-sm-8"><i>{{ data['wellKnownScaleSet'] or "&mdash;"|safe }}</i></dd>
+      </dl>
+    </div>
+  </div>
+
+  <h2>{% trans %}Tile matrices{% endtrans %}
+    <span class="badge text-dark">{{ data['tileMatrices'] | length }}</span>
+  </h2>
+  <div class="card">
+    <div class="table-responsive">
+      <table class="table table-striped align-middle mb-0">
+        <thead>
+          <tr>
+            <th>{% trans %}Tile matrix{% endtrans %}</th>
+            <th>{% trans %}Scale denominator{% endtrans %}</th>
+            <th>{% trans %}Cell size{% endtrans %}</th>
+            <th>{% trans %}Tile size{% endtrans %}</th>
+            <th>{% trans %}Matrix size{% endtrans %}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for m in data['tileMatrices'] %}
+          <tr itemscope itemtype="https://schema.org/DefinedTerm">
+            <td itemprop="name" data-label="id">
+              <span class="badge text-dark">{{ m.id }}</span>
+            </td>
+            <td data-label="scale">{{ m.scaleDenominator | int }}</td>
+            <td data-label="cell">{{ m.cellSize | round(6) }}</td>
+            <td data-label="tile">{{ m.tileWidth }} &times; {{ m.tileHeight }}</td>
+            <td data-label="matrix">{{ m.matrixWidth }} &times; {{ m.matrixHeight }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</section>
+{% endblock %}

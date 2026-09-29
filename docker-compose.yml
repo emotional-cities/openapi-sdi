@@ -31,7 +31,8 @@
 
 services:
   pygeoapi:
-    image: geopython/pygeoapi:latest
+    build: ./pygeoapi
+    image: emotional-pygeoapi:latest  # geopython/pygeoapi:latest + TMS theming fix (pygeoapi/Dockerfile)
 
     container_name: pygeoapi_es
     entrypoint:

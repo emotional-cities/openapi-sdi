@@ -38,7 +38,7 @@ metadata:
         - H2020
         keywords_type: theme
         terms_of_service: https://creativecommons.org/licenses/by/4.0/
-        url: http://example.org
+        url: https://github.com/emotional-cities/openapi-sdi
     license:
         name: CC-BY 4.0 license
         url: https://creativecommons.org/licenses/by/4.0/
@@ -53,8 +53,6 @@ metadata:
         stateorprovince: Lisbon
         postalcode: 1170-007
         country: Portugal
-        phone: +xx-xxx-xxx-xxxx
-        fax: +xx-xxx-xxx-xxxx
         email: info@byteroad.net
         url: https://byteroad.net
         hours: Hours of Service

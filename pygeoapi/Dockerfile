@@ -10,7 +10,7 @@
 # back to the pygeoapi default templates, ignoring server.templates.path.
 # Every other endpoint passes api.config['server']['templates'] instead, which
 # is why the TileMatrixSets HTML pages were the only ones not rendered with
-# the custom (excalidraw) theme.
+# the custom (hand-drawn) theme.
 #
 # If upstream fixes this bug the sed below simply has no effect anymore.
 FROM geopython/pygeoapi:latest

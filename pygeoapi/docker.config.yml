@@ -19,8 +19,8 @@ server:
 
     admin: false
     templates:
-        path: /pygeoapi/themes/excalidraw/templates
-        static: /pygeoapi/themes/excalidraw/static
+        path: /pygeoapi/themes/hand-drawn/templates
+        static: /pygeoapi/themes/hand-drawn/static
 
 logging:
     level: ERROR

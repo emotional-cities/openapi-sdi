@@ -129,7 +129,7 @@ services:
     restart: unless-stopped
 
   apache-httpd:
-    image: httpd:2.4
+    image: httpd:2.4.71
     depends_on:
       - pygeoapi
       - mapstore

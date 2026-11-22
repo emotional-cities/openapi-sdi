@@ -1,8 +1,8 @@
-FROM tomcat:9.0-jre17-temurin
+FROM tomcat:9.0.124-jre17-temurin
 
 LABEL maintainer="ByteRoad <support@byteroad.net>"
 
-ENV GEOSERVER_VERSION 2.28.5
+ENV GEOSERVER_VERSION 2.28.6
 ENV GEOSERVER_DATA_DIR /var/local/geoserver
 ENV GEOSERVER_GWC_DIR /var/local/geoserver-gwc
 ENV GEOSERVER_INSTALL_DIR /usr/local/geoserver
@@ -55,7 +55,7 @@ RUN sed -i '\:</web-app>:i\
 
 # Tomcat env
 ENV CATALINA_OPTS " -Xms768m -Xmx1560m --patch-module java.desktop=/usr/local/tomcat/lib/marlin-0.9.4.5-Unsafe-OpenJDK11.jar \
-    -server -XX:+UseG1GC -XX:NewSize=48m -XX:-UsePerfData -XX:SoftRefLRUPolicyMSPerMB=36000 -Djava.awt.headless=true \
+    -server -XX:+UseG1GC -XX:NewSize=48m -XX:-UsePerfData -XX:SoftRefLRUPolicyMSPerMB=36000 -XX:-UseBASE64Intrinsics -Djava.awt.headless=true \
     -DGEOSERVER_DATA_DIR=${GEOSERVER_DATA_DIR} -Dorg.geotools.referencing.forceXY=true -Dsun.java2d.renderer.useThreadLocal=false "
 
 # Create tomcat user to avoid root access.

@@ -281,7 +281,7 @@ python3 /load_es_data.py /mount_s3/geojson/london_whitechapel_sub-oe576003.geojs
 
 
 echo "Loading the catalog to 03/01/2025"
-python3 /load_es_data.py /mount_s3/geojson/ec_catalog.geojson id
+python3 /load_es_data.py /mount_s3/geojson/ec_catalog.json id
 
 
 echo "Seems that data was loaded"
